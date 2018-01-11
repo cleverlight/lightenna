@@ -241,7 +241,7 @@ compress_html:
 
 # Reveal
 # The Reveal theme
-reveal_theme: black.css
+reveal_theme: white.css
 # The Reveal transition
 reveal_transition: default
 # Path to the used theme (defaults to the Reveal.js standard theme path)

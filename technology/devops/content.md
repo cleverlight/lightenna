@@ -1,4 +1,10 @@
 
+# DevOps
+
+Technology overview from Lightenna
+
+---
+
 ## Culture
 
 * Neither a set of tools
@@ -31,9 +37,18 @@ Note: Collaboration has yielded most of the world's greatest online projects, bu
 
 All projects, whether compose of 2 or 200 participants, are searching for the right balance of collaborative activity and skilled individual effort. 
 
-----
+---
 
-## Slide 1b.2
+## Frag list
 
-Vertical in
+<p class="fragment">One</p>
+<p class="fragment">Two</p>
+<p class="fragment">Three</p>
 
+<pre><code data-trim data-noescape>
+(def lazy-fib
+  (concat
+   [0 1]
+   <mark>((fn rfib [a b]</mark>
+        (lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
+</code></pre>
