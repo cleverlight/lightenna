@@ -16,6 +16,7 @@
 
 		<link rel="stylesheet" href="{{ site.reveal_path }}css/reveal.css">
 		<link rel="stylesheet" href="{{ site.reveal_theme_path }}{{ site.reveal_theme }}" id="theme">
+		<link rel="stylesheet" href="{{ '/assets/css/lightenna-reveal.css' | absolute_url }}">
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="{{ site.reveal_path }}lib/css/zenburn.css">
@@ -24,25 +25,6 @@
 		<script>
 			document.write( '<link rel="stylesheet" href="{{ site.reveal_path }}css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
 		</script>
-
-        <style>
-            .left {
-                left:-8.33%;
-                text-align: left;
-                float: left;
-                width:50%;
-                z-index:-10;
-            }
-
-            .right {
-                left:31.25%;
-                top: 75px;
-                float: right;
-                text-align: right;
-                z-index:-10;
-                width:50%;
-            }
-        </style>
 
 		<!--[if lt IE 9]>
 		<script src="{{ site.reveal_path }}lib/js/html5shiv.js"></script>
