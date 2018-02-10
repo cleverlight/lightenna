@@ -5,6 +5,6 @@ description: Collaboration is brilliant - the only way - but managing the volati
 tags: devops collaboration
 ---
 
-Presentation pre-amble
-
+Inline post
+No included content
 
