@@ -18,8 +18,9 @@
   width: 45%;
 }
 
-.as-right {
+ul.as-right {
   direction: rtl;
+  margin: 0 1em 0 0;
   li {
     text-align: right;
   }
