@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>3.3. OODB</title>
+<base href="" />
+<meta name="generator" content="Drupal S5 Book Export" />
+<meta name="version" content="S5 1.1" />
+<meta name="presdate" content="(c) 2004-2007 Lightenna Ltd." />
+<meta name="author" content="" />
+<meta name="company" content="Lightenna Ltd." />
+<meta name="defaultView" content="slideshow" />
+<meta name="controlVis" content="hidden" />
+<link rel="stylesheet" href="../../../legacy/misc/s5/lightenna/slides.css" type="text/css" media="projection" id="slideProj" />
+<link rel="stylesheet" href="../../../legacy/misc/s5/default/outline.css" type="text/css" media="screen" id="outlineStyle" />
+<link rel="stylesheet" href="../../../legacy/misc/s5/default/print.css" type="text/css" media="print" id="slidePrint" />
+<link rel="stylesheet" href="../../../legacy/misc/s5/default/opera.css" type="text/css" media="projection" id="operaFix" />
+<script src="../../../legacy/misc/s5/default/slides.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="layout">
+<div id="controls"></div>
+<div id="currentSlide"></div>
+<div id="header"></div>
+<div id="footer"><h1>Database Training Course</h1><h2>3.3. OODB</h2></div>
+</div>
+
+<div class="presentation">
+<div class="slide"><h1>3.3. OODB</h1>
+<div class="slidebody"><p>In this lecture we look at...<br />
+[<a href="http://www.lightenna.com/legacy/sitefiles/lightenna.com/3.3.oodb.pdf">Section notes</a> PDF 34Kb]</p>
+</div></div><div class="slide"><h1>3.3.01. Introduction</h1>
+<div class="slidebody"><ul>
+<li>Database architectures, beyond</li>
+<li>Why OODBMS?</li>
+<li>ObjectStore</li>
+<li>CORBA object distribution standard</li>
+</ul>
+</div></div><div class="slide"><h1>3.3.02. Large DBMS</h1>
+<div class="slidebody"><ul>
+<li>Complex entity fragmentation</li>
+<ul>
+<li>across many relations</li>
+</ul>
+<li>Breaks the miniworld-realworld dichotomy</li>
+<li>Requires conceptual abstracting layer</li>
+<li>Difficult to retrieve all information for x</li>
+<li>Compounded by version control</li>
+</ul>
+</div></div><div class="slide"><h1>3.3.03. Object orientation</h1>
+<div class="slidebody"><ul>
+<li>Object components (icv triples)</li>
+<ul>
+<li>Object Identity (OID), I</li>
+<ul>
+<li>replaces primary key</li>
+</ul>
+<li>Type constructor, c</li>
+<ul>
+<li>how the object state is constructed from sub-comp</li>
+<li>e.g. atom, tuple (struct), set, list, bag, array</li>
+</ul>
+<li>Object state, v</li>
+<li>Object behaviour/action</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.3.04. Desirable features</h1>
+<div class="slidebody"><ul>
+<li>Encapsulation</li>
+<ul>
+<li>Abstract data types</li>
+<li>Information hiding</li>
+</ul>
+<li>Object classes and behavior</li>
+<ul>
+<li>Defined by operations (methods)</li>
+</ul>
+<li>Inheritance and hierarchies</li>
+<li>Strong typing (no illegal casting)</li>
+<ul>
+<li>don’t think about inheritance just yet</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.3.05. Desirable features</h1>
+<div class="slidebody"><ul>
+<li>Persistence</li>
+<ul>
+<li>Objects exist after termination</li>
+<li>Naming and reachability mechanism</li>
+<li>Late binding in Java</li>
+</ul>
+<li>Performance</li>
+<ul>
+<li>user-def functions executed on server, not client</li>
+</ul>
+<li>Extension into relational model</li>
+<ul>
+<li>Domains of objects, not just values</li>
+<li>Domain hierarchies etc.</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.3.06. Desirable features</h1>
+<div class="slidebody"><ul>
+<li>Polymorphism</li>
+<ul>
+<li>aka. operator overloading</li>
+<li>same method name/symbol</li>
+<li>multiple implementations</li>
+</ul>
+<li>Easy link to Programming languages</li>
+<ul>
+<li>popular OO language like Java/C++</li>
+<li>Better than PL/SQL integration</li>
+<li>Much better than PL-JDBC integration!</li>
+</ul>
+<li>Highly suitable for multimedia data</li>
+</ul>
+</div></div><div class="slide"><h1>3.3.07. Undesirable features</h1>
+<div class="slidebody"><ul>
+<li>Object Ids</li>
+<ul>
+<li>Artificial Real-Mini, double edged sword</li>
+<li>Exposes inner workings (suspended abstraction)</li>
+</ul>
+<li>Lack of integrity constraints</li>
+<li>No concept of normalisation/forms</li>
+<li>Extreme encapsulation</li>
+<ul>
+<li>e.g. creation of many accessor/mutator methods</li>
+</ul>
+<li>Lack of (better) standardisation</li>
+</ul>
+</div></div><div class="slide"><h1>3.3.08. More undesirables</h1>
+<div class="slidebody"><ul>
+<li>Originally no mechanism for specifying</li>
+<li>   relationships between objects</li>
+<li>In RDBMS – relationships are tuples</li>
+<li>In OODBMS – relationships should be   properties of objects</li>
+</ul>
+</div></div><div class="slide"><h1>3.3.09. ObjectStore</h1>
+<div class="slidebody"><ul>
+<li>Packages supporting Java or C++</li>
+<li>C++ package uses:</li>
+<ul>
+<li>C++ class definition for DDL</li>
+<li>insert(e), remove(e) and create collections, for DML</li>
+</ul>
+<li>Bidirectional relationship facility</li>
+<li>Persistency transparency</li>
+<ul>
+<li>Identical pointers to persistent and transient objects</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.3.10. CORBA</h1>
+<div class="slidebody"><ul>
+<li>Common Object Request Broker Architecture</li>
+<li>Object communication (unifying paradigm)</li>
+<ul>
+<li>Distributed</li>
+<li>Heterogeneous</li>
+<li>Network, OS and language transparency</li>
+</ul>
+<li>Java implementation org.omg.CORBA</li>
+<li>Also C, C++, ADA, SMALLTALK</li>
+</ul>
+</div></div>
+</div>
+
+</body>
+</html>

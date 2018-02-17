@@ -1,0 +1,32 @@
+SQL> describe shared.cars_single;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ID                                        NOT NULL NUMBER(38)
+ MAKE                                               VARCHAR2(64)
+ MODEL                                              VARCHAR2(64)
+ DERIVATIVE                                         VARCHAR2(128)
+ HP                                                 NUMBER(10)
+ P11DPRICE                                          NUMBER(10)
+ PRICEDATE                                          DATE
+ CO2GPKM                                            NUMBER(10)
+ FUELTYPE                                           VARCHAR2(64)
+ FUEL123                                            NUMBER(2)
+ FUELCONSUMPTION                                    NUMBER
+ TRANSMISSION                                       VARCHAR2(64)
+ MAXSPEED                                           NUMBER(4)
+ ACC0TO60                                           NUMBER
+ BODYSTYLE                                          VARCHAR2(64)
+ DOORS                                              NUMBER
+ INSGROUP                                           VARCHAR2(8)
+ FIRSTREGFEE                                        NUMBER(6)
+ VED                                                NUMBER(6)
+ CO203PCTGE                                         NUMBER
+ TAX03AT22                                          NUMBER
+ TAX03AT40                                          NUMBER
+ CO204PCTGE                                         NUMBER
+ TAX04AT22                                          NUMBER
+ TAX04AT40                                          NUMBER
+ CO205PCTGE                                         NUMBER
+ TAX05AT22                                          NUMBER
+ TAX05AT40                                          NUMBER
+ JAN02OTR                                           NUMBER

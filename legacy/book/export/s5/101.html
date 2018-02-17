@@ -1,0 +1,4228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Databases</title>
+<base href="" />
+<meta name="generator" content="Drupal S5 Book Export" />
+<meta name="version" content="S5 1.1" />
+<meta name="presdate" content="(c) 2004-2007 Lightenna Ltd." />
+<meta name="author" content="" />
+<meta name="company" content="Lightenna Ltd." />
+<meta name="defaultView" content="slideshow" />
+<meta name="controlVis" content="hidden" />
+<link rel="stylesheet" href="../../../legacy/misc/s5/lightenna/slides.css" type="text/css" media="projection" id="slideProj" />
+<link rel="stylesheet" href="../../../legacy/misc/s5/default/outline.css" type="text/css" media="screen" id="outlineStyle" />
+<link rel="stylesheet" href="../../../legacy/misc/s5/default/print.css" type="text/css" media="print" id="slidePrint" />
+<link rel="stylesheet" href="../../../legacy/misc/s5/default/opera.css" type="text/css" media="projection" id="operaFix" />
+<script src="../../../legacy/misc/s5/default/slides.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="layout">
+<div id="controls"></div>
+<div id="currentSlide"></div>
+<div id="header"></div>
+<div id="footer"><h1>Database Training Course</h1><h2>Databases</h2></div>
+</div>
+
+<div class="presentation">
+<div class="slide"><h1>Databases</h1>
+<div class="slidebody"><p>The Database Training course is structured into five sections.</p>
+<p>[<a href="../../../legacy/sitefiles/lightenna.com/databases.pdf">Entire course notes</a> PDF 1.87Mb]</p>
+</div></div><div class="slide"><h1>1. Data models</h1>
+<div class="slidebody"><p>This is the Data models course theme.  In this section we introduce concepts for modelling data and language for communicating those models.<br />
+[<a href="../../../legacy/sitefiles/lightenna.com/1.data_models.pdf">Complete set of notes</a> PDF 870Kb].</p>
+</div></div><div class="slide"><h1>1.1. Introduction</h1>
+<div class="slidebody"><p>Databases are pervasive in modern society.  So many of our actions and attributes are logged and stored in organised information repositories, or Databases<br />
+[<a href="../../../legacy/sitefiles/lightenna.com/1.1.introduction.pdf">Section notes</a> PDF 227Kb].</p>
+</div></div><div class="slide"><h1>1.1.01. Databases</h1>
+<div class="slidebody"><ul>
+<li>Where do we come into contact with databases?</li>
+<li>Supermarket inventories/EPOS</li>
+<ul>
+<li>Supplies, shopping habits, store locations, accounts</li>
+</ul>
+<li>Films (iMDB)</li>
+<ul>
+<li>Cast lists, shooting schedules, histories, budgets</li>
+</ul>
+<li>Department</li>
+<ul>
+<li>Students, courses, staff, payroll</li>
+</ul>
+</ul>
+<p>These are all examples of relatively simple databases.  All of the information is textual or referential.</p>
+</div></div><div class="slide"><h1>1.1.02. New technologies</h1>
+<div class="slidebody"><ul>
+<li>Not just traditional, numeric/textual</li>
+<li>Research 70s biased</li>
+<li>Digital media</li>
+<ul>
+<li>Video servers (atom/bbc/youtube)</li>
+</ul>
+<li>Multimedia databases</li>
+<ul>
+<li>Web site, collection of diverse data types</li>
+<li>Google, AltaVista</li>
+</ul>
+<li>Stock Exchange</li>
+<ul>
+<li>Futures, Currency markets, trends</li>
+<li>Databases comprising not only data, but modelling algortihms</li>
+</ul>
+<li>Microsoft's WinFS</li>
+</ul>
+<p>Databases don't have to store just text.  Increasingly Database servers are storing, indexing and delivering rich-media content, explicitly images, audio and video.</p>
+<p>Microsoft's next generation File storage system (WinFS) is a relational database.  From a user perspective, searching (the process of indexing content by keyword) is already mainstream.  Users are moving away from rigid directory structures (files and folders) and towards keyword-tagged content.</p>
+</div></div><div class="slide"><h1>1.1.03. Variations</h1>
+<div class="slidebody"><ul>
+<li>Not only in role</li>
+<li>Size</li>
+<ul>
+<li>Video server example</li>
+</ul>
+<li>Complexity</li>
+<ul>
+<li>Ford Puma™ example</li>
+<li>Ford staff organised by production line and car</li>
+<li>e.g. Each staff member answers to a 'part' manager (engines, bodyshell, chassis) and a 'car' manager (Puma, Mondeo, Ka)</li>
+</ul>
+<li>Expense</li>
+<li>User profiles and demands</li>
+</ul>
+<p>We've seen that databases are used in a variety of contexts.  Those roles imply properties of each of the systems.  An interlinked text-only database (such as Unix/Linux's MAN pages) will require much less storage than a video archive.</p>
+<p>Some databases are perceptually more complex.  Ford's staff management model would be represented as a matrix (in this case 2 dimensional).  Computers are very good at organising multi-dimensional space.</p>
+</div></div><div class="slide"><h1>1.1.04. Definition</h1>
+<div class="slidebody"><ul>
+<li>Embrace diversity</li>
+<li>Data and semantic</li>
+<li>Database: related data, implicit meaning</li>
+<li>Sample/subset of real world</li>
+<ul>
+<li>real world with bounds</li>
+</ul>
+<li>Miniworld/Universe of Discourse</li>
+</ul>
+<p>A single definition of a database is hard to come by.  Dictionary.com <a href="http://dictionary.reference.com/browse/database">defines a database</a> as: a comprehensive collection of related data organized for convenient access, generally in a computer. The <a href="http://en.wikipedia.org/wiki/Database">Wikipedia definition</a> runs for several pages.</p>
+</div></div><div class="slide"><h1>1.1.05. Abstraction</h1>
+<div class="slidebody"><ul>
+<li>Previous lab exercises</li>
+<ul>
+<li>Problem: reading data from a file</li>
+</ul>
+<li>Abstraction theme</li>
+<li>Basis of good OOP and further good P</li>
+<ul>
+<li>from encapsulation to software component analysis</li>
+</ul>
+<li>Layering, splitting data from design</li>
+<ul>
+<li>Solution: grammar (language guide) and data</li>
+</ul>
+</ul>
+<p>In some of your previous lab assignments, or practical experience, you may have been faced with the problem of caching information persistently in a file, later to be reloaded.</p>
+<p>When writing the data into the file, we are storing more than just that information.  We are storing implicitly a design/grammar for that data.  That implicit design is evident when accessing the file with a naive interface. If you try to read the data out in a different order, it fails.</p>
+<p>A better solution is to split the way the information is stored from the actually information stored.</p>
+</div></div><div class="slide"><h1>1.1.06. Data-design divide</h1>
+<div class="slidebody"><div class="bullets">
+<ul>
+<li>Left-hand/right-hand divide</li>
+<li>LHS: Catalog</li>
+<ul>
+<li>or Meta-data</li>
+<li>or Intension</li>
+<li>or Schema</li>
+<li>i.e. the Design of database</li>
+<li>Types of data, organisation, constraints</li>
+</ul>
+<li>RHS: Extension</li>
+<ul>
+<li>or Snapshot</li>
+<li>The data itself</li>
+<li>Information stored in the database</li>
+<li>Tuples</li>
+</ul>
+</ul>
+</div>
+<p><img src="../../../legacy/sitefiles/lightenna.com/database-data-design-divide.gif" alt="Database data design divide" /></p>
+</div></div><div class="slide"><h1>1.1.07. DBMS</h1>
+<div class="slidebody"><ul>
+<li>DataBase</li>
+<li>Management</li>
+<li>System</li>
+<li>Collection of programs that enable users to:</li>
+<ul>
+<li>Define - patterns, boundaries, design</li>
+<li>Construct - populate to go live</li>
+<li>Manipulate - runtime changes</li>
+</ul>
+<li>data in a structured, organised store.</li>
+</ul>
+</div></div><div class="slide"><h1>1.1.08. Database Management Systems</h1>
+<div class="slidebody"><ul>
+<li>Properties</li>
+<li>Data models and independence</li>
+<ul>
+<li>Requirements</li>
+<li>Categorisation of Database users</li>
+</ul>
+<li>DBMS components</li>
+<ul>
+<li>Architecture</li>
+</ul>
+</ul>
+<p>When considering the database systems as a whole, we need to look at all the components, including elements that interact with the DBMS (users, whom we categorise for simplicity).</p>
+<p>This course will contain a discussion of the components that make up the system and the way they interact (system architecture).</p>
+</div></div><div class="slide"><h1>1.1.09. Models</h1>
+<div class="slidebody"><ul>
+<li>Data models</li>
+<li>Relational data model (Oracle)</li>
+<li>Object data model (ObjectStore)</li>
+<li>Legacy systems</li>
+<ul>
+<li>Hierarchical data model</li>
+<li>Network data model</li>
+</ul>
+</ul>
+<p>A data model is an invention.  It is a construct that allows us to share an understanding of how the system works.  As with all good constructs, it's an abstraction; a simplification; a story.</p>
+<p>In this course we're going to look at the Relational model, where the database is organised into tables (relationals) and each row (tuple) within that relation is coded (keyed) to allow referencing between the relationals. </p>
+<p>The Relational model, inspite of being innovated in the 1970s is still the most popular, underpining mainstream modern databases such as Oracle 10i and MySQL 5.0</p>
+<p>As programming languages are becoming increasingly Object orientated, programmers require a means of persistently storing their Objects.  Object Orientated Databases (OODBs) exist to fulfil this purpose.  OODBs may ultimately replace relational databases, but it's not clear at this stage when.</p>
+</div></div><div class="slide"><h1>1.1.10. Other properties</h1>
+<div class="slidebody"><ul>
+<li>Beside Data model</li>
+<li>Number of users</li>
+<li>Number of sites</li>
+<li>Cost</li>
+<li>Types of access paths</li>
+<li>Generality, or inversely specificity</li>
+</ul>
+<p>MySQL is a highly general database system, in that it supports many different designs.  My mobile phone address book is a highly specific database system and as such is not easily extensible.</p>
+</div></div><div class="slide"><h1>1.1.11. Independence</h1>
+<div class="slidebody"><ul>
+<li>Based on File processing</li>
+<li>Data definition implicit in</li>
+<ul>
+<li>Data</li>
+<li>Application program</li>
+</ul>
+<li>Example of one specific database</li>
+<li>Structure embedded into access program</li>
+<ul>
+<li>Coursework code re-use example</li>
+</ul>
+</ul>
+<p>Earlier I made mention of this problem.  Databases tie into the wider Software Engineering field.  Within Software Engineering, post-development issues of code re-use, maintenance, future evolution etc. necessitate a logical flexible approach to program design.  Databases are such an approach.  In order to store information in a database you invest a small amount of time in explicitly structuring it, however you then get things like flexibility (data independence etc.) for free.</p>
+</div></div><div class="slide"><h1>1.1.12. Program-data independence</h1>
+<div class="slidebody"><ul>
+<li>General databases</li>
+<ul>
+<li>Separate Data definition and data</li>
+<li>Catalog/meta-data &amp; tuples</li>
+</ul>
+<li>Data format/structure stored separately</li>
+<li>Program-data independence (e.g. Y2K)</li>
+<ul>
+<li>Changes in data format</li>
+<ul>
+<li>Alter data (tuples)</li>
+<li>Alter grammar (catalog/meta-data)</li>
+</ul>
+<li>We actually split program-data independence into:</li>
+<ul>
+<li>Logical</li>
+<li>Physical</li>
+</ul>
+<li>...more in a second</li>
+</ul>
+</div></div><div class="slide"><h1>1.1.13. Program-operation independence</h1>
+<div class="slidebody"><ul>
+<li>In object-orientated databases</li>
+<ul>
+<li>Objects consist of attributes and operations</li>
+<li>Operation defined by</li>
+<ul>
+<li>Header/Interface/Prototype or Signature</li>
+<li>Implementation</li>
+</ul>
+<li>Program-operation independence</li>
+<ul>
+<li>Implementation change hidden from user</li>
+</ul>
+<li>Collectively data abstraction</li>
+</ul>
+</div></div><div class="slide"><h1>1.1.14. Logical and physical program-data independence</h1>
+<div class="slidebody"><ul>
+<li>Three tier data-model diagram</li>
+<li>Mappings, Data independence</li>
+<ul>
+<li>Logical</li>
+<ul>
+<li>between conceptual and external</li>
+<li>changes to conceptual without changing</li>
+<ul>
+<li>external schemas or application programs</li>
+</ul>
+</ul>
+<li>Physical</li>
+<ul>
+<li>between internal and conceptual</li>
+<li>changes to internal without changing</li>
+<ul>
+<li>conceptual or external schemas</li>
+</ul>
+</ul>
+</ul>
+<p><img src="../../../legacy/sitefiles/lightenna.com/database-three-tiers-external-conceptual-internal.gif" alt="database three tiers external conceptual internal"</p>
+</div></div><div class="slide"><h1>1.1.15. DBMS Requirements</h1>
+<div class="slidebody"><ul>
+<li>DataBase Management System</li>
+<ul>
+<li>Abstraction (i.e. program-data independence)</li>
+<li>Conceptual representation (data models)</li>
+<li>Multiple views and User Interfaces</li>
+<li>Data sharing and transaction processing</li>
+<li>Access restriction</li>
+<li>Redundancy removal/optimisation</li>
+<li>Persistent storage (Program objects) &amp; Integrity</li>
+<li>Relationship management &amp; Inference</li>
+<li>Backup and recovery</li>
+</ul>
+</ul>
+<p>Here's a summary of what we need from a DBMS</p>
+</div></div><div class="slide"><h1>1.1.16. Database Users</h1>
+<div class="slidebody"><ul>
+<li>Database as 1y resource, DBMS as 2y</li>
+<li>Database administrators (DBA)</li>
+<li>Database designers</li>
+<li>End users</li>
+<ul>
+<li>Naïve - canned transactions e.g. bank/airline</li>
+<li>Sophisticated - engineers, scientists, query editors</li>
+<li>Stand-alone (personal databases/MS Access)</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>1.1.17. Results of use</h1>
+<div class="slidebody"><ul>
+<li>Knock-on effects of database approach</li>
+<li>Enforcing standards</li>
+<li>Reduced Development time</li>
+<li>Adaptive to change (design changes)</li>
+<li>Up-to-date information (live database)</li>
+<li>Economies of scale</li>
+<ul>
+<li>centralising commonly required resources</li>
+</ul>
+</ul>
+<p>...and this is what you get for free.  These are the consequences, largely positive, of adopting a database approach to an information storage problem.</p>
+</div></div><div class="slide"><h1>1.1.18. Design side</h1>
+<div class="slidebody"><div class="bullets">
+<ul>
+<li>Meta-data</li>
+<ul>
+<li>Database schema, intension</li>
+<li>Data Model</li>
+<li>Left hand side of database divide</li>
+</ul>
+<li>Schema diagram</li>
+<li>Entity-relationship (ER diagrams)</li>
+<li>UML diagrams</li>
+</ul>
+</div>
+<p><img src="../../../legacy/sitefiles/lightenna.com/schema_diagram.gif" alt="Database Schema diagram" /><img src="../../../legacy/sitefiles/lightenna.com/introduction_er_diagram.gif" alt="Database Entity Relationship diagram" /></p>
+</div></div><div class="slide"><h1>1.1.19. Data side</h1>
+<div class="slidebody"><ul>
+<li>Data, under the column heading</li>
+<li>Less easy to look at (volume issue)</li>
+<li>Fundamentally less interesting (more specific)</li>
+<li>Variety of tools for looking at it:
+<ul>
+<li><a href="http://www.heidisql.com/">HeidiSQL</a>, <a href="http://www.phpmyadmin.net/">PhpMyAdmin</a>, <a href="http://www.cs.bris.ac.uk/software/sword/">Sword</a></li>
+</ul>
+<li>Here's what a snapshot looks like:
+</li>
+</ul>
+<p><img src="../../../legacy/sitefiles/lightenna.com/data_snapshot_example.gif" alt="Database data snapshot example" /></p>
+</div></div><div class="slide"><h1>1.1.20. Data model</h1>
+<div class="slidebody"><ul>
+<li>Data model</li>
+<ul>
+<li>Structure of the database</li>
+<li>Collection of basic operations</li>
+<li>Collection of behaviours/user defined operations</li>
+</ul>
+<li>Dependent on level of abstraction</li>
+<li>Tier diagram</li>
+<ul>
+<li>External (user views)</li>
+<li>Conceptual*</li>
+<li>Internal</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>1.1.20. General data model terms</h1>
+<div class="slidebody"><ul>
+<li>Entity</li>
+<li>Relationship</li>
+<li>Attributes</li>
+<li>Keys</li>
+</ul>
+<p>What follows here is an introduction to the terms which make up the language that we use to describe data models.</p>
+</div></div><div class="slide"><h1>1.1.21. Entity</h1>
+<div class="slidebody"><div class="bullets">
+<ul>
+<li>Selected from real world</li>
+<li>Populate Miniworld/UoD</li>
+<li>Entity is an approximation</li>
+<li>Two elements: Entity types and sets</li>
+<li>Collection of attributes</li>
+<ul>
+<li>Object similarity, classes as entity types</li>
+</ul>
+<li>Entities inter-relate</li>
+</ul>
+</div>
+<p><img src="../../../legacy/sitefiles/lightenna.com/database-entity-types-sets.gif" alt="Database entity types and sets" /></p>
+</div></div><div class="slide"><h1>1.1.22. Attributes</h1>
+<div class="slidebody"><ul>
+<li>Data type, domain</li>
+<li>Simple or composite</li>
+<li>Single or multivalued</li>
+<li>Stored or derived</li>
+<li>Null</li>
+</ul>
+</div></div><div class="slide"><h1>1.1.23. Keys</h1>
+<div class="slidebody"><ul>
+<li>Mechanism for unique identification</li>
+<li>Uniqueness constraint</li>
+<li>Strong and weak entities</li>
+<li>Key attribute</li>
+<li>Composite keys</li>
+<li>Multiple keys</li>
+</ul>
+</div></div><div class="slide"><h1>1.1.27. Relationships</h1>
+<div class="slidebody"><div class="bullets">
+<ul>
+<li>Types and Sets</li>
+<li>Participation by Entities</li>
+<li>Degree - e.g. binary</li>
+<li>Cardinality ratios - e.g. 1:1, 1:M</li>
+<ul>
+<li>Determine occurrence</li>
+</ul>
+<li>Tuples example</li>
+<ul>
+<li>Foreign keys</li>
+</ul>
+</ul>
+</div>
+<p><img src="../../../legacy/sitefiles/lightenna.com/database-relationship-types-sets.gif" alt="Database Relationship types and sets" /></p>
+</div></div><div class="slide"><h1>1.1.28. Database architecture</h1>
+<div class="slidebody"><div class="bullets">
+<ul>
+<li>Client-Server</li>
+<li>Distributed databases</li>
+<ul>
+<li>Fragmentation by attribute/tuple/relation</li>
+</ul>
+<li>Language and description</li>
+<ul>
+<li>Storage Definition Language (SDL) DESIGN</li>
+<li>Data Definition Language (DDL) DESIGN</li>
+<li>View Definition Language (VDL) DESIGN</li>
+<li>Data Manipulation Language (DML) DATA</li>
+<ul>
+<li>High level, can be embedded but precompiled</li>
+<li>Procedural, record-at-a-time, requires high level support</li>
+</ul>
+</ul>
+</div>
+<p><img src="../../../legacy/sitefiles/lightenna.com/simple-client-server.gif" alt="Database client-server model" /></p>
+</div></div><div class="slide"><h1>1.1.29. Structured Query</h1>
+<div class="slidebody"><ul>
+<li>Structured Query Language (SQL or SEQUEL)</li>
+<li>Success of relational databases</li>
+<ul>
+<li>Developed for SystemR at IBM</li>
+</ul>
+<li>ANSI standardised</li>
+<ul>
+<li>SQL1 or SQL-86, ongoing extension</li>
+</ul>
+<li>SQL2 or SQL-92, current version</li>
+<li>SQL3 (1999), SQL2003</li>
+<li>DDL, DML(low-level) and VDL</li>
+</ul>
+</div></div><div class="slide"><h1>1.2. Data models</h1>
+<div class="slidebody"><p>A data model is a model that describes in an abstract way how data are represented in a business organization, an information system or a database management system - <a href="http://en.wikipedia.org/wiki/Data_model">Wikipedia</a><br />
+[<a href="../../../legacy/sitefiles/lightenna.com/1.2.data_models.pdf">Section notes</a> PDF 310Kb].</p>
+</div></div><div class="slide"><h1>1.2.01. Introduction</h1>
+<div class="slidebody"><ul>
+<li>Relational model</li>
+<li>Abstract operations on relations</li>
+<ul>
+<li>Set theoretic operations</li>
+<li>Relational-specific operations</li>
+</ul>
+<li>Basic algebra operations</li>
+<ul>
+<li>Union, Intersection, Difference</li>
+<li>Cross product</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>1.2.02. Relational model</h1>
+<div class="slidebody"><ul>
+<li>Table as relation</li>
+<li>Row as tuple</li>
+<ul>
+<li>real world entity or relationship</li>
+<li>fact</li>
+</ul>
+<li>Column as attribute</li>
+<ul>
+<li>Domain</li>
+</ul>
+</ul>
+<p><img src="../../../legacy/sitefiles/lightenna.com/database-data-relation-schema-state-divide.gif" alt="Schema-state divide for Relational schema" /></p>
+<p>The concept of a relation is abstract, therefore we have a number of different ways of visualising it.</p>
+</div></div><div class="slide"><h1>1.2.03. Relation</h1>
+<div class="slidebody"><ul>
+<li>Relation schema   R(A<sub>1</sub>, A<sub>2</sub>, A<sub>3</sub>.. A<sub>n</sub>)</li>
+<ul>
+<li>Design side</li>
+<li>Assertion/declaration</li>
+</ul>
+<li>Relation state</li>
+<ul>
+<li>Data side</li>
+<li>set of n-tuples</li>
+<ul>
+<li>each one an ordered list of values</li>
+<ul>
+<li>1NF: each value is atomic, no composite/multivalue</li>
+</ul>
+</ul>
+</ul>
+<p><img src="../../../legacy/sitefiles/lightenna.com/database-data-design-divide.gif" alt="Data-design divide" /></p>
+</div></div><div class="slide"><h1>1.2.04. Abstract operations</h1>
+<div class="slidebody"><div class="bullets">
+<ul>
+<li>Database lifecycle</li>
+<ul>
+<li>design, populate, evolve</li>
+</ul>
+<li>Insert</li>
+<ul>
+<li>tuple (a<sub>1</sub>,a<sub>2</sub>,a<sub>3</sub>…a<sub>n</sub>)</li>
+</ul>
+<li>Delete</li>
+<ul>
+<li>tuple (a<sub>1</sub>,a<sub>2</sub>,a<sub>3</sub>…a<sub>n</sub>)</li>
+</ul>
+<li>Update (or modify)</li>
+<ul>
+<li>tuple (a<sub>1</sub>,a<sub>2</sub>,a<sub>3</sub>…a<sub>n</sub>)</li>
+<li>attribute to change, new value</li>
+</ul>
+</ul>
+</div>
+<p><img src="../../../legacy/sitefiles/lightenna.com/database-relation-insert-update-delete.gif" alt="Insert, update and delete" /></p>
+<p>All the operations described in the next few sections are abstract.  We're going to see how valuable they can be in processing real world data later.</p>
+</div></div><div class="slide"><h1>1.2.05. Basic algebra</h1>
+<div class="slidebody"><ul>
+<li>Two categories</li>
+<ul>
+<li>Set theoretic operations</li>
+<ul>
+<li>Union, Intersection etc.</li>
+</ul>
+<li>Relational specific</li>
+<ul>
+<li>Select, project and join</li>
+</ul>
+</ul>
+<p>At this stage we're talking about set theoretical operators on the Relational model, not SQL instructions which confusingly have identical names and only similar behaviour.</p>
+</div></div><div class="slide"><h1>1.2.06. Select operation</h1>
+<div class="slidebody"><ul>
+<li>SELECT a subset of tuples from a relation</li>
+<ul>
+<li>Uses selection condition</li>
+<ul>
+<li>Evaluate each tuple to true of false</li>
+<li>False tuples discarded</li>
+</ul>
+<li>Sigma (<font face=Symbol>s</font><font face=Arial>)</font></li>
+<li>output = <font face=Symbol>s</font><font face=Arial><sub>(cond)</sub>(input_relation)</font></li>
+<li>Relation schema: R(output) = R(input_relation)</li>
+<li>Commutative</li>
+</ul>
+</div></div><div class="slide"><h1>1.2.07. Project operation</h1>
+<div class="slidebody"><ul>
+<li>PROJECT a subset of attributes for all tuples from a relation</li>
+<ul>
+<li>Pi (<font face=Symbol>p</font><font face=Arial>)</font></li>
+<li><font face=Symbol>p</font><font face=Arial><sub>&lt;attribute list&gt;</sub>(R)</font></li>
+</ul>
+<li>If sublist is only non-key attributes</li>
+<ul>
+<li>might get duplicates</li>
+</ul>
+<li>Removes duplicates</li>
+<li>Attribute list:sublist example</li>
+</ul>
+<p>The result set of the operation is itself a relational.  That output relation will contain the same number of rows as the input, however it may contain a different number of columns; fewer if a subset of attributes is projected; more if derived or aggregated attributes are included.</p>
+</div></div><div class="slide"><h1>1.2.07. Sequences of operations</h1>
+<div class="slidebody"><ul>
+<li>Select followed by projection</li>
+<li>Area clipping: rows then columns</li>
+<li><font face=Symbol>p</font><font face=Arial><sub>&lt;attr list&gt;</sub><br />
+       (</font><font face=Symbol>s</font><font face=Arial><sub>(select_cond)</sub>(R))</font></li>
+<li>Rename operation (<font face=Symbol>r</font><font face=Arial>)</font></li>
+<ul>
+<li>Renames attributes list2 from list1</li>
+<li><font face=Symbol>r</font><font face=Arial><sub>(new_attr_names)</sub>(R)</font></li>
+</ul>
+</ul>
+<p><img src="../../../legacy/sitefiles/lightenna.com/relation-select-project-operations.gif" alt="Select, Project and composite abstract operations" /></p>
+</div></div><div class="slide"><h1>1.2.08. Rename operation</h1>
+<div class="slidebody"><ul>
+<li>Attribute renaming only</li>
+<ul>
+<li>Cannot alter domain, or add/remove attr</li>
+</ul>
+<li>Rename operation (<font face=Symbol>r</font><font face=Arial>)</font></li>
+<ul>
+<li>Renames attributes list2 from list1</li>
+<li><font face=Symbol>r</font><font face=Arial><sub>(new_attr_names)</sub>(R)</font></li>
+</ul>
+<li>Implicit renaming</li>
+<ul>
+<li>Order dictated by relational schema</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>1.2.08. Set Theoretic</h1>
+<div class="slidebody"><ul>
+<li>Binary operation: two relations</li>
+<ul>
+<li>Sets of tuples</li>
+<li>Union compatibility (same attributes)</li>
+</ul>
+<li>Union (R u S)</li>
+<li>Intersection (R n S)</li>
+<ul>
+<li>Commutative (R u (S u T) = (R u S) u T)</li>
+</ul>
+</ul>
+<p><img src="../../../legacy/sitefiles/lightenna.com/relation-union-compatible.gif" alt="Relation Union operation on compatible relations" /></p>
+</div></div><div class="slide"><h1>1.2.08b. Set difference</h1>
+<div class="slidebody"><ul>
+<li>Set difference</li>
+<ul>
+<li>Non-commutative (R-S != S-R)</li>
+</ul>
+</ul>
+</ul>
+<p><img src="../../../legacy/sitefiles/lightenna.com/set_difference_example.gif" alt="Set difference example" /></p>
+</div></div><div class="slide"><h1>1.2.09. Cross product</h1>
+<div class="slidebody"><ul>
+<li>Cartesian product of two relations</li>
+<li>R x S</li>
+<li>Also known as</li>
+<ul>
+<li>Cross product</li>
+<li>Cross join</li>
+<ul>
+<li>Cross product diagram</li>
+</ul>
+<li>Introduction to complexity</li>
+<ul>
+<li>Computationally explosive</li>
+</ul>
+</ul>
+<p><img src="../../../legacy/sitefiles/lightenna.com/relation-cross-product.gif" alt="colour-coded cross product of two relations" /></p>
+</div></div><div class="slide"><h1>1.2.10. Relational algebra/model notation</h1>
+<div class="slidebody"><ul>
+<li>Relational schema R(A<sub>1</sub>, A<sub>2</sub>,…,A<sub>n</sub>)</li>
+<li>Relation state r or r(R)</li>
+<ul>
+<li>Set of unordered tuples</li>
+<li>r = {t<sub>1</sub>, t<sub>2</sub>,…,t<sub>n</sub>}</li>
+</ul>
+<li>Each n-tuple is an ordered list of values</li>
+<ul>
+<li>t = &lt;v<sub>1</sub>, v<sub>2</sub>,…,v<sub>n</sub>&gt;</li>
+</ul>
+<li>i<sup>th</sup> value in t = v<sub>i</sub> called t[A<sub>i</sub>]</li>
+<li>r(R) subset of (dom(A<sub>1</sub>) x dom(A<sub>2</sub>)... x dom(A<sub>n</sub>))</li>
+</ul>
+</div></div><div class="slide"><h1>1.2.11. Constraints</h1>
+<div class="slidebody"><ul>
+<li>Domain constraint</li>
+<ul>
+<li>For all v in t of r(R)<br /> v<sub>i</sub> is an element of dom(A<sub>i</sub>)</li>
+</ul>
+<li>Entity constraint</li>
+<ul>
+<li>K = SK<sub>min</sub></li>
+<li>t[K] != null</font></li>
+</ul>
+<li>Key constraint</li>
+<ul>
+<li>Superkey SK as identifying subset of attributes</li>
+<li>t<sub>1</sub>[SK] != t<sub>2</sub>[SK]</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>1.2.12. Referential integrity</h1>
+<div class="slidebody"><ul>
+<li>Given two relations R<sub>1</sub> and R<sub>2</sub></li>
+<ul>
+<li>R<sub>1</sub> contains a foreign key (FK) that references</li>
+<li>A primary key (PK) in R<sub>2</sub></li>
+<ul>
+<li>R<sub>1</sub> referencing relation, R<sub>2</sub> referenced relation</li>
+</ul>
+<li>Shared domains: dom(FK) = dom(PK)</li>
+<li>Foreign exists: t<sub>1</sub> in r(R<sub>1</sub>), t<sub>2</sub> in r(R<sub>2</sub>)</li>
+<ul>
+<li>t<sub>1</sub>[FK] = t<sub>2</sub>[PK]   ||  NULL</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>1.3. Joins</h1>
+<div class="slidebody"><p>In this lecture we look at...<br />
+[<a href="../../../legacy/sitefiles/lightenna.com/1.3.joins.pdf">Section notes</a> PDF 233Kb].</p>
+</div></div><div class="slide"><h1>1.3.01. Introduction</h1>
+<div class="slidebody"><ul>
+<li>Recap: pulling data out of individual relations</li>
+<ul>
+<li>By row, by column</li>
+<li>Select and project</li>
+</ul>
+<li>Access across multiple relations</li>
+<li>Miniworld approximation</li>
+<ul>
+<li>Fragmenting entities by cardinality</li>
+<li>Tuples as entity fragments</li>
+<li>Relationships within relations</li>
+</ul>
+<li>Joins</li>
+<li>Join types (condition and unmatched)</li>
+</ul>
+</div></div><div class="slide"><h1>1.3.02. Access across relations</h1>
+<div class="slidebody"><ul>
+<li>Relational model allows multiple relations to exist within one database schema</li>
+<li>Relations can be accessed individually or together (joins).</li>
+<li>Referential integrity</li>
+<ul>
+<li>Relations relating</li>
+</ul>
+<li>Pulling data out of single relations</li>
+<ul>
+<li>Select and project</li>
+</ul>
+<li>Pulling related data out of</li>
+<ul>
+<li>Multiple relations using Join</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>1.3.03. Miniworld approximation</h1>
+<div class="slidebody"><ul>
+<li>Universe of Discourse, or Miniworld</li>
+<li>Miniworld is an incomplete model of the real world</li>
+<li>The relational data model as a model for the miniworld</li>
+<li>Approximation</li>
+<ul>
+<li>Separate and distinct entities</li>
+<li>Single complex entities</li>
+<li>Separate related entities</li>
+<li>Cardinality of relationships</li>
+</ul>
+<li>Each relation made up of attributes</li>
+<li>Values can be used as references</li>
+</ul>
+</div></div><div class="slide"><h1>1.3.04. Pointing mechanism</h1>
+<div class="slidebody"><ul>
+<li>Relation has a Primary key</li>
+<li>Tuple contains Primary key value</li>
+<li>Foreign keys</li>
+<ul>
+<li>Tuples can contain a reference to another relation's Primary key</li>
+</ul>
+<li>Just numbers</li>
+</ul>
+<p><img src="../../../legacy/sitefiles/lightenna.com/relational-foreign-key.gif" alt="Relational model foreign key example" /></p>
+<p>One number identifies a single tuple in one relation (local), one number identifies a single tuple in another relation (foreign).</p>
+</div></div><div class="slide"><h1>1.3.04b. Pointing mechanism example in C</h1>
+<div class="slidebody"><ul>
+<li>C programming language</li>
+<li>Memory addresses, or pointers<br />
+<pre>
+int a=0;
+int b=0;
+a = &b;
+</pre></li>
+<li>a points to b</li>
+</ul>
+<p><img src="../../../legacy/sitefiles/lightenna.com/relational-foreign-key-c-example.gif" alt="relational foreign key C programming example" /></p>
+<p>In databases, typically done with unique identifiers (IDs) rather than memory addresses.</p>
+</div></div><div class="slide"><h1>1.3.04c. Pointing mechanism with structures</h1>
+<div class="slidebody"><ul>
+<li>Foreign key importing<br />
+<pre>
+typedef struct car
+{
+  int ID;
+  char[] make;
+  char[] model;
+  char[] derivative;
+  int optionID;
+} car;
+
+typedef struct option
+{
+  int ID;
+  char[] name;
+  int price;
+} option;
+
+car c;
+option o;
+//...data structure populating
+c.optionID = o.ID;
+</pre></li>
+</ul>
+<p><img src="../../../legacy/sitefiles/lightenna.com/relational-foreign-key-c-structures.gif" alt="Relational foreign key example in C with Structures" /></p>
+</div></div><div class="slide"><h1>1.3.05. Relational cardinality</h1>
+<div class="slidebody"><ul>
+<li>1:0 relationships</li>
+<ul>
+<li>Single entity</li>
+<li>Uniquely indentifiable</li>
+<li>Candidate keys</li>
+<li>Primary Key</li>
+</ul>
+<li>1:1 relationships</li>
+<ul>
+<li>Two entities, A and B</li>
+<li>1 A relates to 1 B and vice versa</li>
+</ul>
+<li>1:N relationships</li>
+<li>M:N relationships</li>
+</ul>
+</div></div><div class="slide"><h1>1.3.06. Relationships in the relational model</h1>
+<div class="slidebody"><ul>
+<li>Two relations, A and B</li>
+<li>A side, B side, 1 side, N side</li>
+<li>1:1 relationships</li>
+<ul>
+<li>Key can go on either side</li>
+</ul>
+</ul>
+<p><img src="../../../legacy/sitefiles/lightenna.com/relational-foreign-key-relationship-1-1.gif" alt="Relational model 1 to 1 relationships" /></p>
+<ul>
+<li>1:N relationships</li>
+<li>Key cannot go on 1 side</li>
+<li>Has to go on N side</li>
+</ul>
+</ul>
+<p><img src="../../../legacy/sitefiles/lightenna.com/relational-foreign-key-relationship-1-N.gif" alt="Relational model 1 to N relationships" /></p>
+<ul>
+<li>M:N relationships</li>
+<ul>
+<li>Nowhere obvious for the key to go</li>
+<li>Create new pairing relation</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>1.3.07. Joins</h1>
+<div class="slidebody"><ul>
+<li>Phase change, different point in lifecycle</li>
+<li>Join operation</li>
+<ul>
+<li>Combines related tuples, conditionally</li>
+<li>From two relations</li>
+<li>Into single tuples</li>
+</ul>
+<li>Allows processing of relationships</li>
+<li>Among multiple relations</li>
+</ul>
+</div></div><div class="slide"><h1>1.3.08. Joins, canonical algebraic form</h1>
+<div class="slidebody"><ul>
+<li>Conditional (on join condition)</li>
+<ul>
+<li>Only combines tuples where true</li>
+</ul>
+<li>Cartesian product (conditionless)</li>
+<ul>
+<li>example of conditionless join</li>
+<li>all tuples combined</li>
+<li>R &#8904;<sub>true</sub> S</li>
+</ul>
+<li>&#8904;, Binary operator<br />e.g. R &#8904;<sub>&lt;join_condition&gt;</sub> S</li>
+</ul>
+</div></div><div class="slide"><h1>1.3.09. Join equivalence</h1>
+<div class="slidebody"><ul>
+<li>Equivalent to sequence</li>
+<ul>
+<li>Cartesian product (X)</li>
+<li>followed by Selection (<font face=Symbol>s</font>)</li>
+</ul>
+<li>ACTUAL_DEPENDENTS =<br />
+<font face=Symbol>s</font><font face=Arial><sub>SSN=ESSN</sub>(EMPNAMES X DEPENDENT)</font></li>
+<li>or</li>
+<li>ACTUAL_DEPENDENTS =<br />EMPNAMES &#8904; <sub>SSN=ESSN</sub>(DEPENDENT)</li>
+</ul>
+</div></div><div class="slide"><h1>1.3.10. Join types (condition)</h1>
+<div class="slidebody"><ul>
+<li>Theta: A<sub>i</sub> <font face=Symbol>q</font><font face=Arial> B<sub>j</sub><br />
+       (A from R, B from S)</font></li>
+<ul>
+<li><font face=Symbol>q</font><font face=Arial> is comparison operator<br />
+         =,&lt;,&gt;,!=,&gt;=</font></li>
+<li>A<sub>i</sub> and B<sub>j </sub>share the same domain</li>
+</ul>
+<li>Equi: A<sub>i</sub> = B<sub>j</sub></li>
+<ul>
+<li>Theta join where <font face=Symbol>q</font><font face=Arial> is =</font></li>
+</ul>
+<li>Natural: A<sub>i</sub> and B<sub>j</sub> are the same attribute</li>
+<ul>
+<li>in two separate relations (name and domain)</li>
+<li>* denotes natural join</li>
+<li>e.g. EMPNAMES * DEPENDENTS</li>
+</ul>
+</ul>
+<p><img src="../../../legacy/sitefiles/lightenna.com/relation-join-equijoin.gif" alt="Relational join example, equijoin" /></p>
+</div></div><div class="slide"><h1>1.3.11. Join types (inner and outer)</h1>
+<div class="slidebody"><ul>
+<li>Inner joins</li>
+<ul>
+<li>not the only joins</li>
+<li>eliminate tuples without a matching counterpart</li>
+<li>i.e. tuples with a null value for the join attribute are discarded</li>
+</ul>
+</ul>
+<p><img src="../../../legacy/sitefiles/lightenna.com/relation-inner-join-demonstration.gif" alt="Relational Inner join demonstration" /></p>
+</div></div><div class="slide"><h1>1.3.12. Outer joins</h1>
+<div class="slidebody"><ul>
+<li>Outer joins control what's discarded</li>
+<ul>
+<li>Keep unmatched tuples in either</li>
+<ul>
+<li>Left, right, or both relations</li>
+<li>Left, right of full outer join correspondingly</li>
+</ul>
+</ul>
+<p><img src="../../../legacy/sitefiles/lightenna.com/relation-outer-join-demonstration.gif" alt="Relational demonstration of Outer joins" /></p>
+</div></div><div class="slide"><h1>1.4. ER diagrams</h1>
+<div class="slidebody"><p>In this lecture we look at...<br />
+[<a href="../../../legacy/sitefiles/lightenna.com/1.4.er_diagrams.pdf">Section notes</a> PDF 75Kb].</p>
+</div></div><div class="slide"><h1>1.4.01. ER Diagrams and Relational mapping</h1>
+<div class="slidebody"><ul>
+<li>Design communication techniques</li>
+<ul>
+<li>ER diagrams</li>
+<li>ER to relational mapping</li>
+</ul>
+<li>Entities to Objects</li>
+<li>Type Inheritance</li>
+<ul>
+<li>EER diagrams</li>
+<li>UML</li>
+</ul>
+<li>Web DB Integration</li>
+</ul>
+</div></div><div class="slide"><h1>1.4.03. Design in the modern context</h1>
+<div class="slidebody"><ul>
+<li>Team based development</li>
+<li>Documentation</li>
+<ul>
+<li>Value of design over description</li>
+</ul>
+<li>DB sketching (left hand side)</li>
+<ul>
+<li>Concept more important than perfection</li>
+<li>Design iteration</li>
+</ul>
+<li>Mini-world as approximation</li>
+<ul>
+<li>Categorisation to create entities</li>
+<li>Verb’ing to create actions/relationships</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>1.4.04. Database Left:right divide</h1>
+<div class="slidebody"><ul>
+<li>Design</li>
+<ul>
+<li>Catalog, Meta-data, Intension, or Database schema</li>
+<li>Entity type</li>
+<li>Relationship type</li>
+</ul>
+<li>State</li>
+<ul>
+<li>Set of occurences/instances, Extension, snapshot</li>
+<li>Entity set</li>
+<li>Relationship set</li>
+</ul>
+</ul>
+<p><img src="../../../legacy/sitefiles/lightenna.com/database-design-data-entity-rel.gif" alt="Entity and Relationship, types and set in the context of the database design and data divide" /></p>
+</div></div><div class="slide"><h1>1.4.05. Basic ER diagram</h1>
+<div class="slidebody"><ul>
+<li>Typically part of a system</li>
+<li>(Strong) Entities</li>
+<ul>
+<li>Product</li>
+<li>Customer</li>
+<li>Payment</li>
+</ul>
+<li>Relationships</li>
+<ul>
+<li>Sale</li>
+</ul>
+</ul>
+<p><img src="../../../legacy/sitefiles/lightenna.com/simple_er.gif" alt="simple entity-relationalship (ER) diagram" /></p>
+</div></div><div class="slide"><h1>1.4.06. Mapping ER to Relation DB tables</h1>
+<div class="slidebody"><ul>
+<li>Intuitive mapping</li>
+<ul>
+<li>Entities as tables</li>
+<li>Attributes as columns</li>
+</ul>
+<li>Relationships are more difficult</li>
+<li>Key sharing mechanism</li>
+<ul>
+<li>Foreign key references primary key</li>
+</ul>
+<li>Where to put the foreign key forms the intuitive guide to the rest of<br />
+       the mapping</li>
+</ul>
+</div></div><div class="slide"><h1>1.4.07. ER to Relational mapping</h1>
+<div class="slidebody"><ul>
+<li>Step-by-step approach</li>
+</ul>
+<ol>
+<li>Strong entities</li>
+<ul>
+<li>Create relation including (simplified) attributes</li>
+</ul>
+<li>Weak entities</li>
+<ul>
+<li>Create relation inc. attr, foreign/pri key of owner</li>
+</ul>
+<li>Binary relationship S:T, 1:1</li>
+<ul>
+<li>Choose relation, say S (with total participation) and inc. foreign/pri<br />
+         key of T</li>
+<li>inc. relationship attributes</li>
+</ul>
+</ol>
+</div></div><div class="slide"><h1>1.4.08. Cardinality</h1>
+<div class="slidebody"><ul>
+<li>Specifies number of relationship instances a single entity can participate in</li>
+<li>S:T (1:1)</li>
+<li>An entity from table S can is related to one, and only one entity from table T</li>
+<li>1:1, 1:N, N:M</li>
+<ul>
+<li>DEPARTMENT : EMPLOYEE</li>
+<li>EMPLOYEE : EMPLOYEE</li>
+<li>PROJECT : EMPLOYEE</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>1.4.09. ER to Relational mapping</h1>
+<div class="slidebody"><ol>
+<li value="5">Binary relationship 1:N</li>
+<ul>
+<li>Choose relation T (N-side) inc. foreign/pri key of S</li>
+</ul>
+<li>Binary relationship M:N</li>
+<ul>
+<li>Create relation, inc. foreign/pri keys of S&amp;T</li>
+</ul>
+<li>Multivalued</li>
+<ul>
+<li>For each mv_attr, create new relation, inc. foreign/pri key of parent</li>
+</ul>
+<li>n-ary relationship</li>
+<ul>
+<li>Create new relation, inc. all foreign/pri keys of participating<br />
+         entities</li>
+</ul>
+</ol>
+</div></div><div class="slide"><h1>1.4.10. Participation</h1>
+<div class="slidebody"><ul>
+<li>Participation constraints</li>
+<li>Existence of an entity dependant upon</li>
+<ul>
+<li>being related to another entity</li>
+<li>via relationship type (left hand/design)</li>
+</ul>
+<li>Total (<font face=Symbol>&quot;</font><font face=Arial>)/Existence<br />
+       dependency (double line)</font></li>
+<ul>
+<li>Every student must be in a faculty</li>
+<li>For every entity in the total set of students</li>
+</ul>
+<li>Partial (<font face=Symbol>$</font><font face=Arial>) (single line)</font></li>
+<ul>
+<li>Some students are student_representatives</li>
+<li>There exists some entity(s) within the set of all…</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>1.4.11. Library example</h1>
+<div class="slidebody"><ul>
+<li>Library example</li>
+<li>Entities: Person, Book, Librarian</li>
+<li>Time-perspective implications</li>
+</ul>
+<p><a href="../../../legacy/sitefiles/lightenna.com/er_library_big.gif"><img src="../../../legacy/sitefiles/lightenna.com/er_library.jpg" alt="Library example ER diagram" /></a></p>
+</div></div><div class="slide"><h1>1.5. UML</h1>
+<div class="slidebody"><p>In this lecture we look at...<br />
+[<a href="../../../legacy/sitefiles/lightenna.com/1.5.uml_diagrams.pdf">Section notes</a> PDF 86Kb].</p>
+</div></div><div class="slide"><h1>1.5.01. UML diagrams</h1>
+<div class="slidebody"><ul>
+<li>Not just one type of diagram</li>
+<li>ER Entities -&gt; UML objects</li>
+<li>Adds scope to include methods</li>
+</ul>
+<p><img src="../../../legacy/sitefiles/lightenna.com/uml_class.jpg" alt="a simple UML class" /></p>
+</div></div><div class="slide"><h1>1.5.03. Simple UML relationship diagram</h1>
+<div class="slidebody"><ul>
+<li>Classes</li>
+<ul>
+<li>Attributes</li>
+<li>Methods</li>
+</ul>
+<li>Relationships</li>
+<ul>
+<li>Participation</li>
+<li>Cardinality</li>
+<li>Roles</li>
+</ul>
+</ul>
+<p><a href="../../../legacy/sitefiles/lightenna.com/uml_simple_relate_big.jpg"><img src="../../../legacy/sitefiles/lightenna.com/uml_simple_relate.gif" alt="UML simple relationship diagram" /></a></p>
+</div></div><div class="slide"><h1>1.5.04. UML inheritance</h1>
+<div class="slidebody"><ul>
+<li>Notion of inheritance</li>
+<ul>
+<li>Java parallel</li>
+<li>'is a' relationships</li>
+<li>Database Student</li>
+<ul>
+<li>is a Computer Science Student</li>
+<ul>
+<li>is an Engineering Faculty Student
+<li>
+<ul>
+<li>is a Student</li>
+<ul>
+<li>is a Person</li>
+</ul>
+</ul>
+</ul>
+</ul>
+<li>Inheritance hierarchies</li>
+</ul>
+<li>UML diagrams can be used to show inheritance</li>
+</ul>
+<p><a href="../../../legacy/sitefiles/lightenna.com/uml_other_inherit_big.gif"><img src="../../../legacy/sitefiles/lightenna.com/uml_other_inherit.gif" alt="UML class diagram, basic inheritance" /></a></p>
+</div></div><div class="slide"><h1>1.5.05. UML diagram</h1>
+<div class="slidebody"><ul>
+<li>Classes</li>
+<li>Relationships</li>
+<li>Inheritance</li>
+</ul>
+<p><a href="../../../legacy/sitefiles/lightenna.com/uml_complex_inherit_big.gif"><img src="../../../legacy/sitefiles/lightenna.com/uml_complex_inherit.gif" alt="UML class diagram showing inheritance" /><br />
+</a></p>
+</div></div><div class="slide"><h1>2. DBMS Systems</h1>
+<div class="slidebody"><p>This is the DBMS Systems course theme.<br />
+[<a href="../../../legacy/sitefiles/lightenna.com/2.dbms_systems.pdf">Complete set of notes</a> PDF 625Kb]</p>
+</div></div><div class="slide"><h1>2.1. Queries</h1>
+<div class="slidebody"><p>In this lecture we look at...<br />
+[<a href="../../../legacy/sitefiles/lightenna.com/2.1.queries.pdf">Section notes</a> PDF 319Kb]</p>
+</div></div><div class="slide"><h1>2.1.01 Introduction</h1>
+<div class="slidebody"><ul>
+<li>Methods of getting data out</li>
+<li>The need for queries</li>
+<li>QBE</li>
+<li>SQL (design side)</li>
+<ul>
+<li>History</li>
+<li>Schemas and relations (CREATE)</li>
+<li>Data types and domains</li>
+<li>DROP and ALTER</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>2.1.02. Querying interfaces</h1>
+<div class="slidebody"><ul>
+<li>High (view) level</li>
+<li>Query-By-Example (QBE)</li>
+<ul>
+<li>Alternative to SQL</li>
+<ul>
+<li>Table driven (visually similar to relations)</li>
+<li>Rather than script driven, hence intuitive over learned</li>
+<li>Visual or text based</li>
+</ul>
+<li>User fills in templates</li>
+<li>Microsoft Access approach</li>
+</ul>
+<p><a href="../../../legacy/sitefiles/lightenna.com/qbe-access-example-big.gif"><img src="../../../legacy/sitefiles/lightenna.com/qbe-access-example.gif" alt="Query-by-example from MS Access" /></a></p>
+</div></div><div class="slide"><h1>2.1.02b. QBE visual example</h1>
+<div class="slidebody"><ul>
+<li>Record advancing</li>
+<li>Query designing</li>
+<ul>
+<li>Finite domain attributes</li>
+<li>Web search parallel</li>
+</ul>
+</ul>
+<p><img src="../../../legacy/sitefiles/lightenna.com/qbe-record-advance.jpg" alt="Record manoeuvring in Visual QBE (Access)" /><img src="../../../legacy/sitefiles/lightenna.com/qbe-query-define.jpg" alt="Query definition in Visual QBE (Access)" /></p>
+</div></div><div class="slide"><h1>2.1.03. QBE text-format example</h1>
+<div class="slidebody"><ul>
+<li>P. print, I. insert, D. delete, U. update</li>
+<li>_VARNAME, copy field value into variable</li>
+</ul>
+<p><a href="../../../legacy/sitefiles/lightenna.com/qbe-text-example-big.gif"><img src="../../../legacy/sitefiles/lightenna.com/qbe-text-example.gif"  alt="Query by example (Text)" /></a></p>
+</div></div><div class="slide"><h1>2.1.05. SQL</h1>
+<div class="slidebody"><ul>
+<li>Structured Query Language</li>
+<ul>
+<li>(SQL or SEQUEL)</li>
+<li><a href="http://en.wikipedia.org/wiki/SQL">Wikipedia </a> reference</li>
+</ul>
+<li>Success of relational databases</li>
+<li>Developed for SystemR at IBM</li>
+<li>ANSI standardised</li>
+<li>SQL-1986 (SQL1), ongoing extension</li>
+<li>SQL-1992 (SQL2), current version (Oracle 9i)</li>
+<li>SQL-1999 (SQL3), regular expression matching, recursive queries</li>
+<li>SQL-2003, XML features, auto-generated columns</li>
+</ul>
+</div></div><div class="slide"><h1>2.1.05b. SQL command syntax</h1>
+<div class="slidebody"><ul>
+<li>Where follows here is a brief summary</li>
+<ul>
+<li>Oracle syntax</li>
+<li>Similar but not identical to MySQL/MSSQL</li>
+</ul>
+<li>General familiarity</li>
+<li>Query writing best learnt by doing it</li>
+<li>Lecture live-example</li>
+<li>Coursework 1 will be SQL</li>
+<li><a href="http://www.cs.bris.ac.uk/maintain/oracle9docs/server.920/a96540/toc.htm">Oracle  (9i) SQL reference</a></li>
+<li><a href="http://dev.mysql.com/doc/refman/5.0/en/sql-syntax.html">MySQL (5.0) SQL reference</a></li>
+<ul>
+</div></div><div class="slide"><h1>2.1.05c. SQL in application</h1>
+<div class="slidebody"><ul>
+<li>Keyword oriented language</li>
+<li>Keywords not congruous with Relational model</li>
+<li>Lots of different ways to write SQL</li>
+<ul>
+<li>Analogous to C/Java formatting</li>
+<li>if (b==2) { a=1; } else { a=0; }</li>
+</ul>
+<li>Recommend using case to differentiate attributes and keywords</li>
+<ul>
+<li>SELECT colour, size, shape FROM fruit WHERE weight>22;</li>
+</ul>
+<li>Oracle user accounts on Teaching database</li>
+<li>Namespace references, e.g. shared.cars</li>
+</ul>
+</div></div><div class="slide"><h1>2.1.06. SQL Create schema</h1>
+<div class="slidebody"><ul>
+<li>Data definition commands</li>
+<li>CREATE</li>
+<ul>
+<li>SCHEMA &lt;schema_name&gt; AUTHORIZATION &lt;a&gt;</li>
+<li>or workspace</li>
+</ul>
+<li>Beware of names</li>
+<ul>
+<li>Name collisions produce odd behaviours</li>
+</ul>
+<li>SQL Schema embraces Tables (relations), constraints, views, domains, authorizations</li>
+</ul>
+</div></div><div class="slide"><h1>2.1.07. SQL Create table</h1>
+<div class="slidebody"><ul>
+<li>CREATE TABLE</li>
+<ul>
+<li>&lt;schema_name&gt;.&lt;relation_name&gt;</li>
+<li>(</li>
+<ul>
+<li>&lt;attribute_definitions&gt;</li>
+<li>&lt;key&gt;</li>
+<li>&lt;constraints&gt;</li>
+</ul>
+<li>)</li>
+</ul>
+<li><a href="../../../legacy/sitefiles/lightenna.com/sql_create_table_example.txt">CREATE TABLE example (Oracle)</a></li>
+<li>Tables can (and should) be indexed by user</li>
+<li>e.g. &lt;username&gt;.&lt;tablename&gt;</li>
+<li>Normal login implies username</li>
+<li>Non-local table access</li>
+</ul>
+</div></div><div class="slide"><h1>2.1.08. Data types and domains (Oracle)</h1>
+<div class="slidebody"><ul>
+<li>Numeric</li>
+<ul>
+<li>ENUM</li>
+<li>NUMBER, NUMBER(i), NUMBER(i,j)</li>
+<ul>
+<li>Formatted numbers, i precision, j scale</li>
+<li>(number of digits total, after decimal point)</li>
+</ul>
+<li>Character-string</li>
+<ul>
+<li>CHAR(n) - n is length</li>
+<li>VARCHAR2(n) - n is max</li>
+</ul>
+<li><a href="../../../legacy/sitefiles/lightenna.com/sql_table_description.txt">DESCRIBE output example</a></li>
+<li><a href="http://www.onlamp.com/pub/a/onlamp/2001/09/13/aboutSQL.html">Multi-database comparison of Datatypes</a></li>
+<li>Database legacy: limited storage necessitated efficient storage</li>
+<li>Does it need to be efficient anymore?</li>
+</ul>
+<p>You might consider all SQL types as being conceptually similar to attribute types in the relational model, although in reality the implementation of these types in a DBMS only approximates the mathematical purity of unordered domain sets etc.</p>
+</div></div><div class="slide"><h1>2.1.08b. Data types and domains (MySQL)</h1>
+<div class="slidebody"><ul>
+<li>Numeric</li>
+<ul>
+<li>TINYINT, INT, INT UNSIGNED</li>
+<li>FLOAT, DOUBLE, DECIMAL</li>
+<li>ENUM</li>
+<li>Character-string</li>
+<ul>
+<li>CHAR(n) - n is length</li>
+<li>VARCHAR(n) - n is max</li>
+<li>TINYTEXT, TEXT</li>
+<li>Beware different default/maximum lengths to Oracle</li>
+</ul>
+<li>BLOB</li>
+<li><a href="http://www.onlamp.com/pub/a/onlamp/2001/09/13/aboutSQL.html">Multi-database comparison of Datatypes</a></li>
+</ul>
+</div></div><div class="slide"><h1>2.1.09. Time-based data types</h1>
+<div class="slidebody"><ul>
+<li>Date and Time</li>
+<ul>
+<li>DATE</li>
+<ul>
+<li>Ten positions, components YYYY-MM-DD</li>
+</ul>
+<li>TIME</li>
+<ul>
+<li>Eight positions, components HH:MM:SS</li>
+</ul>
+<li>TIME(i)</li>
+<ul>
+<li>Time fractional seconds precision</li>
+<li>Adds i+1 positions</li>
+</ul>
+<li>TIMESTAMP</li>
+<ul>
+<li>optionally WITH TIME ZONE</li>
+</ul>
+<li>Very sensitive to syntactical ambiguities</li>
+<ul>
+<li>day/month/year/hour/minute separators</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>2.1.10. DROPing</h1>
+<div class="slidebody"><ul>
+<li>DROP &lt;object&gt; &lt;obj_name&gt; &lt;flags&gt;</li>
+<li>DROP SCHEMA &lt;schema_name&gt; CASCADE</li>
+<ul>
+<li>drops all workspace tables, domains</li>
+</ul>
+<li>DROP TABLE &lt;relation_name&gt; RESTRICT</li>
+<ul>
+<li>only drops table if</li>
+<li>not referenced in any constraints/views</li>
+</ul>
+<li>Notion of cascading</li>
+<li>Table links</li>
+</ul>
+</div></div><div class="slide"><h1>2.1.11. ALTERing</h1>
+<div class="slidebody"><ul>
+<li>Schema evolution</li>
+<li>Design side</li>
+<li>ALTER TABLE &lt;schema_name&gt;.&lt;relation_name&gt; ADD<br />
+       &lt;var_name&gt; &lt;var_type&gt;;</li>
+<li>Example</li>
+<ul>
+<li>ALTER TABLE uni.student ADD hall VARCHAR(32);</li>
+</ul>
+<li>Upper and lower case syntax</li>
+<li>Naming conventions</li>
+</ul>
+</div></div><div class="slide"><h1>2.1.12. Queries</h1>
+<div class="slidebody"><ul>
+<li>Helper interfaces</li>
+<ul>
+<li>HeidiSQL/phpMyAdmin/Sword/SQLplus</li>
+<li>Design/perform a lot of routine queries for you</li>
+<li>Important to learn SQL, reinforcement</li>
+<li>Designing select queries is more difficult</li>
+<li>Visual interfaces still lacking in this area</li>
+</ul>
+<li>Select queries in SQL</li>
+<li>Basic singlets</li>
+<li>Renaming</li>
+<li>Queries with Joins</li>
+<li>Nested queries</li>
+</ul>
+</div></div><div class="slide"><h1>2.1.13. SQL Queries</h1>
+<div class="slidebody"><ul>
+<li>SELECT statement</li>
+<li>Similar to relational data model SELECT then PROJECT</li>
+<ul>
+<li>SELECT &lt;attribute list&gt;</li>
+<li>FROM &lt;table list&gt;</li>
+<li>WHERE &lt;condition&gt;;</li>
+</ul>
+</ul>
+<p><img src="../../../legacy/sitefiles/lightenna.com/relation-select-project-operations.gif" alt="Select query cropping example" /></p>
+</div></div><div class="slide"><h1>2.1.14. SQL Queries</h1>
+<div class="slidebody"><ul>
+<li>SELECT &lt;attr_list&gt;</li>
+<ul>
+<li>FROM R,S,T</li>
+<li>WHERE DNO = 10</li>
+</ul>
+<li>equivalent to</li>
+<li><font face=Symbol>p</font><sub>&lt;attr_list&gt;</sub>(</font><font face=Symbol>s</font><sub>DNO=10</sub> (R X S X T))</li>
+<li>True-false evaluation tuple by tuple</li>
+<li>WHERE clause as compound logical statement</li>
+</ul>
+</div></div><div class="slide"><h1>2.1.15. SQL Queries</h1>
+<div class="slidebody"><ul>
+<li>Produces a relation/set of tuples</li>
+<li>Can be used to extract a single tuple</li>
+<li>e.g. SELECT bday, age</li>
+<ul>
+<li>FROM student</li>
+<li>WHERE fname='Tim' AND lname='Smith'</li>
+<li>Result = (13-05-80, 20)</li>
+</ul>
+<li>Argument quoting (')</li>
+<ul>
+<li>SQL poisoning</li>
+<li>Not null</li>
+<li>Not numeric values</li>
+</ul>
+<li>MySQL Attribute quoting (`)</li>
+<ul>
+<li>Hypothetical attribute `all`, all, and ALL</li>
+</ul>
+</ul>
+<p>SQL poisoning is a vulnerability exposed by inadequate escaping of arguments/variables used to compose SQL queries.</p>
+<p>E.g. <i>Tim</i> in previous example, could be <i>Tim'; DELETE FROM student;' SELECT * FROM student WHERE 1</i></p>
+</div></div><div class="slide"><h1>2.1.16. Renaming and referencing</h1>
+<div class="slidebody"><ul>
+<li>AS keyword</li>
+<li>(Partial) Attribute renaming in projection list</li>
+<ul>
+<li>SELECT fname AS firstName, minit, lname AS surname...</li>
+</ul>
+<li>Role names for relations</li>
+<ul>
+<li>SELECT S.FNAME, F.FNAME, S.LNAME</li>
+<ul>
+<li>FROM STUDENT AS S, STUDENT AS F</li>
+<li>WHERE S.LNAME=F.LNAME</li>
+</ul>
+</ul>
+<li>(Total) Attribute renaming in FROM</li>
+<ul>
+<li>SELECT s.firstName, s.surname</li>
+<ul>
+<li>FROM student AS s(firstName,surname,DOB,NINO,tutor)</li>
+</ul>
+</ul>
+<li>Wildcards (SELECT s.* FROM...)</li>
+</ul>
+</div></div><div class="slide"><h1>2.1.17. SQL Tables</h1>
+<div class="slidebody"><ul>
+<li>Relations are bags, not sets</li>
+<ul>
+<li>e.g. projection of non-key attributes</li>
+</ul>
+<li>Set cannot contain duplicate item/repetition</li>
+<li>Duplicates exist in bags and be:</li>
+<ul>
+<li>SELECT DISTINCT (eliminated)</li>
+<li>SELECT ALL (ignored/kept)</li>
+</ul>
+<p>   <br>
+  </ul>
+</div></div><div class="slide"><h1>2.1.18. Queries and Joins</h1>
+<div class="slidebody"><ul>
+<li>Relational database allows inter-related data</li>
+<li>SQL select FROM gives Cartesian product</li>
+<li>WHERE clause defines join condition</li>
+<ul>
+<li>SELECT proj.pnum, mgr.ssn</li>
+<li>FROM project AS proj, employee AS mgr</li>
+<li>WHERE proj.mgrssn = mgr.ssn;</li>
+</ul>
+<li>Alternatively, explicitly define join (note type)</li>
+<ul>
+<li>SELECT project.pnum, employee.ssn</li>
+<li>FROM project INNER JOIN employee </li>
+<li>ON project.mgrssn = employee.ssn;</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>2.1.18b. Outer joins</h1>
+<div class="slidebody"><ul>
+<li>Outer joins are crucial in the real-world</li>
+<li>Databases often contain NULLs (3VL)</li>
+<li>Analysis of where the crucial data is across a relationship</li>
+<li>Previous example, only get project data for managed projects</li>
+<ul>
+<li>SELECT project.*, employee.*</li>
+<li>FROM project INNER JOIN employee</li>
+<li>ON project.mgrssn = employee.ssn;</li>
+</ul>
+</ul>
+<p><a href="../../../legacy/sitefiles/lightenna.com/sql-join-inner-big.gif"><img src="../../../legacy/sitefiles/lightenna.com/sql-join-inner.gif" alt="Inner join example" border="0" /></a></p>
+</div></div><div class="slide"><h1>2.1.18c. Outer joins (cont)</h1>
+<div class="slidebody"><li>Scale of loss isn't always instantly obvious</li>
+<li>NULLs often used unpredicably</li>
+<li>May want project information, even if no employee attached as manager</li>
+<ul>
+<li>SELECT project.*, employee.*</li>
+<li>FROM project LEFT OUTER JOIN employee</li>
+<li>ON project.mgrssn = employee.ssn;</li>
+</ul>
+<p><a href="../../../legacy/sitefiles/lightenna.com/sql-join-outer-big.gif"><img src="../../../legacy/sitefiles/lightenna.com/sql-join-outer.gif" alt="Outer join example " border="0" /></a></p>
+</div></div><div class="slide"><h1>2.1.19. 2y and 3y joins</h1>
+<div class="slidebody"><ul>
+<li>Queries can encapsulate any number of relations</li>
+<ul>
+<li>Even one relation many times (in different roles)</li>
+</ul>
+<li>Relationship chain</li>
+<li>Across many relations</li>
+<ul>
+<li>Tuples as Entities OR Relationships</li>
+</ul>
+<li>e.g. Employee -&gt; Works_on -&gt; Project -&gt; Department -&gt;<br />
+       Manager</li>
+</ul>
+</div></div><div class="slide"><h1>2.1.20. Recursive closure</h1>
+<div class="slidebody"><ul>
+<li>Can’t be done in SQL2</li>
+<li>Recursive relationships</li>
+<li>Unknown number of steps</li>
+<li>SQL2 can’t generalise in single query</li>
+</ul>
+</div></div><div class="slide"><h1>2.1.21. Nested queries</h1>
+<div class="slidebody"><ul>
+<li>Essential one or more (inner) queries within an (outer) query</li>
+<li>Inner and outer query</li>
+<li>Not to be confused with inner and outer joins</li>
+<li>Inner query can go in three places</li>
+<ul>
+<li>SELECT clause (projection list)</li>
+<ul>
+<li>Must return a single value, then aliased as attribute in outer result</li>
+</ul>
+<li>FROM clause</li>
+<ul>
+<li>Inner query result used as standard table in FROM cross product</li>
+</ul>
+<li>WHERE clause</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>2.1.21b. Nested query example</h1>
+<div class="slidebody"><ul>
+<li>Use of query result as comparator for other (outer) query</li>
+<ul>
+<li>SELECT DISTINCT course</li>
+<li>FROM dept WHERE course IN (</li>
+<ul>
+<li>SELECT d.course</li>
+<li>FROM dept AS d, faculty AS f, student AS s</li>
+<li>WHERE d.ownfac=f.id AND s.owndept=d.id</li>
+<li>AND f.name='Eng' AND s.year='3'</li>
+</ul>
+<li> ) OR course IN (</li>
+<ul>
+<li>SELECT course</li>
+<li>FROM dept</li>
+<li>WHERE code LIKE 'COMS3%');</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>2.1.22. Bridging SQL across 3 tiers</h1>
+<div class="slidebody"><ul>
+<li>Three tier database design</li>
+<li>Changing role of DBMS</li>
+<li>Indices</li>
+<li>Aggregate functions (conceptual)</li>
+<ul>
+<li>Over bags and sub-bags</li>
+</ul>
+<li>Creating and updating views (ext)</li>
+<li>SQL embedding</li>
+</ul>
+<p><img src="../../../legacy/sitefiles/lightenna.com/database-three-tiers-external-conceptual-internal.gif" alt="Three tier database design (Internal, Conceptual, External)" /></p>
+<p>In this subsection we look at the different roles SQL play across the three tiers of database design.  We discuss the areas in which SQL is lacking and how those difficiencies can be complemented by embedding SQL in other languages.</p>
+</div></div><div class="slide"><h1>2.1.25. Indices</h1>
+<div class="slidebody"><ul>
+<li>Low/Internal level</li>
+<li>Index by one attribute</li>
+<li>For queries selecting by that attribute:</li>
+<ul>
+<li>Faster tuple access (ordered tuples)</li>
+<li>Reduces database memory load</li>
+<ul>
+<li>Small cross product relation, only crosses requisites</li>
+</ul>
+<li>Accelerates query resolution time</li>
+</ul>
+<li>CREATE INDEX Index_Name ON RELATION(Attribute);</li>
+</ul>
+</div></div><div class="slide"><h1>2.1.26. Aggregate functions</h1>
+<div class="slidebody"><ul>
+<li>Run over groups of tuples</li>
+<li>Takes a projected attribute list as an argument</li>
+<li>Produce relation with single tuple</li>
+<li>SUM, MAX, MIN, AVG, COUNT</li>
+<li>e.g. AggFunc over all tuples</li>
+<ul>
+<li>SELECT SUM(SALARY), MAX(SALARY), MIN(SALARY)</li>
+<li>FROM EMPLOYEE;</li>
+</ul>
+<li>Single attribute lists (distinct values)</li>
+<li>Multi-attribute lists (granularity of distinct values by pairing)
+  </ul>
+</div></div><div class="slide"><h1>2.1.27. Aggregates over sub-bags</h1>
+<div class="slidebody"><ul>
+<li>Can run over subsets of tuples</li>
+<li>GROUP BY keyword</li>
+<li>Specifies the grouping attributes</li>
+<li>Need to also appear in projected attr_list</li>
+<li>Show result along side value for group attr</li>
+<li>e.g. AggFunc over subgroups</li>
+<ul>
+<li>SELECT  dno, COUNT(*)</li>
+<li>FROM employee</li>
+<li>GROUP BY  dno</li>
+</ul>
+</ul>
+<p>Quick SQL check, do all attributes in the SELECT projection list appear in the GROUP BY projection list.</p>
+</div></div><div class="slide"><h1>2.1.28. Creating views</h1>
+<div class="slidebody"><ul>
+<li>Views are partial projections</li>
+<li>Virtual relations, or views of live relations</li>
+<li>Update synchronised</li>
+<ul>
+<li>CREATE VIEW &lt;virtual_relname&gt;</li>
+<li>AS &lt;real_relation&gt;</li>
+</ul>
+<li>Real relation could be a query result</li>
+<li>Clever bit is the change propagation</li>
+<li>UPDATEs made to the view dataset are flooded back to relations</li>
+<ul>
+<li>INSERT and DELETE behaviour needs to be defined</li>
+<li>Non-trivial as INSERT into view (virtual relation) may leave holes in real relation</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>2.1.29. Embedding SQL</h1>
+<div class="slidebody"><ul>
+<li>SQL (alone) can do lots of clever things in one expression
+<li>
+<li>But can only execute a single expression</li>
+<li>Can structure SQL commands into proper programming languages</li>
+<li>Java Database Connection (JDBC)</li>
+<ul>
+<li>javac, then java VM</li>
+</ul>
+<li>COBOL, C or PASCAL</li>
+<ul>
+<li>precompiled with PRO*COBOL or PRO*C</li>
+</ul>
+<li>Procedure Language (PL/SQL)</li>
+<ul>
+<li>Oracle/MySQL procedural language</li>
+<li><i>Stored</i> procedures can take parameters</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>2.2. Internals</h1>
+<div class="slidebody"><p>In this lecture we look at...<br />
+[<a href="../../../legacy/sitefiles/lightenna.com/2.2.internals.pdf">Section notes</a> PDF 180Kb]</p>
+</div></div><div class="slide"><h1>2.2.01. Introduction</h1>
+<div class="slidebody"><ul>
+<li>Database internals (base tier)</li>
+<li>RAID technology</li>
+<ul>
+<li>Reliability and performance improvement</li>
+</ul>
+<li>Record and field basics</li>
+<li>Headers to hashing</li>
+<li>Index structures</li>
+</ul>
+</div></div><div class="slide"><h1>2.2.01b. Machine architecture (by distance)</h1>
+<div class="slidebody"><ul>
+<li>Distance from chip determines minimum latency</li>
+<li>Speed of light is a constant</li>
+<li>Impact of bus frequencies</li>
+<ul>
+<li>IDE (66,100,133 Hz)</li>
+<li>PCI, PCI-X (66,100,133 Hz)</li>
+<li>PCI Express (1Ghz to 12Ghz)</li>
+</ul>
+<li>Impact of bus bandwidths</li>
+<ul>
+<li>PCI (32/64 bit/cycle, 133MB/s)</li>
+<li>PCI Express (x16 8.0GB/s)</li>
+</ul>
+</ul>
+<p><img src="../../../legacy/sitefiles/lightenna.com/computer-component-distance-time-from-chip.jpg" alt="Computer components by distance from processor" /></p>
+<p>Here's a link from Intel showing a machine architecture with signal bandwidths: <a href="http://zone.ni.com/devzone/jsp/largeImage.jsp?imagename=/cms/images/devzone/tut/a/b3dadcae1482.gif&amp;language=en">Intel diagram</a></p>
+</div></div><div class="slide"><h1>2.2.01c. Machine architecture (by capacity)</h1>
+<div class="slidebody"><ul>
+<li>Capacity increased with distance</li>
+<li>Staged architecture as compromise</li>
+<li>Speed, time/distance</li>
+<li>Also cost, heat, usage scale</li>
+</ul>
+<p><img src="../../../legacy/sitefiles/lightenna.com/computer-component-capacity.jpg" alt="Computer components by capacity" /></p>
+</div></div><div class="slide"><h1>2.2.02. Database internals</h1>
+<div class="slidebody"><ul>
+<li>Stored as files of records (of data values)</li>
+<ul>
+<li>Auxiliary data structures/indices</li>
+</ul>
+<li>1y and 2y storage</li>
+<ul>
+<li>memory hierarchy (pyramid diagram)</li>
+<li>volatility</li>
+</ul>
+<li>Online and offline devices</li>
+<li>Primary file organisation, records on disk</li>
+<ul>
+<li>Heap - unordered</li>
+<li>Sorted - ordered, sequential by sort key</li>
+<li>Hashed - ordered by hash key</li>
+<li>B-trees - more complex</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>2.2.03. Disk fundamentals</h1>
+<div class="slidebody"><ul>
+<li>DBMS task</li>
+<ul>
+<li>linked to backup</li>
+</ul>
+<li>1y, 2y and 3y</li>
+<ul>
+<li>e.g. DLT tape</li>
+</ul>
+<li>Changing face of current technology</li>
+<ul>
+<li>Impact of inexpensive harddisks</li>
+<li>Flash memory devices (CF, USB)</li>
+</ul>
+<li>Random versus sequential access</li>
+<li>Latency (rotational delay) and</li>
+<li>Bandwidth (data transfer rate)</li>
+</ul>
+</div></div><div class="slide"><h1>2.2.04. RAID technology</h1>
+<div class="slidebody"><ul>
+<li>Redundant Array of Independent Disks</li>
+<li>Data striping</li>
+<ul>
+<li>Blocks (512 bytes), bits and transparency</li>
+</ul>
+<li>Reliability (1/n)</li>
+<ul>
+<li>Mirroring/shadowing</li>
+<li>Error correction codes/parity</li>
+</ul>
+<li>Performance (n)</li>
+<ul>
+<li>Mirroring (2x read access)</li>
+<li>Multiple parallel access</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>2.2.05. RAID levels</h1>
+<div class="slidebody"><ul>
+<li>0    No redundant data</li>
+<li>1    Disk mirrors (performance gain)</li>
+<li>2    Hamming codes (also detect)</li>
+<li>3    Single parity disk</li>
+<li>4   Block level striping</li>
+<li>5   and parity/data distribution</li>
+<li>6   Reed-Soloman codes</li>
+</ul>
+</div></div><div class="slide"><h1>2.2.06. Records and fields</h1>
+<div class="slidebody"><ul>
+<li>DBMS specific, generally</li>
+<li>Records (tuples) comprise fields (attributes)</li>
+<li>File is a sequence of records</li>
+<li>Variable length records</li>
+<ul>
+<li>Variable length fields</li>
+<li>Multi-valued attributes/repeating fields</li>
+<li>Optional fields</li>
+<li>Mixed file of different record types</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>2.2.07. Fields</h1>
+<div class="slidebody"><ul>
+<li>records -&gt; files -&gt; disks</li>
+<li>Fixed length for efficient access</li>
+<li>Networking issues</li>
+<li>Delimit variable length fields (max)</li>
+<li>Explicit record/field lengths</li>
+<li>Separators (,;,:,$,?,%)</li>
+<li>Record headers and footers</li>
+<li>Spanning</li>
+<ul>
+<li>block boundaries and redundancy</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>2.2.08. Primary organisation</h1>
+<div class="slidebody"><ul>
+<li>Bias data manipulation to 1y memory</li>
+<ul>
+<li>Load record to 1y, write back</li>
+<li>Cache theorem</li>
+</ul>
+<li>Data storage investment, rapidity of access</li>
+<ul>
+<li>optimisations based on frequent algorithmic use</li>
+</ul>
+<li>Ordering, ordering field/key field</li>
+<li>Hashing</li>
+</ul>
+</div></div><div class="slide"><h1>2.2.09. Indexes/indices</h1>
+<div class="slidebody"><ul>
+<li>Auxiliary structures/secondary access path</li>
+<li>Single level indexes (Key, Pointer)</li>
+<li>File of records</li>
+<li>Ordering key field</li>
+<li>Primary, Secondary and Clustering</li>
+</ul>
+</div></div><div class="slide"><h1>2.2.09b. Primary index example</h1>
+<div class="slidebody"><ul>
+<li>Primary index on simple table</li>
+<li>Ordering key field (primary key) is Integer</li>
+<li>Pointers as addresses</li>
+<li>Sparse, not dense</li>
+</ul>
+<p><img src="../../../legacy/sitefiles/lightenna.com/databases-index-primary.gif" alt="Database example of primary key structure" /></p>
+</div></div><div class="slide"><h1>2.2.10. Primary Index file (as pairs list)</h1>
+<div class="slidebody"><ul>
+<li>Two fields  &lt;K(i),P(i)&gt;</li>
+<li>Ordering key field and pointer to block</li>
+<li>Second example, indexing candidate key <i>Surname</i></li>
+<ul>
+<li>K(1)="Barnes",P(1) -&gt; block 1</li>
+<ul>
+<li>Barnes record is first/anchor entry in block 1</li>
+</ul>
+<li>K(2)="Smith",P(2) -&gt; block 6</li>
+<li>K(3)="Zeta",P(3) -&gt; block 8</li>
+</ul>
+<li>Dense (K(i) for every record), or Sparse</li>
+<li>Enforce key constraint</li>
+</ul>
+</div></div><div class="slide"><h1>2.2.10b. Clustering index example</h1>
+<div class="slidebody"><ul>
+<li>Clustering index</li>
+<li>Ordering key field (OKF) is non-key</li>
+<li>Each entry points to multiple records</li>
+</ul>
+<p><img src="../../../legacy/sitefiles/lightenna.com/databases-index-clustering.gif" alt="Database clustering index example" /></p>
+</div></div><div class="slide"><h1>2.2.11. Clustering Index (as pairs list)</h1>
+<div class="slidebody"><ul>
+<li>Two fields  &lt;K(i),P(i)&gt;</li>
+<li>Ordering non-key field and pointer to block</li>
+<ul>
+<li>Internal structure e.g. linked list of records</li>
+</ul>
+<li>Each block may contain multiple records</li>
+<ul>
+<li>K(1)="Barnes",P(1) -&gt; block 1</li>
+<li>K(2)="Bates",P(2) -&gt; block 2</li>
+<li>K(3)="Zeta",P(3) -&gt; block 3</li>
+</ul>
+<li>K(i) not required to have</li>
+<ul>
+<li>a distinct value for each record</li>
+<li>non-dense, sparse</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>2.2.11b. Secondary Index example</h1>
+<div class="slidebody"><ul>
+<li>Independent of primary ordering</li>
+<li>Can't use block anchors</li>
+<li>Needs to be dense</li>
+</ul>
+<p><img src="../../../legacy/sitefiles/lightenna.com/databases-index-secondary.gif" alt="Databases Secondary index example" /></p>
+</div></div><div class="slide"><h1>2.2.12. More indices</h1>
+<div class="slidebody"><ul>
+<li>Single level index</li>
+<ul>
+<li>ordered index file</li>
+<li>limited by binary search</li>
+</ul>
+<li>Multi level indices</li>
+<ul>
+<li>based on tree data structures (B+/B-trees)</li>
+<ul>
+<li>faster reduction of search space (log<sub>fo</sub>b<sub>i</sub>)</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>2.2.13. Indices</h1>
+<div class="slidebody"><ul>
+<li>Database architecture</li>
+<ul>
+<li>Intension/extension</li>
+</ul>
+<li>Indexes separated from data file</li>
+<ul>
+<li>Created/disgraded dynamically</li>
+<li>Typically 2y to avoid reordering records on disk</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>2.2.14. Query optimisation</h1>
+<div class="slidebody"><ul>
+<li>Faster query resolution</li>
+<ul>
+<li>improved performance</li>
+<li>lower load</li>
+<li>hardware cost:performance ratio</li>
+</ul>
+<li>Moore's law</li>
+<li>Query process chain</li>
+<li>Query optimisation</li>
+</ul>
+</div></div><div class="slide"><h1>2.2.15. Query processing</h1>
+<div class="slidebody"><ul>
+<li>Compile-track familiarity</li>
+<ul>
+<li>Scanner/tokeniser - break into tokens</li>
+<li>Parser - semantic understanding, grammar</li>
+<li>Validated - check attribute names</li>
+<ul>
+<li>Query tree</li>
+<li>Execution strategy, heuristic</li>
+</ul>
+<li>Query optimisation</li>
+<ul>
+<li>In (extended relational) canonical algebra form</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>2.2.16. Query optimisation</h1>
+<div class="slidebody"><ul>
+<li>SQL query</li>
+<ul>
+<li>SELECT lname, fname</li>
+<li>FROM employee</li>
+<li>WHERE salary &gt; (</li>
+<ul>
+<li>SELECT MAX(salary)</li>
+<li>FROM employee</li>
+<li>WHERE dno=5</li>
+</ul>
+<li>);</li>
+</ul>
+<li>Worst-case</li>
+<ul>
+<li>Process inner for each outer</li>
+</ul>
+<li>Best-base
+<li>Canonical algrebraic form</li>
+</ul>
+</div></div><div class="slide"><h1>2.2.16b. Query optimisation implementation</h1>
+<div class="slidebody"><ul>
+<li>Indexing accelerates query resolution</li>
+<li>Closed comparison (intra-tuple)</li>
+<ul>
+<li>all variables/attributes within single tuple</li>
+<li>e.g. x < 100</li>
+</ul>
+<li>Open comparison (inter-tuple)</li>
+<ul>
+<li>variables span multiple tuples</li>
+</ul>
+<li>Essentially a sorting problem</li>
+<li>Internal sorting covered (pre-requisites)</li>
+<li>Need external sort for non-cached lists</li>
+</ul>
+</div></div><div class="slide"><h1>2.2.17. Query optimisation</h1>
+<div class="slidebody"><ul>
+<li>External sorting</li>
+<ul>
+<li>Stems from large disk (2y), small memory (1y)</li>
+<li>Sort-merge strategy</li>
+<ul>
+<li>Sort runs (small sets of total data file)</li>
+<li>Then merge runs back together</li>
+</ul>
+<li>Used in</li>
+<ul>
+<li>SELECT, to accelerate selection (by index)</li>
+<li>PROJECT, to eliminate duplicates</li>
+<li>JOIN, UNION and INTERSECTION</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>2.3. B-trees</h1>
+<div class="slidebody"><p>In this lecture we look at...<br />
+[<a href="../../../legacy/sitefiles/lightenna.com/2.3.b-trees.pdf">Section notes</a> PDF 159Kb]</p>
+</div></div><div class="slide"><h1>2.3.01. Hash tables</h1>
+<div class="slidebody"><ul>
+<li>Used to implement Indicies</li>
+<li>O(n) access</li>
+<li>Ordering Key Field (K) as argument to Hash function H()</li>
+<li>Address H(K) maps to pointer</li>
+</ul>
+<p><a href="../../../legacy/sitefiles/lightenna.com/primary_index_hashtable_big.gif"><img src="../../../legacy/sitefiles/lightenna.com/primary_index_hashtable.jpg" alt="Hash table example" /></a></p>
+</div></div><div class="slide"><h1>2.3.02. Tree structure</h1>
+<div class="slidebody"><ul>
+<li>Tree revision</li>
+<li>Node based</li>
+<li>Branching nodes/leaf nodes</li>
+<li>Parent/child nodes</li>
+<li>Root node</li>
+<li>Cardinality</li>
+</ul>
+<p><a href="../../../legacy/sitefiles/lightenna.com/tree_diagram_big.gif"><img src="../../../legacy/sitefiles/lightenna.com/tree_diagram.jpg" alt="Basic tree structure" /></a></p>
+</div></div><div class="slide"><h1>2.3.03. Multi-level indices</h1>
+<div class="slidebody"><ul>
+<li>Multi-level indices</li>
+<li>One index indexes another</li>
+<li>Implemented by multiple hash-tables</li>
+<li>&lt;H(k),P&gt; pairs</li>
+<li><i>(data far right)</i></li>
+</ul>
+<p><a href="../../../legacy/sitefiles/lightenna.com/multilevel_index_big.gif"><img src="../../../legacy/sitefiles/lightenna.com/multilevel_index.jpg" alt="Multi-level indices by hash table" /></a></p>
+</div></div><div class="slide"><h1>2.3.04. Index zipping</h1>
+<div class="slidebody"><ul>
+<li>Collapsing a single index</li>
+<li>Two columns become one</li>
+<li>&lt;H(k),P&gt; pairs sequentially stored</li>
+<li>Common in the Elmasri</li>
+</ul>
+<p><a href="../../../legacy/sitefiles/lightenna.com/index_zipping_big.gif"><img src="../../../legacy/sitefiles/lightenna.com/index_zipping.jpg" alt="Index zipping" /></a></p>
+</div></div><div class="slide"><h1>2.3.05. B-tree</h1>
+<div class="slidebody"><ul>
+<li>Paritioning structure</li>
+<li>Each node contains keys &amp; pointers</li>
+<li>Pointers can be:</li>
+<ul>
+<li>Node pointers - to child nodes</li>
+<li>Data pointers - to records in heap</li>
+</ul>
+<li>Number of keys = Number of pointers - 1</li>
+<li>Every node in the tree is identical</li>
+</ul>
+<p><a href="../../../legacy/sitefiles/lightenna.com/b-tree_big.gif"><img src="../../../legacy/sitefiles/lightenna.com/b-tree.jpg" alt="B tree" /></a></p>
+</div></div><div class="slide"><h1>2.3.06. B+ trees</h1>
+<div class="slidebody"><ul>
+<li>Similar to B-trees</li>
+<li>Different types of nodes</li>
+<ul>
+<li>Branching nodes</li>
+<li>Leaf nodes</li>
+</ul>
+<li>Each branching node has:</li>
+<li>At most U children (max U)</li>
+<li>At least L children (min L)</li>
+<li>U = 2L, or U = 2L-1</li>
+</ul>
+<p><a href="../../../legacy/sitefiles/lightenna.com/b_plus_tree_big.gif"><img src="../../../legacy/sitefiles/lightenna.com/b_plus_tree.jpg" alt="B+ tree" /></a></p>
+</div></div><div class="slide"><h1>2.3.07. Properties of B+ trees</h1>
+<div class="slidebody"><ul>
+<li>Balanced</li>
+<li>All leaf nodes at same level</li>
+<li>Record search takes same time for every record</li>
+<li>Partitioning needs to be comprehensive</li>
+<li>B-tree: a<sub>1</sub> &lt; x &lt; a<sub>2</sub></li>
+<li>B+tree: a<sub>1</sub> &lt;= x &lt;= a<sub>2</sub></li>
+<li>Why?</li>
+<ul>
+<li>because all data for partition values must be in the lowest level of the tree</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>2.3.08. B+ tree operations</h1>
+<div class="slidebody"><ul>
+<li>Insert operation cascades from bottom</li>
+<li>Rules: node can contain U children (max)</li>
+<li>Node combine</li>
+<ul>
+<li>Legal if child nodes contain L children</li>
+<li>Parent loses one key/paritition value</li>
+</ul>
+<li>Node split</li>
+<ul>
+<li>Legal if node contains U children</li>
+<li>Parent node gains one key/partition value</li>
+<ul>
+<li>Can cause cascade up tree &amp; rebalancing</li>
+</ul>
+</ul>
+</ul>
+<p><a href="../../../legacy/sitefiles/lightenna.com/b_plus_tree_node_operations_big.gif"><img src="../../../legacy/sitefiles/lightenna.com/b_plus_tree_node_operations.jpg" alt="B+ tree operations" /></a></p>
+</div></div><div class="slide"><h1>3. Database Design</h1>
+<div class="slidebody"><p>This is the Database Design course theme.<br />
+[<a href="../../../legacy/sitefiles/lightenna.com/3.database_design.pdf">Complete set of notes</a> PDF 300Kb].</p>
+</div></div><div class="slide"><h1>3.1. Functional Dependency</h1>
+<div class="slidebody"><p>In this lecture we look at...<br />
+[<a href="../../../legacy/sitefiles/lightenna.com/3.1.functional_dependency.pdf">Section notes</a> PDF 48Kb]</p>
+</div></div><div class="slide"><h1>3.1.01. Introduction</h1>
+<div class="slidebody"><ul>
+<li>What is relational design?</li>
+<ul>
+<li>Notion of attribute distribution</li>
+<li>Conceptual-level optimisation</li>
+</ul>
+<li>How do we asses the quality of a design?</li>
+</ul>
+</div></div><div class="slide"><h1>3.1.02. Value in design</h1>
+<div class="slidebody"><ul>
+<li>Allocated arbitrarily by DBD under ER/EER</li>
+<li>Goodness at</li>
+<ul>
+<li>Internal/storage level (base relations only)</li>
+<ul>
+<li>Reducing nulls - obvious storage benefits /frequent</li>
+<li>Reducing redundancy - for efficient storage/anomalies</li>
+</ul>
+<li>Conceptual level</li>
+<ul>
+<li>Semantics of the attributes /single entity:relation</li>
+<li>No spurious tuple generation /no match Attr,-PK/FK</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.1.03. Initial state</h1>
+<div class="slidebody"><ul>
+<li>Database design</li>
+<li>Universal relation</li>
+<ul>
+<li>R = {A<sub>1</sub>, A<sub>2</sub>, …, A<sub>n</sub>}</li>
+<li>Set of functional dependencies F</li>
+</ul>
+<li>Decompose R using F to</li>
+<ul>
+<li>D = {R<sub>1</sub>, R<sub>2</sub>, …, R<sub>n</sub>}</li>
+<li>D is a decomposition of R under F</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.1.05. Aims</h1>
+<div class="slidebody"><ul>
+<li>Attribute preservation</li>
+<ul>
+<li>Union of all decomposed relations = original</li>
+</ul>
+<li>Lossless/non-additive join</li>
+<ul>
+<li>For every extension, total join of r(R<sub>i</sub>) yeilds r(R)</li>
+<li>no spurious/erroneous tuples</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.1.06. Aims (preservation)</h1>
+<div class="slidebody"><ul>
+<li>Dependency preservation</li>
+<ul>
+<li>Constraints on the database</li>
+<ul>
+<li>X -&gt; Y in F of R, appears directly in R<sub>i</sub></li>
+</ul>
+<li>Attributes X and Y all contained in R<sub>i</sub></li>
+<li>Each relation R<sub>i</sub> in 3NF</li>
+</ul>
+<li>But what's a dependency?</li>
+</ul>
+</div></div><div class="slide"><h1>3.1.07. Functional dependency</h1>
+<div class="slidebody"><ul>
+<li>Constraint between two sets of attributes</li>
+<ul>
+<li>Formal method for grouping attributes</li>
+</ul>
+<li>DB as one single universal relation/-literal</li>
+<ul>
+<li>R = {A<sub>1</sub>,A<sub>2</sub>,…,A<sub>n</sub>}</li>
+<li>Two sets of attributes, X subset R,Y subset R</li>
+</ul>
+<li>Functional dependency (FD or f.d.) X -&gt; Y</li>
+<li>If t<sub>1</sub>[X] = t<sub>2</sub>[X], then t<sub>1</sub>[Y] = t<sub>2</sub>[Y]</li>
+<ul>
+<li>Values of the Y attribute depend on value of X</li>
+<li>X functionally determines Y, not reverse necessarily</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.1.08. Dependency derivation</h1>
+<div class="slidebody"><ul>
+<li>Rules of inference</li>
+<li>reflexive: if X implies Y then  X -&gt; Y</li>
+<li>augment:  {X -&gt; Y} then XZ -&gt; YZ</li>
+<li>transitive: {X -&gt; Y,Y -&gt; Z} then X -&gt; Z</li>
+<li>Armstrong demonstrated complete for closures</li>
+</ul>
+</div></div><div class="slide"><h1>3.1.09. Functional dependency</h1>
+<div class="slidebody"><ul>
+<li>If X is a key (primary and/or candidate)</li>
+<ul>
+<li>All tuples t<sub>i</sub> have a unique value for X</li>
+<li>No two tuples (t<sub>1</sub>,t<sub>2</sub>) share a value of X</li>
+</ul>
+<li>Therefore X -&gt; Y</li>
+<ul>
+<li>For any subset of attributes Y</li>
+</ul>
+<li>Examples</li>
+<ul>
+<li>SSN -&gt; {Fname, Minit, Lname}</li>
+<li>{Country of issue, Driving license no} -&gt; SSN</li>
+<li>Mobile area code -&gt; Mobile<br />
+         network (not anymore)</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.1.10. Process</h1>
+<div class="slidebody"><ul>
+<li>Typically start with set of f.d., F</li>
+<ul>
+<li>determined from semantics of attributes</li>
+</ul>
+<li>Then use IR1,2,3 to infer additional f.d.s</li>
+<li>Determine left hand sides (Xs)</li>
+<ul>
+<li>Then determine all attributes dependent on X</li>
+</ul>
+<li>For each set of attributes X,</li>
+<ul>
+<li>determine X+ :the set of attributes f.d'ed by X on F</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.1.11. Algorithm</h1>
+<div class="slidebody"><ul>
+<li>Compute the closure of X under F: X+</li>
+<ul>
+<li>xplus = x;</li>
+<li>do</li>
+<ul>
+<li>oldxplus = xplus;</li>
+<li>for (each f.d. Y -&gt; Z in F)</li>
+<ul>
+<li>if (xplus implies Y) then</li>
+<li>xplus = xplus union Z;</li>
+</ul>
+</ul>
+<li>while (xplus != oldxplus);</li>
+</ul>
+</div></div><div class="slide"><h1>3.1.12. Function dependency</h1>
+<div class="slidebody"><ul>
+<li>Consider a relation schema R(A,B,C,D) and a set F of functional dependencies</li>
+<ul>
+<li>Aim to find all keys (minimal superkeys),</li>
+<li>by determining closures of all possible X subsets of R’s attributes, e.g.</li>
+<ul>
+<li>A+, B+, C+, D+,</li>
+<li>AB+, AC+, AD+, BC+, BD+, CD+</li>
+<li>ABC+, ABD+, BCD+</li>
+<li>ABCD+</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.1.13. Worked example</h1>
+<div class="slidebody"><ul>
+<li>Let R be a relational schema R(A, B, C, D)</li>
+<li>Simple set of f.d.s</li>
+<li>AB -&gt; C, C -&gt; D, D -&gt; A</li>
+<li>Calculate singletons</li>
+<ul>
+<li>A+, B+, C+, D+,</li>
+</ul>
+<li>Pairs</li>
+<ul>
+<li>AB+, AC+,…</li>
+</ul>
+<li>Triples</li>
+<ul>
+<li>and so on</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.1.14. Worked example</h1>
+<div class="slidebody"><ul>
+<li>Compute sets of closures</li>
+<ul>
+<li>AB -&gt; C, C -&gt; D, D -&gt; A</li>
+</ul>
+<li>1.Singletons</li>
+<ul>
+<li>A+ -&gt; A</li>
+<li>B+ -&gt; B</li>
+<li>C+ -&gt; CDA</li>
+<li>D+ -&gt; AD</li>
+</ul>
+<li>Question: are any singletons superkeys?</li>
+</ul>
+</div></div><div class="slide"><h1>3.1.15. F.d. closure example</h1>
+<div class="slidebody"><ul>
+<li>2.Pairs (note commutative)</li>
+<ul>
+<li>AB+ -&gt; ABCD</li>
+<li>AC+ -&gt; ACD</li>
+<li>AD+ -&gt; AD</li>
+<li>BC+ -&gt; ABCD</li>
+<li>BD+ -&gt; ABCD</li>
+<li>CD+ -&gt; ACD</li>
+</ul>
+<li>Superkeys?</li>
+</ul>
+</div></div><div class="slide"><h1>3.1.16. F.d. closure example</h1>
+<div class="slidebody"><ul>
+<li>3.Triples</li>
+<ul>
+<li>ABC+ -&gt; ABCD</li>
+<li>ABD+ -&gt; ABCD</li>
+<li>BCD+ -&gt; ABCD</li>
+</ul>
+<li>Superkeys? Minimal superkeys (keys)?</li>
+<ul>
+    </ul>
+<li>4.Quadruples</li>
+<ul>
+<li>ABCD+ -&gt; ABCD</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.1.17. F.d. closure summary</h1>
+<div class="slidebody"><ul>
+<li>Superkeys:</li>
+<ul>
+<li>AB, BC, BD, ABC, ABD, BCD, ABCD</li>
+</ul>
+<li>Minimal superkeys (keys)</li>
+<ul>
+<li>AB, BC, BD</li>
+</ul>
+</div></div><div class="slide"><h1>3.2. Normal Forms</h1>
+<div class="slidebody"><p>In this lecture we look at...<br />
+[<a href="../../../legacy/sitefiles/lightenna.com/3.2.normal_forms.pdf">Section notes</a> PDF 121Kb]</p>
+</div></div><div class="slide"><h1>3.2.01. Orthogonal design</h1>
+<div class="slidebody"><ul>
+<li>Information Principle:</li>
+<ul>
+<li>The entire information content of the database is represented in one and only one way, namely as explicit values in column positions in tables</li>
+</ul>
+<li>Implies that two relations cannot have the same meaning</li>
+<ul>
+<li>unless they explicitly have the same design/attributes (including name)</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.2.02. Normalization</h1>
+<div class="slidebody"><ul>
+<li>Reduced redundancy</li>
+<li>Organised data efficiently</li>
+<li>Improves data consistency</li>
+<ul>
+<li>Reduces chance of update anomalies</li>
+<li>Data duplicated, then updated in only one location</li>
+</ul>
+<li>Only duplicate primary key</li>
+<ul>
+<li>All non-key data stored only once</li>
+</ul>
+<li>Data spread across multiple tables, instead of one Universal relation R</li>
+</ul>
+</div></div><div class="slide"><h1>3.2.03. Good or bad?</h1>
+<div class="slidebody"><ul>
+<li>Depends on Application</li>
+<li>OLTP (Transaction processing)</li>
+<ul>
+<li>Lots of small transactions</li>
+<li>Need to execute updates quickly</li>
+</ul>
+<li>OLAP (Analytical processing/DSS)</li>
+<ul>
+<li>Largely Read-only</li>
+<li>Redundant data copies facilitate Business Intellegence applications, e.g. star schema (later)</li>
+</ul>
+<li>3NF considered ‘normalised’</li>
+<ul>
+<li>save special cases</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.2.04. Normal forms (1NF)</h1>
+<div class="slidebody"><ul>
+<li>First Normal form (1NF)</li>
+<ul>
+<li>Disallows multivalued attributes</li>
+<li>Part of the basic relational model</li>
+</ul>
+<li>Domain must include only atomic values</li>
+<ul>
+<li>simple, indivisible</li>
+</ul>
+<li>Value of attribute-tuple in extension of schema</li>
+<li>t[A<sub>i</sub>] &isin; (A<sub>i</sub>)</li>
+</ul>
+</div></div><div class="slide"><h1>3.2.05. Normalisation (1NF)</h1>
+<div class="slidebody"><ul>
+<li>Remove fields containing comma separated lists</li>
+<li>Multi-valued attribute (A<sub>MV</sub>) of R<sub>i</sub></li>
+<li>Create new relation (R<sub>NEW</sub>)</li>
+<ul>
+<li>with FK to R<sub>i</sub>[PK]</li>
+<li>R<sub>NEW</sub>(UID, A<sub>MV</sub>, FK<sub>I</sub>)</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.2.06. Normalisation (1NF)</h1>
+<div class="slidebody"><div class="bullets">
+<ul>
+<li>On weak entity</li>
+<li>On strong entity</li>
+</ul>
+</div>
+<p><a href="../../../legacy/sitefiles/lightenna.com/normal_forms_weak_entity_big.png"> <img style="margin: 10px;" src="../../../legacy/sitefiles/lightenna.com/normal_forms_weak_entity.jpg" alt="weak entity example" border="0" /></a><br />
+<a href="../../../legacy/sitefiles/lightenna.com/normal_forms_strong_entity_big.png"> <img style="margin: 10px;" src="../../../legacy/sitefiles/lightenna.com/normal_forms_strong_entity.jpg" alt= "strong entity example" border="0" /></a></p>
+</div></div><div class="slide"><h1>3.2.07. Normal forms (2NF)</h1>
+<div class="slidebody"><ul>
+<li>A relation R<sub>i</sub> is in 2NF if:</li>
+<ul>
+<li>Every nonprime attribute A in R<sub>i</sub> is</li>
+<li>fully functionally dependent on 1y key of R</li>
+</ul>
+<li>If all keys are singletons, guaranteed</li>
+<li>If R<sub>i</sub> has composite key are</li>
+<ul>
+<li>all non-key attributes fully functionally dependent</li>
+<li>on all attributes of composite key?</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.2.08. Normal forms (2NF)</h1>
+<div class="slidebody"><ul>
+<li>Second normal form (2NF)</li>
+<ul>
+<li>Full functional dependency X &rarr; Y</li>
+<ul>
+<li>A &isin; X, (X - {A}) &not;&rarr; Y</li>
+</ul>
+</ul>
+<li>If any attribute A is removed from X</li>
+<li>Then X &rarr; Y no longer holds</font></li>
+<ul>
+<li>Partial functional dependency</li>
+<li>A &isin; X, (X - {A}) &rarr; Y</font></li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.2.09. Normal forms (2NF)</h1>
+<div class="slidebody"><ul>
+<li>In context</li>
+<ul>
+<li>Not 2NF: AB &rarr; C, A &rarr; C</li>
+<ul>
+<li>AB &rarr; C is not in 2NF, because B can be removed</li>
+</ul>
+<li>Not 2NF: AB &rarr; CDE, B &rarr; DE</li>
+<ul>
+<li>because attributes D&amp;E are dependent on part of the composite key (B of AB), not all of it</li>
+</ul>
+</ul>
+</ul</p>
+</div></div><div class="slide"><h1>3.2.10. Normalisation (2NF)</h1>
+<div class="slidebody"><ul>
+<li>Split attributes not depended on all of the primary key into separate relations</li>
+</ul>
+<p><a href="../../../legacy/sitefiles/lightenna.com/normal_forms_2NF_big.png"><img src="../../../legacy/sitefiles/lightenna.com/normal_forms_2NF.jpg"/></a></p>
+</div></div><div class="slide"><h1>3.2.11. Normal forms (BCNF)</h1>
+<div class="slidebody"><ul>
+<li>Boyce-Codd Normal form (BCNF)</li>
+<ul>
+<li>Simpler, stricter 3NF</li>
+<ul>
+<li>BCNF &rarr; 3NF</li>
+<li>3NF does not imply BCNF</li>
+</ul>
+<li>nontrivial functional dependency X &rarr; Y</li>
+<li>Then X must be a superkey</li>
+</ul>
+</div></div><div class="slide"><h1>3.2.12. Normal forms (3NF)</h1>
+<div class="slidebody"><ul>
+<li>Third Normal form (3NF)</li>
+<li>Derived/based on transitive dependency</li>
+<li>For all nontrivial functional dependencies<br />
+    X &rarr; A</li>
+<li>Either X must be a superkey</li>
+<li>Or A is a prime attribute<br />
+    (member of a key)</li>
+</ul>
+</div></div><div class="slide"><h1>3.2.13. Normal forms in context</h1>
+<div class="slidebody"><ul>
+<li>AB &rarr; C, C &rarr; D, D &rarr; A</li>
+<li>In context</li>
+<ul>
+<li>3NF? Yes</li>
+<ul>
+<li>Because AB is a superkey and</li>
+<li>D and A are prime attributes</li>
+</ul>
+<li>BCNF? No</li>
+<ul>
+<li>Because C and D are not superkeys</li>
+<li>(even though AB is)</li>
+</ul>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.2.14. Normalisation (3NF)</h1>
+<div class="slidebody"><ul>
+<li>CarMakes not in 3NF because:</li>
+<ul>
+<li>singleton key A</li>
+<li>non-trivial fd B &rarr; C</font></li>
+<ul>
+<li>B not superkey, C not prime attribute</li>
+</ul>
+</ul>
+</ul>
+<p><a href="../../../legacy/sitefiles/lightenna.com/normal_forms_3NF_big.png"><br />
+<img src="../../../legacy/sitefiles/lightenna.com/normal_forms_3NF.jpg" /></a></p>
+</div></div><div class="slide"><h1>3.3. OODB</h1>
+<div class="slidebody"><p>In this lecture we look at...<br />
+[<a href="http://www.lightenna.com/legacy/sitefiles/lightenna.com/3.3.oodb.pdf">Section notes</a> PDF 34Kb]</p>
+</div></div><div class="slide"><h1>3.3.01. Introduction</h1>
+<div class="slidebody"><ul>
+<li>Database architectures, beyond</li>
+<li>Why OODBMS?</li>
+<li>ObjectStore</li>
+<li>CORBA object distribution standard</li>
+</ul>
+</div></div><div class="slide"><h1>3.3.02. Large DBMS</h1>
+<div class="slidebody"><ul>
+<li>Complex entity fragmentation</li>
+<ul>
+<li>across many relations</li>
+</ul>
+<li>Breaks the miniworld-realworld dichotomy</li>
+<li>Requires conceptual abstracting layer</li>
+<li>Difficult to retrieve all information for x</li>
+<li>Compounded by version control</li>
+</ul>
+</div></div><div class="slide"><h1>3.3.03. Object orientation</h1>
+<div class="slidebody"><ul>
+<li>Object components (icv triples)</li>
+<ul>
+<li>Object Identity (OID), I</li>
+<ul>
+<li>replaces primary key</li>
+</ul>
+<li>Type constructor, c</li>
+<ul>
+<li>how the object state is constructed from sub-comp</li>
+<li>e.g. atom, tuple (struct), set, list, bag, array</li>
+</ul>
+<li>Object state, v</li>
+<li>Object behaviour/action</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.3.04. Desirable features</h1>
+<div class="slidebody"><ul>
+<li>Encapsulation</li>
+<ul>
+<li>Abstract data types</li>
+<li>Information hiding</li>
+</ul>
+<li>Object classes and behavior</li>
+<ul>
+<li>Defined by operations (methods)</li>
+</ul>
+<li>Inheritance and hierarchies</li>
+<li>Strong typing (no illegal casting)</li>
+<ul>
+<li>don’t think about inheritance just yet</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.3.05. Desirable features</h1>
+<div class="slidebody"><ul>
+<li>Persistence</li>
+<ul>
+<li>Objects exist after termination</li>
+<li>Naming and reachability mechanism</li>
+<li>Late binding in Java</li>
+</ul>
+<li>Performance</li>
+<ul>
+<li>user-def functions executed on server, not client</li>
+</ul>
+<li>Extension into relational model</li>
+<ul>
+<li>Domains of objects, not just values</li>
+<li>Domain hierarchies etc.</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.3.06. Desirable features</h1>
+<div class="slidebody"><ul>
+<li>Polymorphism</li>
+<ul>
+<li>aka. operator overloading</li>
+<li>same method name/symbol</li>
+<li>multiple implementations</li>
+</ul>
+<li>Easy link to Programming languages</li>
+<ul>
+<li>popular OO language like Java/C++</li>
+<li>Better than PL/SQL integration</li>
+<li>Much better than PL-JDBC integration!</li>
+</ul>
+<li>Highly suitable for multimedia data</li>
+</ul>
+</div></div><div class="slide"><h1>3.3.07. Undesirable features</h1>
+<div class="slidebody"><ul>
+<li>Object Ids</li>
+<ul>
+<li>Artificial Real-Mini, double edged sword</li>
+<li>Exposes inner workings (suspended abstraction)</li>
+</ul>
+<li>Lack of integrity constraints</li>
+<li>No concept of normalisation/forms</li>
+<li>Extreme encapsulation</li>
+<ul>
+<li>e.g. creation of many accessor/mutator methods</li>
+</ul>
+<li>Lack of (better) standardisation</li>
+</ul>
+</div></div><div class="slide"><h1>3.3.08. More undesirables</h1>
+<div class="slidebody"><ul>
+<li>Originally no mechanism for specifying</li>
+<li>   relationships between objects</li>
+<li>In RDBMS – relationships are tuples</li>
+<li>In OODBMS – relationships should be   properties of objects</li>
+</ul>
+</div></div><div class="slide"><h1>3.3.09. ObjectStore</h1>
+<div class="slidebody"><ul>
+<li>Packages supporting Java or C++</li>
+<li>C++ package uses:</li>
+<ul>
+<li>C++ class definition for DDL</li>
+<li>insert(e), remove(e) and create collections, for DML</li>
+</ul>
+<li>Bidirectional relationship facility</li>
+<li>Persistency transparency</li>
+<ul>
+<li>Identical pointers to persistent and transient objects</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.3.10. CORBA</h1>
+<div class="slidebody"><ul>
+<li>Common Object Request Broker Architecture</li>
+<li>Object communication (unifying paradigm)</li>
+<ul>
+<li>Distributed</li>
+<li>Heterogeneous</li>
+<li>Network, OS and language transparency</li>
+</ul>
+<li>Java implementation org.omg.CORBA</li>
+<li>Also C, C++, ADA, SMALLTALK</li>
+</ul>
+</div></div><div class="slide"><h1>3.4. Type Inheritance and EER diagrams</h1>
+<div class="slidebody"><p>In this lecture we look at...<br />
+[<a href="../../../legacy/sitefiles/lightenna.com/3.4.type_inheritance_and_eer.pdf">Section notes</a> PDF 117Kb]</p>
+</div></div><div class="slide"><h1>3.4.01. Introduction</h1>
+<div class="slidebody"><ul>
+<li>Design/schema side (Entity types)</li>
+<li>Object-orientated concepts</li>
+<ul>
+<li>Java, C++ or UML</li>
+<li>Sub/superclasses and inheritance</li>
+</ul>
+<li>EER diagrams</li>
+<li>EER to Relational mapping</li>
+</ul>
+</div></div><div class="slide"><h1>3.4.02. OO</h1>
+<div class="slidebody"><ul>
+<li>Inheritance concept</li>
+<ul>
+<li>Attributes (and methods)</li>
+</ul>
+<li>Subtypes and supertypes</li>
+<li>Specialisation and Generalisation</li>
+<li>ER diagrams</li>
+<ul>
+<li>show entities/entity sets</li>
+</ul>
+<li>EER diagrams</li>
+<ul>
+<li>show type inheritance</li>
+<li>additional 8<sup>th</sup> step to ER&rarr;Relational mapping</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.4.03. Objects</h1>
+<div class="slidebody"><ul>
+<li>Basic guide to Java</li>
+<li>Object, classes as blueprints</li>
+<li>Object, collection of methods and attributes</li>
+<li>Miniworld model of real world things</li>
+<li>Object, entity in database terms</li>
+</ul>
+</div></div><div class="slide"><h1>3.4.04. Abstract</h1>
+<div class="slidebody"><ul>
+<li>Similar objects</li>
+<li>Car Park example</li>
+<li>Student example</li>
+<li>Shared properties/attributes</li>
+<li>Generalisation</li>
+<li>Reverse, specialisation</li>
+</ul>
+</div></div><div class="slide"><h1>3.4.05. Relationships</h1>
+<div class="slidebody"><ul>
+<li>Using English as model</li>
+<li>‘Is a’ (inheritance)</li>
+<li>‘Has a’ (containment)</li>
+<li>Nouns as objects</li>
+<li>Verbs as methods</li>
+<li>Adjectives as variables (sort of)</li>
+</ul>
+</div></div><div class="slide"><h1>3.4.06. Classes</h1>
+<div class="slidebody"><ul>
+<li>Superclasses (Student)</li>
+<li>Subclasses   (Engineer, Geographer, Medic)</li>
+<li>Inheritance</li>
+<li>Subclass inherits superclass attributes</li>
+<ul>
+<li>Union of specific/local and general attributes</li>
+</ul>
+<li>Inheritance chains</li>
+<ul>
+<li>Person &rarr; Student &rarr; Engineer &rarr; Computer Scientist</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.4.07. EER Fruit example</h1>
+<div class="slidebody"><ul>
+<li>Partial participation</li>
+<li>Disjoint subclasses</li>
+<li>A fruit may be either a pear or an apple or a banana, or none of them. A fruit may not be a pear and a banana, an apple and a banana, an apple and a pear &hellip;</li>
+</ul>
+<p><a href="../../../legacy/sitefiles/lightenna.com/eer_simple_diagram_big.jpg"><img src="../../../legacy/sitefiles/lightenna.com/eer_simple_diagram.jpg" alt="Extended Entity-Relationship diagram showing partial participation in disjoint subclasses" /></a></p>
+</div></div><div class="slide"><h1>3.4.08. EER Wine example</h1>
+<div class="slidebody"><ul>
+<li>Total, disjoint</li>
+<li>Equivalent to Java Abstract classes</li>
+<li>A Wine has to be either Red, White or Rosé cannot be both more</li>
+</ul>
+<p><a href="../../../legacy/sitefiles/lightenna.com/eer_total_disjoint_big.jpg"><img src="../../../legacy/sitefiles/lightenna.com/eer_total_disjoint.jpg" alt="EER diagram showing total participation in disjoint subclasses" /></a></p>
+</div></div><div class="slide"><h1>3.4.09. More extended (EER)</h1>
+<div class="slidebody"><ul>
+<li>Specialisation lattices</li>
+<ul>
+<li>and Hierarchies</li>
+</ul>
+<li>Multiple inheritance</li>
+<li>Union of two superclasses (u in circle)</li>
+<li>In addition to basic ER notation</li>
+</ul>
+</div></div><div class="slide"><h1>3.4.10. EER diagramatic notation</h1>
+<div class="slidebody"><ul>
+<li>Subset symbol to illustrate</li>
+<li>sub/superclass relationship</li>
+<li>direction of relationship</li>
+<li>Circle to link super to subclasses</li>
+<ul>
+<li>Disjoint</li>
+<li>Overlapping</li>
+<li>Union</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.4.11. Disjointness constraint</h1>
+<div class="slidebody"><ul>
+<li>Disjointness (d in circle) – single honours</li>
+<li>Overlapping (o in circle) – joint honours/sports</li>
+<li>Membership condition on same attribute</li>
+<ul>
+<li>attribute-defined specialisation</li>
+<li>defining attribute</li>
+<li>implies disjointness</li>
+</ul>
+<li>versus user-defined</li>
+<ul>
+<li>each entity type specifically defined by user</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.4.12. Completeness constraint</h1>
+<div class="slidebody"><ul>
+<li>Total specialisation</li>
+<ul>
+<li>Every entity in the superclass must be a member of atleast 1 subclass</li>
+<li>Double line (as ER)</li>
+</ul>
+<li>Partial specialisation</li>
+<ul>
+<li>Some entites may belong to atleast 1 subclass, or none at all</li>
+<li>Single line</li>
+</ul>
+<li>Yields 4 possibilities</li>
+<ul>
+<li>(Total-Dis, Total-Over, Partial-Dis, Partial-Over)</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.4.13. EER Chip example</h1>
+<div class="slidebody"><ul>
+<li>Total, overlapping</li>
+<li>A Chip may has to be at least one of FPA Unit, Reg Block, L1 Cache, and may be more than one type</li>
+</ul>
+<p><a href="../../../legacy/sitefiles/lightenna.com/eer_total_overlapping_big.jpg"><img src="../../../legacy/sitefiles/lightenna.com/eer_total_overlapping.jpg" alt="EER diagram showing total participation in overlapping sets" /></a></p>
+</div></div><div class="slide"><h1>3.4.14. EER Multiple inheritance</h1>
+<div class="slidebody"><ul>
+<li>Type hierarchies</li>
+<li>Specialisation lattices</li>
+<li><i>Well, sir, the Supreme Court of the United States has determined that the tomato is for legal and commercial purposes both a fruit and a vegetable. So we can legally refer to tomato juice as 'vegetable' juice.</i></li>
+<li>Candice, General Foods</li>
+</ul>
+<p><a href="../../../legacy/sitefiles/lightenna.com/eer_multiple_inheritance_big.jpg"><img src="../../../legacy/sitefiles/lightenna.com/eer_multiple_inheritance.jpg" alt="EER diagram showing Multiple inheritance" /></a></p>
+</div></div><div class="slide"><h1>3.4.15. EER to Relational Mapping</h1>
+<div class="slidebody"><ul>
+<li>Initially following 7 ER stages</li>
+<li>Stage 8</li>
+<li>4 different options</li>
+<ul>
+<li>Optimal solution based on problem</li>
+</ul>
+<li>Let C be superclass, S<sub>1..m</sub> subclasses</li>
+</ul>
+</div></div><div class="slide"><h1>3.4.16. Stage 8</h1>
+<div class="slidebody"><ul>
+<li>Create relation for C, and relations for S<sub>1..m</sub> each with a foreign key to C (primary key)</li>
+<li>Create relations for S<sub>1..m</sub> each including all attributes of C and its primary key</li>
+</ul>
+</div></div><div class="slide"><h1>3.4.17. Stage 8</h1>
+<div class="slidebody"><ul>
+<li>Create a single relation including all attributes of C &cup; S<sub>1..m</sub> and a type/discriminating attribute</li>
+<ul>
+<li>only for disjoint subclasses</li>
+</ul>
+<li>Create a single relation as above, but include a boolean type flag for each subclass</li>
+<ul>
+<li>works for overlapping, and also disjoint</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.5. System Design</h1>
+<div class="slidebody"><p>In this lecture we look at...<br />
+[<a href="../../../legacy/sitefiles/lightenna.com/3.5.system_design.pdf">Section notes</a> PDF 64Kb]</p>
+</div></div><div class="slide"><h1>3.5.01. Databases in Application</h1>
+<div class="slidebody"><ul>
+<li>Where’s the data?</li>
+<li>Programmer driven future</li>
+<li>OODBMS limitations</li>
+<li>RDBMS longevity</li>
+<li>System design by</li>
+<ul>
+<li>Data store, delivery, interface</li>
+</ul>
+<li>Case study</li>
+</ul>
+</div></div><div class="slide"><h1>3.5.02. Where’s the data?</h1>
+<div class="slidebody"><ul>
+<li>Previously covered distance from User to Data (and reason for it)</li>
+<li>Client-Server data model creates DBMS</li>
+<ul>
+<li>P2P alternative</li>
+</ul>
+<li>Accountability</li>
+<li>Distribution (BitTorrent, eDonkey)</li>
+<li>Caching</li>
+</ul>
+</div></div><div class="slide"><h1>3.5.03. Where’s the data?</h1>
+<div class="slidebody"><ul>
+<li>Answer: everywhere</li>
+<li>But where is it meaningful?</li>
+<li>Answer: for whom?</li>
+</ul>
+</div></div><div class="slide"><h1>3.5.04. Quality paradigm</h1>
+<div class="slidebody"><ul>
+<li>Large projects require large teams</li>
+<li>Team overhead (ref 2nd year)</li>
+<li>Code responsibilities</li>
+<li>Data/data model resp.</li>
+<li>Object responsibilities</li>
+</ul>
+<p><a href="../../../legacy/sitefiles/lightenna.com/system_design_data_support_big.png"><img src="../../../legacy/sitefiles/lightenna.com/system_design_data_support.jpg" /></a></p>
+</div></div><div class="slide"><h1>3.5.05. Web application data support</h1>
+<div class="slidebody"><ul>
+<li>Web application programming</li>
+<li>Goal, dynamically produced XHTML</li>
+<li>Client side designer-programmer split</li>
+<ul>
+<li>CSS, XHTML</li>
+</ul>
+<li>Server side programmer-programmer split</li>
+<ul>
+<li>Old school: query design, integrator</li>
+<li>New school: MVC (Model-View-Controller)</li>
+<ul>
+<li>Controller – user input</li>
+<li>Model – modelling of external world</li>
+<li>View – visual feedback</li>
+</ul>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.5.06. CMS</h1>
+<div class="slidebody"><ul>
+<li>Content Management System</li>
+<li>part of other courses</li>
+<li>CMS is a DBMS</li>
+<li>Zope/Plone and ZODB</li>
+<li>e107, Drupal and Seagull</li>
+<li>Zend MVC Framework (pre-beta)</li>
+</ul>
+</div></div><div class="slide"><h1>3.5.07. OODBMS limitations</h1>
+<div class="slidebody"><ul>
+<li>Future unknown</li>
+<li>RDBMS supports</li>
+<ul>
+<li>Application data sharing</li>
+<li>Physical/logical data independence/views</li>
+<li>Concurrency control</li>
+<li>Constraints</li>
+</ul>
+<li>at inception these requirements not known</li>
+<li>RDBMS mathematical basis &rarr;       extensible</li>
+<li>Crude Type Inheritance (see EER mapping)</li>
+<li>OODBMS as construction kit</li>
+</ul>
+</div></div><div class="slide"><h1>3.5.08. Weaknesses in RDBMS</h1>
+<div class="slidebody"><ul>
+<li>Data type support</li>
+<li>Unwieldy, created 3VL (nulls)</li>
+<li>Type Inheritance and Relationships</li>
+<li>Tuple:Entity fragmentation</li>
+<ul>
+<li>not to be confused with ‘fragmentation’</li>
+</ul>
+<li>Entity approximation requires joins</li>
+</ul>
+</div></div><div class="slide"><h1>3.5.09. System design</h1>
+<div class="slidebody"><ul>
+<li>Client specifications</li>
+<li>Variance amongst Mobile devices</li>
+<li>Rich-media Content delivery</li>
+<li>Where’s the data? (M – media database)</li>
+<li>Where’s it going? (C – mobile browser)</li>
+<li>How’s it going to get there? (query design)</li>
+<li>What’s it going to look like? (V – XHTML)</li>
+</ul>
+</div></div><div class="slide"><h1>3.5.10. Muddy boots</h1>
+<div class="slidebody"><ul>
+<li>The real world of databases</li>
+<li>Massive Excel spreadsheets</li>
+<li>Access Migration</li>
+<li>Normalisation</li>
+<li>Update implications</li>
+<li>Visual language of the Internet limitations</li>
+<li>Future of browser components</li>
+</ul>
+</div></div><div class="slide"><h1>3.6. Design for optimised query resolution</h1>
+<div class="slidebody"><ul>
+<li>Skillswap talk</li>
+<li>28th May 2008</li>
+</ul>
+</div></div><div class="slide"><h1>3.6.01. Introduction</h1>
+<div class="slidebody"><ul>
+<li>Pace of talk</li>
+<li>Principals not query syntax</li>
+<li>Online notes</li>
+<li>Questions welcome anytime</li>
+<li>Prompt thought about the issues</li>
+</ul>
+</div></div><div class="slide"><h1>3.6.02. Terms</h1>
+<div class="slidebody"><ul>
+<li>Tables/relations</li>
+<li>Rows/tuples</li>
+<li>Columns/attributes</li>
+<li>Joins</li>
+<ul>
+<li><a href="../../../training/databases/1_data_models/1_3_joins/1_3_11_join_types_inner_and.html">Inner joins</a></li>
+<li><a href="../../../training/databases/1_data_models/1_3_joins/1_3_12_outer_joins.html">Outer joins</a></li>
+</ul>
+<li>Indexes</li>
+<ul>
+<li><a href="../../../training/databases/2_dbms_systems/2_3_b_trees/2_3_06_b_trees.html">B+ trees</a></li>
+<li><a href="../../../training/databases/2_dbms_systems/2_3_b_trees/2_3_03_multi_level_indices.html">Multi-level implementation</a>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.6.03. Domains and sets</h1>
+<div class="slidebody"><ul>
+<li>Domains</li>
+<ul>
+<li>Set of possible data</li>
+<li>8-bit unsigned integer example</li>
+</ul>
+<li>Powersets</li>
+<ul>
+<li>Set</li>
+<ul>
+<li>Odd numbers less than 10</li>
+<li>(1,3,5,7,9)</li>
+</ul>
+<li>Powerset</li>
+<ul>
+<li>Set of sets</li>
+<ul>
+<li>5 digit collection of non-repeating integers less than 10</li>
+<li>((1,3,5,7,9),(2,3,5,7,9),(1,4,5,7,9),(1,3,6,7,9)...)</li>
+</ul>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.6.04. Query and snapshot</h1>
+<div class="slidebody"><ul>
+<li>Query + database snapshot returns one set of actual data</li>
+<ul>
+<li>but a query alone defines a powerset of possible data</li>
+</ul>
+<li>Load</li>
+<ul>
+<li>Metrics for query performance</li>
+<li>Time is easy to measure</li>
+<li>Load is better in the real world</li>
+<ul>
+<li>Query might be fast to execute, but require a lot of memory</li>
+</ul>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.6.05. Design in context</h1>
+<div class="slidebody"><ul>
+<li>Query design needs context</li>
+<ul>
+<li>Hardware information</li>
+<ul>
+<li><a href="../../../training/databases/2_dbms_systems/2_2_internals/2_2_01c_machine_architecture_by_capacity.html">L2, RAM, Disk : O(1), O(10), O(1000)</a></li>
+</ul>
+<li>Competition information (other Application Servers)</li>
+<ul>
+<li>MySQL, Apache, Tomcat, SVN</li>
+</ul>
+<li>Data information</li>
+<ul>
+<li>Likely number of rows, lifetime of information, interval distribution within domains</li>
+</ul>
+<li>Database design information</li>
+<ul>
+<li><a href="../../../training/databases/3_database_design/3_2_normal_forms.html">Normalisation</a></li>
+</ul>
+<li>Database implementation information</li>
+<ul>
+<li>Transaction granularity</li>
+</ul>
+<li>Use information</li>
+<ul>
+<li>Balance between read (SELECT) and write (INSERT, UPDATE, DELETE) ops</li>
+</ul>
+</ul>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.6.06. Elementary steps</h1>
+<div class="slidebody"><ul>
+<li>Ask MySQL what it's doing</li>
+<ul>
+<li>Query analysis with EXPLAIN</li>
+</ul>
+<li>Cache the query</li>
+<ul>
+<li>no free lunch, there's almost always a cost</li>
+<li>Simple</li>
+<ul>
+<li>Repetitive queries</li>
+<li>Rare since requires constant snapshot</li>
+<li>What's the point of the query</li>
+</ul>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.6.07. Query caching</h1>
+<div class="slidebody"><ul>
+<li>Complex - Summary table</li>
+<ul>
+<li>Multiple queries drawing data from subset of DB data</li>
+<li>Cache subset</li>
+<ul>
+<li>Query subset rather than whole database</li>
+</ul>
+</ul>
+<li>Complex - Age analyses</li>
+<ul>
+<li>Webstats, meaningful even if not last 24 hours</li>
+<ul>
+<li>Run the heavyweight analysis queries during downtime</li>
+<li>Cache results</li>
+</ul>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.6.08. Avoid the query</h1>
+<div class="slidebody"><ul>
+<li>Cache the object</li>
+<ul>
+<li>Higher level primitives</li>
+<li>Object persistence</li>
+</ul>
+<li>Get only the critical data</li>
+<ul>
+<li>What's critical now</li>
+<li>What's required in 10s, 1m, 5m</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.6.09. Simplify</h1>
+<div class="slidebody"><ul>
+<li>Route/path to information</li>
+<ul>
+<li>Introduction</li>
+<ul>
+<li>Join is an arc, join time is arc length</li>
+<li>Table is a node</li>
+</ul>
+<li>Graph traversal problem</li>
+<ul>
+<li>Dijkstra's shortest path</li>
+<ul>
+<li>Heuristic</li>
+<ul>
+<li>Search for optimal</li>
+<li>General, each node defines a population of tuples</li>
+</ul>
+</ul>
+</ul>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.6.10. Traversal</h1>
+<div class="slidebody"><ul>
+<li>Traversal of graph</li>
+<ul>
+<li>(aka. positive closure)</li>
+<li>gives intermediate relation</li>
+</ul>
+<li>Goal</li>
+<ul>
+<li>Intermediate relation minimisation</li>
+<ul>
+<li>Space (memory, disk triangle)</li>
+<li>Time (fast joins versus slow joins)</li>
+<ul>
+<li>Fewer relations</li>
+<li>Fewer active attributes (horizontal cropping)</li>
+<li>Fewer rows (vertical cropping)</li>
+<ul>
+<li>Role of single-relation WHERE statements</li>
+</ul>
+</ul>
+</ul>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.6.11. Optimise (Indexing)</h1>
+<div class="slidebody"><ul>
+<li>Giving the Optimiser hints</li>
+<li>Indexing</li>
+<ul>
+<li>Simple - single attribute</li>
+<ul>
+<li>Index(A)</li>
+<li>Reduce sparse domains (e.g. text)</li>
+</ul>
+<li>Composite - multiple attributes (typically pairs)</li>
+<ul>
+<li>Index (A,B)</li>
+<li>Some subtleties in here</li>
+</ul>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.6.12. Optimise (Limit)</h1>
+<div class="slidebody"><ul>
+<li>Limit</li>
+<ul>
+<li>Valueable on sorts (0,10 faster than 0,1000!)</li>
+<li>Beware limit referencing</li>
+<ul>
+<li>Limit 1000,10 will fetch the first 1000, then give you the 10 you want</li>
+<ul>
+<li>Search engines</li>
+</ul>
+<li>Better to use WHERE restriction if possible</li>
+</ul>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.6.13. Optimise (Delayed Joins)</h1>
+<div class="slidebody"><ul>
+<li>SELECT <full row> FROM (SELECT id FROM ... LIMIT 0,10)</li>
+<ul>
+<li>Subqueries not the silver bullet</li>
+<li>Often not cached or indexed</li>
+</ul>
+<li>Views help manage complex relationships but not performance</li>
+<li>Changing picture</li>
+<ul>
+<li>Even between MySQL 5.0 and 5.1</li>
+<li>MySQL 6.0</li>
+<ul>
+<li>Falcon (transactional) Storage</li>
+<li>Better subquery optimisation</li>
+</ul>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.6.14. References</h1>
+<div class="slidebody"><ul>
+<li>External References for Section 3.6 only</li>
+<ul>
+<li>Shortest path</li>
+<li><a href="http://en.wikipedia.org/wiki/Dijkstra's_algorithm">http://en.wikipedia.org/wiki/Dijkstra's_algorithm</a></li>
+<li>CASO</li>
+<li><a href="http://www.mysqlperformanceblog.com/">http://www.mysqlperformanceblog.com/</a></li>
+<li>MySQL 6</li>
+<li><a href="http://dev.mysql.com/doc/refman/6.0/en/index.html">http://dev.mysql.com/doc/refman/6.0/en/index.html</a></li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>4. Distributed systems</h1>
+<div class="slidebody"><p>This is the Distributed systems course theme.</p>
+<p>[<a href="../../../legacy/sitefiles/lightenna.com/4.distributed_systems.pdf">Complete set of notes</a> PDF 109Kb]</p>
+</div></div><div class="slide"><h1>4.1. Transaction processing</h1>
+<div class="slidebody"><p>In this lecture we look at...<br />
+[<a href="../../../legacy/sitefiles/lightenna.com/4.1.transaction.pdf">Section notes</a> PDF 86Kb]</p>
+</div></div><div class="slide"><h1>4.1.01. Distributed Databases</h1>
+<div class="slidebody"><ul>
+<li>Transactions</li>
+<li>Unpredictable failure</li>
+<ul>
+<li>Commit and rollback</li>
+</ul>
+<li>Stored procedures</li>
+<li>Brief PL overview</li>
+<ul>
+<li>Cursors</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>4.1.02. Transactions</h1>
+<div class="slidebody"><ul>
+<li>Real world database actions</li>
+<li>Rarely single step</li>
+<li>Flight reservation example</li>
+<ul>
+<li>Add passenger details to roster</li>
+<li>Charge passenger credit card</li>
+<li>Update seats available</li>
+<li>Order extra vegetarian meal</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>4.1.04. Desirable properties of transactions</h1>
+<div class="slidebody"><h1>ACID test</h1>
+<ul>
+<li><u>A</u>tomicity</li>
+<ul>
+<li>transaction as smallest unit of processing</li>
+<li>transactions complete entirely or not at all</li>
+<ul>
+<li>consequences of partial completion in flight example</li>
+</ul>
+</ul>
+<li><u>C</u>onsistency</li>
+<ul>
+<li>complete execution preserves database constrained state/integrity</li>
+<li>e.g. Should a transaction create an entity with a foreign key then the reference entity must exist (see 4 constraints)</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>4.1.05. ACID test continued</h1>
+<div class="slidebody"><ul>
+<li>Isolation</li>
+<ul>
+<li>not interfered with by any other concurrent transactions</li>
+</ul>
+<li>Durable (permanency)</li>
+<ul>
+<li>commited changes persist in the database, not vulernable to failure</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>4.1.06. Commit</h1>
+<div class="slidebody"><ul>
+<li>Notion of Commit (durability)</li>
+<li>Transaction failures</li>
+<ul>
+<li>From flight reservation example</li>
+<ul>
+<li>Add passenger details to roster</li>
+<li>Charge passenger credit card</li>
+<li>Update seats available: No seats remaining</li>
+<li>Order extra vegetarian meal</li>
+</ul>
+</ul>
+<li>Rollback</li>
+</ul>
+</div></div><div class="slide"><h1>4.1.07. PL/SQL overview</h1>
+<div class="slidebody"><ul>
+<li>Language format</li>
+<ul>
+<li>Declarations</li>
+<li>Execution</li>
+<li>Exceptions</li>
+<li>Handling I/O</li>
+<li>Functions</li>
+<li>Cursors</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>4.1.08. PL/SQL</h1>
+<div class="slidebody"><ul>
+<li>Blocks broken into three parts</li>
+<ul>
+<li>Declaration</li>
+<ul>
+<li>Variables declared and initialised</li>
+</ul>
+<li>Execution</li>
+<ul>
+<li>Variables manipulated/actioned</li>
+</ul>
+<li>Exception</li>
+<ul>
+<li>Error raised and handled during exec</li>
+</ul>
+</ul>
+<li><tt><br />
+DECLARE<br />
+&nbsp;&nbsp;&nbsp;&nbsp;---declarations<br />
+BEGIN<br />
+&nbsp;&nbsp;&nbsp;&nbsp;---statements<br />
+EXCEPTION<br />
+&nbsp;&nbsp;&nbsp;&nbsp;---handlers<br />
+END ;</tt></li>
+</ul>
+</div></div><div class="slide"><h1>4.1.09. Declaration</h1>
+<div class="slidebody"><ul>
+<li>DECLARE</li>
+<ul>
+<li>age   NUMBER;</li>
+<li>name    VARCHAR(20);</li>
+<li>surname  employee.fname%TYPE;</li>
+<li>addr   student.termAddress%TYPE;</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>4.1.10. Execution</h1>
+<div class="slidebody"><ul class="bulletless">
+<li>BEGIN    (not in order)</li>
+<ul class="bulletless">
+<li>/* sql_statements */</li>
+<ul class="bulletless">
+<li>UPDATE employee SET salary = salary+1;</li>
+</ul>
+<li>/* conditionals */</li>
+<ul class="bulletless">
+<li>IF (age &lt; 0) THEN</li>
+<ul class="bulletless">
+<li>age: = 0;</li>
+</ul>
+<li>ELSE</li>
+<ul class="bulletless">
+<li>age: = age + 1;</li>
+</ul>
+<li>END IF;</li>
+</ul class="bulletless">
+<li>/* transaction processing */</li>
+<ul class="bulletless">
+<li>COMMIT; ROLLBACK;</li>
+</ul>
+<li>/* loops */ /* cursors */</li>
+</ul>
+<li>[END;]   (if no exception handling)</li>
+</ul>
+</div></div><div class="slide"><h1>4.1.11. Exception passing</h1>
+<div class="slidebody"><ul>
+<li>Beginnings of PL I/O</li>
+<li>CREATE TABLE temp (logmessage varchar(80));</li>
+<ul>
+<li>Can create transfer/bridge relation outside</li>
+<p>    <br>
+   </ul>
+<li>Within block (e.g. within exception handler)</li>
+<ul>
+<li>WHEN invalid_age THEN</li>
+<ul>
+<li>INSERT INTO temp VALUES( ‘Cannot have negative ages’);</li>
+</ul>
+<li>END;</li>
+<p>   <br></p>
+<li>SELECT * FROM temp;</li>
+<ul>
+<li>To review error messages</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>4.1.12. Exception handling</h1>
+<div class="slidebody"><ul>
+<li>DECLARE</li>
+<ul>
+<li>invalid_age  exception;</li>
+</ul>
+<li>BEGIN</li>
+<ul>
+<li>IF (age &lt; 0) THEN</li>
+<ul>
+<li>RAISE invalid_age</li>
+</ul>
+<li>END IF;</li>
+</ul>
+<li>EXCEPTION</li>
+<ul>
+<li>WHEN invalid_age THEN</li>
+<ul>
+<li>INSERT INTO temp VALUES( ‘Cannot have negative ages’);</li>
+</ul>
+<li>END;</li>
+</ul>
+</div></div><div class="slide"><h1>4.1.13. Cursors</h1>
+<div class="slidebody"><ul>
+<li>Cursors</li>
+<ul>
+<li>Tuple by tuple processing of relations</li>
+<li>Three phases (two)</li>
+<ul>
+<li>Declare</li>
+<li>Use</li>
+<li>Exception (as per normal raise)</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>4.1.14. Impact</h1>
+<div class="slidebody"><ul>
+<li>PL blocks coherently change database state</li>
+<li>No runtime I/O</li>
+<li>Difficult to debug</li>
+<li>SQL tested independently</li>
+</ul>
+</div></div><div class="slide"><h1>4.1.15. PL Cursors</h1>
+<div class="slidebody"><ul class="bulletless">
+<li>DECLARE</li>
+<li>name_attr  EMPLOYEE.NAME%TYPE;</li>
+<li>ssn_attr   EMPLOYEE.SSN%TYPE;</li>
+<li>/* cursor declaration */</li>
+<li>CURSOR myEmployeeCursor IS</li>
+<ul>
+<li>SELECT NAME,SSN FROM EMPLOYEE</li>
+<li>WHERE DNO=1</li>
+<li>FOR UPDATE;</li>
+</ul>
+<li>emp_tuple  myEmployeeCursor%ROWTYPE;</li>
+</ul>
+</div></div><div class="slide"><h1>4.1.16. Cursors execution</h1>
+<div class="slidebody"><ul class="bulletless">
+<li>BEGIN</li>
+<li>/* open cursor */</li>
+<li>OPEN myEmployeeCursor;</li>
+<li>/* can pull a tuple attributes into variables */</li>
+<li>FETCH myEmployeeCursor INTO name_attr,ssn_attr;</li>
+<li>/* or pull tuple into tuple variable */</li>
+<li>FETCH myEmployeeCursor INTO emp_tuple;</li>
+<li>CLOSE myEmployeeCursor;</li>
+<p>   <br><br />
+   <br></p>
+<li>[LOOP…END LOOP example on handout]</li>
+</ul>
+</div></div><div class="slide"><h1>4.1.17. Concurrency Introduction</h1>
+<div class="slidebody"><ul>
+<li>Concurrent transactions</li>
+<li>Distributed databases (DDB)</li>
+<li>Fragmentation</li>
+<li>Desirable transaction properties</li>
+<li>Concurrency control techniques</li>
+<ul>
+<li>Locking</li>
+<li>Timestamps</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>4.1.18. Notation</h1>
+<div class="slidebody"><ul>
+<li>Language</li>
+<ul>
+<li>PL too complex/long-winded</li>
+</ul>
+<li>Simplified database model</li>
+<ul>
+<li>Database as collection of named items</li>
+<li>Granularity, or size of data item</li>
+<li>Disk block based, each block X</li>
+</ul>
+<li>Basic transaction language (BTL)</li>
+<ul>
+<li>read_item(X);</li>
+<li>write_item(X);</li>
+<li>Basic algebra, X=X+N;</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>4.1.19. Transaction processing</h1>
+<div class="slidebody"><ul>
+<li>DBMS Multiuser system</li>
+<ul>
+<li>Multiple terminals/clients</li>
+<ul>
+<li>Single processor, client side execution</li>
+</ul>
+<li>Single centralised database</li>
+<ul>
+<li>Multiprocessor, server</li>
+<li>Resolving many transactions simultaneously</li>
+</ul>
+</ul>
+<li>Concurrency issue</li>
+<ul>
+<li>Coverage by previous courses (e.g. COMS12100)</li>
+<li>PL/SQL scripts (Transactions) as processes</li>
+</ul>
+<li>Interleaved execution</li>
+</ul>
+</div></div><div class="slide"><h1>4.1.20. Transactions</h1>
+<div class="slidebody"><ul>
+<li>Two transactions, T<sub>1</sub> and T<sub>2</sub></li>
+<li>Overlapping read-sets and write-sets</li>
+<li>Interleaved execution</li>
+<li>Concurrency control required</li>
+<li>PL/SQL example</li>
+<ul>
+<li>Commit; and rollback;</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>4.1.21. Concurrency issues</h1>
+<div class="slidebody"><ul>
+<li>Three potential problems</li>
+<ul>
+<li>Lost update</li>
+<li>Dirty read</li>
+<li>Incorrect summary</li>
+</ul>
+<li>All exemplified using BTL</li>
+<ul>
+<li>Transaction diagrams to make clearer</li>
+<li>C-like syntax for familiarity</li>
+<li>Many possible examples of each problem</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>4.1.22. Lost update</h1>
+<div class="slidebody"><ul style="width: 40%; float: left;">
+<li>T<sub>1</sub></li>
+<li>read_item(X);</li>
+<li>X=X-N;</li>
+<p>   <br></p>
+<li>write_item(X);</li>
+<li>read_item(Y);</li>
+<p>   <br></p>
+<li>Y=Y+N;</li>
+<li>write_item(Y);</li>
+</ul>
+<ul style="width: 40%; float: left; margin-top: 1.5em;">
+<li>T<sub>2</sub></li>
+<p>   <br></p>
+<li>read_item(X);</li>
+<li>X=X+M;</li>
+<p>   <br></p>
+<li>write_item(X);</li>
+</ul>
+<ul style="clear: both;">
+<li>T<sub>1</sub> X update overwritten</li>
+</ul>
+</div></div><div class="slide"><h1>4.1.23. Dirty read (or Temporary update)</h1>
+<div class="slidebody"><ul style="width: 40%; float: left;">
+<li>T<sub>1</sub></li>
+<li>read_item(X);</li>
+<li>X=X-N;</li>
+<li>write_item(X);</li>
+<p>   <br></p>
+<li>&lt;T<sub>1</sub> fails&gt;</li>
+<li>&lt;T<sub>1</sub> rollback&gt;</li>
+<p>   <br></p>
+<li>read_item(X);</li>
+<li>X=X+N;</li>
+<li>write_item(X);</li>
+</ul>
+<ul style="width: 40%; float: left; margin-top: 4.0em;">
+<li>T<sub>2</sub></li>
+<p>   <br></p>
+<li>read_item(X);</li>
+<li>X=X+M;</li>
+<li>write_item(X);</li>
+</ul>
+<ul style="clear: both;">
+<li>T<sub>2</sub> reads temporary incorrect value of X</li>
+</ul>
+</div></div><div class="slide"><h1>4.1.24. Incorrect summary</h1>
+<div class="slidebody"><ul style="width: 40%; float: left; margin-top: 1.0em;">
+<li>T<sub>1</sub></li>
+<p>   <br></p>
+<li>read_item(X);</li>
+<li>X=X-N;</li>
+<li>write_item(X);</li>
+<p>   <br></p>
+<li>read_item(Y);</li>
+<li>Y=Y-N;</li>
+<li>write_item(Y);</li>
+</ul>
+<ul style="width: 40%; float: left;">
+<li>T<sub>2</sub></li>
+<li>sum=0;</li>
+<li>read_item(A)</li>
+<li>sum=sum+A;</li>
+<p>   <br></p>
+<li>read_item(X);</li>
+<li>sum=sum+X;</li>
+<li>read_item(Y);</li>
+<li>sum=sum+Y;</li>
+</ul>
+<ul style="clear: both;">
+<li>T<sub>2</sub> sums after X-N and before Y-N</li>
+</ul>
+</div></div><div class="slide"><h1>4.1.25. Serializability</h1>
+<div class="slidebody"><ul>
+<li>Schedule S is a collection of transactions (T<sub>i</sub>)</li>
+<li>Serial schedule S<sub>1</sub></li>
+<ul>
+<li>Transactions executed one after the other</li>
+<li>Performed in a serial order</li>
+<li>No interleaving</li>
+<li>Commit or abort of active transaction (T<sub>i</sub>) triggers<br />
+         execution of the next (T<sub>i+1</sub>)</li>
+<li>If transactions are independent</li>
+<ul>
+<li>all serial schedules are correct</li>
+</ul>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>4.1.26. Serializability</h1>
+<div class="slidebody"><ul>
+<li>Serial schedules/histories</li>
+<ul>
+<li>No concurrency</li>
+<li>Unfair timeslicing</li>
+</ul>
+<li>Non-serial schedule S<sub>2</sub> of n transactions</li>
+<ul>
+<li>Serializable if</li>
+</ul>
+<li>equivalent to some serial schedule of the same n transactions</li>
+<ul>
+<li>correct</li>
+</ul>
+<li>n! serial schedules, more non-serial</li>
+</ul>
+</div></div><div class="slide"><h1>4.1.27. Distribution</h1>
+<div class="slidebody"><ul>
+<li>DDB, collection of</li>
+<ul>
+<li>multiple logically interrelated databases</li>
+<li>distributed over a computer network</li>
+<li>DDBMS</li>
+</ul>
+<li>Multiprocessor environments</li>
+<ul>
+<li>Shared memory</li>
+<li>Shared disk</li>
+<li>Shared nothing</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>4.1.28. Advantages</h1>
+<div class="slidebody"><ul>
+<li>Distribution transparency</li>
+<ul>
+<li>Multiple transparency levels</li>
+<li>Network</li>
+<li>Location/dept autonomy</li>
+<li>Naming</li>
+<li>Replication</li>
+<li>Fragmentation</li>
+</ul>
+<li>Reliability and availability</li>
+<li>Performance, data localisation</li>
+<li>Expansion</li>
+</ul>
+</div></div><div class="slide"><h1>4.1.29. Fragmentation</h1>
+<div class="slidebody"><ul>
+<li>Breaking the database into</li>
+<ul>
+<li>logical units</li>
+<li>for distribution (DDB design)</li>
+</ul>
+<li>Global directory to keep track/abstract</li>
+<li>Fragmentation schema/allocation schema</li>
+<ul>
+<li>Relational</li>
+<li>Horizontal</li>
+<ul>
+<li>Derived (referential), complete (by union)</li>
+</ul>
+<li>Vertical</li>
+<li>Hybrid</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>4.1.30. Concurrency control in DDBs</h1>
+<div class="slidebody"><ul>
+<li>Multiple copies</li>
+<li>Failure of individual sites (hosts/servers)</li>
+<li>Failure of network/links</li>
+<li>Transaction processing</li>
+<ul>
+<li>Distributed commit</li>
+<li>Deadlock</li>
+</ul>
+<li>Primary/coordinator site - voting</li>
+</ul>
+</div></div><div class="slide"><h1>4.1.31. Distributed commit</h1>
+<div class="slidebody"><ul>
+<li>Coordinator elected</li>
+<li>Coordinator prepares</li>
+<ul>
+<li>writes log to disk, open sockets, sends out queries</li>
+</ul>
+<li>Process</li>
+<ul>
+<li>Coordinator sends ‘Ready-commit’ message</li>
+<li>Peers send back ‘Ready-OK’</li>
+<li>Coordinator sends ‘Commit’ message</li>
+<li>Peers send back ‘Commit-OK’ message</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>4.1.32. Query processing</h1>
+<div class="slidebody"><ul>
+<li>Data transfer costs of query processing</li>
+<ul>
+<li>Local bias</li>
+<li>High remote access cost</li>
+<li>Vast data quantities to build intermediate relations</li>
+</ul>
+<li>Decomposition</li>
+<ul>
+<li>Subqueries resolved locally</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>4.1.33. Concurrency control</h1>
+<div class="slidebody"><ul>
+<li>Must avoid 3+ problems</li>
+<ul>
+<li>Lost update, dirty read, incorrect summary</li>
+<li>Deadlock/livelock - dining example</li>
+</ul>
+<li>Data item granularity</li>
+<li>Solutions</li>
+<ul>
+<li>Protocols, validation</li>
+<li>Locking</li>
+<li>Timestamps</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>4.1.34. Definition of terms</h1>
+<div class="slidebody"><ul>
+<li>Binary (two-state) locks</li>
+<li>locked, unlocked associated with item X</li>
+<li>Mutual exclusion</li>
+<li>Four requirements</li>
+<ul>
+<li>Must lock before access</li>
+<li>Must unlock after all access</li>
+<li>No relocking of already locked</li>
+<li>No unlocking of already unlocked</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>4.1.35. Definition</h1>
+<div class="slidebody"><ul>
+<li>Multiple mode locking</li>
+<li>Read/write locks</li>
+<li>aka. shared/exclusive locks</li>
+<li>Less restrictive (CREW)</li>
+<li>read_lock(X), write_lock(X), unlock(X)</li>
+<ul>
+<li>e.g. acquire read/write_lock</li>
+<li>not reading or writing the lock state</li>
+</ul>
+<p>   <br>
+  </ul>
+</div></div><div class="slide"><h1>4.1.36. Rules of Multimode locks</h1>
+<div class="slidebody"><ul>
+<li>Must hold read/write_lock to read</li>
+<li>Must hold write_lock to write</li>
+<li>Must unlock after all access</li>
+<li>Cannot upgrade/downgrade locks</li>
+<ul>
+<li>Cannot request new lock while holding one</li>
+</ul>
+<li>Upgrading permissable (read lock to write)</li>
+<ul>
+<li>if currently holding sole read access</li>
+</ul>
+<li>Downgrading permissable (write lock to read)</li>
+<ul>
+<li>if currently holding write lock</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>4.2. Concurrency protocols</h1>
+<div class="slidebody"><p>In this lecture we look at...<br />
+[<a href="../../../legacy/sitefiles/lightenna.com/4.2.concproto.pdf">Section notes</a> PDF 37Kb]</p>
+</div></div><div class="slide"><h1>4.2.01. Introduction</h1>
+<div class="slidebody"><ul>
+<li>Concurrency control protocols</li>
+<li>Concurrency techniques</li>
+<ul>
+<li>Locks, Protocols, Timestamps</li>
+<li>Multimode locking with conversion</li>
+</ul>
+<li>Guarenteeing serializability</li>
+<li>Associated cost</li>
+<li>Timestamps and ordering</li>
+</ul>
+</div></div><div class="slide"><h1>4.2.02. Guarenteeing serializability</h1>
+<div class="slidebody"><ul>
+<li>Two phase locking protocol (2PL)</li>
+<ul>
+<li>Growing/expanding</li>
+<ul>
+<li>Acquisition of all locks</li>
+<li>Or upgrading of existing locks</li>
+</ul>
+<li>Shrinking</li>
+<ul>
+<li>Release of locks</li>
+<li>Or downgrading</li>
+</ul>
+<li>Guarentees serializability</li>
+<ul>
+<li>equivalency without checking schedules</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>4.2.03. A typical transaction pair</h1>
+<div class="slidebody"><ul style="width: 40%; float: left;">
+<li>T<sub>1</sub></li>
+<p><br></p>
+<li>read_lock(Y);</li>
+<li>read_item(Y);</li>
+<li>unlock(Y);</li>
+<p><br></p>
+<li>write_lock(X);</li>
+<li>read_item(X);</li>
+<li>X=X+Y;</li>
+<li>write_item(X);</li>
+<li>unlock(X);</li>
+</ul>
+<ul style="width: 40%; float: left;">
+<li>T<sub>2</sub></li>
+<p><br></p>
+<li>read_lock(X);</li>
+<li>read_item(X);</li>
+<li>unlock(X);</li>
+<p><br></p>
+<li>write_lock(Y);</li>
+<li>read_item(Y);</li>
+<li>Y=X+Y;</li>
+<li>write_item(Y);</li>
+<li>unlock(Y);</li>
+</ul>
+<ul style="clear: both;">
+<li>Violates rules of two phase locking</li>
+<li>unlock occurs during locking/expanding phase</li>
+</ul>
+</div></div><div class="slide"><h1>4.2.04. 2PL: Guaranteed serializable</h1>
+<div class="slidebody"><ul style="width: 40%; float: left;">
+<li>T<sub>1</sub></li>
+<p><br></p>
+<li>read_lock(Y);</li>
+<li>read_item(Y);</li>
+<li>write_lock(X);</li>
+<li>unlock(Y);</li>
+<li>read_item(X);</li>
+<li>X=X+Y;</li>
+<li>write_item(X);</li>
+<li>unlock(X);</li>
+</ul>
+<ul style="width: 40%; float: left;">
+<li>T<sub>2</sub></li>
+<p><br></p>
+<li>read_lock(X);</li>
+<li>read_item(X);</li>
+<li>write_lock(Y);</li>
+<li>unlock(X);</li>
+<li>read_item(Y);</li>
+<li>Y=X+Y;</li>
+<li>write_item(Y);</li>
+<li>unlock(Y);</li>
+</ul>
+<ul style="clear: both;">
+<li>Less efficient (cost), but serializable</li>
+</ul>
+</div></div><div class="slide"><h1>4.2.05. Guarantee cost</h1>
+<div class="slidebody"><ul>
+<li>T<sub>2</sub> ends up waiting for read access to X</li>
+<li>Either after T<sub>1</sub> finished</li>
+<ul>
+<li>T<sub>1</sub> cannot release X even though it has finished using it</li>
+<li>Incorrect phase (still expanding)</li>
+</ul>
+<li>Or before T<sub>1</sub> has used it</li>
+<ul>
+<li>T<sub>1</sub> has to claim X during expansion, even if it doesn’t use<br />
+         it until later</li>
+</ul>
+<li>Cost: limits the amount of concurrency</li>
+</ul>
+</div></div><div class="slide"><h1>4.2.06. Alternatives</h1>
+<div class="slidebody"><ul>
+<li>Concurrency control</li>
+<ul>
+<li>Locks limit concurrency</li>
+<ul>
+<li>Busy waiting</li>
+</ul>
+<li>Timestamp ordering (TO)</li>
+<li>Order transaction execution</li>
+<ul>
+<li>for a particular equivalent serial schedule</li>
+<li>of transactions ordered by timestamp value</li>
+<ul>
+<li>Note: difference to lock serial equivalent</li>
+</ul>
+</ul>
+<li>No locks, no deadlock</li>
+</ul>
+</div></div><div class="slide"><h1>4.2.07. Timestamps</h1>
+<div class="slidebody"><ul>
+<li>Unique identifier for transaction (T)</li>
+<li>Assigned in order of submission</li>
+<ul>
+<li>Time</li>
+<ul>
+<li>linear time, current date/sys clock - one per cycle</li>
+</ul>
+<li>Counter</li>
+<ul>
+<li>counter, finite bitspace, wrap-around issues</li>
+</ul>
+<li>Timestamp aka. Transaction start time</li>
+<li>TS(T)</li>
+</ul>
+</div></div><div class="slide"><h1>4.2.08. Timestamping</h1>
+<div class="slidebody"><ul>
+<li>DBMS associates two TS with each item</li>
+<ul>
+     <br><br />
+     <br>
+    </ul>
+<li>Read_TS(X): gets read timestamp of item X</li>
+<ul>
+<li>timestamp of most recent successful read on X</li>
+<li>= TS(T) where T is youngest read transaction</li>
+<p>     <br><br />
+     <br>
+    </ul>
+<li>Write_TS(X): gets write timestamp of item X</li>
+<ul>
+<li>as for read timestamp</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>4.2.09. Timestamping</h1>
+<div class="slidebody"><ul>
+<li>Transaction T issues read_item(X)</li>
+<ul>
+<li>TO algorithm compares TS(T) with Write_TS(X)</li>
+<li>Ensures transaction order execution not violated</li>
+</ul>
+<li>If successful,Write_TS(X) &lt;= TS(T)</li>
+<ul>
+<li>Read_TS(X) = MAX<sub>TS(T), current Read_TS(X)</sub></li>
+</ul>
+<li>If fail,Write_TS(X) &gt; TS(T)</li>
+<ul>
+<li>T aborted, rolled-back and resubmitted with new TS</li>
+<li>Cascading rollback</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>4.2.10. Timestamping</h1>
+<div class="slidebody"><ul>
+<li>Transaction T issues write_item(X)</li>
+<ul>
+<li>TO algorithm compares TS(T) with Read_TS(X) and compares TS(T) with Write_TS(X)</li>
+</ul>
+<li>If successful, op_TS(X) &lt;= TS(T)</li>
+<ul>
+<li>Write_TS(X) = TS(T)</li>
+</ul>
+<li>If fail, op_TS(X) &gt; TS(T)</li>
+<ul>
+<li>T aborted, cascade etc.</li>
+</ul>
+<li>All operations focus on not violating the execution order defined by the timestamp ordering</li>
+</ul>
+</div></div><div class="slide"><h1>4.2.11. Updates</h1>
+<div class="slidebody"><ul>
+<li>Insertion</li>
+<ul>
+<li>2PL: DBMS secures exclusive write-lock</li>
+<li>TOA: op_TS(X) set to TS(creating transaction)</li>
+</ul>
+<li>Deletion</li>
+<ul>
+<li>2PL: as insert</li>
+<li>TOA: waits to ensure later transactions don’t access</li>
+</ul>
+<li>Phantom problem</li>
+<ul>
+<li>Record being inserted matches inclusion conditions</li>
+<li><span style='mso-spacerun:yes'>      </span>of another transaction<br />
+         (e.g. selection by dno=5)</li>
+<li>Locking doesn’t guarantee inclusion <br><br />
+                  (need index locking)</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>5. Real world</h1>
+<div class="slidebody"><p>This is the Real world course theme.</p>
+<p>[<a href="../../../legacy/sitefiles/lightenna.com/5.real_world.pdf">Complete set of notes</a> PDF 206Kb]</p>
+</div></div><div class="slide"><h1>5.1. Web</h1>
+<div class="slidebody"><p>In this lecture we look at...<br />
+[<a href="../../../legacy/sitefiles/lightenna.com/5.1.web.pdf">Section notes</a> PDF 133Kb]</p>
+</div></div><div class="slide"><h1>5.1.01. Databases for the Internet</h1>
+<div class="slidebody"><ul>
+<li>Path from DB to User</li>
+<li>Information flow</li>
+<li>Data formats (OO)</li>
+<li>Format transitions</li>
+<li>Limitations/channel<br>
+<li>The Future</li>
+</ul>
+<p><a href="../../../legacy/sitefiles/lightenna.com/real_world_web_big.jpg"><img src="../../../legacy/sitefiles/lightenna.com/real_world_web.jpg" /></a></p>
+</div></div><div class="slide"><h1>5.1.02. OO</h1>
+<div class="slidebody"><ul>
+<li>Object orientated approach</li>
+<ul>
+<li>Consistent/optimised development model</li>
+<li>Good approximation of real world</li>
+<li>Closer link to mini-world</li>
+</ul>
+<li>Java and PHP</li>
+<li>DB persistence</li>
+<li>UML</li>
+</ul>
+</div></div><div class="slide"><h1>5.1.03. Java and PHP in context</h1>
+<div class="slidebody"><ul>
+<li>Java</li>
+<ul>
+<li>JSP (server-side)</li>
+<li>Javascript (client-side)</li>
+</ul>
+<li>PHP</li>
+<ul>
+<li>Server side only</li>
+</ul>
+<li>JSON or XML</li>
+<ul>
+<li>Object communication</li>
+</ul>
+<li>Ideal scenario</li>
+<ul>
+<li>Java – load times</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>5.1.04. In a perfect world</h1>
+<div class="slidebody"><ul>
+<li>Homogenous data format/data model</li>
+<li>DB stores objects instead</li>
+<li>Objects transferred</li>
+<ul>
+<li>Robust</li>
+<li>Lightweight</li>
+<li>Fast</li>
+<li>Consistent (more later in Transactions)</li>
+<li>Caching</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>5.1.05. In the real world</h1>
+<div class="slidebody"><ul>
+<li>Heterogenous data model</li>
+<li>Object translation/wrappers</li>
+<li>Different languages features at different layers</li>
+<li>Minimal subset of OO functionality available end-to-end</li>
+<li>Going to look at information flow/functionality provided</li>
+</ul>
+</div></div><div class="slide"><h1>5.1.06. User</h1>
+<div class="slidebody"><ul>
+<li>Limitations of being human</li>
+<ul>
+<li>short term memory</li>
+<li>long term familiarity</li>
+</ul>
+<li>language of the Internet</li>
+<ul>
+<li>hypertext linking</li>
+<li>form filling</li>
+</ul>
+<li>Advantages of being human</li>
+<ul>
+<li>impatience, no waiting</li>
+<li>wants instant response</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>5.1.07. Browser</h1>
+<div class="slidebody"><ul>
+<li>Http requests</li>
+<li>Forms</li>
+<ul>
+<li>Post</li>
+<li>Get</li>
+</ul>
+<li>Form fields</li>
+<ul>
+<li>By name, by ID</li>
+<li>Hidden</li>
+</ul>
+<li>Javascript/DOM tree</li>
+</ul>
+</div></div><div class="slide"><h1>5.1.08. Internet</h1>
+<div class="slidebody"><ul>
+<li>Communication medium</li>
+<li>Good for transferring data</li>
+<li>Not good for transforming data</li>
+<li>e.g. Light in air</li>
+<li>e.g. Signal over CAT5e/UTP cable</li>
+</ul>
+</div></div><div class="slide"><h1>5.1.09. Web server</h1>
+<div class="slidebody"><ul>
+<li>Straight HTML pages</li>
+<li>Dynamic HTML pages</li>
+<ul>
+<li>PHP example</li>
+<li>JSP example</li>
+</ul>
+<li>As above with RDBMS integration</li>
+<ul>
+<li>PHP PDO example</li>
+</ul>
+<li>As above with Objects</li>
+<ul>
+<li>PHP DBDO example</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>5.1.10. load, edit, submit, act timeline</h1>
+<div class="slidebody"><p><a href="../../../legacy/sitefiles/lightenna.com/real_world_timeline_big.jpg"><img src="../../../legacy/sitefiles/lightenna.com/real_world_timeline.jpg" /></a></p>
+</div></div><div class="slide"><h1>5.1.11. href click, versus form post</h1>
+<div class="slidebody"><ul>
+<li>Protocol stack</li>
+<li>Basic up-down</li>
+<li>Shortcuts</li>
+<li>Browser cache</li>
+<li>Web server</li>
+<ul>
+<li>assembled page cache</li>
+<li>php object cache</li>
+</ul>
+<li>DB optimised queries</li>
+</ul>
+<p><a href="../../../legacy/sitefiles/lightenna.com/real_world_href_click_big.jpg"><img src="../../../legacy/sitefiles/lightenna.com/real_world_href_click.jpg" /></a></p>
+</div></div><div class="slide"><h1>5.1.12. Examples from the web</h1>
+<div class="slidebody"><ul>
+<li><a href="http://maps.google.co.uk/">Google Maps</a></li>
+<li><a href="http://www.lexus.co.uk/corporate/user_chooser/co2_calculator/calculator.asp">Car selector and Dealer locator</a></li>
+</ul>
+</div></div><div class="slide"><h1>5.2. Decision Support</h1>
+<div class="slidebody"><p>In this lecture we look at...<br />
+[<a href="../../../legacy/sitefiles/lightenna.com/5.2.decision_support.pdf">Section notes</a> PDF 85Kb]</p>
+</div></div><div class="slide"><h1>5.2.01. Introduction</h1>
+<div class="slidebody"><ul>
+<li>Decision support systems (DSS)</li>
+<li>Duplicates of live systems, historical archiving</li>
+<li>Primarily read-only</li>
+<li>Load and refresh operations</li>
+<li>Integrity</li>
+<ul>
+<li>Assumptions about initial data</li>
+</ul>
+<li>Large, indexed, redundancy</li>
+</ul>
+</div></div><div class="slide"><h1>5.2.02. DSS Management</h1>
+<div class="slidebody"><ul>
+<li>Design</li>
+<ul>
+<li>Logical</li>
+<ul>
+<li>Temporal keys, required to distinquish historical data (since:to<br />
+         current &amp; during:within interval)</li>
+</ul>
+<li>Physical (Hash indexes, Bitmap indexes)</li>
+<ul>
+<li>Controlled Redundancy</li>
+</ul>
+<li>Synchronisation/update propogation</li>
+<ul>
+<li>Synchronous (update driven)</li>
+<li>Asynchronous (query driven)</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>5.2.03. Data Preparation</h1>
+<div class="slidebody"><ul>
+<li>Extract</li>
+<ul>
+<li>pulling from live database system(s)</li>
+</ul>
+<li>Cleansing</li>
+<li>Transformation and Consolidation</li>
+<ul>
+<li>migrating from live or legacy system design <br><br />
+                  to DSS design</li>
+</ul>
+<li>Load (DSS live/query-able)</li>
+<li>Refresh (latest update)</li>
+</ul>
+</div></div><div class="slide"><h1>5.2.04. Querying</h1>
+<div class="slidebody"><ul>
+<li>Boolean expression complexity</li>
+<ul>
+<li>heavy WHERE clauses</li>
+</ul>
+<li>Join complexity</li>
+<ul>
+<li>Normalised databases, many tables</li>
+<li>Facts distributed across tables</li>
+<li>Joins required to answer complex questions</li>
+</ul>
+<li>Function and Analytic complexity</li>
+<ul>
+<li>Often require non-DBMS functions</li>
+<li>Smaller queries with interleaved code</li>
+</ul>
+<p>   <br>
+  </ul>
+</div></div><div class="slide"><h1>5.2.05. Data Warehouse</h1>
+<div class="slidebody"><ul>
+<li>Specific example of DSS</li>
+<li>Subject-orientated</li>
+<ul>
+<li>e.g. customers/products</li>
+</ul>
+<li>Non-volatile</li>
+<ul>
+<li>once inserted, items cannot be updated</li>
+</ul>
+<li>Time variant</li>
+<ul>
+<li>Temporal keys</li>
+</ul>
+<li>Accuracy and granularity issues</li>
+</ul>
+</div></div><div class="slide"><h1>5.2.06. DB Company organisation</h1>
+<div class="slidebody"><ul>
+<li>By example</li>
+</ul>
+<p><a href="../../../legacy/sitefiles/lightenna.com/real_world_company_big.jpg"><img src="../../../legacy/sitefiles/lightenna.com/real_world_company.jpg" /></a></p>
+</div></div><div class="slide"><h1>5.2.07. Dimensional Schema</h1>
+<div class="slidebody"><ul>
+<li>Consider product, customer, sales data</li>
+<li>Each sale represents a specific event</li>
+<ul>
+<li>when a product was purchased</li>
+<li>when a customer bought something</li>
+<li>when a sale was recorded</li>
+</ul>
+<li>Each can be thought of as an axis<br><br />
+              or dimension (3D)</li>
+<li>Each occurred at a moment in time (4D)</li>
+</ul>
+</div></div><div class="slide"><h1>5.2.08. Star schemae and Hypercubes</h1>
+<div class="slidebody"><ul>
+<li>Data centralised in ‘fact’ table</li>
+<li>Referencing creates star pattern</li>
+<li>Dimensions as satellite tables</li>
+<li>Normalising creates snowflake schema</li>
+</ul>
+<p><a href="../../../legacy/sitefiles/lightenna.com/real_world_star_schemae_big.png"><img src="../../../legacy/sitefiles/lightenna.com/real_world_star_schemae.png" /></a></p>
+</div></div><div class="slide"><h1>5.2.09. Hypercubes</h1>
+<div class="slidebody"><ul>
+<li>Hypercube is also a multi-processor topology inspired by a 4D shape</li>
+<li>Used by Intel’s iPSC/2</li>
+<li>Good at certain database operations</li>
+<li>e.g. Duplicate removal</li>
+<li>MIMD</li>
+</ul>
+<p><img src="../../../legacy/sitefiles/lightenna.com/real_world_hypercube.png" /></p>
+</div></div>
+</div>
+
+</body>
+</html>

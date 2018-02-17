@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>1.3. Joins</title>
+<base href="" />
+<meta name="generator" content="Drupal S5 Book Export" />
+<meta name="version" content="S5 1.1" />
+<meta name="presdate" content="(c) 2004-2007 Lightenna Ltd." />
+<meta name="author" content="" />
+<meta name="company" content="Lightenna Ltd." />
+<meta name="defaultView" content="slideshow" />
+<meta name="controlVis" content="hidden" />
+<link rel="stylesheet" href="../../../legacy/misc/s5/lightenna/slides.css" type="text/css" media="projection" id="slideProj" />
+<link rel="stylesheet" href="../../../legacy/misc/s5/default/outline.css" type="text/css" media="screen" id="outlineStyle" />
+<link rel="stylesheet" href="../../../legacy/misc/s5/default/print.css" type="text/css" media="print" id="slidePrint" />
+<link rel="stylesheet" href="../../../legacy/misc/s5/default/opera.css" type="text/css" media="projection" id="operaFix" />
+<script src="../../../legacy/misc/s5/default/slides.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="layout">
+<div id="controls"></div>
+<div id="currentSlide"></div>
+<div id="header"></div>
+<div id="footer"><h1>Database Training Course</h1><h2>1.3. Joins</h2></div>
+</div>
+
+<div class="presentation">
+<div class="slide"><h1>1.3. Joins</h1>
+<div class="slidebody"><p>In this lecture we look at...<br />
+[<a href="../../../legacy/sitefiles/lightenna.com/1.3.joins.pdf">Section notes</a> PDF 233Kb].</p>
+</div></div><div class="slide"><h1>1.3.01. Introduction</h1>
+<div class="slidebody"><ul>
+<li>Recap: pulling data out of individual relations</li>
+<ul>
+<li>By row, by column</li>
+<li>Select and project</li>
+</ul>
+<li>Access across multiple relations</li>
+<li>Miniworld approximation</li>
+<ul>
+<li>Fragmenting entities by cardinality</li>
+<li>Tuples as entity fragments</li>
+<li>Relationships within relations</li>
+</ul>
+<li>Joins</li>
+<li>Join types (condition and unmatched)</li>
+</ul>
+</div></div><div class="slide"><h1>1.3.02. Access across relations</h1>
+<div class="slidebody"><ul>
+<li>Relational model allows multiple relations to exist within one database schema</li>
+<li>Relations can be accessed individually or together (joins).</li>
+<li>Referential integrity</li>
+<ul>
+<li>Relations relating</li>
+</ul>
+<li>Pulling data out of single relations</li>
+<ul>
+<li>Select and project</li>
+</ul>
+<li>Pulling related data out of</li>
+<ul>
+<li>Multiple relations using Join</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>1.3.03. Miniworld approximation</h1>
+<div class="slidebody"><ul>
+<li>Universe of Discourse, or Miniworld</li>
+<li>Miniworld is an incomplete model of the real world</li>
+<li>The relational data model as a model for the miniworld</li>
+<li>Approximation</li>
+<ul>
+<li>Separate and distinct entities</li>
+<li>Single complex entities</li>
+<li>Separate related entities</li>
+<li>Cardinality of relationships</li>
+</ul>
+<li>Each relation made up of attributes</li>
+<li>Values can be used as references</li>
+</ul>
+</div></div><div class="slide"><h1>1.3.04. Pointing mechanism</h1>
+<div class="slidebody"><ul>
+<li>Relation has a Primary key</li>
+<li>Tuple contains Primary key value</li>
+<li>Foreign keys</li>
+<ul>
+<li>Tuples can contain a reference to another relation's Primary key</li>
+</ul>
+<li>Just numbers</li>
+</ul>
+<p><img src="../../../legacy/sitefiles/lightenna.com/relational-foreign-key.gif" alt="Relational model foreign key example" /></p>
+<p>One number identifies a single tuple in one relation (local), one number identifies a single tuple in another relation (foreign).</p>
+</div></div><div class="slide"><h1>1.3.04b. Pointing mechanism example in C</h1>
+<div class="slidebody"><ul>
+<li>C programming language</li>
+<li>Memory addresses, or pointers<br />
+<pre>
+int a=0;
+int b=0;
+a = &b;
+</pre></li>
+<li>a points to b</li>
+</ul>
+<p><img src="../../../legacy/sitefiles/lightenna.com/relational-foreign-key-c-example.gif" alt="relational foreign key C programming example" /></p>
+<p>In databases, typically done with unique identifiers (IDs) rather than memory addresses.</p>
+</div></div><div class="slide"><h1>1.3.04c. Pointing mechanism with structures</h1>
+<div class="slidebody"><ul>
+<li>Foreign key importing<br />
+<pre>
+typedef struct car
+{
+  int ID;
+  char[] make;
+  char[] model;
+  char[] derivative;
+  int optionID;
+} car;
+
+typedef struct option
+{
+  int ID;
+  char[] name;
+  int price;
+} option;
+
+car c;
+option o;
+//...data structure populating
+c.optionID = o.ID;
+</pre></li>
+</ul>
+<p><img src="../../../legacy/sitefiles/lightenna.com/relational-foreign-key-c-structures.gif" alt="Relational foreign key example in C with Structures" /></p>
+</div></div><div class="slide"><h1>1.3.05. Relational cardinality</h1>
+<div class="slidebody"><ul>
+<li>1:0 relationships</li>
+<ul>
+<li>Single entity</li>
+<li>Uniquely indentifiable</li>
+<li>Candidate keys</li>
+<li>Primary Key</li>
+</ul>
+<li>1:1 relationships</li>
+<ul>
+<li>Two entities, A and B</li>
+<li>1 A relates to 1 B and vice versa</li>
+</ul>
+<li>1:N relationships</li>
+<li>M:N relationships</li>
+</ul>
+</div></div><div class="slide"><h1>1.3.06. Relationships in the relational model</h1>
+<div class="slidebody"><ul>
+<li>Two relations, A and B</li>
+<li>A side, B side, 1 side, N side</li>
+<li>1:1 relationships</li>
+<ul>
+<li>Key can go on either side</li>
+</ul>
+</ul>
+<p><img src="../../../legacy/sitefiles/lightenna.com/relational-foreign-key-relationship-1-1.gif" alt="Relational model 1 to 1 relationships" /></p>
+<ul>
+<li>1:N relationships</li>
+<li>Key cannot go on 1 side</li>
+<li>Has to go on N side</li>
+</ul>
+</ul>
+<p><img src="../../../legacy/sitefiles/lightenna.com/relational-foreign-key-relationship-1-N.gif" alt="Relational model 1 to N relationships" /></p>
+<ul>
+<li>M:N relationships</li>
+<ul>
+<li>Nowhere obvious for the key to go</li>
+<li>Create new pairing relation</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>1.3.07. Joins</h1>
+<div class="slidebody"><ul>
+<li>Phase change, different point in lifecycle</li>
+<li>Join operation</li>
+<ul>
+<li>Combines related tuples, conditionally</li>
+<li>From two relations</li>
+<li>Into single tuples</li>
+</ul>
+<li>Allows processing of relationships</li>
+<li>Among multiple relations</li>
+</ul>
+</div></div><div class="slide"><h1>1.3.08. Joins, canonical algebraic form</h1>
+<div class="slidebody"><ul>
+<li>Conditional (on join condition)</li>
+<ul>
+<li>Only combines tuples where true</li>
+</ul>
+<li>Cartesian product (conditionless)</li>
+<ul>
+<li>example of conditionless join</li>
+<li>all tuples combined</li>
+<li>R &#8904;<sub>true</sub> S</li>
+</ul>
+<li>&#8904;, Binary operator<br />e.g. R &#8904;<sub>&lt;join_condition&gt;</sub> S</li>
+</ul>
+</div></div><div class="slide"><h1>1.3.09. Join equivalence</h1>
+<div class="slidebody"><ul>
+<li>Equivalent to sequence</li>
+<ul>
+<li>Cartesian product (X)</li>
+<li>followed by Selection (<font face=Symbol>s</font>)</li>
+</ul>
+<li>ACTUAL_DEPENDENTS =<br />
+<font face=Symbol>s</font><font face=Arial><sub>SSN=ESSN</sub>(EMPNAMES X DEPENDENT)</font></li>
+<li>or</li>
+<li>ACTUAL_DEPENDENTS =<br />EMPNAMES &#8904; <sub>SSN=ESSN</sub>(DEPENDENT)</li>
+</ul>
+</div></div><div class="slide"><h1>1.3.10. Join types (condition)</h1>
+<div class="slidebody"><ul>
+<li>Theta: A<sub>i</sub> <font face=Symbol>q</font><font face=Arial> B<sub>j</sub><br />
+       (A from R, B from S)</font></li>
+<ul>
+<li><font face=Symbol>q</font><font face=Arial> is comparison operator<br />
+         =,&lt;,&gt;,!=,&gt;=</font></li>
+<li>A<sub>i</sub> and B<sub>j </sub>share the same domain</li>
+</ul>
+<li>Equi: A<sub>i</sub> = B<sub>j</sub></li>
+<ul>
+<li>Theta join where <font face=Symbol>q</font><font face=Arial> is =</font></li>
+</ul>
+<li>Natural: A<sub>i</sub> and B<sub>j</sub> are the same attribute</li>
+<ul>
+<li>in two separate relations (name and domain)</li>
+<li>* denotes natural join</li>
+<li>e.g. EMPNAMES * DEPENDENTS</li>
+</ul>
+</ul>
+<p><img src="../../../legacy/sitefiles/lightenna.com/relation-join-equijoin.gif" alt="Relational join example, equijoin" /></p>
+</div></div><div class="slide"><h1>1.3.11. Join types (inner and outer)</h1>
+<div class="slidebody"><ul>
+<li>Inner joins</li>
+<ul>
+<li>not the only joins</li>
+<li>eliminate tuples without a matching counterpart</li>
+<li>i.e. tuples with a null value for the join attribute are discarded</li>
+</ul>
+</ul>
+<p><img src="../../../legacy/sitefiles/lightenna.com/relation-inner-join-demonstration.gif" alt="Relational Inner join demonstration" /></p>
+</div></div><div class="slide"><h1>1.3.12. Outer joins</h1>
+<div class="slidebody"><ul>
+<li>Outer joins control what's discarded</li>
+<ul>
+<li>Keep unmatched tuples in either</li>
+<ul>
+<li>Left, right, or both relations</li>
+<li>Left, right of full outer join correspondingly</li>
+</ul>
+</ul>
+<p><img src="../../../legacy/sitefiles/lightenna.com/relation-outer-join-demonstration.gif" alt="Relational demonstration of Outer joins" /></p>
+</div></div>
+</div>
+
+</body>
+</html>

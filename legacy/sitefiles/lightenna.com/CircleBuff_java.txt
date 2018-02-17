@@ -1,0 +1,67 @@
+import java.io.*;
+import java.util.*;
+
+public class CircleBuff
+{
+   public CircleBuff( int n)
+   {
+      maxsize = n;
+      pos = new int[n];
+      invalidate();
+   }
+   
+   public void add( int position)
+   {
+      pos[nfs] = position;
+      nfs = (nfs+1)%maxsize;
+      if (currentsize++>maxsize) currentsize = maxsize;
+   }
+   
+   public int getSize()
+   {
+      return(currentsize);
+   }
+   
+   public int get( int offset)
+   {
+      int posset = 0-offset;
+      if (posset > currentsize)
+         return(UNFILLED);
+      return(pos[(nfs+(maxsize+offset))%maxsize]);
+   }
+   
+   public void invalidate()
+   {
+      for (int i=0 ; i<maxsize ; ++i)
+         pos[i] = UNFILLED;
+      currentsize = 0;
+      nfs = 0;
+   }
+   
+   public String toString()
+   {
+      String s = "";
+      for (int i=0 ; i<maxsize ; ++i)
+         s += i+"["+pos[i]+"] ";
+      return(s);
+   }
+   
+   private int maxsize;
+   private int currentsize;
+   private int nfs; // next free slot
+   private int[] pos;
+   
+   static final int UNFILLED = -65535;
+   
+   public static void main( String args[])
+   {
+      CircleBuff nt = new CircleBuff(3);
+      nt.add(10);
+      nt.add(20);
+      nt.add(30);
+      nt.add(40); // over-writes 10
+      System.out.println(nt);
+      System.out.println("-1["+nt.get(-1)+"], -2["+nt.get(-2)+"], -3["+nt.get(-3)+"], -4["+nt.get(-4)+"]");
+   }
+}
+

@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>3.1. Functional Dependency</title>
+<base href="" />
+<meta name="generator" content="Drupal S5 Book Export" />
+<meta name="version" content="S5 1.1" />
+<meta name="presdate" content="(c) 2004-2007 Lightenna Ltd." />
+<meta name="author" content="" />
+<meta name="company" content="Lightenna Ltd." />
+<meta name="defaultView" content="slideshow" />
+<meta name="controlVis" content="hidden" />
+<link rel="stylesheet" href="../../../legacy/misc/s5/lightenna/slides.css" type="text/css" media="projection" id="slideProj" />
+<link rel="stylesheet" href="../../../legacy/misc/s5/default/outline.css" type="text/css" media="screen" id="outlineStyle" />
+<link rel="stylesheet" href="../../../legacy/misc/s5/default/print.css" type="text/css" media="print" id="slidePrint" />
+<link rel="stylesheet" href="../../../legacy/misc/s5/default/opera.css" type="text/css" media="projection" id="operaFix" />
+<script src="../../../legacy/misc/s5/default/slides.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="layout">
+<div id="controls"></div>
+<div id="currentSlide"></div>
+<div id="header"></div>
+<div id="footer"><h1>Database Training Course</h1><h2>3.1. Functional Dependency</h2></div>
+</div>
+
+<div class="presentation">
+<div class="slide"><h1>3.1. Functional Dependency</h1>
+<div class="slidebody"><p>In this lecture we look at...<br />
+[<a href="../../../legacy/sitefiles/lightenna.com/3.1.functional_dependency.pdf">Section notes</a> PDF 48Kb]</p>
+</div></div><div class="slide"><h1>3.1.01. Introduction</h1>
+<div class="slidebody"><ul>
+<li>What is relational design?</li>
+<ul>
+<li>Notion of attribute distribution</li>
+<li>Conceptual-level optimisation</li>
+</ul>
+<li>How do we asses the quality of a design?</li>
+</ul>
+</div></div><div class="slide"><h1>3.1.02. Value in design</h1>
+<div class="slidebody"><ul>
+<li>Allocated arbitrarily by DBD under ER/EER</li>
+<li>Goodness at</li>
+<ul>
+<li>Internal/storage level (base relations only)</li>
+<ul>
+<li>Reducing nulls - obvious storage benefits /frequent</li>
+<li>Reducing redundancy - for efficient storage/anomalies</li>
+</ul>
+<li>Conceptual level</li>
+<ul>
+<li>Semantics of the attributes /single entity:relation</li>
+<li>No spurious tuple generation /no match Attr,-PK/FK</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.1.03. Initial state</h1>
+<div class="slidebody"><ul>
+<li>Database design</li>
+<li>Universal relation</li>
+<ul>
+<li>R = {A<sub>1</sub>, A<sub>2</sub>, …, A<sub>n</sub>}</li>
+<li>Set of functional dependencies F</li>
+</ul>
+<li>Decompose R using F to</li>
+<ul>
+<li>D = {R<sub>1</sub>, R<sub>2</sub>, …, R<sub>n</sub>}</li>
+<li>D is a decomposition of R under F</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.1.05. Aims</h1>
+<div class="slidebody"><ul>
+<li>Attribute preservation</li>
+<ul>
+<li>Union of all decomposed relations = original</li>
+</ul>
+<li>Lossless/non-additive join</li>
+<ul>
+<li>For every extension, total join of r(R<sub>i</sub>) yeilds r(R)</li>
+<li>no spurious/erroneous tuples</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.1.06. Aims (preservation)</h1>
+<div class="slidebody"><ul>
+<li>Dependency preservation</li>
+<ul>
+<li>Constraints on the database</li>
+<ul>
+<li>X -&gt; Y in F of R, appears directly in R<sub>i</sub></li>
+</ul>
+<li>Attributes X and Y all contained in R<sub>i</sub></li>
+<li>Each relation R<sub>i</sub> in 3NF</li>
+</ul>
+<li>But what's a dependency?</li>
+</ul>
+</div></div><div class="slide"><h1>3.1.07. Functional dependency</h1>
+<div class="slidebody"><ul>
+<li>Constraint between two sets of attributes</li>
+<ul>
+<li>Formal method for grouping attributes</li>
+</ul>
+<li>DB as one single universal relation/-literal</li>
+<ul>
+<li>R = {A<sub>1</sub>,A<sub>2</sub>,…,A<sub>n</sub>}</li>
+<li>Two sets of attributes, X subset R,Y subset R</li>
+</ul>
+<li>Functional dependency (FD or f.d.) X -&gt; Y</li>
+<li>If t<sub>1</sub>[X] = t<sub>2</sub>[X], then t<sub>1</sub>[Y] = t<sub>2</sub>[Y]</li>
+<ul>
+<li>Values of the Y attribute depend on value of X</li>
+<li>X functionally determines Y, not reverse necessarily</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.1.08. Dependency derivation</h1>
+<div class="slidebody"><ul>
+<li>Rules of inference</li>
+<li>reflexive: if X implies Y then  X -&gt; Y</li>
+<li>augment:  {X -&gt; Y} then XZ -&gt; YZ</li>
+<li>transitive: {X -&gt; Y,Y -&gt; Z} then X -&gt; Z</li>
+<li>Armstrong demonstrated complete for closures</li>
+</ul>
+</div></div><div class="slide"><h1>3.1.09. Functional dependency</h1>
+<div class="slidebody"><ul>
+<li>If X is a key (primary and/or candidate)</li>
+<ul>
+<li>All tuples t<sub>i</sub> have a unique value for X</li>
+<li>No two tuples (t<sub>1</sub>,t<sub>2</sub>) share a value of X</li>
+</ul>
+<li>Therefore X -&gt; Y</li>
+<ul>
+<li>For any subset of attributes Y</li>
+</ul>
+<li>Examples</li>
+<ul>
+<li>SSN -&gt; {Fname, Minit, Lname}</li>
+<li>{Country of issue, Driving license no} -&gt; SSN</li>
+<li>Mobile area code -&gt; Mobile<br />
+         network (not anymore)</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.1.10. Process</h1>
+<div class="slidebody"><ul>
+<li>Typically start with set of f.d., F</li>
+<ul>
+<li>determined from semantics of attributes</li>
+</ul>
+<li>Then use IR1,2,3 to infer additional f.d.s</li>
+<li>Determine left hand sides (Xs)</li>
+<ul>
+<li>Then determine all attributes dependent on X</li>
+</ul>
+<li>For each set of attributes X,</li>
+<ul>
+<li>determine X+ :the set of attributes f.d'ed by X on F</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.1.11. Algorithm</h1>
+<div class="slidebody"><ul>
+<li>Compute the closure of X under F: X+</li>
+<ul>
+<li>xplus = x;</li>
+<li>do</li>
+<ul>
+<li>oldxplus = xplus;</li>
+<li>for (each f.d. Y -&gt; Z in F)</li>
+<ul>
+<li>if (xplus implies Y) then</li>
+<li>xplus = xplus union Z;</li>
+</ul>
+</ul>
+<li>while (xplus != oldxplus);</li>
+</ul>
+</div></div><div class="slide"><h1>3.1.12. Function dependency</h1>
+<div class="slidebody"><ul>
+<li>Consider a relation schema R(A,B,C,D) and a set F of functional dependencies</li>
+<ul>
+<li>Aim to find all keys (minimal superkeys),</li>
+<li>by determining closures of all possible X subsets of R’s attributes, e.g.</li>
+<ul>
+<li>A+, B+, C+, D+,</li>
+<li>AB+, AC+, AD+, BC+, BD+, CD+</li>
+<li>ABC+, ABD+, BCD+</li>
+<li>ABCD+</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.1.13. Worked example</h1>
+<div class="slidebody"><ul>
+<li>Let R be a relational schema R(A, B, C, D)</li>
+<li>Simple set of f.d.s</li>
+<li>AB -&gt; C, C -&gt; D, D -&gt; A</li>
+<li>Calculate singletons</li>
+<ul>
+<li>A+, B+, C+, D+,</li>
+</ul>
+<li>Pairs</li>
+<ul>
+<li>AB+, AC+,…</li>
+</ul>
+<li>Triples</li>
+<ul>
+<li>and so on</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.1.14. Worked example</h1>
+<div class="slidebody"><ul>
+<li>Compute sets of closures</li>
+<ul>
+<li>AB -&gt; C, C -&gt; D, D -&gt; A</li>
+</ul>
+<li>1.Singletons</li>
+<ul>
+<li>A+ -&gt; A</li>
+<li>B+ -&gt; B</li>
+<li>C+ -&gt; CDA</li>
+<li>D+ -&gt; AD</li>
+</ul>
+<li>Question: are any singletons superkeys?</li>
+</ul>
+</div></div><div class="slide"><h1>3.1.15. F.d. closure example</h1>
+<div class="slidebody"><ul>
+<li>2.Pairs (note commutative)</li>
+<ul>
+<li>AB+ -&gt; ABCD</li>
+<li>AC+ -&gt; ACD</li>
+<li>AD+ -&gt; AD</li>
+<li>BC+ -&gt; ABCD</li>
+<li>BD+ -&gt; ABCD</li>
+<li>CD+ -&gt; ACD</li>
+</ul>
+<li>Superkeys?</li>
+</ul>
+</div></div><div class="slide"><h1>3.1.16. F.d. closure example</h1>
+<div class="slidebody"><ul>
+<li>3.Triples</li>
+<ul>
+<li>ABC+ -&gt; ABCD</li>
+<li>ABD+ -&gt; ABCD</li>
+<li>BCD+ -&gt; ABCD</li>
+</ul>
+<li>Superkeys? Minimal superkeys (keys)?</li>
+<ul>
+    </ul>
+<li>4.Quadruples</li>
+<ul>
+<li>ABCD+ -&gt; ABCD</li>
+</ul>
+</ul>
+</div></div><div class="slide"><h1>3.1.17. F.d. closure summary</h1>
+<div class="slidebody"><ul>
+<li>Superkeys:</li>
+<ul>
+<li>AB, BC, BD, ABC, ABD, BCD, ABCD</li>
+</ul>
+<li>Minimal superkeys (keys)</li>
+<ul>
+<li>AB, BC, BD</li>
+</ul>
+</div></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,492 @@
+
+/* Site-wide fonts */
+body {	
+	font-family: verdana, arial, helvetica, sans-serif;
+}
+
+h2, h3, h4, h5 {	
+	font-family: verdana, arial, helvetica, sans-serif;
+}
+
+/* Font colour and alignment */
+body {
+	background-color: #333333;
+	color: #535355;
+}
+
+h2 {
+	color: #666666;
+	font-size: 150%;
+	font-weight: bold;
+	padding: 0 0 8px 0;
+}
+
+h3 {
+	color: #666666;
+	font-size: 100%;
+	font-weight: bold;
+}
+
+h4 {
+	color: #06477F;
+	font-size: 110%;
+	font-weight: bold;
+}
+
+h5 {
+	color: #3F383A;
+	font-size: 110%;
+	font-weight: bold;
+}
+
+.general-page a {
+	color: #666666 !important;
+	font-weight: bold;
+}
+
+/* Layout */
+#container {
+	width: 920px;
+	background-color: #FFFFFF;
+	padding: 0;
+	margin: 0 auto 0 auto;
+}
+
+#inner_container {
+	padding: 0 0 0 0;
+	border-color: #FFCC00;
+	border-width: 2px;
+	border-style: none solid none solid;
+}
+
+#lower_container {
+	
+}
+
+div.general-page {
+	padding-right: 50px;
+	padding-bottom: 10px;
+	min-height: 300px;
+}
+
+div.with-sidebar-right {
+	padding-right: 150px;
+}
+
+#header {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+#header div.block {
+	float: left;
+}
+
+div.sidebar {
+	padding: 20px 0 0 0;
+	margin: 0;
+}
+
+#sidebar-left {
+	width: 246px;
+	float: left;
+}
+
+#sidebar-left div.block {
+	margin: 0 0 20px 20px;
+}
+
+#sidebar-left h3 {
+	padding-bottom: 7px;
+}
+
+/**
+ * Option: have a faint background image on content pane
+ * 
+#center {
+	float: right;
+	width: 670px;
+	background-image: url("./images/contentback.jpg");
+	background-repeat: no-repeat;
+	background-position: bottom right;
+}
+ *
+ */
+
+#center {
+	float: right;
+	width: 670px;
+}
+
+#center div.content {
+
+}
+
+#center div.content ul {
+	margin-left: 2.0em;
+}
+
+#center div.content ul li {
+	margin-top: 1.0em;
+}
+
+#center div.node {
+
+}
+
+#sidebar-right {
+	float: right;
+	width: 150px;
+}
+
+#sidebar-right h3 {
+	margin-bottom: 5px;
+}
+
+#sidebar-right img {
+	margin-bottom: 6px;
+}
+
+#footer {
+	color: #AAAAAA;
+	clear: both;
+	background-color: #DBE0E3;
+	height: 56px;
+	width: 100%;
+	font-size: 10px;
+	text-align: left;
+}
+
+#footer p {
+	float: left;
+	margin: 5px 10px 0 10px;
+}
+
+/* magic clearing stuff */
+.clearFloats {
+	clear: both;
+}
+
+div.clearFloats {
+	height: 0px;
+	overflow: hidden;
+}
+
+/* banner */
+#banner {
+	width: 775px;
+	height: 208px;
+	padding: 50px 360px 0 60px;
+	width: 355px;
+	height: 158px;
+	margin-bottom: 25px;
+}
+
+#banner h2 {
+	color: #D95084;
+	font-size: 14px;
+	margin-bottom: 2px;
+}
+
+#banner h3 {
+	font-size: 25px;
+	color: #ffffff;
+	font-weight: normal;
+	margin: 0;
+}
+
+#banner p {
+	color: #B1AFB0;
+	line-height: 14px;
+}
+
+#banner a {
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.breadcrumb {
+	float: right;
+	width: 300px;
+	text-align: right;
+	margin-right: 50px;
+}
+
+a.more {
+	margin-bottom: 30px;
+	display: block;
+}
+
+
+/* Menus */
+div.lightmenu {
+	overflow: hidden;
+	float: left;
+	padding: 0;
+}
+
+#topmenu {
+	background-image: url("images/menu_unselected.jpg");
+	background-repeat: repeat-x;
+	background-position: 0 0;
+	width: 697px;
+	height: 46px;
+}
+
+div.lightmenu #inner {
+	margin: 0;
+}
+
+#topmenu #inner {
+	background-image: none;
+	background-repeat: no-repeat;
+	background-position: 100% 0;
+	height: 46px;
+}
+
+div.lightmenu #menulist {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+div.lightmenu #menulist li {
+	display: block;
+	margin: 0px;
+	float: left;
+	text-align: center;
+}
+
+#topmenu #menulist {
+	height: 46px;
+}
+
+#topmenu #menulist li {
+	padding: 10px 0 0 0;
+	height: 36px;
+}
+
+#topmenu #menulist li.selected {
+	background-image: url("images/menu_selected.jpg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+#topmenu #menulist li.selected a {
+	background-image: url("images/menu_selected-right.jpg");
+	background-repeat: no-repeat;
+	background-position: right -10px;
+}
+
+div.lightmenu #menulist li a {
+	display: block;
+	white-space: nowrap;
+}
+
+#topmenu #menulist li a {
+	border-color: #000000 #000000 #000000 #333333;
+	border-style: none none none none;
+	border-width: 1px;
+	height: 26px;
+	padding: 10px 20px 0 20px;
+	font-weight: bold;
+	font-size: 85%;
+	color: #ffffff;
+}
+
+#bottommenu #menulist li a {
+	border-color: #000000 #000000 #000000 #AAAAAA;
+	border-style: none none none solid;
+	border-width: 1px;
+	padding: 5px 10px 0 20px;
+	color: #AAAAAA;
+}
+
+/* first and last menu items */
+#menulist li.first a {
+	border-style: none none none none;
+}
+
+#menulist li.last a {
+	border-style: none none none none;
+}
+
+#menulist li a.active {
+}
+
+/*** logo styles ***/
+img.logo {
+	vertical-align: bottom;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+/*** image alignment in body fields ***/
+span.left {
+	margin-right: 15px;
+	float: left;
+}
+
+span.right {
+	margin-left: 15px;
+	float: right;
+}
+
+/* Override Drupal menu styles */
+ul.menu li, .item-list ul li, li.leaf {
+    background: none;
+}
+
+/*** Contact us button ***/
+p.button-contact {
+	padding: 14px 0 10px 52px;
+	background-image: url("images/button-contact.jpg");
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+
+/*** Form/editing styles ***/
+div.imagefield-edit-preview {
+	display: none;
+}
+
+div.imagefield-edit-image-detail {
+	margin-left: 10px;
+	width: 500px;
+}
+
+div.imagefield-edit-image-flags div.form-item {
+	margin: 0;
+}
+
+input#edit-field-images-0-flags-delete {
+	margin-bottom: 0px;
+}
+
+html.js .resizable-textarea textarea {
+	width: 374px;
+}
+
+/*
+ *  Block: Summary box
+ */
+.block_mid div.summary, .block_mid div.summary_progress {
+	background-color: #4E4E4E;
+	background-image: url("images/summary.jpg");
+	background-repeat: no-repeat;
+	width: 261px;
+	color: #FFFFFF;
+	padding: 0 5px 0 10px;
+}
+
+.block_mid div.summary {
+	background-position: 0 0;
+	height: 320px;
+}
+
+.block_mid div.summary_progress {
+	background-position: 0 -100px;
+	height: 40px;
+}
+
+.block_mid div.summary h3 {
+	font-size: 240%;
+	font-weight: normal;
+	line-height: normal;
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
+
+.block_mid div.summary h4 {
+	font-size: 170%;
+	font-weight: normal;
+	line-height: normal;
+	color: #FFCC00;
+	text-transform: uppercase;
+}
+
+.block_mid div.summary img {
+	margin: 0 -5px 0 -10px;
+}
+
+div.summary-visible {
+	display: block;
+}
+
+div.summary-invisible {
+	display: none;
+}
+
+div.summary_progress_bar {
+	background-color: #FFCC00;
+	height: 2px;
+	line-height: 2px;
+	padding: 0;
+	margin: 0;
+	width: 0;
+}
+
+div.summary_progress p {
+	display: inline;
+	float: left;
+	margin-right: 10px;
+}
+
+div.summary_progress p a, div.summary_progress p a:active, div.summary_progress p a:hover, div.summary_progress p a:link, div.summary_progress p a:visited {
+	color: #FFCC00;
+}
+
+/*
+ *  Right hand skyscraper
+ */
+
+img.rightsky {
+	margin: 0 -50px 0 20px;
+}
+
+/*
+ *  Page: Recent work
+ */
+li.recent {
+  margin-bottom: 1.2em;
+  line-height: 1.4em;
+}
+
+p.recent-left
+{
+  width: 460px;
+  min-height: 70px;
+}
+
+img.recent-right
+{
+  float: right;
+  padding: 0;
+  margin: -80px 0 0 0;
+}
+
+br.recent { }
+
+/* Slides: Book navigation */
+
+.book-navigation .menu, .book-navigation .page-links
+{
+	border-top: none !important;
+	border-bottom: none !important;
+}
+
+/* Slides: common styles */
+
+.bulletless
+{
+	list-style: none;
+}
+
+
+/* Home page */
+
+p#left-da {
+	margin: 0 0 0 40px;
+}
