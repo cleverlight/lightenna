@@ -13,11 +13,11 @@
 <meta name="company" content="Lightenna Ltd." />
 <meta name="defaultView" content="slideshow" />
 <meta name="controlVis" content="hidden" />
-<link rel="stylesheet" href="../../../legacy/misc/s5/lightenna/slides.css" type="text/css" media="projection" id="slideProj" />
-<link rel="stylesheet" href="../../../legacy/misc/s5/default/outline.css" type="text/css" media="screen" id="outlineStyle" />
-<link rel="stylesheet" href="../../../legacy/misc/s5/default/print.css" type="text/css" media="print" id="slidePrint" />
-<link rel="stylesheet" href="../../../legacy/misc/s5/default/opera.css" type="text/css" media="projection" id="operaFix" />
-<script src="../../../legacy/misc/s5/default/slides.js" type="text/javascript"></script>
+<link rel="stylesheet" href="../../../../legacy/misc/s5/lightenna/slides.css" type="text/css" media="projection" id="slideProj" />
+<link rel="stylesheet" href="../../../../legacy/misc/s5/default/outline.css" type="text/css" media="screen" id="outlineStyle" />
+<link rel="stylesheet" href="../../../../legacy/misc/s5/default/print.css" type="text/css" media="print" id="slidePrint" />
+<link rel="stylesheet" href="../../../../legacy/misc/s5/default/opera.css" type="text/css" media="projection" id="operaFix" />
+<script src="../../../../legacy/misc/s5/default/slides.js" type="text/javascript"></script>
 </head>
 <body>
 
@@ -31,7 +31,7 @@
 <div class="presentation">
 <div class="slide"><h1>2.3. B-trees</h1>
 <div class="slidebody"><p>In this lecture we look at...<br />
-[<a href="../../../legacy/sitefiles/lightenna.com/2.3.b-trees.pdf">Section notes</a> PDF 159Kb]</p>
+[<a href="../../../../legacy/sitefiles/lightenna.com/2.3.b-trees.pdf">Section notes</a> PDF 159Kb]</p>
 </div></div><div class="slide"><h1>2.3.01. Hash tables</h1>
 <div class="slidebody"><ul>
 <li>Used to implement Indicies</li>
@@ -39,7 +39,7 @@
 <li>Ordering Key Field (K) as argument to Hash function H()</li>
 <li>Address H(K) maps to pointer</li>
 </ul>
-<p><a href="../../../legacy/sitefiles/lightenna.com/primary_index_hashtable_big.gif"><img src="../../../legacy/sitefiles/lightenna.com/primary_index_hashtable.jpg" alt="Hash table example" /></a></p>
+<p><a href="../../../../legacy/sitefiles/lightenna.com/primary_index_hashtable_big.gif"><img src="../../../../legacy/sitefiles/lightenna.com/primary_index_hashtable.jpg" alt="Hash table example" /></a></p>
 </div></div><div class="slide"><h1>2.3.02. Tree structure</h1>
 <div class="slidebody"><ul>
 <li>Tree revision</li>
@@ -49,7 +49,7 @@
 <li>Root node</li>
 <li>Cardinality</li>
 </ul>
-<p><a href="../../../legacy/sitefiles/lightenna.com/tree_diagram_big.gif"><img src="../../../legacy/sitefiles/lightenna.com/tree_diagram.jpg" alt="Basic tree structure" /></a></p>
+<p><a href="../../../../legacy/sitefiles/lightenna.com/tree_diagram_big.gif"><img src="../../../../legacy/sitefiles/lightenna.com/tree_diagram.jpg" alt="Basic tree structure" /></a></p>
 </div></div><div class="slide"><h1>2.3.03. Multi-level indices</h1>
 <div class="slidebody"><ul>
 <li>Multi-level indices</li>
@@ -58,7 +58,7 @@
 <li>&lt;H(k),P&gt; pairs</li>
 <li><i>(data far right)</i></li>
 </ul>
-<p><a href="../../../legacy/sitefiles/lightenna.com/multilevel_index_big.gif"><img src="../../../legacy/sitefiles/lightenna.com/multilevel_index.jpg" alt="Multi-level indices by hash table" /></a></p>
+<p><a href="../../../../legacy/sitefiles/lightenna.com/multilevel_index_big.gif"><img src="../../../../legacy/sitefiles/lightenna.com/multilevel_index.jpg" alt="Multi-level indices by hash table" /></a></p>
 </div></div><div class="slide"><h1>2.3.04. Index zipping</h1>
 <div class="slidebody"><ul>
 <li>Collapsing a single index</li>
@@ -66,7 +66,7 @@
 <li>&lt;H(k),P&gt; pairs sequentially stored</li>
 <li>Common in the Elmasri</li>
 </ul>
-<p><a href="../../../legacy/sitefiles/lightenna.com/index_zipping_big.gif"><img src="../../../legacy/sitefiles/lightenna.com/index_zipping.jpg" alt="Index zipping" /></a></p>
+<p><a href="../../../../legacy/sitefiles/lightenna.com/index_zipping_big.gif"><img src="../../../../legacy/sitefiles/lightenna.com/index_zipping.jpg" alt="Index zipping" /></a></p>
 </div></div><div class="slide"><h1>2.3.05. B-tree</h1>
 <div class="slidebody"><ul>
 <li>Paritioning structure</li>
@@ -79,7 +79,7 @@
 <li>Number of keys = Number of pointers - 1</li>
 <li>Every node in the tree is identical</li>
 </ul>
-<p><a href="../../../legacy/sitefiles/lightenna.com/b-tree_big.gif"><img src="../../../legacy/sitefiles/lightenna.com/b-tree.jpg" alt="B tree" /></a></p>
+<p><a href="../../../../legacy/sitefiles/lightenna.com/b-tree_big.gif"><img src="../../../../legacy/sitefiles/lightenna.com/b-tree.jpg" alt="B tree" /></a></p>
 </div></div><div class="slide"><h1>2.3.06. B+ trees</h1>
 <div class="slidebody"><ul>
 <li>Similar to B-trees</li>
@@ -93,7 +93,7 @@
 <li>At least L children (min L)</li>
 <li>U = 2L, or U = 2L-1</li>
 </ul>
-<p><a href="../../../legacy/sitefiles/lightenna.com/b_plus_tree_big.gif"><img src="../../../legacy/sitefiles/lightenna.com/b_plus_tree.jpg" alt="B+ tree" /></a></p>
+<p><a href="../../../../legacy/sitefiles/lightenna.com/b_plus_tree_big.gif"><img src="../../../../legacy/sitefiles/lightenna.com/b_plus_tree.jpg" alt="B+ tree" /></a></p>
 </div></div><div class="slide"><h1>2.3.07. Properties of B+ trees</h1>
 <div class="slidebody"><ul>
 <li>Balanced</li>
@@ -125,7 +125,7 @@
 </ul>
 </ul>
 </ul>
-<p><a href="../../../legacy/sitefiles/lightenna.com/b_plus_tree_node_operations_big.gif"><img src="../../../legacy/sitefiles/lightenna.com/b_plus_tree_node_operations.jpg" alt="B+ tree operations" /></a></p>
+<p><a href="../../../../legacy/sitefiles/lightenna.com/b_plus_tree_node_operations_big.gif"><img src="../../../../legacy/sitefiles/lightenna.com/b_plus_tree_node_operations.jpg" alt="B+ tree operations" /></a></p>
 </div></div>
 </div>
 
