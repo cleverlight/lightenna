@@ -6,4 +6,4 @@ header:
 tag: devops
 ---
 
-Yo yo yo header
+Here are a collection of posts from our team on DevOps culture, tools and collaboration. 
