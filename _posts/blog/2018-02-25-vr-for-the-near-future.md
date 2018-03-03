@@ -3,9 +3,13 @@ layout: single
 title: VR for the near future
 description: VR has been a tantalizingly close proposition for years but where will it land first?
 tags: vr
+header:
+  overlay_image: /assets/images/vr_and_phones_146100.jpg
 ---
 
-Much excitement today as Samsung released to much-hyped and much-leaked S9.  Amongst the news headlines and soundbites, which largely centred on the low-light and slow-motion properties of the camera chip, there wasn't much about virtual reality, but the S9 seems poised to be at least a step forward.  It's arrival is well-timed.
+In your pocket and good enough for most mainstream use-cases?
+
+Much excitement today as Samsung released the much-hyped and much-leaked S9.  Amongst the news headlines and soundbites, which largely centred on the low-light and slow-motion properties of the camera chip, there wasn't much about virtual reality, but the S9 seems poised to be at least a step forward.  It's arrival is well-timed.
 
 First generation VR headsets, like [Oculus' Rift](https://www.oculus.com/) and [HTC's Vive](https://www.vive.com/uk/) since 2016 in their consumer releases.  They suffered from similar constraints: low-resolution displays that create a screen-door effect.  Each device has the same pixel resolution (1080 x 1200 per eye), which translates to a pixel density of roughly 455 pixels per inch (the other PPI).  Pixel density is important because the human eye's fovea packs millions of colour sensors into a small area of the retina.  If you want to have an immersive _virtual_ experience that's a good approximation of reality, a high-resolution (>600 PPI), high-framerate (90Hz) display is a key part of that.
 

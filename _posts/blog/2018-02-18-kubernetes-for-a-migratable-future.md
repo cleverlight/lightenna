@@ -3,7 +3,11 @@ layout: single
 title: Kubernetes for a migratable future
 description: Serverless function-as-a-service (like AWS Lambda) is magic, but it's hard to commit at this early stage
 tags: devops scale
+header:
+  overlay_image: /assets/images/containers_on_ship_05027.jpg
 ---
+
+Orchestration that might also be the grease that eases vendor lock-in
 
 This week I've been working on the technical design for a production Kubernetes cluster.  Kubernetes, or K8s for short, is a fantastic technology.  The Internet is full of K8s primers so I'm not going to try to introduce the terms or concepts that make K8s a great platform for container orchestration.  Instead I'd like to make the case for using it.
 
