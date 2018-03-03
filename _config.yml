@@ -271,3 +271,8 @@ defaults:
       comments: true
       share: true
       related: true
+  # don't include _pages links
+  - scope:
+      path: _pages/
+    values:
+      sitemap: false
