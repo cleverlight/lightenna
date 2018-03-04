@@ -179,7 +179,7 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
+permalink: /tech/:year/:title
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -219,7 +219,7 @@ category_archive:
   path: /categories/
 tag_archive:
   type: liquid
-  path: /on/
+  path: /tech/
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:
