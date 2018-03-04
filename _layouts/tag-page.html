@@ -16,7 +16,6 @@ layout: single
     <ul>
     {% if page.tag %}
       {% for post in site.tags[page.tag] %}
-      {{ posts | json }}
       <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
         {{ post.description }}
       </li>

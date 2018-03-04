@@ -4,7 +4,7 @@ title: VR for the near future
 description: VR has been a tantalizingly close proposition for years but where will it land first?
 tags: vr
 header:
-  overlay_image: /assets/images/vr_and_phones_146100.jpg
+  overlay_image: /assets/images/vr_and_phones_146100_1920x.jpg
 ---
 
 In your pocket and good enough for most mainstream use-cases?

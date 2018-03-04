@@ -4,7 +4,7 @@ title: Kubernetes for a migratable future
 description: Serverless function-as-a-service (like AWS Lambda) is magic, but it's hard to commit at this early stage
 tags: devops scale
 header:
-  overlay_image: /assets/images/containers_on_ship_05027.jpg
+  overlay_image: /assets/images/containers_on_ship_05027_1920x.jpg
 ---
 
 Orchestration that might also be the grease that eases vendor lock-in
