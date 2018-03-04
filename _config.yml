@@ -273,6 +273,10 @@ defaults:
       related: true
   # don't include _pages links
   - scope:
-      path: _pages/
+      path: _pages*
+    values:
+      sitemap: false
+  - scope:
+      path: assets*
     values:
       sitemap: false
