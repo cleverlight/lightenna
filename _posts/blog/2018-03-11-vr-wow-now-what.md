@@ -4,7 +4,7 @@ title: VR, wow... now what?
 description: Each iteration of VR technology creates a wow factor, but the annoyances slowly suck the life out of the experience.  Are we getting close to a minimum viable sustainable VR hit?
 tags: vr
 header:
-  overlay_image: /assets/images/vr_and_phones_146100_1920x.jpg
+  overlay_image: /assets/images/next_vr_headset_03D45953_1920x.jpg
 ---
 
 Virtual reality has a wow factor.  Each new iteration rekindles that wow.  In 1996 I sat in an early VR prototype, wearing a helmet that weighed nearly as much as I did, lost in wonder.  Yesterday I got a chance to play with a Samsung S9 and Gear VR and was instantly wowwed.

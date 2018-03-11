@@ -14,61 +14,150 @@ layout: default
   {% endunless %}
 {% endif %}
 
+<!-- reveal test -->
+<link rel="stylesheet" href="{{ site.reveal_path }}css/reveal.css">
+<link rel="stylesheet" href="{{ site.reveal_theme_path }}{{ site.reveal_theme }}" id="theme">
+<link rel="stylesheet" href="{{ '/assets/css/lightenna-reveal.css' | absolute_url }}">
+<!-- For syntax highlighting -->
+<link rel="stylesheet" href="{{ site.reveal_path }}lib/css/zenburn.css">
+<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+<script>
+document.write( '<link rel="stylesheet" href="{{ site.reveal_path }}css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+</script>
+<script src="{{ site.reveal_path }}lib/js/head.min.js"></script>
+<script src="{{ site.reveal_path }}js/reveal.js"></script>
+
+
 <div id="main" role="main">
-  {% include sidebar.html %}
+{% include sidebar.html %}
 
-  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-    {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
-    {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date: "%B %d, %Y" }}">{% endif %}
+<article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+{% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+{% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+{% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
+{% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date: "%B %d, %Y" }}">{% endif %}
 
-    <div class="page__inner-wrap">
-      {% unless page.header.overlay_color or page.header.overlay_image %}
-        <header>
-          {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
-          {% if page.read_time %}
-            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
-          {% endif %}
-        </header>
-      {% endunless %}
+<div class="page__inner-wrap">
+{% unless page.header.overlay_color or page.header.overlay_image %}
+<header>
+  {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
+  {% if page.read_time %}
+    <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
+  {% endif %}
+</header>
+{% endunless %}
 
-      <section class="page__content" itemprop="text">
-        {% if page.toc %}
-          <aside class="sidebar__right">
-            <nav class="toc">
-              <header><h4 class="nav__title"><i class="fa fa-{{ page.toc_icon | default: 'file-text' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label }}</h4></header>
-              {% include toc.html sanitize=true html=content h_min=2 h_max=3 class="toc__menu" %}
-            </nav>
-          </aside>
-        {% endif %}
-        {{ content }}
-        {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
-      </section>
+<section class="page__content" itemprop="text">
+{% if page.toc %}
+  <aside class="sidebar__right">
+    <nav class="toc">
+      <header><h4 class="nav__title"><i class="fa fa-{{ page.toc_icon | default: 'file-text' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label }}</h4></header>
+      {% include toc.html sanitize=true html=content h_min=2 h_max=3 class="toc__menu" %}
+    </nav>
+  </aside>
+{% endif %}
 
-      <footer class="page__meta">
-        {% if site.data.ui-text[site.locale].meta_label %}
-          <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
-        {% endif %}
-        {% include page__taxonomy.html %}
-        {% if page.last_modified_at %}
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.last_modified_at | date: "%Y-%m-%d" }}">{{ page.last_modified_at | date: "%B %d, %Y" }}</time></p>
-        {% elsif page.date %}
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
-        {% endif %}
-      </footer>
+<div class="reveal">
+  <div class="slides">
+  <!-- include slide content -->
+  {% include reveal_slide-start.html %}
 
-      {% if page.share %}{% include social-share.html %}{% endif %}
+    # DevOps
 
-      {% include post_pagination.html %}
-    </div>
+    Technology overview from Lightenna
 
-    {% if jekyll.environment == 'production' and site.comments.provider and page.comments %}
-      {% include comments.html %}
-    {% endif %}
-  </article>
+    ---
 
-  {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}
+    ## What is DevOps?
+
+    * Neither a set of tools
+    * Nor a job role
+    * DevOps as a collaboration
+    * DevOps as a culture
+
+    Note: Job roles are advertised as DevOps, tools are labelled 'DevOps', but the word is a contraction of Development and Operations and eludes to a collaboration between the two.
+
+    Peter Drucker said "Culture eats strategy for breakfast."  It's a hugely over-used quote but as relevant for DevOps [as it was for motorcars when Mark Fields referenced it](https://www.torbenrick.eu/blog/culture/organisational-culture-eats-strategy-for-breakfast-lunch-and-dinner/).
+
+    To create a culture of collaboration, we've got to understand it.
+
+  {% include reveal_slide-finish.html %}
+  </div>
+</div>
+
+<!-- include web-visible content -->
+{{ content }}
+
+
+  <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+          controls: true,
+          progress: true,
+          history: true,
+          center: true,
+
+          theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+          transition: '{{ site.reveal_transition }}', // default/cube/page/concave/zoom/linear/fade/none
+
+      {% if site.reveal_options %}
+
+      {{ site.reveal_options | append:',' }}
+
+      {% endif %}
+
+      // Optional libraries used to extend on reveal.js
+      dependencies: [
+          { src: '{{ site.reveal_path }}lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '{{ site.reveal_path }}plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '{{ site.reveal_path }}plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '{{ site.reveal_path }}plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '{{ site.reveal_path }}plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          {% if site.reveal_notes_server %}
+      { src: '{{ site.reveal_path }}socket.io/socket.io.js', async: true },
+      { src: '{{ site.reveal_path }}plugin/notes-server/client.js', async: true }
+      {% else %}
+      { src: '{{ site.reveal_path }}plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+      {% endif %}
+      {% if site.reveal_dependencies %}
+      , {{ site.reveal_dependencies }}
+      {% endif %}
+      ]
+      });
+
+  </script>
+
+
+
+
+  {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
+</section>
+
+<footer class="page__meta">
+{% if site.data.ui-text[site.locale].meta_label %}
+  <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
+{% endif %}
+{% include page__taxonomy.html %}
+{% if page.last_modified_at %}
+  <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.last_modified_at | date: "%Y-%m-%d" }}">{{ page.last_modified_at | date: "%B %d, %Y" }}</time></p>
+{% elsif page.date %}
+  <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
+{% endif %}
+</footer>
+
+{% if page.share %}{% include social-share.html %}{% endif %}
+
+{% include post_pagination.html %}
+</div>
+
+{% if jekyll.environment == 'production' and site.comments.provider and page.comments %}
+{% include comments.html %}
+{% endif %}
+</article>
+
+{% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}
   {% if page.id and page.related and site.related_posts.size > 0 %}
     <div class="page__related">
       <h4 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h4>
