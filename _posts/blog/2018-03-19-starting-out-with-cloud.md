@@ -3,8 +3,8 @@ layout: single
 title: Help!  We can't find the DevOps people.  Do we already have the DevOps people?
 description: With market demand for Site Reliability engineers, DevOps engineers and Service Automation engineers eclipsing supply, at what point does cross-training become the only way to keep pace with the ever-more-automated world?
 tags: devops
-zzheader:
-  overlay_image: /assets/images/next_vr_headset_03D45953_1920x.jpg
+header:
+  overlay_image: /assets/images/detective_deerstalker_02J83851_1920x.jpg
 ---
 
 Finding people is hard.  Recruitment is hard.  While I used to think that marketing was the hardest, the calming realisation that changed my mind was that quality wins out in the end.  In start-up land, if your quality has not won out yet, it's not the end.  Whether you think that's a sleep restoring platitude, or a naive investment in ill-founded hope, it keeps you going!
