@@ -13,5 +13,7 @@ About 18 months ago I gave a talk about starting out with cloud automation.  Man
 
 Now in Spring 2018, the picture is surprisingly similar.  It's very difficult to find either system administrators who've stepped beyond their manual-Linux manicles, or developers who've widened their repetoire to include server provisioning, configuration and automated operation.  These talented folks exist, but the market's demand for them continues to outstrip their availability.
 
-The course I ran at DWP (which is now available open-source), is as relevant now as back then, not because the technology is new, but because the driver for many staff in technical roles to get good at 'DevOps' is still around.  If you can't find the new recruits who know the tech, can you help your existing tech people learn it?
+I appreciate training isn't a panacea.  It's a long-term option that requires a lot of commitment from both the company and its staff.
+
+The Internet is full of fantastic training resources, but I've always found that getting started is the tricky bit - finding the activation energy both culturally and personally to get going.  The course I ran at DWP (which is now [available open-source](https://github.com/dwp/devops-workstream)), is as relevant now as back then, not because the technology is new, but because the driver for many staff in technical roles to get good at 'DevOps' is still around.  If you can't find the new recruits who know the tech, can you help your existing tech people learn it?
 
