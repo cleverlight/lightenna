@@ -1,8 +1,8 @@
 # main links
 main:
   - title: "DevOps"
-    url: /tech/devops/
+    url: /tech/devops
   - title: "VR"
-    url: /tech/vr/
+    url: /tech/vr
   - title: "Contact"
     url: /contact
