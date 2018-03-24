@@ -18,3 +18,22 @@
   display: block;
   clear: both;
 }
+
+.page__hero--overlay .page__lead {
+  background-color: rgba(0,0,0,0.5);
+  padding: 0.2em 0 0.2em 0.7em;
+}
+
+.page__pre_content {
+  font-size: 0.8em;
+  color: gray;
+  float: right;
+  // hide the 'Tags' label
+  .page__taxonomy strong {
+    display: none;
+  }
+  // make it float up-right of the text
+  position: relative;
+  top: -3em;
+  height: 0;
+}
