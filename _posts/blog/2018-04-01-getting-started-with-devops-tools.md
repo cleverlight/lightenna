@@ -1,11 +1,14 @@
 ---
 layout: single
 title: Getting Started in the DevOps space 
-description: The Development-Operations world is a wash with some fantastic tools, but sometimes getting started can be too great an impediment to realise the 'DevOps' efficiency promise.<br /><br />Starting out in anything can be rough.  While the prospect of having a helpful colleague or trainer sit down with you to walk you through it is wonderful, it and they aren't always available.
+description: The Development-Operations world is a wash with some fantastic tools, but sometimes getting started can be too great an impediment to realise the 'DevOps' efficiency promise.
 tags: devops
 header:
   overlay_image: /assets/images/explosive_start_02329_1920x.jpg
 ---
+
+Starting out in anything can be rough.  While the prospect of having a helpful colleague or trainer sit down with you to walk you through it is wonderful, it and they aren't always available.
+
 This post is designed to help you get started using DevOps tools like Terraform, Puppet or Docker.
 Even if you just want to familiarise yourself with the toolset because you manage people who use it, I hope you'll find this an accessible primer.
 Depending on its popularity, there may follow more in the series.
