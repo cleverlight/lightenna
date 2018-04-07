@@ -79,7 +79,7 @@ The tools named here may quickly appear dated and the balance of effort invested
 ## 2. Engineering
 
 <div class="n-col">
-<ul class="left" style="width: 44%">
+<ul class="left">
 <li>Provisioning</li>
 <li>Config management</li>
 <li>Artefact management</li>
@@ -87,7 +87,7 @@ The tools named here may quickly appear dated and the balance of effort invested
 <li>Orchestration</li>
 </ul>
 
-<ul class="right as-right"  style="width: 48%">
+<ul class="right as-right">
 <li>Monitoring</li>
 <li>Logging</li>
 <li>Performance management</li>

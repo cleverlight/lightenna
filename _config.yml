@@ -247,7 +247,7 @@ reveal_theme: white.css
 # The Reveal transition
 reveal_transition: default
 # Path to the used theme (defaults to the Reveal.js standard theme path)
-reveal_theme_path: /assets/frameworks/reveal/reveal.js/css/theme/
+reveal_theme_path: /assets/frameworks/reveal/css/theme/
 # Embed Server-side speaker notes?
 reveal_notes_server: false
 # Additional reveal.js options
@@ -255,7 +255,7 @@ reveal_options:
 # Additional reveal.js dependencies
 reveal_dependencies:
 # Reveal.js subdirectory
-reveal_path: /assets/frameworks/reveal/reveal.js/
+reveal_path: /assets/frameworks/reveal/
 
 
 # Defaults
@@ -277,14 +277,18 @@ defaults:
     values:
       sitemap: false
   - scope:
-      path: assets*
-    values:
-      sitemap: false
-  - scope:
       path: /_pages*
     values:
       sitemap: false
   - scope:
-      path: /assets*
+      path: assets*
+    values:
+      sitemap: false
+  - scope:
+      path: assets/*
+    values:
+      sitemap: false
+  - scope:
+      path: assets/frameworks/reveal/*
     values:
       sitemap: false
