@@ -2,7 +2,7 @@
 layout: single
 title: VR for the near future
 description: VR has been a tantalizingly close proposition for years but where will it land first?
-tags: vr
+tags: vr front
 header:
   overlay_image: /assets/images/vr_and_phones_146100_1920x.jpg
 ---

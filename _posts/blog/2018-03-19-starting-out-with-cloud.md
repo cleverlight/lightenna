@@ -2,7 +2,7 @@
 layout: single
 title: Help!  We can't find the DevOps people.  Do we already have the DevOps people?
 description: With market demand for Site Reliability engineers, DevOps engineers and Service Automation engineers eclipsing supply, at what point does cross-training become the only way to keep pace with the ever-more-automated world?
-tags: devops
+tags: devops front
 header:
   overlay_image: /assets/images/detective_deerstalker_02J83851_1920x.jpg
 ---

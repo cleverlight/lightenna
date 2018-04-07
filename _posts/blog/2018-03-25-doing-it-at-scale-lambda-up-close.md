@@ -2,7 +2,7 @@
 layout: single
 title: Scalability trumps speed 
 description: Serverless promises a world without low-level worries, but what's it like at scale?
-tags: devops consulting
+tags: devops consulting front
 header:
   overlay_image: /assets/images/fly-at-scale_01542_1920x.jpg
 ---

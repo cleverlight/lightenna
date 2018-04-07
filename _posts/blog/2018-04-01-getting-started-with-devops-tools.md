@@ -2,7 +2,7 @@
 layout: single
 title: Getting Started in the DevOps space 
 description: The Development-Operations world is a wash with some fantastic tools, but sometimes getting started can be too great an impediment to realise the 'DevOps' efficiency promise.
-tags: devops
+tags: devops front
 header:
   overlay_image: /assets/images/explosive_start_02329_1920x.jpg
 ---
