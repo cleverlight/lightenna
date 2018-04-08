@@ -7,6 +7,6 @@ permalink: /tech/2018/cost-of-collaboration/reveal/
 
 {% include reveal_slide-start.html %}
 
-{% include presentations/2018-01-24-cost-of-collaboration.md %}
+{% include presentations/2018-04-08-cost-of-collaboration.md %}
 
 {% include reveal_slide-finish.html %}

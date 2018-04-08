@@ -9,6 +9,6 @@ header:
 
 {% include video id="h6SIjcT5zuE" provider="youtube" %}
 
-{% include presentations/2018-01-24-cost-of-collaboration.md %}
+{% include presentations/2018-04-08-cost-of-collaboration.md %}
 
 [Presentation only](reveal/)
