@@ -6,7 +6,7 @@
 * DevOps as a collaboration
 * DevOps as a culture
 
-Note: Job roles are advertised as DevOps, tools are labelled 'DevOps', but the word is a contraction of Development and Operations and eludes to a collaboration between the two.
+{% if include.pres %}Note: {% endif %}Job roles are advertised as DevOps, tools are labelled 'DevOps', but the word is a contraction of Development and Operations and eludes to a collaboration between the two.
 
 Peter Drucker said "Culture eats strategy for breakfast."  It's a hugely over-used quote but as relevant for DevOps [as it was for motorcars when Mark Fields referenced it](https://www.torbenrick.eu/blog/culture/organisational-culture-eats-strategy-for-breakfast-lunch-and-dinner/).
 
@@ -29,7 +29,7 @@ To create a culture of collaboration, we've got to understand it.
 </ul>
 </div>
 
-Note: Collaboration has yielded most of the world's greatest online projects, but managed poorly it can carry a high cost.  The old "how many X does it take to change a lightbulb?" joke owes its creation to redundant collaboration.
+{% if include.pres %}Note: {% endif %}Collaboration has yielded most of the world's greatest online projects, but managed poorly it can carry a high cost.  The old "how many X does it take to change a lightbulb?" joke owes its creation to redundant collaboration.
 
 <a href="https://xkcd.com/841/"><img src="https://imgs.xkcd.com/comics/audiophiles.png" width="740" height="285" alt="XKCD comic: Audiophiles"></a>
 
@@ -44,7 +44,7 @@ All projects, whether composed of 2 or 200 participants, are searching for the r
 <p class="fragment">Complexity</p>
 <p class="fragment">Ambiguity</p>
 
-Note: To design a team's culture, we need to know the context in which it will work.
+{% if include.pres %}Note: {% endif %}To design a team's culture, we need to know the context in which it will work.
 
 VUCA emerged from the US's elite training academcy [U.S. Army War College](https://books.google.co.uk/books?id=sEkp6GlK19cC&pg=PA34&dq=VUCA&redir_esc=y&hl=en#PPA6,M1).  It described the multilateral world in which the US Military found itself at the end of the Cold War.  Their experience precipitated a way of thinking about and solving problems.
 
@@ -59,7 +59,7 @@ For technology projects in large enterprises, that context is constantly changin
 <p class="fragment">Clarity</p>
 <p class="fragment">Agility</p>
 
-Note: Coping and excelling in that world requires a shift from VUCA to VUCA Prime, as described by [PDF: Bob Johansen, Getting There Early, 2007](https://www.bkconnection.com/static/getthereearlyPR.pdf).  The tools, processes and practices outlined here are designed to help teams maintain these prime qualities in order to be effective.
+{% if include.pres %}Note: {% endif %}Coping and excelling in that world requires a shift from VUCA to VUCA Prime, as described by [PDF: Bob Johansen, Getting There Early, 2007](https://www.bkconnection.com/static/getthereearlyPR.pdf).  The tools, processes and practices outlined here are designed to help teams maintain these prime qualities in order to be effective.
 
 ---
 
@@ -70,7 +70,7 @@ Note: Coping and excelling in that world requires a shift from VUCA to VUCA Prim
 * Version-controlled
 * Dated
 
-Note: Version-controlled means not only that the source is versioned, but also that commits are logged, attributed to the author, branched, merged and tagged for release.
+{% if include.pres %}Note: {% endif %}Version-controlled means not only that the source is versioned, but also that commits are logged, attributed to the author, branched, merged and tagged for release.
 
 The tools named here may quickly appear dated and the balance of effort invested in each will change, but the high-level activity will hopefully be consistent over time.
 
@@ -96,7 +96,7 @@ The tools named here may quickly appear dated and the balance of effort invested
 </ul>
 </div>
 
-Note: Engineering is first because it's the most obvious as-code example.  Everything we build should be reliably and repeatably built from code.
+{% if include.pres %}Note: {% endif %}Engineering is first because it's the most obvious as-code example.  Everything we build should be reliably and repeatably built from code.
 
 This tutorial series will look at specific technologies in each of these areas.
 
@@ -109,7 +109,7 @@ This tutorial series will look at specific technologies in each of these areas.
 * API definitions
 * Message schema
 
-Note: Architecture appears second in this deck even though it's a logical pre-cursor to Engineering.  All aspects of the solution evolve at the same time, all managed as source code.
+{% if include.pres %}Note: {% endif %}Architecture appears second in this deck even though it's a logical pre-cursor to Engineering.  All aspects of the solution evolve at the same time, all managed as source code.
 
 While the Engineering team is going through set up activities in Sprint-0 (environments, pipeline config etc.) the Architecture team is piecing together minimum viable product (MVP) requirements and initial microservice designs. 
 
@@ -123,7 +123,7 @@ While the Engineering team is going through set up activities in Sprint-0 (envir
 * Integration
 * Regression
 
-Note: Test-Driven Development (TDD) helps us build the thing right.
+{% if include.pres %}Note: {% endif %}Test-Driven Development (TDD) helps us build the thing right.
 
 User stories form the spec as the basis of behaviour-driven development (BDD).  If BDD helps us build the right thing, TDD makes sure we build only the right thing.  (Over-)Extending that metaphor, Unit testing and regression test suites make sure we build it right.
 
@@ -136,7 +136,7 @@ User stories form the spec as the basis of behaviour-driven development (BDD).  
 * Governance checklist
 * Stakeholder RACI
 
-Note: Again, keep the risk assessment with the code.  It will evolve over the course of the project, but your ability to track, mitigate and manage risks associated with the project is key.
+{% if include.pres %}Note: {% endif %}Again, keep the risk assessment with the code.  It will evolve over the course of the project, but your ability to track, mitigate and manage risks associated with the project is key.
 
 ---
 
@@ -147,7 +147,7 @@ Note: Again, keep the risk assessment with the code.  It will evolve over the co
 * Lightenna can help
 * Consulting and on-site training
 
-Note: Over the next few months, we'll be releasing, free and open-source, an example that illustrates how you and your team might put together a new project and embed DevOps collaboration at the centre of it.
+{% if include.pres %}Note: {% endif %}Over the next few months, we'll be releasing, free and open-source, an example that illustrates how you and your team might put together a new project and embed DevOps collaboration at the centre of it.
 
 If you'd like help with a particularly project, either hands-on keyboard engineering, guidance or on-site training for your team, please get in touch.
 
