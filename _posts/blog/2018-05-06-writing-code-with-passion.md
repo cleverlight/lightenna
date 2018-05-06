@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Doing work with a passion for excellence
-description: 
+description: As the earth hosts greater numbers of human and artificially intelligent lifeforms, excellence is becoming more than a nice-to-have. 
 tags: front
 header:
     overlay_image: /assets/images/creating_excellent_work_112557_1920x.jpg
