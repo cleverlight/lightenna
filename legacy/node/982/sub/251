@@ -1,0 +1,13 @@
+
+<div class="webform-component webform-component-display" id="webform-component-organisation-name"><div class="form-item" id="edit-submitted-organisation-name-wrapper">
+<div id="edit-submitted-organisation-name"><a class="gmapmark_sub_name" target="_blank" href="http://www.bathspa.ac.uk/schools/humanities-and-cultural-industries/" rel="nofollow">Bath Spa University School of Humanities and Cultural Industries</a></div>
+</div>
+</div><div class="form-item" id="edit-submitted-subsector-wrapper">
+ <label for="edit-submitted-subsector">What subsectors does your organisation work in? </label>
+<div id="edit-submitted-subsector"><div class="uiro-priorityitem"><div class="slide-pane slide-label">Advertising &amp; Creative agencies</div><!-- slide-label --><div class="slide-pane slide-outer"><div class="slide-inner" style="width:100%"></div></div><div class="clear"></div></div><!-- /uiro-priorityitem -->
+<div class="uiro-priorityitem"><div class="slide-pane slide-label">Film</div><!-- slide-label --><div class="slide-pane slide-outer"><div class="slide-inner" style="width:100%"></div></div><div class="clear"></div></div><!-- /uiro-priorityitem -->
+<div class="uiro-priorityitem"><div class="slide-pane slide-label">Publishing</div><!-- slide-label --><div class="slide-pane slide-outer"><div class="slide-inner" style="width:100%"></div></div><div class="clear"></div></div><!-- /uiro-priorityitem -->
+<div class="uiro-priorityitem"><div class="slide-pane slide-label">TV &amp; Radio</div><!-- slide-label --><div class="slide-pane slide-outer"><div class="slide-inner" style="width:100%"></div></div><div class="clear"></div></div><!-- /uiro-priorityitem -->
+<div class="uiro-priorityitem"><div class="slide-pane slide-label">Social media &amp; Digital agencies</div><!-- slide-label --><div class="slide-pane slide-outer"><div class="slide-inner" style="width:77%"></div></div><div class="clear"></div></div><!-- /uiro-priorityitem -->
+</div>
+</div>
