@@ -13,7 +13,13 @@ By virtue of the things I learned and the stuff that has happened since because 
 
 ### Just like _X_, only better 
 
-Launched back in 2010, this little ventured surfed the wave of me-too web applications.  It came into being because some of our customers reported frustration with the market leaders (such as Survey Monkey, which in fairness has gone from strength to strength).  As it turned out, those same customers were happy to use Surfy while it was free, but reluctant to pay for it once we introduced our fremium model.  The idea was sound-ish, but the execution was all wrong:
+Launched back in 2010, this little ventured surfed the wave of me-too web applications.  It came into being because some of our customers reported frustration with the market leaders (such as Survey Monkey, which in fairness has gone from strength to strength).  As it turned out, those same customers were happy to use Surfy while it was free, but reluctant to pay for it once we introduced our fremium model.  The idea was sound-ish, but the execution was all wrong.
+
+### Highs and lows
+
+There were some good times.  Technology Strategy Board ran a survey in partnership with NESTA and the Knowledge Transfer Network.  The survey responses were dynamically composited into a map of the UK Creative Industries, organised by sub-sector.  The [UK Map of the Creative Industries (2012)](http://www.lightenna.com/legacy/node/982/map.html) is still online if you want to take a look.
+
+![Picture of map]({{ "/assets/images/surfy-map-of-creative-industries-2012_640x.png" | absolute_url }})
 
 ### Aiming (better) to please
 
