@@ -1,0 +1,5 @@
+
+
+
+
+body,input,textarea,select{color:#000;background:none;}ul.primary-links,ul.secondary-links,#header-region,.sidebar{display:none;}body.sidebars,body.sidebar-left,body.sidebar-right,body{width:640px;}body.sidebar-left #center,body.sidebar-right #center,body.sidebars #center,body.sidebar-left #squeeze,body.sidebar-right #squeeze,body.sidebars #squeeze{margin:0;}#sidebar-left-stretched,#header,#main_content_stretched div.breadcrumb,#main_content_stretched ul.tabs{display:none;}#main_content_stretched{left:0;width:100%;}
