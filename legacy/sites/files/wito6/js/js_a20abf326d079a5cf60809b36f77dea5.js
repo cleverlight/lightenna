@@ -603,7 +603,7 @@ Drupal.behaviors.ucRoleExpirationEndOverride = function(context) {
         }
         // fire ajax request for rich content
         $.ajax({
-          url : '/node/' + nid + '/sub/' + sid,
+          url : '/legacy/node/' + nid + '/sub/' + sid,
           success : function(data) {
             if (false && console && console.log) {
               console.log('Sample of data:', data.slice(0, 100));
