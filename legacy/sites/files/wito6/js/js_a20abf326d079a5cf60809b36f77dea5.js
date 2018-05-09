@@ -525,7 +525,7 @@ Drupal.behaviors.ucRoleExpirationEndOverride = function(context) {
         var url, rawurl = ev.target.href;
         // extract the real URL from this non-js safe href
         url = unescape(rawurl.substring(rawurl.indexOf('#') + 1));
-        console.log(url);
+        // console.log(url);
         // load the new KML layer
         that.kmlLoadLayer(url);
         // clear the active class from the last link
