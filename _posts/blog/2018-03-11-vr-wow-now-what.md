@@ -2,7 +2,7 @@
 layout: single
 title: VR, wow... now what?
 description: Each iteration of VR technology creates a wow factor, but the annoyances slowly suck the life out of the experience.  Are we getting close to a minimum viable sustainable VR hit?
-tags: vr front
+tags: tech vr front
 header:
   overlay_image: /assets/images/next_vr_headset_03D45953_1920x.jpg
 ---

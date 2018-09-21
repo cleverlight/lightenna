@@ -2,7 +2,7 @@
 layout: single
 title: Cost of Dev-Ops Collaboration
 description: Collaboration is brilliant - the only way - but managing the volatility, uncertainty, confusion and ambiguity associated with it is expensive.
-tags: devops front
+tags: devops training front
 header:
     overlay_image: /assets/images/diamond_eyes_01282_1920x.jpg
     og_video: https://www.youtube.com/v/h6SIjcT5zuE/
