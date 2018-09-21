@@ -10,7 +10,7 @@ header:
     og_video: https://www.youtube.com/v/h6SIjcT5zuE/
 ---
 
-{# include video id="h6SIjcT5zuE" provider="youtube" #}
+{% include video id="h6SIjcT5zuE" provider="youtube" %}
 
 {% include presentations/2018-09-21-cloud-starter.md %}
 
