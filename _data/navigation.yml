@@ -1,8 +1,8 @@
 # main links
 main:
   - title: "Consulting"
-    url: /services/consulting
+    url: /services/consulting/
   - title: "Training"
-    url: /services/training
+    url: /services/training/
   - title: "Contact"
-    url: /contact
+    url: /contact/
