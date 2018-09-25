@@ -41,3 +41,31 @@
 object.wrapper {
   position: relative;
 }
+
+@media print {
+  // clean up redundant (for print) page elements
+  .page__comments,
+  .page__share,
+  .page__meta,
+  .page__content hr,
+  .responsive-video-container {
+    display: none;
+  }
+
+  // show background on hero/title
+  .page__hero--overlay {
+    -webkit-print-color-adjust: exact !important;   /* Chrome, Safari */
+    color-adjust: exact !important;                 /* Firefox */
+  }
+
+  body {
+    padding-top: 4.0rem;
+
+    &:before {
+      // content: "Lightenna";
+    }
+    &:after {
+      content: "For more information, please contact Alex Stanhope on +442071835698. \00A9 2018 Lightenna Ltd";
+    }
+  }
+}
