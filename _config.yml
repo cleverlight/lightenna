@@ -17,6 +17,7 @@ url                      : "https://www.lightenna.com"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "cleverlight/lightenna"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+future                   : false
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
