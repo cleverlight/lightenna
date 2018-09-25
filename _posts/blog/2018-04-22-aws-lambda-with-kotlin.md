@@ -1,10 +1,11 @@
 ---
 layout: single
 title: Spinning up AWS Lambda functions (Part 1)
-description: Serverless infrastructure holds great promise but building something fast that runs fast requires planning
+description: Serverless infrastructure holds great promise but building something fast that runs fast requires planning.
 tags: devops front
 header:
     overlay_image: /assets/images/spinning_clay_4998_1920x.jpg
+    small_image: /assets/images/spinning_clay_4998_640x.jpg
 ---
 
 This week I did a talk for SkyBet at the JVM Thing.  It was [a great night](https://www.meetup.com/Leeds-JVMThing/events/248916472/) and brilliant to see such a broad range of topics covered.

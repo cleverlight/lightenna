@@ -5,6 +5,7 @@ description: With market demand for Site Reliability engineers, DevOps engineers
 tags: devops front
 header:
   overlay_image: /assets/images/detective_deerstalker_02J83851_1920x.jpg
+  small_image: /assets/images/detective_deerstalker_02J83851_640x.jpg
 ---
 
 Finding people is hard.  Recruitment is hard.  While I used to think that marketing was the hardest, the calming realisation that changed my mind was that quality wins out in the end.  In start-up land, if your quality has not won out yet, it's not the end.  Whether you think that's a sleep restoring platitude, or a naive investment in ill-founded hope, it keeps you going!

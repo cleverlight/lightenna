@@ -37,7 +37,8 @@
         'iframe[src*="youtube.com"]',
         'iframe[src*="youtube-nocookie.com"]',
         'iframe[src*="kickstarter.com"][src*="video.html"]',
-        'object',
+        // AS changed hacked out object selector because messing with SVG
+        // 'object',
         'embed'
       ];
 

@@ -7,6 +7,6 @@ permalink: /tech/2018/cloud-starter/reveal/
 
 {% include reveal_slide-start.html %}
 
-{% include presentations/2018-09-21-cloud-starter.md %}
+{% include presentations/2018-09-21-cloud-starter.md pres=true %}
 
 {% include reveal_slide-finish.html %}

@@ -5,6 +5,7 @@ description: The Development-Operations world is a wash with some fantastic tool
 tags: devops front
 header:
   overlay_image: /assets/images/explosive_start_02329_1920x.jpg
+  small_image: /assets/images/explosive_start_02329_640x.jpg
 ---
 
 Starting out in anything can be rough.  While the prospect of having a helpful colleague or trainer sit down with you to walk you through it is wonderful, it and they aren't always available.

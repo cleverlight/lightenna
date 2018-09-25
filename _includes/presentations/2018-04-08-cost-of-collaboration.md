@@ -1,6 +1,5 @@
 
 ## What is DevOps?
-
 * Neither a set of tools
 * Nor a job role
 * DevOps as a collaboration
@@ -15,7 +14,6 @@ To create a culture of collaboration, we've got to understand it.
 ---
 
 ## Cost - benefit
-
 <div class="n-col">
 <ul class="left">
 <li>Hard to manage</li>
@@ -38,7 +36,6 @@ All projects, whether composed of 2 or 200 participants, are searching for the r
 ---
 
 ## VUCA
-
 <p class="fragment">Volatility</p>
 <p class="fragment">Uncertainty</p>
 <p class="fragment">Complexity</p>
@@ -53,7 +50,6 @@ For technology projects in large enterprises, that context is constantly changin
 ---
 
 ## VUCA'
-
 <p class="fragment">Vision</p>
 <p class="fragment">Understanding</p>
 <p class="fragment">Clarity</p>
@@ -64,7 +60,6 @@ For technology projects in large enterprises, that context is constantly changin
 ---
 
 ## Clarity as an asset
-
 * Common language
 * Source code, everything-as-code
 * Version-controlled
@@ -77,7 +72,6 @@ The tools named here may quickly appear dated and the balance of effort invested
 ---
 
 ## 2. Engineering
-
 <div class="n-col">
 <ul class="left">
 <li>Provisioning</li>

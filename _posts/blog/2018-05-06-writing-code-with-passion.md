@@ -5,6 +5,7 @@ description: As the earth hosts greater numbers of human and artificially intell
 tags: front
 header:
     overlay_image: /assets/images/creating_excellent_work_112557_1920x.jpg
+    small_image: /assets/images/creating_excellent_work_112557_640x.jpg
 ---
 
 This is Andrew from [Hoxton North](https://hoxtonnorth.com/).  I'm in no way knowledgeable about coffee, but I worked as a coffee barista long-enough to spot someone who has mastered it.  I made a few hundred Cappuccinos at Pizza Express, but they were as a child's scribblings compared to the _Deco_ art Andrew places in front of his customers.

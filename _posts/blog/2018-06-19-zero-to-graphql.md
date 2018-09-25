@@ -1,10 +1,11 @@
 ---
 layout: single
 title: Zero to GraphQL
-description: Much-hyped and misunderstood, GraphQL isn't for everything but it might be just right for your API
+description: Much-hyped and misunderstood, GraphQL isn't for everything but it might be just right for your API.
 tags: front
 header:
     overlay_image: /assets/images/zero-to-speed_5180_1920x.jpg
+    small_image: /assets/images/zero-to-speed_5180_640x.jpg
 ---
 
 Newphoria, the feeling of excitement and wonder that goes with your first experience of a new thing, is gripping but is it the best guide for tech choices?

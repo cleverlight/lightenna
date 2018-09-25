@@ -5,6 +5,7 @@ description: VR has been a tantalizingly close proposition for years but where w
 tags: tech vr front
 header:
   overlay_image: /assets/images/vr_and_phones_146100_1920x.jpg
+  small_image: /assets/images/vr_and_phones_146100_640x.jpg
 ---
 
 In your pocket and good enough for most mainstream use-cases?

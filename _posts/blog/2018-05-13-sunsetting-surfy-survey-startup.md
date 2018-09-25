@@ -5,6 +5,7 @@ description: Without iteration and test-and-learn, we never stood a chance of co
 tags: front
 header:
     overlay_image: /assets/images/surfy_sunset_70764319_1920x.jpg
+    small_image: /assets/images/surfy_sunset_70764319_640x.jpg
 ---
 
 By virtue of the things I learned and the stuff that has happened since because I learned those things, Surfy Surveys was a great success.  Sadly by purely financial measures, it tanked.

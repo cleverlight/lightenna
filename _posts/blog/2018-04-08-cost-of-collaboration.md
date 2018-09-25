@@ -5,6 +5,7 @@ description: Collaboration is brilliant - the only way - but managing the volati
 tags: devops training front
 header:
     overlay_image: /assets/images/diamond_eyes_01282_1920x.jpg
+    small_image: /assets/images/diamond_eyes_01282_640x.jpg
     og_video: https://www.youtube.com/v/h6SIjcT5zuE/
 ---
 

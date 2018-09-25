@@ -5,6 +5,7 @@ description: Serverless promises a world without low-level worries, but what's i
 tags: devops consulting front
 header:
   overlay_image: /assets/images/fly-at-scale_01542_1920x.jpg
+  small_image: /assets/images/fly-at-scale_01542_640x.jpg
 ---
 
 At one stage I was trying to license a mainstream games engine on behalf of a Bristol-based tech company.  As part of my vendor research, I was putting together a comparison table, because [this page on Wikipedia](https://en.wikipedia.org/wiki/List_of_game_engines) didn't exist back in 2005!  The conversations got a bit testy when I asked one vendor about the basic licence fees and they replied "we'll get an NDA out to you, but basically it's a small six-figure sum."  As I wasn't exactly working on [Battlefield 2](https://en.wikipedia.org/wiki/Battlefield_2), I knew I was 'shopping in the wrong mall'.

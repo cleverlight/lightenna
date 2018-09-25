@@ -15,7 +15,7 @@ It introduces the course and establishes some guidelines on what you need to get
 ---
 
 ## First steps
-* Teach a person to ~fish~ mess around with Internet examples for hours on end...
+* Teach a person to ~~fish~~ mess around with Internet examples for hours on end...
 * Not comprehensive
 
 {% if include.pres %}Note: {% endif %}This course is about giving those unfamiliar with the tools a starting point.
@@ -55,17 +55,17 @@ This 'DevOps' collaboration has precipitated a new set of tools - the subject of
 ---
 
 ## Pre-requisites
-* Laptop
+* Laptop with install (root/Administrator) access
 * Account with major Cloud Provider
 * Time
 
-{% if include.pres %}Note: {% endif %}
+{% if include.pres %}Note: {% endif %}To get the most out of this course, you need to be able to run and customise the examples.
 
 + Essential
    + Basic coding knowledge.
-   * A local machine with an SSH client and a web browser, both required for remote provisioning.
+   + A local machine with an SSH client and a web browser (required for remote provisioning).
 + Preferred
-   + A local machine with root/Administrator access and 100MB free space, required for local provisioning.
+   + A local machine with root/Administrator access and 100MB free space (required for local provisioning).
    + Familiarity with an IDE such as IntelliJ IDEA.
 
 ---
@@ -95,28 +95,51 @@ Equally, this is a developing course, so future iterations will try to keep pace
 ---
 
 ## Clouds
-* AWS
+* AWS first
 * Alternatives available
 
-{% if include.pres %}Note: {% endif %}
+{% if include.pres %}Note: {% endif %}The course is based on Amazon Web Services because at the time of writing, AWS is the largest and most established Cloud provider.
+
+While many of the examples mention AWS, the tools mentioned are multi-platform and can be equally applied to Microsoft Azure, Google Cloud or half a dozen others providers.
 
 ---
 
-## Local vs Remote provisioning
+## Provisioning models
 * Local development
 * Remote production
 * Remote provisioning (remprov)
 
-{% if include.pres %}Note: {% endif %}when developing application code, there are pros and cons to all development models.
+{% if include.pres %}Note: {% endif %}When developing application code, there are pros and cons to all development models.
 
 Local development places all the source code on your local desktop/laptop computer.  Access is typically fast (low latency) and high-bandwidth (direct GUI).  If the application can be run locally, testing can benefit from that same fast/high-bandwidth access.
 
-While 'local' is a great place for application development, it's not the best place to host production solutions.  Always on hosts, reliably power supplies and dedicated network connections make servers a better place to host production services.
+While 'local' is a great place for application development, it's not the best place to host production solutions.  Always on hosts, reliable power supplies and dedicated network connections make servers a better place to host production services.
 
 When developing infrastructure-as-code (IAC), the same applies but to a lesser extent.  Since most provisioning involves the client talking to a Cloud Provider (AWS/Google Cloud/Microsoft Azure), the advantage of local development is lessened.
 
 ## Remprov starter
-* AWI
+* Public ready-to-go AMI
+* Pre-installed with all the tools
+
+{% if include.pres %}Note: {% endif %}The `workstream-remprov` AMI comes pre-packaged with all the content you need to get started.
+
+---
+
+## Firewalls
+* Zero inbound port access
+* SSH outbound access
+* 22 -> 443 workaround
+
+{% if include.pres %}Note: {% endif %}Remote provisioning requires no inbound port access, but you will need to be able to SSH out to your remprov machine.
+
+That outbound access tends to be on port 22.  Some firewalls may block outbound access on port 22.  A special version of the remprov AMI is available on request with SSH running on a non-standard port (443).
+
+---
+
+## Access and user accounts
+* Cloud account
+* User account
+* Scope (IAM permissions)
 
 {% if include.pres %}Note: {% endif %}
 
