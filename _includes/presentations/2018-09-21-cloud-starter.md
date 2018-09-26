@@ -1,14 +1,12 @@
 
 ## Introduction
-* First steps
-* Pre-requisites
-* Tools
-* Clouds
+* Pre-requisites and first steps
+* Tools and Clouds
 * Provisioning models
-* Firewalls
-* Access and user accounts
+* Firewalls, Access and User accounts
 
-{% if include.pres %}Note: {% endif %}This section summarises the module and starts chipping away at the blocks that can inhibit experimentation and discovery in the Cloud.
+{% if include.pres %}Note: {% endif %}
+This section summarises the module and starts chipping away at the blocks that can inhibit that experimentation and discovery in the Cloud.
 
 ---
 
@@ -16,7 +14,11 @@
 * Teach a person to ~~fish~~ mess around with Internet examples for hours on end...
 * Not comprehensive
 
-{% if include.pres %}Note: {% endif %}This course is about giving those unfamiliar with the tools a starting point.
+{% include svg.html svg="/assets/svg/cloud_starter_workstream.svg"  png="/assets/svg/cloud_starter_workstream.png" %}
+
+{% if include.pres %}Note: {% endif %}The diagram above shows the basic, secure Cloud environment we will automatically provision as part of this course.
+
+This course is about giving those unfamiliar with the tools a starting point.
 This is not a ground-up introduction of:
 + every single tool/language and
 + every single coding statement in
