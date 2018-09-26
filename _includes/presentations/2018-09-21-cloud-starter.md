@@ -11,13 +11,12 @@ This section summarises the module and starts chipping away at the blocks that c
 ---
 
 ## First steps
-* Teach a person to ~~fish~~ mess around with Internet examples for hours on end...
+* Starting point
 * Not comprehensive
 
-{% include svg.html svg="/assets/svg/cloud_starter_workstream.svg"  png="/assets/svg/cloud_starter_workstream.png" %}
+> Teach a person to ~~fish~~ mess around with Internet examples for hours on end....
 
-{% if include.pres %}Note: {% endif %}The diagram above shows the basic, secure Cloud environment we will automatically provision as part of this course.
-
+{% if include.pres %}Note: {% endif %}
 This course is about giving those unfamiliar with the tools a starting point.
 This is not a ground-up introduction of:
 + every single tool/language and
@@ -28,7 +27,18 @@ Instead it's a good way to get started, build something really quickly and give 
 
 This is intended to be the beginning of your DevOps journey, but I hope the course will also be relevant for those who've got some experience.
 
-The course is experimentation-driven, meaning that you'll get nothing from it unless you're firing up the examples and pinging the servers and systems we create.
+---
+
+## Target architecture
+* Build something fast
+* Build something real
+
+{% include svg.html svg="/assets/svg/cloud_starter_workstream.svg"  png="/assets/svg/cloud_starter_workstream.png" %}
+
+{% if include.pres %}Note: {% endif %}
+The diagram above shows the basic, secure Cloud environment we will automatically provision as part of this course.
+
+The course is experimentation-driven, meaning that you'll get little from it unless you're firing up the examples and pinging the servers and systems we create.
 
 ---
 
