@@ -3,6 +3,7 @@ layout: single
 title: Cloud framework
 description: "Start simple, start with people, but aim for a holistic well-constructed Cloud."
 tags: front devops
+toc: true
 preview:
     parentheses: "(Roadmap)"
 header:

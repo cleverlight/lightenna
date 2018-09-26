@@ -9,8 +9,9 @@ preview:
 header:
     overlay_image: /assets/images/smokerainbow_00122_1920x.jpg
     small_image: /assets/images/smokerainbow_00122_640x.jpg
-    og_video: https://www.youtube.com/v/h6SIjcT5zuE/
 ---
+
+This module is the first part of the Cloud Starter course.  It introduces the course and establishes some guidelines on what you need to get started.
 
 {% include presentations/2018-09-21-cloud-starter.md %}
 
