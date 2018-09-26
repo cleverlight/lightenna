@@ -7,7 +7,10 @@ toc: true
 header:
     overlay_image: /assets/images/openroad_02H23152_1920x.jpg
     small_image: /assets/images/openroad_02H23152_640x.jpg
+    og_video: https://www.youtube.com/v/eE9fZd5nHp0/
 ---
+
+{% include video id="eE9fZd5nHp0" provider="youtube" %}
 
 {% include presentations/2018-09-21-how-to-go-to-cloud-well.md %}
 
