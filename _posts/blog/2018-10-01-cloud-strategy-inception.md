@@ -10,4 +10,4 @@ header:
 
 {% include presentations/2018-10-01-cloud-strategy-inception.md %}
 
-[Presentation only](reveal/)
+{% include reveal_link.html %}

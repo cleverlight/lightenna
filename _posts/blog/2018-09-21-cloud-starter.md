@@ -13,4 +13,4 @@ header:
 
 {% include presentations/2018-09-21-cloud-starter.md %}
 
-[Presentation only](reveal/)
+{% include reveal_link.html %}

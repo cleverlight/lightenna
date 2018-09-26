@@ -10,4 +10,4 @@ header:
 
 {% include presentations/2018-09-21-how-to-go-to-cloud-well.md %}
 
-[Presentation only](reveal/)
+{% include reveal_link.html %}

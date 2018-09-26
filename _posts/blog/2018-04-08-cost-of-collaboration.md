@@ -13,4 +13,4 @@ header:
 
 {% include presentations/2018-04-08-cost-of-collaboration.md %}
 
-[Presentation only](reveal/)
+{% include reveal_link.html %}

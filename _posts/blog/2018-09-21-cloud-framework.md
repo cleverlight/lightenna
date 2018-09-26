@@ -15,4 +15,4 @@ header:
 
 {% include presentations/2018-09-21-cloud-framework.md %}
 
-[Presentation only](reveal/)
+{% include reveal_link.html %}
