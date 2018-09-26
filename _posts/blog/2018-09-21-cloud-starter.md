@@ -3,6 +3,7 @@ layout: single
 title: Cloud starter
 description: "Inspire your team to greater heights in the Cloud.<br />Audience: Developers, Architects, Testers."
 tags: front training-courses
+toc: true
 preview:
     parentheses: "(Training course, 1/2 day)"
 header:

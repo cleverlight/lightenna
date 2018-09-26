@@ -1,4 +1,4 @@
-### Cloud destination
+## Cloud destination
 * Mountain / Elephant metaphor
 * Overwhelming big design
 
@@ -10,7 +10,7 @@ They might propose elaborate Cloud frameworks, each unique and 'tailored' to you
 
 ---
 
-### Cloud framework
+## Cloud framework
 {% include svg.html svg="/assets/svg/cloud_framework_v1.svg"  png="/assets/svg/cloud_framework_v1.png" %}
 
 {% if include.pres %}Note: {% endif %}Here's an example of a fairly moderate but still intimidating Cloud framework.
@@ -19,7 +19,7 @@ There's a lot here and I talk it through box-by-box in the [Cloud framework](/te
 
 ---
 
-### Agile
+## Agile
 * Fast-changing
 * New actors
 * Managing risk
@@ -34,7 +34,7 @@ Reactive, and proactive, teams have the skills to embrace that change, adapt the
 
 ---
 
-### Alike
+## Alike
 * Common ground
 * Accentuate the differences
 * Not invented here
@@ -48,7 +48,7 @@ Every day developers, technical architects and specialists are designing improve
 
 ---
 
-### Open
+## Open
 * Open source software
 * Free or freemium software
 
@@ -61,7 +61,7 @@ Earlier this year Lightenna released our [Cloud Starter](/tech/2018/cloud-starte
 
 ---
 
-### Starting with people
+## Starting with people
 
 {% if include.pres %}Note: {% endif %}Instead of shooting for the moon or buying into a seven-figure, multi-year plan, I'd like to advocate a different approach.
 A box on a diagram has a nice simplicity, but the business outcomes associated with Cloud success have people at their core.

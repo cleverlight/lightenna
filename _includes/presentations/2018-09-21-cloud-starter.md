@@ -8,9 +8,7 @@
 * Firewalls
 * Access and user accounts
 
-{% if include.pres %}Note: {% endif %}This module is the first part of the Cloud Starter course.
-
-It introduces the course and establishes some guidelines on what you need to get started.
+{% if include.pres %}Note: {% endif %}This section summarises the module and starts chipping away at the blocks that can inhibit experimentation and discovery in the Cloud.
 
 ---
 
@@ -19,9 +17,8 @@ It introduces the course and establishes some guidelines on what you need to get
 * Not comprehensive
 
 {% if include.pres %}Note: {% endif %}This course is about giving those unfamiliar with the tools a starting point.
-
 This is not a ground-up introduction of:
-* every single tool/language and
++ every single tool/language and
 + every single coding statement in
 + every single example
 
