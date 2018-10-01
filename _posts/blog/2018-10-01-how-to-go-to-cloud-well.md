@@ -12,6 +12,6 @@ header:
 
 {% include video id="eE9fZd5nHp0" provider="youtube" %}
 
-{% include presentations/2018-09-21-how-to-go-to-cloud-well.md %}
+{% include presentations/2018-10-01-how-to-go-to-cloud-well.md %}
 
 {% include reveal_link.html %}

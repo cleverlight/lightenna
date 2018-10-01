@@ -9,6 +9,6 @@ header:
     small_image: /assets/images/strategy-inception_05777_640x.jpg
 ---
 
-{% include presentations/2018-10-17-cloud-strategy-inception.md %}
+{% include presentations/2018-10-15-cloud-strategy-inception.md %}
 
 {% include reveal_link.html %}

@@ -7,6 +7,6 @@ permalink: /tech/2018/cloud-strategy-inception/reveal/
 
 {% include reveal_slide-start.html %}
 
-{% include presentations/2018-10-17-cloud-strategy-inception.md pres=true %}
+{% include presentations/2018-10-15-cloud-strategy-inception.md pres=true %}
 
 {% include reveal_slide-finish.html %}

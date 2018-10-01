@@ -7,6 +7,6 @@ permalink: /tech/2018/how-to-go-to-cloud-well/reveal/
 
 {% include reveal_slide-start.html %}
 
-{% include presentations/2018-09-21-how-to-go-to-cloud-well.md pres=true %}
+{% include presentations/2018-10-01-how-to-go-to-cloud-well.md pres=true %}
 
 {% include reveal_slide-finish.html %}
