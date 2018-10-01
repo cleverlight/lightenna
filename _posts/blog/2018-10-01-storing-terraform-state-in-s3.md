@@ -1,12 +1,12 @@
 ---
 layout: single
 title: Storing Terraform state in S3
-description:   
+description: Terraform is a great solo tool but, when you start working together as a team, keep the tfstate files in the Cloud (S3) 
 tags: front tech devops
 toc: true
 header:
-    overlay_image: /assets/images/techupdate_00012_1920x.png.jpg
-    small_image: /assets/images/techupdate_00012_640x.png.jpg
+    overlay_image: /assets/images/techupdate_00012_1920x.png
+    small_image: /assets/images/techupdate_00012_640x.png
 ---
 
 ## Terraform state in the Cloud
