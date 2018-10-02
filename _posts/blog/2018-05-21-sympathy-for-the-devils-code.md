@@ -2,7 +2,7 @@
 layout: single
 title: Sympathy for the devil (or his legacy anyway)
 description: Legacy systems (of any type) pervade almost every one of our roles, yet they are pretty universally hated.  What can we do for our tomorrow-selves to break the circle? 
-tags: front consulting
+tags: front business
 toc: true
 header:
     overlay_image: /assets/images/sympathy-for-legacy_00901_1920x.png

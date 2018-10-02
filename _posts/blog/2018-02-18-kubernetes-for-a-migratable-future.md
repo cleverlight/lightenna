@@ -2,7 +2,7 @@
 layout: single
 title: Kubernetes for a migratable future
 description: Serverless function-as-a-service (like AWS Lambda) is magic, but it's hard to commit at this early stage.
-tags: devops consulting front
+tags: devops front
 header:
   overlay_image: /assets/images/containers_on_ship_05027_1920x.jpg
   small_image: /assets/images/containers_on_ship_05027_640x.jpg

@@ -2,7 +2,7 @@
 layout: single
 title: Buying software with integrity 
 description: The ephemeral nature of a digital download can make for murky transactions.  What we need isn't a 40-page EULA, it's a clear agreement of how and how long the software will work.
-tags: business consulting front
+tags: business front
 header:
   overlay_image: /assets/images/ephemeral_software_144362_1920x.jpg
   small_image: /assets/images/ephemeral_software_144362_640x.jpg
