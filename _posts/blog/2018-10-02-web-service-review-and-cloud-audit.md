@@ -315,5 +315,5 @@ There is no substitute for a thorough compliance assessment against GDPR and PCI
 * What documentation do you maintain and how does that link to the source?
 * Tabs or spaces?  (Only kidding)
 
-If you'd like Lightenna to audit some part of your digital estate, or conduct some Due Diligence on an investment that you're considering, please [get in touch](/contact).
+If you'd like Lightenna to audit some part of your digital estate, or conduct some due diligence on an investment that you're considering, please [get in touch](/contact).
 
