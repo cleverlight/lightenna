@@ -214,6 +214,77 @@ That process is as unique as the project itself, but we tend to ask a standard s
 * What mechanisms do you have in place to detect data breaches?
 * Do you have a communication plan in place to enact in the event of a data breach?
 
+## Payment Card Industry Data Security Standard (PCI DSS)
+### Scope
+* Does the service interact in any way with card payment processing?
+    * Does it control how consumers are redirected to a validated third-party service provider?
+* Have you reviewed the relevant Self-Assessment Questionnaire (SAQ) for PCI compliance?
+* Do you already know which SAQ classification you fall into:
+    + [SAQ A](https://www.pcisecuritystandards.org/documents/SAQ_A_v3.pdf). Card-not-present, all cardholder data functions are fully outsourced
+    + [SAQ A-EP](https://www.pcisecuritystandards.org/documents/SAQ_A-EP_v3.pdf). Partially outsourced eCommerce using a third-party website for payment processing
+    + SAQ B. Imprint or standalone machines (including B-IP and P2PE), no electronic cardholder data storage (not applicable to eCommerce channels).
+    + SAQ C. Payment Application Systems connected to the Internet or Web-based virtual terminals (C-VT), no electronic cardholder data storage (not applicable to eCommerce channels).
+    + [SAQ D](https://www.pcisecuritystandards.org/documents/SAQ_D_v3_Merchant.pdf). All other merchants/service providers
+
+### Third-parties
+* How do you manage service providers with whom cardholder data is shared/made accessible?
+    * What legal documentation do you maintain with/for them?
+    * How do you engage them?  What due diligence do you conduct?
+    * How do you monitor their compliance? (e.g. annual assessment)
+    * How do you distribute your PCI DSS requirements across those service providers?
+
+### Payment pages
+Choosing between SAQ A and SAQ A-EP can be difficult, but there is help in the [Understanding SAQs](https://www.pcisecuritystandards.org/documents/Understanding_SAQs_PCI_DSS_v3.pdf) guidance.
+* Is there any program or application code that does or _could_ capture payment information? (e.g. javascript on payment pages)
+* Do all elements of payment pages originate from the third-party service provider?
+* How does the system link to or embed the third-party payment processing service provider?
+* How and where is the payment form created?
+
+### Cardholder data
+* Do you store any cardholder data, such as Primary Account Number (PAN), expiration date, cardholder name or CV2?
+    * If so, do you store it electronically or in hardcopy?  Name all the places where this data is stored.
+    * Do you receive any reports or receipts featuring cardholder data?
+* For each physical data storage location:
+    * How are the media secured?
+    * How do you restrict physical access to the media?
+    * How is distribution controlled?
+    * How is the media classified, transmitted, approved for access or transmission, destroyed after use, stored prior to destruction etc.?
+* For each electronic storage location (including storage locations managed by a third-party service provider):
+    * How do you define the Cardholder Data Environment (CDE)?
+    * If hosted on a non-networked computer, how is the host machine isolated?
+    * If hosted on a networked computer, how is the network segmented?
+    * If hosted by a networked third-party:
+        * How is your office network segmented?
+        * How is the system segmented from the third-party service provider?
+
+### Staff access
+* Which employees have access to cardholder data?
+    * What audit process wraps their access to it?
+    * What credentials are required for their access?
+    * How are those credentials secured (e.g. password requirements)?  How and when are they rotated?
+    * Do you have a policy that covers information security?
+    * How often are staff trained in information security and how is that logged?
+
+### SAQ A
+* How do you meet the SAQ A requirements?
+    * 9 Restrict physical access to cardholder data
+    * 12 Maintain a policy that addresses information security for all personnel?
+
+### SAQ A-EP and SAQ D
+* In addition to SAQ A above, how do you meet the SAQ A-EP/D requirements?
+    * 1 Install and maintain a firewall configuration to protect data
+    * 2 Do not use vendor-supplied defaults for system passwords and other security parameters
+    * 3 Protect stored cardholder data
+    * 4 Encrypt transmission of cardholder data across open, public networks
+    * 5 Protect all systems against malware and regularly update anti-virus software or programs
+    * 6 Develop and maintain secure systems and applications
+    * 7 Restrict access to cardholder data by business need to know
+    * 8 Identify and authenticate access to system components
+    * 10 Track and monitor all access to network resources and cardholder data
+    * 11 Regularly test security systems and processes
+
+There is no substitute for a thorough compliance assessment against GDPR and PCI DSS conducted by a Qualified Security Assessor (QSA), but these questions are a useful indicator of a business's readiness.  Any formal PCI assessment should begin with the [PCI DSS Self-assessment questionnaire](https://www.pcisecuritystandards.org/documents/SAQ_InstrGuidelines_v3-1.pdf).
+
 ## Code review
 ### Standards
 * Do you provide any recommendations, guidelines or rigid technical standards to your development teams?
