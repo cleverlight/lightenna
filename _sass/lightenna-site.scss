@@ -52,6 +52,12 @@ object.wrapper {
   display: none;
 }
 
+.mailchimp-signup {
+  max-width: 424px;
+  float: right;
+  margin-top: -20px;
+}
+
 @media print {
   // clean up redundant (for print) page elements
   .page__comments,
