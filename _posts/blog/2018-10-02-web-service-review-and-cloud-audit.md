@@ -9,6 +9,7 @@ preview:
 header:
     overlay_image: /assets/images/auditsky_07013_1920x.jpg
     small_image: /assets/images/auditsky_07013_640x.jpg
+permalink: /tech/2018/web-service-review-and-cloud-audit/
 ---
 
 Every audit is about deeply understanding a technology platform and the people who are responsible for it.
