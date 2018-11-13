@@ -296,6 +296,13 @@ There is no substitute for a thorough compliance assessment against GDPR and PCI
 * What design patterns are used in the code?
 * How do you ensure consistency of approach in a multi-developer team?
 
+### Secure coding practices
+* How are dependencies handled?
+* What kind of scanning do you use?
+* What is your policy on input sanitisation (SQL injection, XSS) and form forgeries (CSRF)?
+* How do you treat authentication (including any tokens) and authorisation (including privilege escalation)?
+* Do you treat input from the database as potentially hostile?
+
 ### Logging
 * What log-levels does the code issue messages at?
 * How verbose and accurate are those messages at each level?
