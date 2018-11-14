@@ -7,6 +7,6 @@ permalink: /tech/2018/web-audit-spice/reveal/
 
 {% include reveal_slide-start.html %}
 
-{% include presentations/2018-11-14-web-audit-spice.md %}
+{% include presentations/2018-11-14-web-audit-spice.md pres=true %}
 
 {% include reveal_slide-finish.html %}
