@@ -1,6 +1,6 @@
 
 ## What is it?
-* Everything you should have done,
+* Everything you should have done
 * Couldn't do or
 * Couldn't afford to do earlier
 
