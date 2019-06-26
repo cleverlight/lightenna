@@ -21,6 +21,8 @@ Cloudlog.live is a web app that takes a real-time event stream from your Cloud p
 Based on those events it maintains a picture of all the resources in an account, then uses that to compute a cost projection.
 Every time a new resource appears, or an old one gets shutdown, the projection updates.
 
+{% include video id="XSyfSghBCYA" provider="youtube" %}
+
 ---
 
 ## Next steps
