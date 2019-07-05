@@ -10,5 +10,3 @@ header:
 ---
 
 {% include presentations/2018-10-15-cloud-strategy-inception.md %}
-
-{% include reveal_link.html %}
