@@ -65,5 +65,5 @@ When implementing GraphQL, my advice is to start with the basic stuff:
 * Think about your backing store before you publish your API.  If there's a major disconnect between the way your data is stored and the way you plan to surface it through the API, then you're creating more work for your resolvers.
 * Use domain-driven design to inform the way you carve up your business processes and the entities that interact with them.  It gives you best chance of locking down your schema.  Since _some_ schema changes affect consumers - not additions because GraphQL queries are implicitly partial subsets of available attributes - be careful to minimise their impact.
 
-As ever, if you've got questions or comments, please tweet, reply or [get in touch](/contact/).
+As ever, if you've got questions or comments, please tweet, reply or [get in touch](/contact).
 
