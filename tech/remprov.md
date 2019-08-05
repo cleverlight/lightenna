@@ -1,8 +1,8 @@
 ---
 layout: tag-page
-title: Remote provisioning (remprov)
+title: Remote provisioning
 description: 
-tag: business
+tag: remprov
 header:
   overlay_image: /assets/images/bearing_81127_1920x.jpg
 ---
