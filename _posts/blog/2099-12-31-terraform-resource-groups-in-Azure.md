@@ -45,7 +45,7 @@ By selecting a unique name, we can easily filter the Azure web console 'Resource
 <!--- @todo insert console screenshot -->
 
 ## Open-source
-All the code for these tutorials is available as part of [DevOps-Workstream](https://github.com/lightenna/devops-workstream).  The segments from this tutorial specifically make up `terraform/tutorial/03-azure-resource-group-with-unique-default` on [here on GitHub](https://github.com/lightenna/devops-workstream/tree/master/terraform/tutorial/03-azure-resource-group-with-unique-default).
+All the code for these tutorials is available as part of [DevOps-Workstream](https://github.com/lightenna/devops-workstream).  The segments from this tutorial specifically make up `terraform/tutorial/03-azure-resource-group-with-unique-default` [here on GitHub](https://github.com/lightenna/devops-workstream/tree/master/terraform/tutorial/03-azure-resource-group-with-unique-default).
 
 ## Get your team coding
 If you'd like to help your Operations team move to infrastructure-as-code, please [get in touch](/contact) to find out how Lightenna consulting could accelerate your Cloud journey.
