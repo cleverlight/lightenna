@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Organise Puppet manifests using classes
-description: 
+description: Classes are to resources like folders are to your Physics revision notes.
 tags: tech devops puppet
 toc: true
 header:

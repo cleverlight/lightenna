@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Import Hiera values into Puppet classes
-description: 
+description: When configuration code contains 'hard-coded' configuration values, it's much harder to maintain.  Hiera allows us to break the latter out into something readable.
 tags: tech devops puppet
 toc: true
 header:

@@ -1,7 +1,7 @@
 ---
 layout: single
 title: String substitution in Puppet using variables
-description: 
+description: Variables allow us to start genericising Puppet configuration and allow us to keep things DRY (don't repeat yourself)
 tags: front tech devops puppet
 toc: true
 header:

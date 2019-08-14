@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Use Puppet for templating Hiera secrets into configuration files
-description: 
+description: Maintaining infrastructure-as-code at scale requires a clear, logical and ruthlessly consistent approach to machine state.  Hiera is the way.
 tags: tech devops puppet
 toc: true
 header:

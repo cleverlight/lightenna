@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Multiple node definitions in puppet's site.pp
-description: 
+description: A single node defined in site.pp is how all vast server estates begin, but multiple node definitions allow us to build out while sharing common configuration.
 tags: tech devops puppet
 toc: true
 header:

@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Getting started with Puppet, masterless
-description: 
+description: Getting going with Puppet can be as simple a few lines of infrastructure-as-code (IAC).
 tags: tech devops puppet
 toc: true
 header:
