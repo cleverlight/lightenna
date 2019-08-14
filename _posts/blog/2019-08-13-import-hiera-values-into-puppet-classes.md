@@ -10,9 +10,15 @@ header:
 ---
 
 ## Introduction
-Hiera is great.
+Hiera is great.  It allows us to lift the values out of our Puppet manifests, which creates a healthy separation.
+Hiera contains the values.
+Puppet manifests contain the description of what to do with those values.
+
+In a well-managed infrastructure, it should be possible to clone repeating, but subtly different, config patterns by simply adding to the Hiera config.
+The Puppet manifest is like a blueprint that maps the Hiera config to the machine configuration.
 
 ## Node definition
+This is an abstract concept, so let's take a look at an example:
 ```
 node default {
   class { 'example' : }
@@ -62,6 +68,8 @@ In `common.yaml` we define our first value for the `example` class:
 example::user: "azula"
 ```
 
+This means that the value `azula` is going to be passed to the `$user` variable in the `example` class.
+
 ## Output
 The debugging output now features a lot of information from Hiera:
 ```
@@ -103,6 +111,8 @@ Debug: Scope(Class[Example]): The value of the variable $user is azula
 ## Open-source
 All the code for these tutorials is available as part of [DevOps-Workstream](https://github.com/lightenna/devops-workstream). 
 The segments from this tutorial specifically make up `puppet/tutorial/05-class-attribute-values-from-hiera` [here on GitHub](https://github.com/lightenna/devops-workstream/tree/master/puppet/tutorial/).
+
+If you'd like to see all the [previous and future installments of this tutorial](/tech/puppet), they're available under the `puppet` tag.
 
 ## Get your team coding
 If you'd like to help your Operations team move to infrastructure-as-code, please [get in touch](/contact) to find out how Lightenna consulting could accelerate your Cloud journey.

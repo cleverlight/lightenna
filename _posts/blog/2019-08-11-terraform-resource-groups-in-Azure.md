@@ -10,7 +10,7 @@ header:
 ---
 
 ## Creating resources
-Now that we've got a Terraform command-line and given it the credentials it needs to provision resources in our Cloud, we can start provisioning.
+Now that we've got [a Terraform command-line](/tech/2019/terraform-command-line-for-remote-provisioning/) and [given it the credentials](/tech/2019/set-up-terraform-with-Azure/) it needs to provision resources in our Cloud, we can start provisioning.
 
 ## Keeping it unique
 When running these kind of tutorials, I find it helpful to keep all the resources unique.  That can either be done by appending a unique name, or using a short random string.
@@ -32,6 +32,7 @@ locals {
 ```
 
 ## Terraform resource group
+Having generated that `local.unique_append` we can use it in resources names to keep them unique.  Even if this module is re-run in the same account, the resource names should be different enough to avoid a collision.
 ```
 resource "azurerm_resource_group" "rg" {
   name     = "rg${local.unique_append}"
@@ -47,5 +48,7 @@ By selecting a unique name, we can easily filter the Azure web console 'Resource
 ## Open-source
 All the code for these tutorials is available as part of [DevOps-Workstream](https://github.com/lightenna/devops-workstream).  The segments from this tutorial specifically make up `terraform/tutorial/03-azure-resource-group-with-unique-default` [here on GitHub](https://github.com/lightenna/devops-workstream/tree/master/terraform/tutorial/03-azure-resource-group-with-unique-default).
 
-## Get your team coding
-If you'd like to help your Operations team move to infrastructure-as-code, please [get in touch](/contact) to find out how Lightenna consulting could accelerate your Cloud journey.
+If you'd like to see all the [previous and future installments of this tutorial](/tech/remprov), they're available under the `remprov` tag.
+
+## More like this
+If you'd like to see more posts like this, or see this post expanded in more detail, please [let us know](/contact).

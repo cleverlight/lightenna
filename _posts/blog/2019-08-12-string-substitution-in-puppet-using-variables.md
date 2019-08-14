@@ -2,7 +2,7 @@
 layout: single
 title: String substitution in Puppet using variables
 description: 
-tags: tech devops puppet
+tags: front tech devops puppet
 toc: true
 header:
     overlay_image: /assets/images/techupdate_00012_1920x.png
@@ -10,7 +10,7 @@ header:
 ---
 
 ## The call
-The user variable is passed into the class explicitly in the node definition `site.pp`:
+The value for the `user` attribute is passed into the class explicitly in the node definition `site.pp`:
 ```
 node default {
   class { 'example' :
@@ -20,7 +20,7 @@ node default {
 ```
 
 # The definition
-The module, as defined in `modules/example/manifests/init.pp`:
+The module, as defined in `modules/example/manifests/init.pp` creates a variable using that value, which we can access further down in the class definition:
 ```
 class example (
   $user,
@@ -83,6 +83,8 @@ Debug: Scope(Class[Example]): Single quoted strings are interpreted literally (n
 ## Open-source
 All the code for these tutorials is available as part of [DevOps-Workstream](https://github.com/lightenna/devops-workstream). 
 The segments from this tutorial specifically make up `puppet/tutorial/03-class-variables` and `puppet/tutorial/04-class-defaults` [here on GitHub](https://github.com/lightenna/devops-workstream/tree/master/puppet/tutorial/).
+
+If you'd like to see all the [previous and future installments of this tutorial](/tech/puppet), they're available under the `puppet` tag.
 
 ## Get your team coding
 If you'd like to help your Operations team move to infrastructure-as-code, please [get in touch](/contact) to find out how Lightenna consulting could accelerate your Cloud journey.

@@ -27,6 +27,7 @@ The variables in our template come from multiple sources:
     * `service_name`
 
 ## File resource
+This file resources composes the contents of the file from an EPP template, which in turn references the variables above.
 ```
   file { '/tmp/configuration.xml':
     ensure => 'present',
@@ -36,9 +37,23 @@ The variables in our template come from multiple sources:
   }
 ```
 
+## Template
+The template could use ERB (Ruby-like) or EPP, but for simplicity's sake, we'll stick with Puppet's Embedded Puppet (EPP) syntax.
+```
+<?xml version="1.0" encoding="utf-8" ?>
+<server address="<%= $::fqdn %>">
+  <service name="<%= $service_name %>">
+    <port number="<%= $appserver::port %>" />
+  </service>
+  <database name="<%= $appserver::database_name %>" username="<%= $appserver::database_user %>" password="<%= $appserver::database_pass %>" />
+</server>
+```
+
 ## Open-source
 All the code for these tutorials is available as part of [DevOps-Workstream](https://github.com/lightenna/devops-workstream). 
 The segments from this tutorial specifically make up `puppet/tutorial/07-templating` [here on GitHub](https://github.com/lightenna/devops-workstream/tree/master/puppet/tutorial/).
+
+If you'd like to see all the [previous and future installments of this tutorial](/tech/puppet), they're available under the `puppet` tag.
 
 ## Get your team coding
 If you'd like to help your Operations team move to infrastructure-as-code, please [get in touch](/contact) to find out how Lightenna consulting could accelerate your Cloud journey.

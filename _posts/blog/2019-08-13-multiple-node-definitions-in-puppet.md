@@ -10,6 +10,9 @@ header:
 ---
 
 ## More the merrier
+We've started with a single node, which probably translates to a single machine or a single family of nearly-identical machines.
+
+Now let's start to add in other machine definitions (nodes):
 ```
 node default {
   class { 'example' : }
@@ -39,6 +42,8 @@ Debug: Scope(Class[Example]): The value of the variable $user is yuliana on remp
 ## Open-source
 All the code for these tutorials is available as part of [DevOps-Workstream](https://github.com/lightenna/devops-workstream). 
 The segments from this tutorial specifically make up `puppet/tutorial/06-second-node` [here on GitHub](https://github.com/lightenna/devops-workstream/tree/master/puppet/tutorial/).
+
+If you'd like to see all the [previous and future installments of this tutorial](/tech/puppet), they're available under the `puppet` tag.
 
 ## Get your team coding
 If you'd like to help your Operations team move to infrastructure-as-code, please [get in touch](/contact) to find out how Lightenna consulting could accelerate your Cloud journey.

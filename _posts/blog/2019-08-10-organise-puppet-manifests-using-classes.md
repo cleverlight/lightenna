@@ -10,7 +10,8 @@ header:
 ---
 
 ## The value of abstraction
-The goal is to hide complexity.
+The goal is to hide complexity.  By placing resources in well-defined classes, we can wrap up similar configuration.
+Those wrapped resources can then be treated as a single entity.
 
 ## Reorganising
 In `site.pp` we still define one node, but all the complexity is shifted out into an `example` module:
@@ -75,6 +76,8 @@ Debug: Scope(Class[Example]): This is some output from the 'example' module, vis
 ## Open-source
 All the code for these tutorials is available as part of [DevOps-Workstream](https://github.com/lightenna/devops-workstream). 
 The segments from this tutorial specifically make up `puppet/tutorial/02-local-class` [here on GitHub](https://github.com/lightenna/devops-workstream/tree/master/puppet/tutorial/).
+
+If you'd like to see all the [previous and future installments of this tutorial](/tech/puppet), they're available under the `puppet` tag.
 
 ## Get your team coding
 If you'd like to help your Operations team move to infrastructure-as-code, please [get in touch](/contact) to find out how Lightenna consulting could accelerate your Cloud journey.
