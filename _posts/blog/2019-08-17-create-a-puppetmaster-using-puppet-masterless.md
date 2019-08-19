@@ -171,6 +171,18 @@ Also, I recommend putting some kind of basic password on the dashboard (443).  W
 }
 ```
 
+We'll also need to create the .htpasswd file
+```
+httpauth { 'name':
+  username => 'username',
+  file     => '/etc/httpd/secure/.htpasswd',
+  password => 'password',
+  realm => 'realm',
+  mechanism => basic,
+  ensure => present,
+}
+```
+
 If you'd like to see all the [previous and future installments of this tutorial](/tech/puppet), they're available under the `puppet` tag.
 
 ## Get your team coding
