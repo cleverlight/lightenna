@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Create a Puppetmaster using Puppet masterless
-description: A simple exercise in bootstrapping the most complex config-managed server in the estate: the Puppetmaster.
+description: A simple exercise in bootstrapping the most complex config-managed server in the estate, the Puppetmaster.
 tags: tech devops puppet
 toc: true
 header:
