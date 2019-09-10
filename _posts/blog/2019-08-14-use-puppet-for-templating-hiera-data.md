@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Use Puppet for templating Hiera secrets into configuration files
+title: Use Puppet for templating Hiera data into configuration files
 description: Maintaining infrastructure-as-code at scale requires a clear, logical and ruthlessly consistent approach to machine state.  Hiera is the way.
 tags: tech devops puppet
 toc: true
@@ -35,6 +35,22 @@ This file resources composes the contents of the file from an EPP template, whic
       'service_name' => "${::hostname}-appserver"
     }),
   }
+```
+
+## Hiera
+To pull class data from Hiera, we need to create a hiera.yaml file:
+```
+hierarchy:
+  - name: "Per-node data"
+    path: "nodes/%{::hostname}.yaml"
+
+  - name: "Common data"
+    path: "common.yaml"
+```
+
+and refer to it in the `puppet apply` command:
+```
+puppet apply -dvt ./manifests/site.pp --modulepath=./modules/ --hiera_config=./hiera.yaml
 ```
 
 ## Template
