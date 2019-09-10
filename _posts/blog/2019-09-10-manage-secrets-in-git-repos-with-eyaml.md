@@ -91,7 +91,7 @@ appserver::database_pass:
 ...
 ```
 
-## 
+## ...Puppet
 Finally the `puppet apply` run uses the exact same command as the previous example:
 ```
 puppet apply -dvt ./manifests/site.pp --modulepath=./modules/ --hiera_config=./hiera.yaml
