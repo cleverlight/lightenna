@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Master the Migrate-Train-Run cycle
-description: IT is endlessly keeping up with the future, but here are 10 things that make it dramatically easier
+description: IT is endlessly keeping up with the future, but there are things that make it dramatically easier
 permalink: /tech/2019/migrate-train-run/
 tags: front tech consulting
 toc: true

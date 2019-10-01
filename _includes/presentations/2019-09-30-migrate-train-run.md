@@ -14,7 +14,7 @@ When I ran an IT team, I felt like we were constantly in a migrate-train-run cyc
 
 Cloud is still new enough to be fuelling the current cycle.
 Many firms are migrating their physical servers, or entire data centres, to the Cloud.
-Cloud brings with it a different philosophy, one where servers persist for hours or days but not months.
+Cloud brings with it a different philosophy, one where servers persist for hours or days but typically not months.
 Coupled with changes in application architecture, which are splitting monoliths into dozens of microservices, the numbers of server instances (or more likely containers) are exploding.
 The management surface is getting bigger, which is stretching Operations teams.
 
@@ -84,7 +84,7 @@ Many clouds have bespoke or highly customised service offerings, which if used w
 However, those same services tend to standardise over time.
 If possible, choose commoditised services where healthy competition will ensure that prices remain low.
 Aim to roll out containers into a managed Kubernetes cluster, or provision generic object storage or elastic compute instances.
-Customise and configure those services will standardised multi-platform or cross-platform tooling.
+Customise and configure those services with standardised multi-platform or cross-platform tooling.
 
 Above all, code.  Where services are provisioned using code, they will implicitly be easier to swap out in the future, even if you're forced to adopt single vendor-specific solutions for now.
 That infrastructure-as-code (IAC) encodes the complexity so that almost all requirements and dependencies are clearly captured.
@@ -117,10 +117,10 @@ None of knows what the future holds precisely, but we can predict the impact of 
 
 We do know there'll be data and those who would seek to steal or otherwise exploit it.
 We do know there'll be newly discovered security flaws that we'll need to protect ourselves against.
-We do know there'll be bugs and misconfigurations that we've introduced now which only become apparent in time.
+We do know there'll be bugs and misconfigurations that we've introduced already, which only become apparent in time.
 And because we know these things, we can plan for them.
 
-IAC means that when there's a data breach, we can isolate its scope and minimise the impact on our users.
+IAC means that when there's a data breach, you can isolate its scope and minimise the impact on your users.
 IAC means that when there's another Heartbleed, Shellshock or POODLE, you can assess your exposure by simply analysing that code, often just a search-and-replace.
 IAC means that when you track down a misconfiguration, especially something systemic, you can fix not only that one but all occurrences of the problem.
 
@@ -128,7 +128,7 @@ New tools will arrive, new technologies that we haven't yet dreamed of will beco
 When they do, history again intimates that we might be able to re-use our existing IAC, or trivially transcode it.
 IAC today saves time and money tomorrow.
 
-> It matter less the specific language you code it in or tool you adopt.  It matters that you manage the problem with code.
+> It matters less the specific language you code it in or tool you adopt.  It matters that you manage the problem with code.
 
 ---
 
@@ -138,14 +138,13 @@ IAC today saves time and money tomorrow.
 * Real environments, real challenges
 
 {% if include.pres %}Note: {% endif %}
-So the business case for IAC is pretty water-tight, but I've skirted the main reason we're not all doing it yet.
-Skills.
-Learning a new language, or adopting a new 
+So the business case for IAC is pretty water-tight, but I've skirted the main reason we're not all doing it yet: skills.
+Learning a new language, or adopting a new tool is hard.
 It often requires outside help.
 Not a lot of it, but some.
 As the outside help, I see a lot of companies stuck with imperfect processes and enthusiastic teams without the time or headspace to improve them.
 
-The frustration is that I know it only takes 1 day to get started with IAC, then from there it's a progressive and self-driven learning journey that culminates in a fully-managed infrastructure-as-code.
+The frustration is that I know it only takes one day to get started with IAC, then from there it's a progressive and self-driven learning journey that culminates in a fully-managed infrastructure-as-code.
 Increasingly the vast open information resource that is our Internet means that almost everything you need to grow and flourish is out there, it's just hard to get started.
 
 ---
