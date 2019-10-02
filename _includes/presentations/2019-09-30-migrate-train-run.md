@@ -18,6 +18,8 @@ Cloud brings with it a different philosophy, one where servers persist for hours
 Coupled with changes in application architecture, which are splitting monoliths into dozens of microservices, the numbers of server instances (or more likely containers) are exploding.
 The management surface is getting bigger, which is stretching Operations teams.
 
+![Migrate-train-run cycle visualisation]({{ "/assets/images/migratetrain-swirl-82850_640x.png" | absolute_url }})
+
 Thankfully new tools are allowing us to make giant leaps forward in automation and process efficiency, but adopting those well requires training to upskill the teams that use them.
 Coding techniques that originated in software engineering are becoming more popular in infrastructure engineering:
 
