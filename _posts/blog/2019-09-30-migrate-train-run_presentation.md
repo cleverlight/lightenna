@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: reveal
 title: Master the Migrate-Train-Run cycle
 description: IT is endlessly keeping up with the future, but there are things that make it dramatically easier
 permalink: /tech/2019/migrate-train-run/reveal/
