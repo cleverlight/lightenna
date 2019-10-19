@@ -15,7 +15,7 @@ By virtue of the things I learned and the stuff that has happened since because 
 
 ## Just like _X_, only better 
 
-Launched back in 2010, this little ventured surfed the wave of me-too web applications.  It came into being because some of our customers reported frustration with the market leaders (such as Survey Monkey, which in fairness has gone from strength to strength).  As it turned out, those same customers were happy to use Surfy while it was free, but reluctant to pay for it once we introduced our fremium model.  The idea was sound-ish, but the execution was all wrong.
+Launched back in 2010, this little venture surfed the wave of me-too web applications.  It came into being because some of our customers reported frustration with the market leaders (such as Survey Monkey, which in fairness has gone from strength to strength).  As it turned out, those same customers were happy to use Surfy while it was free, but reluctant to pay for it once we introduced our fremium model.  The idea was sound-ish, but the execution was all wrong.
 
 ## Highs and lows
 
