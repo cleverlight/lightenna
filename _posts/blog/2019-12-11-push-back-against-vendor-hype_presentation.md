@@ -2,7 +2,7 @@
 layout: reveal
 title: Push back against IT vendor hype
 description: IT vendors are always pushing the next big thing, but knowing if it's right for your organisation cannot be answered by a sales pitch
-permalink: /tech/2019/push-back-against-vendor-hype
+permalink: /tech/2019/push-back-against-vendor-hype/reveal/
 ---
 
 {% include reveal_slide-start.html %}
