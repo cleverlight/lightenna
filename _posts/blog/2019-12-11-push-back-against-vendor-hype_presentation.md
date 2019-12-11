@@ -7,6 +7,6 @@ permalink: /tech/2019/push-back-against-vendor-hype/reveal/
 
 {% include reveal_slide-start.html %}
 
-{% include presentations/2019-12-11-push-back-against-vendor-hype.md %}
+{% include presentations/2019-12-11-push-back-against-vendor-hype.md pres=true %}
 
 {% include reveal_slide-finish.html %}
