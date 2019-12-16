@@ -8,7 +8,10 @@ toc: true
 header:
     overlay_image: /assets/images/widemarket_13224_1920x.jpg
     small_image: /assets/images/widemarket_13224_640x.jpg
+    og_video: https://www.youtube.com/v/xQQoxOFh6EU/
 ---
+
+{% include video id="xQQoxOFh6EU" provider="youtube" %}
 
 {% include presentations/2019-12-11-push-back-against-vendor-hype.md %}
 
