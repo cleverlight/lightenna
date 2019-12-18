@@ -22,15 +22,40 @@
 
 ---
 
+## Exercise: puppet a machine from a shared master
++ Connect to puppetmaster machine
+`puppetmaster.training.azure-dns.lightenna.com`
++ Spin up azure_pmd (bastion) using Terraform
+    + `cd ~/devops-workstream/terraform/azure_pmd`
+    + `terraform init`
+    + `sudo ls`
+        + You must `sudo` before attempting to spin up the machine to allow your SSH session to escalate
+        + This is required for Terraform to run `puppetserver ca sign --certname=<your_new_hostname>`
++ Connect to your new machine
+    + Check the puppet run using `sudo cat /root/puppet_agent.out`
++ Look for your machine on the puppetmaster
+    + Tunnel a connection to port 18443
+    + Check the puppet run using Puppetboard
+
+{% if include.pres %}Note: {% endif %}
+Compared to the previous exercise, you'll notice that provisioning puppet-mastered machines is much faster than manually creating these things yourself.
+
+---
+
 ## Exercise: distribute secrets from a shared master
++ Using the previous exercise, puppet a puppet-mastered machine 
+    + Connect to your bastion machine
+    + Source your FQDN using `hostname -f` on your bastion machine
 + Update puppet manifests
     + create a feature branch from master
-    + make your changes
+    + create a module with a single class
+    + complete your changes
     + commit to feature branch
     + merge back into master
     + manually deploy master to control repo `/srv/git/github.com/devops-workstream`
     + run puppet agent 
 + Create a node definition for your node
+    + For now, match the node name precisely in `site.pp`
 + Add a notify resource
 + Repuppet your node to verify the notify resource runs
 + Create a class in `/puppet/environments/workstream/modules`
@@ -45,3 +70,6 @@
 {% if include.pres %}Note: {% endif %}
 
 ---
+
+## Exercise: repeat in Vagrant
++ Walk-through directory structure
