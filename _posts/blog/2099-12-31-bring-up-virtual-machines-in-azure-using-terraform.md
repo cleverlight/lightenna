@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Using Terraform to create virtual machines in Microsoft Azure
-description: 
+description: Microsoft Azure requires more resources to be independently created and connected to bring up a VM, so Terraform all the things
 tags: tech devops remprov
 toc: true
 header:
