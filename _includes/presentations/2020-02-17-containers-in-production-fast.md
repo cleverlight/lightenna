@@ -84,6 +84,7 @@
     + dev < staging < test < prod
 
 {% if include.pres %}Note: {% endif %}
+Amazon's Kubernetes service (EKS) can [run on Fargate](https://aws.amazon.com/blogs/aws/amazon-eks-on-aws-fargate-now-generally-available/), which means Amazon manage the underlying infrastructure that your pods run on.
 
 --
 
