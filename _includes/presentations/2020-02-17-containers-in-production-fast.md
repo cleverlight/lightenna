@@ -7,6 +7,22 @@
 + Complexity managed with testing
 
 {% if include.pres %}Note: {% endif %}
+The world would lose it's spontaneity if every action was idempotent.
+
+I want the 'play' button to produce a different result each time I watch something because I love the weekly churn of box sets on Netflix.
+I don't want to always eat the same flavour of jelly bean.
+And if I wanted every day to look the same, I'd still be working for Big Blue.
+
+The thing is, some things really have to be.
+
+I want the fire alarm button to work exactly the same way every time someone needs to press it.
+I don't want there to be any random variation when I hit the brake pedal in my car.
+I like my test suite green.
+
+So when containers came along, providing an idempotent way of delivering web services, a lot of DevOps engineers breathed a collective sigh of relief.
+Docker didn't invent idempotency, but they their read-only, managed-access, largely-stateless view of the world made it a lot more attainable.
+
+But they also have to be run in production.
 
 ---
 
@@ -149,7 +165,14 @@ Iteration is the key - nothing is ever done!
 + Start manual, weekly cadence
 
 {% if include.pres %}Note: {% endif %}
-
+The instant you've got a single secure container hosted in production, you'll need to update it.
+I'm a big proponent of engineering-discipline over vendor-hype, which means infrastructure-as-code.
+Having that code makes it fairly trivial to duplicate the setup.
+Instead of just having a single production environment, create two.
+If _Blue_ is hosting the website now, set up _Green_ with the new version.
+Once you're confident that Green will deliver the same quality of service, switch the DNS across.
+This blue-green independence allows you to run tests against new versions, patching on-the-fly, or even try out new features with a subset of your users.
+You can build up the complexity (like Canary deployments, Parallel running or Load sharing) over time.
 
 --
 
@@ -164,6 +187,12 @@ Iteration is the key - nothing is ever done!
 
 {% if include.pres %}Note: {% endif %}
 Amazon's Kubernetes service (EKS) can [run on Fargate](https://aws.amazon.com/blogs/aws/amazon-eks-on-aws-fargate-now-generally-available/), which means Amazon manage the underlying infrastructure that your pods run on.
+It's a great example of relying on the managed services that Hyperscale Cloud vendors provide, rather than building it all yourself.
+
+It's not the only way.  It may not even be the right way for you in the future, but it's almost certainly the right way to start out.
+By paying the vendor (who has greater access to massive economies of scale) to take care of the service management, you can concentrate on your core business activities\: the special sauce that allows you to differentiate your product, not the sesame seems that make you like every other company in your space.
+
+When you know that you need to run a 100,000 server farm to build a rendering pipeline for your next 3D Animated feature, maybe paying AWS for on-demand EC2 instances won't be the way to go, but it might be now.
 
 --
 
@@ -176,6 +205,13 @@ Amazon's Kubernetes service (EKS) can [run on Fargate](https://aws.amazon.com/bl
     + UAT
 
 {% if include.pres %}Note: {% endif %}
+Away from the nuts, bolts and engine grease that goes into managing bare-metal servers, there are several more important areas of your web service to invest in.
+
+Get your test suite to the point that it confidently reflects the users' journeys through your service.
+At that point, it instill confidence not only that your service is working properly (every time you run it),
+but more that it will _continue_ to work properly.
+That test suite is becomes the yardstick for every patch, every migration, every newly developed feature.
+If the test suite is solid, then so is the service.
 
 --
 
@@ -186,11 +222,23 @@ Amazon's Kubernetes service (EKS) can [run on Fargate](https://aws.amazon.com/bl
 + Invest in your Ops team
 
 {% if include.pres %}Note: {% endif %}
+I don't know if it was Andy Hertzfeld or Steve Jobs who said "real artists ship", but I like the sentiment.
+It's possible to get lost in the ever-changing flux of the Cloud hosting world, or over-elaborate a solution that really just needs as single t2.micro with a MySQL DB.
+Instead, building up a production container hosting environment is about pragmatism.
+Start small, start secure and iterate.
+
+Of all the issues here, staff training is the hardest.
+~Bottom or~ Cloud is not a weekend retreat.
+The skills an operations team needs to manage a cloud of servers are not exactly the same as those required to manage a room of servers.
+I don't believe good engineering skills ever go out of fashion, but the days of command-line hacks and click-and-tick web interfaces are numbered.
+Cloud provisioning is a shot-in-the-arm for an ops team.
+
+It's worth investing in, either by giving that team the time they need to experiment and learn about the Cloud, or fast-tracking their progress by bringing someone in to work with them.
 
 --
 
 ## Help
 
 {% if include.pres %}Note: {% endif %}
-If you'd like help organising and preparing your digital strategy, working with your team to foster a data-driven culture, or just training in the nuts and bolts of infrastructure as code, please [get in touch](/contact).
+If you'd like help organising and preparing your digital strategy, working with your team to foster a data-driven culture, or just hands-on-keyboard training in infrastructure-as-code, please [get in touch](/contact).
 
