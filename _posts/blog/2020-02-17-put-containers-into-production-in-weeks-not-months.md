@@ -8,10 +8,10 @@ toc: true
 header:
     overlay_image: /assets/images/prodweeks_03295_1920x.jpg
     small_image: /assets/images/prodweeks_03295_640x.jpg
-    og_video: https://www.youtube.com/v/xxxxx/
+    og_video: https://www.youtube.com/v/6DMWJ9CbZU8/
 ---
 
-{% include video id="xxxxx" provider="youtube" %}
+{% include video id="6DMWJ9CbZU8" provider="youtube" %}
 
 {% include presentations/2020-02-17-containers-in-production-fast.md %}
 
