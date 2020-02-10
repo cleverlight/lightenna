@@ -6,8 +6,8 @@ permalink: /tech/2020/put-containers-into-production-fast/
 tags: front tech devops consulting
 toc: true
 header:
-    overlay_image: /assets/images/widemarket_13224_1920x.jpg
-    small_image: /assets/images/widemarket_13224_640x.jpg
+    overlay_image: /assets/images/prodweeks_03295_1920x.jpg
+    small_image: /assets/images/prodweeks_03295_640x.jpg
     og_video: https://www.youtube.com/v/xxxxx/
 ---
 

@@ -6,13 +6,13 @@ permalink: /tech/2020/multi-cloud-first/
 tags: front tech business consulting
 toc: true
 header:
-    overlay_image: /assets/images/widemarket_13224_1920x.jpg
-    small_image: /assets/images/widemarket_13224_640x.jpg
+    overlay_image: /assets/images/multicloud_07065_1920x.jpg
+    small_image: /assets/images/multicloud_07065_640x.jpg
     og_video: https://www.youtube.com/v/xxxxx/
 ---
 
 {% include video id="xxxxx" provider="youtube" %}
 
-{% include presentations/2020-02-03-multi-cloud-first.md %}
+{% include presentations/2020-02-10-multi-cloud-first.md %}
 
 {% include reveal_link.html %}
