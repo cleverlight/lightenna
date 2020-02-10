@@ -48,7 +48,7 @@ There are still compliance obligations and governance.
 
 All the things we needed to do yesterday to keep the service running consistently, performantly, securely, resiliently are still things we need to do today.
 
---
+---
 
 ## What is this 'managed'?
 + Patching and updates
@@ -114,7 +114,7 @@ They need to be authenticated, repeatedly and regularly with multiple factors.
 Their access needs to be controlled and restricted appropriately.
 They different live-like environments to conduct their tests or develop new functionality.
 
---
+---
 
 ## Automate progressively
 + Don't try to build it all
@@ -137,7 +137,7 @@ Never build applications in isolation, in the vain hope that we can "sort out pr
 That's the entirety of what's required.
 Once you've got that, you will eventually deliver the kind of comprehensive platform described earlier.
 
---
+---
 
 ## Start with security
 + MVP must be secure
@@ -157,7 +157,7 @@ The very first minimum viable product (MVP) must be secure, so it's worth invest
 Managing that with infrastructure-as-code is a great way to make that iterable.
 Iteration is the key - nothing is ever done!
 
---
+---
 
 ## Iterate
 + Needs to be updatable
@@ -174,7 +174,7 @@ Once you're confident that Green will deliver the same quality of service, switc
 This blue-green independence allows you to run tests against new versions, patching on-the-fly, or even try out new features with a subset of your users.
 You can build up the complexity (like Canary deployments, Parallel running or Load sharing) over time.
 
---
+---
 
 ## Backfill spending
 + Consume managed services as a stop-gap
@@ -194,7 +194,7 @@ By paying the vendor (who has greater access to massive economies of scale) to t
 
 When you know that you need to run a 100,000 server farm to build a rendering pipeline for your next 3D Animated feature, maybe paying AWS for on-demand EC2 instances won't be the way to go, but it might be now.
 
---
+---
 
 ## Invest in tests
 + Deliver against tests
@@ -213,7 +213,7 @@ but more that it will _continue_ to work properly.
 That test suite is becomes the yardstick for every patch, every migration, every newly developed feature.
 If the test suite is solid, then so is the service.
 
---
+---
 
 ## Deliver
 + Something up in weeks
@@ -235,7 +235,7 @@ Cloud provisioning is a shot-in-the-arm for an ops team.
 
 It's worth investing in, either by giving that team the time they need to experiment and learn about the Cloud, or fast-tracking their progress by bringing someone in to work with them.
 
---
+---
 
 ## Help
 
