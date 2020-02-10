@@ -1,7 +1,7 @@
 ---
 layout: reveal
 title: Multi-cloud first
-description: Going to the Cloud? Don't let your investment get lost in just one
+description: Going to the Cloud? Don't let your investment get lost in just one.  Instead, use infrastructure-as-code to make the vendors compete for your custom.
 permalink: /tech/2020/multi-cloud-first/reveal/
 ---
 
