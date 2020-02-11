@@ -1,7 +1,9 @@
 <div class="page__footer-follow">
-  <div class="mailchimp-signup">
-    {% include mailchimp-signup.html %}
-  </div>
+  {% comment %}
+    <div class="mailchimp-signup">
+      {% include mailchimp-signup.html %}
+    </div>
+  {% endcomment %}
   <ul class="social-icons">
     {% if site.data.ui-text[site.locale].follow_label %}
       <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
