@@ -22,7 +22,7 @@ resource "oci_core_subnet" "subnet" {
 ...
 ```
 
-##
+## Restricting port 22
 If you don't want SSH open to all and sundry, it's important to create your own empty security list thus:
 ```
 resource "oci_core_subnet" "subnet" {
