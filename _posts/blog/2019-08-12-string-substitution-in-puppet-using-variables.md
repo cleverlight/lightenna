@@ -86,5 +86,4 @@ The segments from this tutorial specifically make up `puppet/tutorial/03-class-v
 
 If you'd like to see all the [previous and future installments of this tutorial](/tech/puppet), they're available under the `puppet` tag.
 
-## Get your team coding
-If you'd like to help your Operations team move to infrastructure-as-code, please [get in touch](/contact) to find out how Lightenna consulting could accelerate your Cloud journey.
+{% include call_to_action-opsteam_iac.html %}

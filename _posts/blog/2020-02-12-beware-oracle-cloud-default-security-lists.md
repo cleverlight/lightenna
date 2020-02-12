@@ -79,5 +79,4 @@ resource "oci_core_network_security_group_security_rule" "nsg_inbound_ssh" {
 ## Open-source
 All the code for these tutorials is available as part of [DevOps-Workstream](https://github.com/lightenna/devops-workstream). 
 
-## Get your team coding
-If you'd like to help your Operations team move to infrastructure-as-code, please [get in touch](/contact) to find out how Lightenna consulting could accelerate your Cloud journey.
+{% include call_to_action-opsteam_iac.html %}

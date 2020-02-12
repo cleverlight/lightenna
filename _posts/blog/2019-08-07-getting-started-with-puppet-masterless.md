@@ -31,5 +31,4 @@ Notice: Applied catalog in 0.02 seconds
 All the code for these tutorials is available as part of [DevOps-Workstream](https://github.com/lightenna/devops-workstream). 
 The segments from this tutorial specifically make up `puppet/tutorial/01-site-nodes` [here on GitHub](https://github.com/lightenna/devops-workstream/tree/master/puppet/tutorial/).
 
-## Get your team coding
-If you'd like to help your Operations team move to infrastructure-as-code, please [get in touch](/contact) to find out how Lightenna consulting could accelerate your Cloud journey.
+{% include call_to_action-opsteam_iac.html %}
