@@ -7,11 +7,11 @@ tags: services
 header:
     overlay_image: /assets/images/salmon_migration_03c62865_1920x.jpg
     small_image: /assets/images/salmon_migration_03c62865_640x.jpg
-    actions:
-      - label: "Convert now!"
-        url: "#form"
 preview:
     parentheses: "for improved flexibility and reduced costs"
+feature_test:
+  - image_path: /assets/images/winding_road_01112_640x.jpg
+    excerpt: "Identifying how the dynamic world of Cloud impacts your business is something you may only have limited time for.  Lightenna can ease your migration, drive costs down by increasing competition between Cloud vendors and help your team adopt new tools to realise productivity gains."
 feature_migration_animation:
   - video_id: "2YOWmRbZ2Ao"
     excerpt: "Identifying how the dynamic world of Cloud impacts your business is something you may only have limited time for.  Lightenna can ease your migration, drive costs down by increasing competition between Cloud vendors and help your team adopt new tools to realise productivity gains."

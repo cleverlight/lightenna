@@ -10,9 +10,6 @@ tags: services front kubernetes
 header:
     overlay_image: /assets/images/datacentre_00934_1920x.jpg
     small_image: /assets/images/datacentre_00934_640x.jpg
-    actions:
-      - label: "Convert now!"
-        url: "#form"
 preview:
     parentheses: "(Part/fully-managed)"
 feature_kubernetes_animation:
@@ -70,6 +67,8 @@ feature_cloudframework:
 No web project should be deployed without the backing of good architecture to ensure we build the right thing and it's built right.  Done right, a new platform can be transformative so we provide clear documentation to show how your environments will work.  We agree with you what hostnames should be assigned, how DNS will work, what level of firewalling should be built into the solution and the base operating system for each machine build.  We then provide a quote that shows precisely what we will deploy if you decide to go ahead.
 
 {% include svg.html svg="/assets/svg/azure-cloud-architecture2-simplified.svg"  png="/assets/svg/azure-cloud-architecture2-simplified.png" %}
+
+<div class="feature__wrapper">&nbsp;</div>
 
 To make sure your Kubernetes cluster continues to run reliably, every Lightenna Kubernetes environment also includes:
 * Configuration-managed set of firewalled hosts
