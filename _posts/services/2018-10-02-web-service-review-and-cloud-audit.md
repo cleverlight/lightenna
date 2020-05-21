@@ -2,7 +2,7 @@
 layout: single
 title: Web service review and Cloud audit
 description: Beyond the code, there's so much that needs to be thought about when launching and running a production-grade, scalable and extensible app or web service.  Let's get specific!
-tags: front tech devops consulting
+tags: front services tech devops
 toc: true
 preview:
     parentheses: "(Checklist)"

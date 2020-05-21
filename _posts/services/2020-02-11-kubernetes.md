@@ -6,7 +6,7 @@ permalink: /services/kubernetes
 redirect_from:
   - /products/kubernetes-on-premise/
   - /products/kubernetes/
-tags: products front kubernetes
+tags: services front kubernetes
 header:
     overlay_image: /assets/images/datacentre_00934_1920x.jpg
     actions:

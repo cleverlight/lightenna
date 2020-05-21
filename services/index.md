@@ -2,7 +2,7 @@
 layout: splash-tag
 title: Services
 description: 
-tag: products
+tag: services
 header:
   overlay_image: /assets/images/bendypaint_00171_1920x.jpg
 redirect_from:
