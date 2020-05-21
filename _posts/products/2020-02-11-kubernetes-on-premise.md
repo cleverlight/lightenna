@@ -2,8 +2,10 @@
 layout: splash
 title: Kubernetes on-premise or in any cloud
 description: Bootstrap a Cloud presence or make the most of your existing tin with a standardised platform.  Our part or fully-managed, on-premise or any-cloud Kubernetes offerings give you improved reliability and resilience, reduced Operations costs and a migration path to the Cloud.
-permalink: /products/kubernetes
-redirect_from: /products/kubernetes-on-premise/
+permalink: /services/kubernetes
+redirect_from:
+  - /products/kubernetes-on-premise/
+  - /products/kubernetes/
 tags: products front kubernetes
 header:
     overlay_image: /assets/images/datacentre_00934_1920x.jpg

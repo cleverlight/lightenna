@@ -81,6 +81,39 @@ object.wrapper {
   width: auto;
 }
 
+// show mini map on masthead, but only when the viewport is big enough
+@media (max-width: 52em) {
+  .masthead .ukmap {
+    display: none;
+  }
+}
+.masthead .ukmap {
+
+  text-align: right;
+  margin-top: -1.0em;
+  color: #7a8288;
+
+  img {
+    height: 5.0em;
+    position: absolute;
+    top: -10px;
+    margin-left: -2.5em;
+    z-index: -1;
+  }
+
+  span {
+    white-space: nowrap;
+
+    &.estbased {
+      font-size: 0.5em;
+    }
+
+    &.phonenumber {
+      display: block;
+    }
+  }
+}
+
 // hide print masthead
 .print-masthead {
   display: none;
