@@ -62,8 +62,22 @@ object.wrapper {
   padding-left: 0;
   margin-right: 1.6%;
 }
+// remove strange underline on unlinked title hover
+.archive__item:hover .archive__item-title {
+  text-decoration: none;
+}
+// fix feature left to float (for non-mobile views)
+@media (min-width: 37.5em) {
+  .feature__item--left {
+    width: 50%;
+    clear: none;
+  }
+  .feature__item--left .archive__item-body {
+    padding-left: 7%;
+  }
+}
 // restore to full width
-.feature__item--center .archive__item-body {
+.feature__item--center .archive__item-body, .feature__item--left .archive__item-body, .feature__item--left .archive__item-teaser {
   width: auto;
 }
 
