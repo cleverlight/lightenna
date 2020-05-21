@@ -8,6 +8,8 @@
     + _layouts
     + _sass
 
+* Manually force the line endings back to Unix (LF) from Windows (CRLF)
+
 ---
 
 ## Carefully merge
