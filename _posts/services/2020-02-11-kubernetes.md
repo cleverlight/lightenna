@@ -2,7 +2,7 @@
 layout: splash
 title: Kubernetes on-premise or in any cloud
 description: Bootstrap a Cloud presence or make the most of your existing tin with a standardised platform.  Our part or fully-managed, on-premise or any-cloud Kubernetes offerings give you improved reliability and resilience, reduced Operations costs and a migration path to the Cloud.
-permalink: /services/kubernetes
+permalink: /services/kubernetes/
 redirect_from:
   - /products/kubernetes-on-premise/
   - /products/kubernetes/
@@ -12,7 +12,6 @@ header:
     actions:
       - label: "Convert now!"
         url: "#form"
-reference_test_page: https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/test/_pages/splash-page.md
 preview:
     parentheses: "(Part/fully-managed)"
 feature_kubernetes_animation:
