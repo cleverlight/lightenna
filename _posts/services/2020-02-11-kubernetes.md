@@ -42,7 +42,7 @@ feature_foss:
     alt: "rancher-screenshot"
   - title: "Elasticsearch"
     image_path: /assets/screenshots/screenshot-kibana_640x.png
-    excerpt: "Elasticsearch, Logstash & Kibana (ELK) for logging and Prometheus & Alert manager for monitoring"
+    excerpt: "Elasticsearch, Logstash & Kibana (ELK) for logging and Prometheus & AlertManager for monitoring"
     alt: "kibana-screenshot"
 feature_cloudframework:
   - image_path: assets/svg/cloud_framework_cybertunnel_880x.jpg
@@ -89,9 +89,9 @@ Along with your cluster, we deliver the infrastructure-as-code that you need to 
 # Support
 
 The success of any kind of Cloud project depends not only on a good delivery but how well it\'s supported in production.  We offer three different service offerings, depending on what you decide is the best fit for your organisation:
+* Staged handover: we train your team to build confidence in the technologies that underpin the cluster, then we're available for ad hoc support, if rather than when it's required.
 * Part-managed: we patch and maintain the cluster, by proactively monitoring for issues before they affect the service.
-* Fully-managed: as above, but we also handle code deployments to the cluster.
-* Staged handover: we train your team to build confidence in the technologies that underpin the cluster, then we're available for ad hoc support, if rather than as-and-when it's required.
+* Fully-managed: as above, but we also handle code deployments to the cluster and application upgrades.
 
 {% include feature_row id="feature_cloudframework" type="right" %}
 
@@ -104,7 +104,7 @@ The success of any kind of Cloud project depends not only on a good delivery but
     <input type="email" name="email" placeholder="Your email">
     <textarea name="message" placeholder="Your message"></textarea>
     <p>There's a human-being on the end of this form, so please tell us how and when you'd like to be contacted
-    and anything pertinent about the on-prem environment that you'd like to move to Kubernetes.</p>
+    and anything pertinent about your Cloud or the on-prem environment that you'd like to move to Kubernetes.</p>
     <button type="submit" class="btn btn--primary btn--large">Send</button>
 </form>
 <div stlye="clear:both;">&nbsp;</div>

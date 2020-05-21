@@ -26,12 +26,12 @@ feature_row_features:
     alt: "robotic-automation-to-reduce-costs"
   - title: "Take the team with you"
     image_path: /assets/images/migrating_birds_02h66135_640x.jpg
-    excerpt: "Build a DevOps culture: by working with your staff in-situ, we can help them adopt new tools to help them build confidence in running a performant web service."
+    excerpt: "Build a DevOps culture: by working with your staff in-situ, we can help them adopt new tools to build confidence in running a performant web service."
     alt: "training-to-take-the-team-with-you-on-migration"
 feature_cloudframework:
   - image_path: assets/svg/cloud_framework_cybertunnel_880x.jpg
     title: "Everything you need for Cloud"
-    excerpt: "Your cloud migration may already fit into your digital strategy, but if you'd like advice on how to integrate with project into your wider programme, please [get in touch](/contact/).  Our consultants can bring to bear years of experience in Cloud adoption to help your business take on the right mix of services from hyperscale providers such as AWS, Google Cloud and Microsoft Azure or others."
+    excerpt: "Your cloud migration may already fit into your digital strategy, but if you'd like advice on how to integrate this project into your wider programme, please [get in touch](/contact/).  Our consultants can bring to bear years of experience in Cloud adoption to help your business take on the right mix of services from hyperscale providers such as AWS, Google Cloud and Microsoft Azure or others.  We're independent, so we can also recommend smaller ($250m+ market cap) providers to bring you the best value proposition."
     alt: "cloud-framework"
     url: "/tech/2018/cloud-framework/"
     btn_label: "Read More"
@@ -52,14 +52,15 @@ feature_cloudframework:
 # Code first
 
 Everything we do is based on open standards, to ensure that you never become locked into a single vendor.
-We deliver the infrastructure-as-code that you need to maintain, replicate and extend what you've paid for.  We hope our great service will mean you choose us again in the future.
+We deliver the infrastructure-as-code that you need to maintain, replicate and extend what you've paid for.
+That leaves you completely free to take the next step with any Cloud-acceleration team, but we hope our great service will mean you choose us again in the future.
 
 <div class="feature__wrapper">&nbsp;</div>
 
 # Support
 
 Get the support you need without being tied in.  We offer three different service offerings, depending on what you decide is the best fit for your organisation:
-* Staged handover: we design and provision your cloud with your team, then train them to build confidence in the technologies that underpin it.
+* Staged handover: we design and provision your cloud with your team, then train them in the technologies that underpin it.
 * Part-managed: we patch and maintain the your cloud, by proactively monitoring for issues before they affect the service.
 * Fully-managed: as above, but we also handle code deployments, application performance management and cost optimisation to keep saving you money based on what you're actually using.
 
