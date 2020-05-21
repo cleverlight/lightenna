@@ -26,6 +26,9 @@
     <p class="page__lead">{{ page.description | markdownify | remove: "<p>" | remove: "</p>" }}</p>
 ```
 
+* _includes/footer
+    + Add back MailChimp form (commented right now), even though we're not really using it
+
 * _config.yml
     + Merge by hand, looking for new keys
     + exclude .idea from watch
