@@ -1,0 +1,10 @@
+{% capture download_type %}{{ include.type }}{% endcapture %}
+{% capture download_url %}{{ include.url }}{% endcapture %}
+{% capture download_alt %}{{ include.alt }}{% endcapture %}
+
+<div class="download-button type-{{ download_type }}">
+    <a class="btn btn--inverse btn-grey" target="_blank" href="{{ download_url }}" onclick="_gaq.push(['_trackEvent', '{{ download_type }}', 'download', '']);">
+      <span class="main">Download {{ download_type | upcase}}</span>
+      <span class="alt">{{ download_alt }}</span>
+    </a>
+</div>

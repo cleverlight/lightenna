@@ -81,6 +81,33 @@ object.wrapper {
   width: auto;
 }
 
+// nice download buttons
+.btn.btn--inverse:hover {
+  color: white;
+  background-color: lightslategrey;
+}
+.download-button {
+  a {
+    text-align: left;
+    padding-left: 3.4em;
+    background-position: 0.8em center;
+    background-repeat: no-repeat;
+    span {
+      display: block;
+      font-weight: normal;
+      &.main {
+        font-weight: bold;
+      }
+    }
+  }
+  &.type-pdf {
+    a {
+      background-image: url('/assets/chrome/PDF_32.png');
+    }
+  }
+
+}
+
 // show mini map on masthead, but only when the viewport is big enough
 @media (max-width: 52em) {
   .masthead .ukmap {

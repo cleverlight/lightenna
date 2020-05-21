@@ -55,6 +55,8 @@ Everything we do is based on open standards, to ensure that you never become loc
 We deliver the infrastructure-as-code that you need to maintain, replicate and extend what you've paid for.
 That leaves you completely free to take the next step with any Cloud-acceleration team, but we hope our great service will mean you choose us again in the future.
 
+{% include download type="pdf" url="/assets/pdfs/cloud-starter_lightenna_training_v1d180926.pdf" alt="Cloud Starter - Training course outline" %}
+
 <div class="feature__wrapper">&nbsp;</div>
 
 # Support
