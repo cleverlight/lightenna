@@ -9,6 +9,7 @@ redirect_from:
 tags: services front kubernetes
 header:
     overlay_image: /assets/images/datacentre_00934_1920x.jpg
+    small_image: /assets/images/datacentre_00934_640x.jpg
     actions:
       - label: "Convert now!"
         url: "#form"
@@ -94,7 +95,7 @@ The success of any kind of Cloud project depends not only on a good delivery but
 
 {% include feature_row id="feature_cloudframework" type="right" %}
 
-# Let us show you the business benefit of Kubernetes
+# Let us show you the business benefits of Kubernetes
 
 <a name="form" />
 <form action="https://formspree.io/alex_stanhope@hotmail.com"
