@@ -6,8 +6,9 @@ tag: products
 header:
   overlay_image: /assets/images/bendypaint_00171_1920x.jpg
 redirect_from:
-  - "/tech/products/"
-  - "/tech/services/"
+  - /products/
+  - /tech/products/
+  - /tech/services/
 ---
 
 Lightenna can help you make the most of your technology and empower your teams to greater productivity.
