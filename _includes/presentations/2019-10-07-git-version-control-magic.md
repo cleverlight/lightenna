@@ -86,7 +86,7 @@ Git provides a mechanism for us to contribute those changes, while managing the 
 
 ---
 
-## Present: Git pull (simplified)
+## Git pull (simplified)
 
 <div class="mermaid">
     sequenceDiagram
@@ -102,7 +102,7 @@ Git provides a mechanism for us to contribute those changes, while managing the 
 
 ---
 
-## Present: Git pull
+## Git pull
 
 <div class="mermaid">
     sequenceDiagram
@@ -145,7 +145,7 @@ Git provides a mechanism for us to contribute those changes, while managing the 
 
 ---
 
-## Present: Git push (simplified)
+## Git push (simplified)
 
 <div class="mermaid">
     sequenceDiagram
@@ -161,7 +161,7 @@ Git provides a mechanism for us to contribute those changes, while managing the 
 
 ---
 
-## Present: Git push (including stage)
+## Git push (including stage)
 
 <div class="mermaid">
     sequenceDiagram
