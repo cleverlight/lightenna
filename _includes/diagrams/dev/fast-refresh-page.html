@@ -1,0 +1,18 @@
+<div class="mermaid">
+    sequenceDiagram
+    participant Working copy
+    participant Local repo
+    participant Remote repo
+    Remote repo ->> Working copy: git clone
+    Remote repo ->> Working copy: git pull
+    Remote repo ->> Local repo: git fetch
+</div>
+
+<script>
+    if (window.mermaid === undefined) {
+        var script = document.createElement("script");
+        script.src = "../../../assets/frameworks/mermaid/mermaid.min.js";
+        document.head.appendChild(script);
+        console.log('Added Mermaid.js using jQuery');
+    }
+</script>

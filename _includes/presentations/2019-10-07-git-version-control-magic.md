@@ -25,6 +25,183 @@ git config --global user.email 'lighttrain@users.noreply.github.com'
 
 ---
 
+## What is git?
+
+* Distributed version control system
+* The 'master' copy can be anywhere
+* Conventionally, we adopt a single remote
+* All contributions pushed to that remote
+* Demonstrate with an example
+
+---
+
+## File tree
+
++ `/home/myuser/devops-workstream/`
+    + `kubernetes`
+        + `service.yaml`
+        + `deployment.yaml`
+    + `terraform`
+    + `vagrant`
+    + `README.md`
+
+{% if include.pres %}Note: {% endif %}Git helps us manage sets of files.
+
+This example set is taken from the open-source [Devops-Workstream](https://github.com/lightenna/devops-workstream) repo.
+
+---
+
+## Changes
+
++ `/home/myuser/devops-workstream/`
+    + `kubernetes`
+        + `service.yaml`
+        + `deployment.yaml`
+    + `terraform`
+    + `vagrant`
+    + **README.md**
+
+{% if include.pres %}Note: {% endif %}When we change a file, we need everyone else to see those changes.
+
+We could simple copy the files around, but that risks overwriting others' changes.
+
+Git provides a mechanism for us to contribute those changes, while managing the risk of overwriting other changes.
+
+---
+
+## Past: CVS/Subversion
+
+<div class="mermaid">
+    sequenceDiagram
+    participant Working copy
+    participant Remote repo
+    Remote repo ->> Working copy: svn checkout
+    Remote repo ->> Working copy: svn update
+    Working copy ->> Remote repo: svn commit
+</div>
+
+* `svn checkout` - get a working copy
+* `svn update` - get latest changes
+* `svn commit` - push my changes
+
+---
+
+## Present: Git pull (simplified)
+
+<div class="mermaid">
+    sequenceDiagram
+    participant Working copy
+    participant Local repo
+    participant Remote repo
+    Remote repo ->> Working copy: git clone
+    Remote repo ->> Working copy: git pull
+</div>
+
+* `git clone` - create local repo and working copy
+* `git pull` - update repo and working copy
+
+---
+
+## Present: Git pull
+
+<div class="mermaid">
+    sequenceDiagram
+    participant Working copy
+    participant Local repo
+    participant Remote repo
+    Remote repo ->> Working copy: git clone
+    Remote repo ->> Working copy: git pull
+    Remote repo ->> Local repo: git fetch
+    Local repo ->> Working copy: git checkout
+</div>
+
+* `git clone` - create local repo and working copy
+* `git pull` - update repo and working copy
+* `git fetch` - update local repo only
+* `git checkout` - update working copy only
+
+---
+
+## Local repo stored in .git
+
++ `/home/myuser/devops-workstream/`
+    + **.git**
+    + `kubernetes`
+        + `service.yaml`
+        + `deployment.yaml`
+    + `terraform`
+    + `vagrant`
+    + `README.md`
+
+---
+
+## Pull process
+
+* `git pull`
+    * Combines `fetch` and `checkout`
+        * Fetch from remote
+        * Update local repo
+        * Update working copy
+
+---
+
+## Present: Git push (simplified)
+
+<div class="mermaid">
+    sequenceDiagram
+    participant Working copy
+    participant Local repo
+    participant Remote repo
+    Working copy ->> Local repo: git commit .
+    Local repo ->> Remote repo: git push
+</div>
+
+* `git commit .` - stage and commit to local
+* `git push` - push local to remote
+
+---
+
+## Present: Git push (including stage)
+
+<div class="mermaid">
+    sequenceDiagram
+    participant Working copy
+    participant Stage
+    participant Local repo
+    participant Remote repo
+    Working copy ->> Stage: git add
+    Stage ->> Local repo: git commit
+    Local repo ->> Remote repo: git push
+</div>
+
+* `git add` - stage file for commit
+* `git commit` - commit to local
+* `git push` - push local to remote
+
+---
+
+## Push process
+
+* `git commit .`
+    * Combines `git add` and `git commit`
+        * Stage for commit
+        * Commit to local repo
+* `git push`
+        * Push local repo to remote
+
+---
+
+## Exercise: clone remote
+* Clone remote repo locally (`git clone <repo_address>`)
+* Change README.md, edit a _random_ line
+* Stage and commit (`git commit . -m "message"`)
+* Push (`git push`)
+* Check online
+
+{% if include.pres %}Note: {% endif %}
+
+---
+
 ## Exercise: create repo
 * Create remote repo
 * Clone locally
