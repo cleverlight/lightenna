@@ -1,3 +1,10 @@
-<object class="wrapper" type="image/svg+xml" data="{{ include.svg }}">
-  <img src="{{ include.png }}" alt="Falling back to PNG as your browser does not support SVG."
-</object>
+<figure class="image">
+  <object class="wrapper" type="image/svg+xml" data="{{ include.svg }}">
+    {% if include.png %}
+    <img src="{{ include.png }}" alt="Falling back to PNG as your browser does not support SVG." />
+    {% endif %}
+  </object>
+  {% if include.caption %}
+  <figcaption>{{ include.caption }}</figcaption>
+  {% endif %}
+</figure>

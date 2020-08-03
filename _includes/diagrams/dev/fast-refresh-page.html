@@ -1,18 +1,33 @@
 <div class="mermaid">
-    sequenceDiagram
-    participant Working copy
-    participant Local repo
-    participant Remote repo
-    Remote repo ->> Working copy: git clone
-    Remote repo ->> Working copy: git pull
-    Remote repo ->> Local repo: git fetch
+gitGraph:
+commit
+branch newbranch
+checkout newbranch
+commit
+checkout master
+commit
+checkout newbranch
+commit
+checkout master
+commit
+merge newbranch
 </div>
 
+<!-- CLONED from custom.html: process mermaid diagrams -->
+<script src="//cdn.jsdelivr.net/npm/mermaid@8.6.4/dist/mermaid.min.js"></script>
 <script>
-    if (window.mermaid === undefined) {
-        var script = document.createElement("script");
-        script.src = "../../../assets/frameworks/mermaid/mermaid.min.js";
-        document.head.appendChild(script);
-        console.log('Added Mermaid.js using jQuery');
-    }
+    mermaid.initialize({
+        startOnLoad: true,
+        logLevel: 'info',
+        git: {
+            nodeSpacing: 100,
+            nodeRadius: 10,
+            nodeLabel: {
+                width: 100,
+                height: 100,
+                x: -25,
+                y: 0
+            }
+        }
+    });
 </script>

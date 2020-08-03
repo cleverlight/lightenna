@@ -53,6 +53,29 @@ object.wrapper {
   position: relative;
 }
 
+// neat incidental captions
+figure figcaption {
+  font-size: 0.5em;
+}
+
+// mermaid diagram theme
+.mermaid {
+  .node-label p {
+    font-size: 0.75em;
+    line-height: 1.0em;
+    margin: 1.0em 0 1.0em 0;
+
+    span {
+      &.commit-id {
+        color: lightgrey !important;
+      }
+      &.branch-label {
+        color: black !important; // necessary to override #theme style
+      }
+    }
+  }
+}
+
 // right aligned text looks horrible, but feature__item--center/right are useful
 .feature__item--right, .feature__item--center {
   text-align: left;

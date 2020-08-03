@@ -1,7 +1,8 @@
 
-## Git
+## Git resources
 * [Primer](https://www.slideshare.net/HubSpot/git-101-git-and-github-for-beginners)
-* [Diagrams](https://marklodato.github.io/visual-git-guide/index-en.html)
+* [A Visual Git Reference](https://marklodato.github.io/visual-git-guide/index-en.html)
+* [Mermaid live editor](https://mermaid-js.github.io/mermaid-live-editor/)
 * Setup
 * Exercises
 
@@ -180,6 +181,12 @@ Git provides a mechanism for us to contribute those changes, while managing the 
 
 ---
 
+## Commit and undo (Visual Git Reference)
+
+{% include svg.html svg="https://marklodato.github.io/visual-git-guide/basic-usage.svg" caption="Git add, commit, reset and checkout operations, Source: A Visual Git Reference" %}
+
+---
+
 ## Push process
 
 * `git commit .`
@@ -202,6 +209,67 @@ Git provides a mechanism for us to contribute those changes, while managing the 
 
 ---
 
+## Create a local branch
+
+* Done from a source branch
+* `git checkout -b newbranch`
+
+<div class="mermaid">
+    gitGraph:
+    commit
+    branch newbranch
+    checkout newbranch
+    commit
+    checkout master
+    commit
+    checkout newbranch
+    commit
+    checkout master
+    commit
+</div>
+
+---
+
+## Push to remote
+
+* So far only local
+* `git push origin newbranch`
+* `git push --set-upstream origin newbranch`
+
+---
+
+## Merge back
+
+* Make changes to new branch
+* `git checkout newbranch`
+* Edit, commit (`git commit .`)
+* `git checkout master`
+* `git merge newbranch`
+
+<div class="mermaid">
+    gitGraph:
+    commit
+    branch newbranch
+    checkout newbranch
+    commit
+    checkout master
+    commit
+    checkout newbranch
+    commit
+    checkout master
+    commit
+    merge newbranch
+</div>
+<!-- do not indent mermaid diagrams if using embedded options -->
+
+---
+
+## Branches as chains of commits
+
+{% include svg.html svg="https://marklodato.github.io/visual-git-guide/conventions.svg" caption="Source: A Visual Git Reference" %}
+
+---
+
 ## Exercise: create repo
 * Create remote repo
 * Clone locally
@@ -215,12 +283,19 @@ Git provides a mechanism for us to contribute those changes, while managing the 
 
 ---
 
+## Rollback
+
+{% include svg.html svg="https://marklodato.github.io/visual-git-guide/reset-commit.svg" caption="Reset operation showing rollback of last 3 commits, Source: A Visual Git Reference" %}
+
+---
+
 ## Exercise: undo a bad commit
 * Clone locally (already done)
 * Mess up a file
 * Stage and commit
 * View history
 * Checkout a previous commit
+    * Move HEAD back to previous commit
 * Make rational change
 * Stage and commit again
 * Push
