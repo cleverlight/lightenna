@@ -1,6 +1,6 @@
 ---
-layout: tag-page
-title: Technology Training
+layout: splash-tag
+title: Training
 description: On-site, in-context training courses to empower your teams
 tag: training-courses
 header:

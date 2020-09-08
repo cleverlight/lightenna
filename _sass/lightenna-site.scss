@@ -3,6 +3,28 @@
  * Copyright Lightenna Ltd - lightenna.com | @lightenna
 */
 
+/* sensible page borders */
+#main {
+  @include clearfix;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+  -webkit-animation: $intro-transition;
+  animation: $intro-transition;
+  max-width: 90%;
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s;
+
+  @include breakpoint($large) {
+    max-width: 80%;
+  }
+
+  @include breakpoint($x-large) {
+    max-width: 70%;
+  }
+}
+
 .left {
   float: left;
   width: 50%;

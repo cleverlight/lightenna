@@ -1,5 +1,5 @@
 ---
-layout: tag-page
+layout: splash-tag
 title: DevOps
 header:
   overlay_image: /assets/images/penguins_02F20796_1920x.jpg

@@ -1,7 +1,7 @@
 ---
 layout: splash-tag
 title: Services
-description: 
+description: Standardised service offerings, that can be delivered as fixed-price engagements or customised to your adapting needs
 tag: services
 header:
   overlay_image: /assets/images/bendypaint_00171_1920x.jpg

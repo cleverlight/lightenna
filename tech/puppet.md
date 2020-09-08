@@ -1,5 +1,5 @@
 ---
-layout: tag-page
+layout: splash-tag
 title: Configuration management with Puppet
 description: 
 tag: puppet

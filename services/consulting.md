@@ -1,5 +1,5 @@
 ---
-layout: tag-page
+layout: splash-tag
 title: Consulting
 description: Short-term, targeted support for your business's technical challenges
 tag: consulting

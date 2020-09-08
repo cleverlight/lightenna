@@ -1,5 +1,5 @@
 ---
-layout: tag-page
+layout: splash-tag
 title: Remote provisioning
 description: 
 tag: remprov

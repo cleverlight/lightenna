@@ -6,5 +6,7 @@ main:
     url: /services/consulting/
   - title: "Training"
     url: /services/training/
+  - title: "Technology"
+    url: /tech/
   - title: "Contact"
     url: /contact/

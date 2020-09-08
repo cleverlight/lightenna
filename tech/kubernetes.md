@@ -1,5 +1,5 @@
 ---
-layout: tag-page
+layout: splash-tag
 title: Container orchestration with Kubernetes
 description: 
 tag: kubernetes
