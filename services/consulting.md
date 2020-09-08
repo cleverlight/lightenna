@@ -1,7 +1,7 @@
 ---
 layout: tag-page
 title: Consulting
-description: Short-term, targeted support for your business' technical challenges
+description: Short-term, targeted support for your business's technical challenges
 tag: consulting
 header:
   overlay_image: /assets/images/bearing_81127_1920x.jpg
