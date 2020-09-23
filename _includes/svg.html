@@ -7,4 +7,4 @@
   {% if include.caption %}
   <figcaption>{{ include.caption }}</figcaption>
   {% endif %}
-</figure>
+</figure><a href="{{ include.svg }}">Download SVG</a>{% if include.png %} | <a href="{{ include.png }}">PNG</a>{% endif %}
