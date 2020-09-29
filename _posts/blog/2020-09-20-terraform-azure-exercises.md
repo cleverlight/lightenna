@@ -30,8 +30,23 @@ header:
     * `azurerm_key_vault_key`
     * `azurerm_key_vault_certificate`
         * Generate the certificate in key vault, then `output` name and size
+* Design output {} statements
+    * to verify that secrets have been created properly
 
 {% if include.pres %}Note: {% endif %}
+
+---
+
+## Exercise: working with workspaces
+* Refactor previous exercise
+    * Create dev workspace
+    * Create prod workspace
+    * Include ${terraform.workspace} name in all resources
+* Create side-by-side (per environment) secrets
+    * Create set of dev secrets
+    * Create set of prod secrets at the same time
+* Destroy the dev secrets
+    * Verify that prod secrets are still available
 
 ---
 
