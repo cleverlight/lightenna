@@ -38,7 +38,7 @@ header:
 ---
 
 ## Exercise: working with workspaces
-* Refactor previous exercise
+* Refactor 'create Azure secret store' exercise
     * Create dev workspace
     * Create prod workspace
     * Include ${terraform.workspace} name in all resources
@@ -47,6 +47,17 @@ header:
     * Create set of prod secrets at the same time
 * Destroy the dev secrets
     * Verify that prod secrets are still available
+
+---
+
+## Exercise: referencing secrets
+
+* Create a second root module
+    * Reference a secret using the [data source](https://www.terraform.io/docs/providers/azurerm/d/key_vault_secret.html)
+* Use the prod secrets in tutorial/07
+    * Refactor your previous tutorial/07 code
+    * Source the admin password for your VMs from AKV
+        * `prod` secrets
 
 ---
 
