@@ -23,8 +23,9 @@ header:
 * Add tags to all resources to make management easier
 * Read current service principal object ID
     * Hint: look at `azurerm_client_config`
-* Grant your service principal full access to you key vault
+* Grant your service principal full access to your key vault
     * Beware creating keys that you cannot see or delete!
+* Grant your read-only Portal user access to your key vault
 * Create secrets
     * `azurerm_key_vault_secret`
     * `azurerm_key_vault_key`
@@ -51,13 +52,29 @@ header:
 ---
 
 ## Exercise: referencing secrets
-
 * Create a second root module
     * Reference a secret using the [data source](https://www.terraform.io/docs/providers/azurerm/d/key_vault_secret.html)
+    * Create an output block to return some property of a secret
 * Use the prod secrets in tutorial/07
     * Refactor your previous tutorial/07 code
     * Source the admin password for your VMs from AKV
         * `prod` secrets
+
+---
+
+## Exercise: create a VM as a docker host
+* Using tutorial/06 as a reference, create a VM
+    * Open up port 80 using the Network Security Group
+* Customise your azurerm_virtual_machine to run a command `whoami`
+    * Use the [custom_data](https://www.terraform.io/docs/providers/azurerm/r/virtual_machine.html#custom_data) field, or
+    * Use a [remote-exec provisioner](https://www.terraform.io/docs/provisioners/remote-exec.html)
+* Alter your command to install docker
+    * `yum install docker`
+* SSH into the VM
+    * List out current containers using `docker ps -a` (should be empty)
+* Use the docker command line to install the [Apache HTTPd container](https://hub.docker.com/_/httpd)
+* Use `curl` to connect to http://localhost:80
+* Use a local web browser to connect to your public IP (http://...)
 
 ---
 
