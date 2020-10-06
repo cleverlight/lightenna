@@ -26,6 +26,7 @@ header:
 * Grant your service principal full access to your key vault
     * Beware creating keys that you cannot see or delete!
 * Grant your read-only Portal user access to your key vault
+    * Ensure your networking access includes the IP of the machine that you're accessing the portal from
 * Create secrets
     * `azurerm_key_vault_secret`
     * `azurerm_key_vault_key`
