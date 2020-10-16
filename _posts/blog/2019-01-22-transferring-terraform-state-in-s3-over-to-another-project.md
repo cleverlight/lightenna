@@ -5,8 +5,8 @@ description: Terraform state files in S3 are the way forward, but when you need 
 tags: tech devops techupdate
 toc: true
 header:
-    overlay_image: /assets/images/techupdate_00012_1920x.png
-    small_image: /assets/images/techupdate_00012_640x.png
+    overlay_image: /assets/images/techupdate_25318_1920x.jpg
+    small_image: /assets/images/techupdate_25318_640x.jpg
 ---
 
 ## Process

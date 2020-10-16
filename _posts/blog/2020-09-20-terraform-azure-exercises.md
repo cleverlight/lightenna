@@ -5,8 +5,8 @@ description: Terraform provides a great way to create resources in the cloud usi
 tags: tech devops
 toc: true
 header:
-    overlay_image: /assets/images/techupdate_00012_1920x.png
-    small_image: /assets/images/techupdate_00012_640x.png
+    overlay_image: /assets/images/techupdate_25318_1920x.jpg
+    small_image: /assets/images/techupdate_25318_640x.jpg
 ---
 
 ## Exercise: create Azure secret store

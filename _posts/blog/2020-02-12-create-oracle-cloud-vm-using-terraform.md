@@ -5,8 +5,8 @@ description: Oracle Cloud is still something of the new kid on the block, but th
 tags: tech devops remprov
 toc: true
 header:
-    overlay_image: /assets/images/techupdate_00012_1920x.png
-    small_image: /assets/images/techupdate_00012_640x.png
+    overlay_image: /assets/images/techupdate_25318_1920x.jpg
+    small_image: /assets/images/techupdate_25318_640x.jpg
 ---
 
 ## Getting started

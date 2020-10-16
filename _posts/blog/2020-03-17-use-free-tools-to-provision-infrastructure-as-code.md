@@ -6,8 +6,8 @@ permalink: /tech/2020/use-free-tools-to-provision-infrastructure-as-code/
 tags: tech devops
 toc: true
 header:
-    overlay_image: /assets/images/techupdate_00012_1920x.png
-    small_image: /assets/images/techupdate_00012_640x.png
+    overlay_image: /assets/images/techupdate_25318_1920x.jpg
+    small_image: /assets/images/techupdate_25318_640x.jpg
 ---
 
 {% include presentations/2020-03-17-use-free-tools-to-provision-infrastructure-as-code.md %}

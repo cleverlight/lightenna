@@ -5,8 +5,8 @@ description: While a single firewall should be enough, the number of successful 
 tags: tech devops techupdate
 toc: true
 header:
-    overlay_image: /assets/images/techupdate_00012_1920x.png
-    small_image: /assets/images/techupdate_00012_640x.png
+    overlay_image: /assets/images/techupdate_25318_1920x.jpg
+    small_image: /assets/images/techupdate_25318_640x.jpg
 ---
 
 Cloud Security is becoming ever more important as organisations increasingly put their faith in the major cloud platforms.

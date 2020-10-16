@@ -5,8 +5,8 @@ description: Variables allow us to start genericising Puppet configuration and a
 tags: front tech devops puppet
 toc: true
 header:
-    overlay_image: /assets/images/techupdate_00012_1920x.png
-    small_image: /assets/images/techupdate_00012_640x.png
+    overlay_image: /assets/images/techupdate_25318_1920x.jpg
+    small_image: /assets/images/techupdate_25318_640x.jpg
 ---
 
 ## The call

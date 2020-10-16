@@ -5,8 +5,8 @@ description: Classes are to resources like folders are to your Physics revision 
 tags: tech devops puppet
 toc: true
 header:
-    overlay_image: /assets/images/techupdate_00012_1920x.png
-    small_image: /assets/images/techupdate_00012_640x.png
+    overlay_image: /assets/images/techupdate_25318_1920x.jpg
+    small_image: /assets/images/techupdate_25318_192x.jpg
 ---
 
 ## The value of abstraction
