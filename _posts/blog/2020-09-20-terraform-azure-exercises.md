@@ -32,6 +32,8 @@ header:
     * `azurerm_key_vault_key`
     * `azurerm_key_vault_certificate`
         * Generate the certificate in key vault, then `output` name and size
+* Use `depends_on` to ensure that your secrets are created after and destroyed before the access permission
+    * Typically this setting `depends_on` in each secret with a reference to the policy
 * Design output {} statements
     * to verify that secrets have been created properly
 
