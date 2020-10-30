@@ -1,5 +1,10 @@
 <!-- start custom head snippets -->
 
+{% if page.canonical %}
+<!-- add canonical reference to originating page for all variants -->
+<link rel="canonical" href="{{ page.canonical }}" />
+{% endif %}
+
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 
 <!-- process mermaid diagrams -->
