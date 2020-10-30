@@ -8,8 +8,8 @@ redirect_from:
   - /products/kubernetes-as-a-service/
 tags: services front kubernetes
 header:
-    overlay_image: /assets/images/datacentre_00934_1920x.jpg
-    small_image: /assets/images/datacentre_00934_640x.jpg
+    overlay_image: /assets/images/cloudland_01197_1920x.jpg
+    small_image: /assets/images/cloudland_01197_640x.jpg
 preview:
     parentheses: "(Managed)"
 feature_kubernetes_animation:
