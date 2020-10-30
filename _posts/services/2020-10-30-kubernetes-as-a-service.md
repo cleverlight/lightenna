@@ -103,7 +103,7 @@ The success of any kind of Cloud project depends not only on a good delivery but
     <input type="email" name="email" placeholder="Your email">
     <textarea name="message" placeholder="Your message"></textarea>
     <p>There's a human-being on the end of this form, so please tell us how and when you'd like to be contacted
-    and anything pertinent about your Cloud or the on-prem environment that you'd like to move to Kubernetes.</p>
+    and anything pertinent the workload you'd like to host in our managed Kubernetes service.</p>
     <button type="submit" class="btn btn--primary btn--large">Send</button>
 </form>
 <div stlye="clear:both;">&nbsp;</div>
