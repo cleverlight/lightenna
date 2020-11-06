@@ -60,9 +60,7 @@ A single container running on a Docker host
 + Simple to start up `docker-compose up`
 + Simple to stop them `docker-compose down`
 
----
-
-## Docker compose
+{% if include.pres!=true %}
 ```
 version: "3"
 services:
@@ -85,6 +83,7 @@ services:
         depends_on:
             - elasticsearch
 ```
+{% endif %}
 
 ---
 
