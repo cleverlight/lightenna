@@ -1,13 +1,15 @@
-<figure class="image" {% if include.style %}style="{{ include.style }}"{% endif %}>
-  <object class="wrapper" type="image/svg+xml" data="{{ include.svg }}">
-    {% if include.png %}
-    <img src="{{ include.png }}" alt="Falling back to PNG as your browser does not support SVG." />
+<div class="svg-embed">
+  <figure class="image" {% if include.style %}style="{{ include.style }}"{% endif %}>
+    <object class="wrapper" type="image/svg+xml" data="{{ include.svg }}">
+      {% if include.png %}
+      <img src="{{ include.png }}" alt="Falling back to PNG as your browser does not support SVG." />
+      {% endif %}
+    </object>
+    {% if include.caption %}
+    <figcaption>{{ include.caption }}</figcaption>
     {% endif %}
-  </object>
-  {% if include.caption %}
-  <figcaption>{{ include.caption }}</figcaption>
-  {% endif %}
-</figure>
+  </figure>
+</div>
 <div class="download-link">
   <a href="{{ include.svg }}">Download SVG</a>
   {% if include.png %} | <a class="download-link" href="{{ include.png }}">PNG</a>{% endif %}

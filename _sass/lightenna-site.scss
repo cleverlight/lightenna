@@ -70,9 +70,17 @@ p.smallright {
   font-size: 80%;
 }
 
-// scalable SVG embeds
+// scalable SVG embeds, centred
 object.wrapper {
   position: relative;
+}
+div.svg-embed {
+  width: 100%;
+  text-align: center;
+  figure {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 // neat incidental captions
