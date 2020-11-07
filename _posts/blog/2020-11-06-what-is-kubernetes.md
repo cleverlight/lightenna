@@ -6,8 +6,8 @@ permalink: /tech/2020/what-is-kubernetes/
 tags: tech devops front
 toc: true
 header:
-    overlay_image: /assets/images/container_blocks_23630_1920x.jpg
-    small_image: /assets/images/container_blocks_23630_640x.jpg
+    overlay_image: /assets/images/tetris_kubernetes_24040_1920x.jpg
+    small_image: /assets/images/tetris_kubernetes_24040_640x.jpg
 ---
 
 {% include presentations/2020-11-06-what-is-kubernetes.md %}
