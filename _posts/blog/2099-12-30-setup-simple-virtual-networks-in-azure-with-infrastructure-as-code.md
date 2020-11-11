@@ -2,7 +2,7 @@
 layout: single
 title: Using Terraform to stitch together virtual networks in Microsoft Azure
 description: 
-tags: tech devops remprov
+tags: tech devops remprov terraform
 toc: true
 header:
     overlay_image: /assets/images/techupdate_25318_1920x.jpg

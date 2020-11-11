@@ -2,7 +2,7 @@
 layout: single
 title: Transferring Terraform state in S3 over to another project
 description: Terraform state files in S3 are the way forward, but when you need to split a project, managing those state files requires care
-tags: tech devops techupdate
+tags: tech devops techupdate terraform
 toc: true
 header:
     overlay_image: /assets/images/techupdate_25318_1920x.jpg

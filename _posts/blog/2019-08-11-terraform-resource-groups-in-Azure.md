@@ -2,7 +2,7 @@
 layout: single
 title: Create resource groups in Microsoft Azure using Terraform
 description: Resource groups hold everything together in Azure, like virtual containers for the resources we provision.
-tags: tech devops remprov
+tags: tech devops terraform remprov
 toc: true
 header:
     overlay_image: /assets/images/techupdate_25318_1920x.jpg

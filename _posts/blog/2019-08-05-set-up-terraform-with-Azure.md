@@ -2,7 +2,7 @@
 layout: single
 title: Set up Terraform to provision in Microsoft Azure
 description: Terraforming your Azure Cloud means building out a more predictable, reliable and extensible Cloud estate for the future
-tags: front tech devops remprov
+tags: front tech devops remprov terraform
 toc: true
 header:
     overlay_image: /assets/images/techupdate_25318_1920x.jpg

@@ -2,7 +2,7 @@
 layout: single
 title: Get started with remote provisioning using Terraform
 description: Often local machines or firewalls make it impossible to run Terraform locally, but remote provisioning offers a convenient secure alternative
-tags: front tech devops remprov
+tags: front tech devops remprov terraform
 toc: true
 header:
     overlay_image: /assets/images/techupdate_25318_1920x.jpg

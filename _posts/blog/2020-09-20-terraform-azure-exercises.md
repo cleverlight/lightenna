@@ -2,7 +2,7 @@
 layout: single
 title: Create resources in Azure Cloud using Terraform
 description: Terraform provides a great way to create resources in the cloud using infrastructure-as-code.  Just ensure you grant yourself permission to delete the things you create!
-tags: tech devops
+tags: tech devops terraform
 toc: true
 header:
     overlay_image: /assets/images/techupdate_25318_1920x.jpg
@@ -38,6 +38,7 @@ header:
     * to verify that secrets have been created properly
 
 {% if include.pres %}Note: {% endif %}
+The [solution to the 'create Azure secret store' exercise](https://github.com/lightenna/devops-workstream/tree/master/terraform/tutorial/08-azure-secrets) is available as part of our open-source [Devops-Workstream](https://github.com/lightenna/devops-workstream/).
 
 ---
 
@@ -63,6 +64,9 @@ header:
     * Source the admin password for your VMs from AKV
         * `prod` secrets
 
+{% if include.pres %}Note: {% endif %}
+The [solution to the 'referencing secrets' exercise](https://github.com/lightenna/devops-workstream/tree/master/terraform/tutorial/09-referencing-secrets) is available as part of our open-source [Devops-Workstream](https://github.com/lightenna/devops-workstream/).
+
 ---
 
 ## Exercise: create a VM as a docker host
@@ -85,8 +89,3 @@ header:
 * Coming soon
 
 {% if include.pres %}Note: {% endif %}
-
----
-
-## Help
-If you'd like help moving your team onto GitFlow, please [get in touch](/contact).
