@@ -16,8 +16,8 @@
   animation-delay: 0.15s;
 }
 
-/* front page */
-.layout--splash-tag #main {
+/* front page, service page */
+.layout--splash #main, .layout--splash-tag #main {
   max-width: 80%;
   @include breakpoint($large) {
     max-width: 68%;
@@ -29,7 +29,7 @@
     max-width: 52%;
   }
 }
-/* article */
+/* general article */
 #main {
   max-width: 80%;
   @include breakpoint($large) {
