@@ -8,7 +8,10 @@ toc: true
 header:
     overlay_image: /assets/images/tetris_kubernetes_24040_1920x.jpg
     small_image: /assets/images/tetris_kubernetes_24040_640x.jpg
+    og_video: https://www.youtube.com/v/oBH8b8ESI5M/
 ---
+
+{% include video id="oBH8b8ESI5M" provider="youtube" %}
 
 {% include presentations/2020-11-06-what-is-kubernetes.md %}
 
