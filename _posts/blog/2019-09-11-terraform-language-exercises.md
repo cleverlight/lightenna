@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Terraform language exercises
+title: Terraform exercises (Part 1 - Language)
 description: These exercises for part of the Terraform section of our Cloud training courses.
 tags: tech devops terraform
 toc: true

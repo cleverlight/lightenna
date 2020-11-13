@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Create resources in Azure Cloud using Terraform
+title: Terraform exercises (Part 2 - Secret management)
 description: Terraform provides a great way to create resources in the cloud using infrastructure-as-code.  Just ensure you grant yourself permission to delete the things you create!
 tags: tech devops terraform
 toc: true
