@@ -3,7 +3,7 @@
  * Copyright Lightenna Ltd - lightenna.com | @lightenna
 */
 
-/* sensible page borders */
+/* sensible page width and borders */
 #main {
   @include clearfix;
   margin-left: auto;
@@ -12,16 +12,34 @@
   padding-right: 1em;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
-  max-width: 90%;
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
+}
 
+/* front page */
+.layout--splash-tag #main {
+  max-width: 80%;
   @include breakpoint($large) {
-    max-width: 80%;
+    max-width: 68%;
   }
-
   @include breakpoint($x-large) {
-    max-width: 70%;
+    max-width: 56%;
+  }
+  @include breakpoint($xx-large) {
+    max-width: 52%;
+  }
+}
+/* article */
+#main {
+  max-width: 80%;
+  @include breakpoint($large) {
+    max-width: 95%;
+  }
+  @include breakpoint($x-large) {
+    max-width: 90%;
+  }
+  @include breakpoint($xx-large) {
+    max-width: 82%;
   }
 }
 
