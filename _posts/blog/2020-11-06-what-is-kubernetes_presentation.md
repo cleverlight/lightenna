@@ -3,6 +3,7 @@ layout: reveal
 title: What is Kubernetes?
 description: From the ground up, or really the application down, we look at the transformative effect that Kubernetes is having and the container technology that underpins it
 permalink: /tech/2020/what-is-kubernetes/reveal/
+reveal_theme: night.css
 ---
 
 {% include reveal_slide-start.html %}

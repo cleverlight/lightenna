@@ -15,7 +15,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="{{ site.reveal_path }}css/reveal.css">
-    <link rel="stylesheet" href="{{ site.reveal_theme_path }}{{ site.reveal_theme }}" id="theme">
+    <link rel="stylesheet" href="{{ site.reveal_theme_path }}{% if page.reveal_theme %}{{ page.reveal_theme }}{% else %}{{ site.reveal_theme }}{% endif %}" id="theme">
     <!-- Theme used for syntax highlighting of code -->
     <link rel="stylesheet" href="{{ site.reveal_path }}lib/css/zenburn.css">
     <!-- Printing and PDF exports -->
