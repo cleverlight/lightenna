@@ -6,7 +6,7 @@ tags: tech devops puppet
 toc: true
 header:
     overlay_image: /assets/images/techupdate_25318_1920x.jpg
-    small_image: /assets/images/techupdate_25318_192x.jpg
+    small_image: /assets/images/techupdate_25318_640x.jpg
 ---
 
 ## The value of abstraction

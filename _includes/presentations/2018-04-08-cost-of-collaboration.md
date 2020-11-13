@@ -22,7 +22,7 @@ To create a culture of collaboration, we've got to understand it.
 <li>Inefficient</li>
 </ul>
 
-<ul class="right-as-right">
+<ul class="left as-right">
 <li>Great</li>
 </ul>
 </div>
@@ -81,7 +81,7 @@ The tools named here may quickly appear dated and the balance of effort invested
 <li>Orchestration</li>
 </ul>
 
-<ul class="right as-right">
+<ul class="left as-right">
 <li>Monitoring</li>
 <li>Logging</li>
 <li>Performance management</li>

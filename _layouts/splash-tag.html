@@ -15,17 +15,30 @@ header:
   {% endif %}
   {{ content }}
   <div class="post">
-    <ul>
+    <ul class="postlist">
     {% if page.tag %}
       {% for post in site.tags[page.tag] %}
-      <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> {% if post.preview.parentheses %}{{post.preview.parentheses}}{% else %}({{ post.date | date_to_string }}){% endif %}<br>
-        {{ post.description }}
+        {% assign remainder = forloop.index | modulo: 2 %}
+      <li class="postimg">
+        <span class="img {% if remainder == 0 %}left{% else %}right{% endif %}"><a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ post.header.small_image }}" alt="Image: {{ post.title }}" /></a></span>
+        <span class="text">
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><br />
+          {% if post.preview.parentheses %}{{post.preview.parentheses}}{% else %}{{ post.date | date_to_string }}{% endif %}<br />
+          {{ post.description }}<br />
+          <a class="readmore" href="{{ site.baseurl }}{{ post.url }}">Read more</a>
+        </span>
       </li>
       {% endfor %}
     {% else %}
       {% for post in site.posts %}
-      <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> {% if post.preview.parentheses %}{{post.preview.parentheses}}{% else %}({{ post.date | date_to_string }}){% endif %}<br>
-        {{ post.description }}
+      <li class="postimg">
+        <span class="img {% if remainder == 0 %}left{% else %}right{% endif %}"><a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ post.header.small_image }}" alt="Image: {{ post.title }}" /></a></span>
+        <span class="text">
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><br />
+          {% if post.preview.parentheses %}{{post.preview.parentheses}}{% else %}{{ post.date | date_to_string }}{% endif %}<br />
+          {{ post.description }}<br />
+          <a class="readmore" href="{{ site.baseurl }}{{ post.url }}">Read more</a>
+        </span>
       </li>
       {% endfor %}
     {% endif %}
