@@ -49,12 +49,8 @@ ul.postlist {
   padding: 0;
   li.postimg {
     clear: both;
-    padding-top: 1.0em;    /* margin on li to offset text */
-    span.text {
-    }
+    margin-bottom: 2.0em;
     span.img {
-      margin-top: -1.0em;  /* negative margin on img to make it abut */
-      margin-bottom: 2.0em;/* use image to create vertical padding between li elements */
       box-shadow: 0 0 10px rgba(0,0,0,0.25);
       width: 50%;
       &.left {
@@ -85,7 +81,7 @@ ul.postlist {
   text-align: right;
 }
 
-.n-col:after {
+li.postimg:after, .n-col:after {
   content: '';
   display: block;
   clear: both;
