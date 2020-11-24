@@ -76,11 +76,15 @@ The [solution to the 'referencing secrets' exercise](https://github.com/lightenn
     * Use the [custom_data](https://www.terraform.io/docs/providers/azurerm/r/virtual_machine.html#custom_data) field, or
     * Use a [remote-exec provisioner](https://www.terraform.io/docs/provisioners/remote-exec.html)
 * Alter your command to install docker
-    * `curl -fsSL https://get.docker.com/ | sh`
+    * `sudo curl -fsSL https://get.docker.com/ | sh`
+    * Add your current user to the docker group
+    * Start the docker service
+    * Start the docker service on start-up (enable)
 * Extend to install docker-compose
     * `sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose`
     * `sudo chmod +x /usr/local/bin/docker-compose`
 * SSH into the VM
+    * Check you can see the (empty) running container list using `docker ps`
     * List out current containers using `docker ps -a` (should be empty)
 * Use the docker command line to install the [Apache HTTPd container](https://hub.docker.com/_/httpd)
 * Use `curl` to connect to http://localhost:80
