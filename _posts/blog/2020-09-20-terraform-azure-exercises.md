@@ -90,6 +90,9 @@ The [solution to the 'referencing secrets' exercise](https://github.com/lightenn
 * Use `curl` to connect to http://localhost:80
 * Use a local web browser to connect to your public IP (http://...)
 
+{% if include.pres %}Note: {% endif %}
+The [solution to the 'docker host' exercise](https://github.com/lightenna/devops-workstream/tree/master/terraform/tutorial/10-docker-host) is available as part of our open-source [Devops-Workstream](https://github.com/lightenna/devops-workstream/).
+
 ---
 
 ## Exercise: create Azure Kubernetes cluster
