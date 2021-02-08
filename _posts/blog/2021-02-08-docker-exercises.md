@@ -31,7 +31,7 @@ header:
         * Start using `npm start`
         * `curl localhost:3030` or open in local browser
         * Terminate local service after testing
-* Write a `Dockerfile` to
+* Write a `Dockerfile` to:
     * Use a Node.js base image
     * Copy package.json over to image and `npm install` at build time
     * Run `npm start` at container start time
@@ -56,7 +56,7 @@ The [solution to the 'containerising' exercise](https://github.com/lightenna/dev
     * using the package manager built into your chosen distribution
 * Copy a local nginx.conf file into your container
     * You might base your configuration on a simplified version of this [Nginx Example Configuration](https://www.nginx.com/resources/wiki/start/topics/examples/full/)
-        * Alternatively see solution for sample config.
+        * Alternatively see solution for sample config
 * Copy a local website into your container
     * A single `index.html` file will suffice, but you can enrich it if you'd like
 * Run NGINX as a non-root user, e.g. user `1000`
@@ -103,7 +103,7 @@ The [solution to the 'environment variables' exercise](https://github.com/lighte
 * Build on the [environment variables](https://github.com/lightenna/devops-workstream/tree/master/docker/tutorial/03-dockerfile-environment-variables) to share volumes into your container
     * Instead of using `COPY` to make a duplicate of your `nginx.conf`
         * mount the file as a volume
-* Trying modifying your config then restarting your container
+* Try modifying your config then restarting your container
     * Hint: you can use `docker logs <container_name>` to see start-up logs from NGINX
 * Repeat this process for the local website you made previously
     * Instead of using `COPY` to make a duplicate of your local website
@@ -118,6 +118,13 @@ The [solution to the 'volumes' exercise](https://github.com/lightenna/devops-wor
     * Elasticsearch `docker.elastic.co/elasticsearch/elasticsearch:7.10.0`
     * Logstash `docker.elastic.co/logstash/logstash:7.10.0`
     * Kibana `docker.elastic.co/kibana/kibana:7.10.0`
+* Bring your stack up using `docker-compose up`
+    * You might choose to run that in a separate process (using `&`) to avoid blocking your command prompt
+* Pass an environment variable to Elasticsearch:
+    * `discovery.type=single-node`
+* Expose port `9200` for Elasticsearch and `5601` for Kibana
+    * Test internal (in-container) and external (on-guest) access to both services
+* Ensure that Elasticsearch spins-up before Logstash and Kibana using the `depends_on` relationship
 
 {% if include.pres %}Note: {% endif %}
 The [solution to the 'docker-compose' exercise](https://github.com/lightenna/devops-workstream/tree/master/docker/tutorial/05-dockerfile-environment-variables) is available as part of our open-source [Devops-Workstream](https://github.com/lightenna/devops-workstream/).
