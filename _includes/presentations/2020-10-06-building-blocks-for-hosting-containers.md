@@ -54,6 +54,16 @@ A single container running on a Docker host
 
 ---
 
+## Docker build process
++ Create container image: `docker build`
++ Instantiated container: `docker run`
++ Connect into container: `docker exec -it`
++ Stop container: `docker stop`
++ Delete container: `docker rm`
++ Delete container image: `docker rmi`
+
+---
+
 ## Docker compose
 + Run up multiple containers
 + File-based, YAML

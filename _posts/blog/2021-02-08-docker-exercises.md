@@ -51,7 +51,7 @@ The [solution to the 'containerising' exercise](https://github.com/lightenna/dev
 
 ## Exercise: augment existing Dockerfile
 * Create a `Dockerfile` that augments the existing NGINX Dockerfile
-    * Use the BASE keyword to reference the [latest nginx](https://hub.docker.com/_/nginx)
+    * Use the `FROM` keyword to reference the [latest nginx](https://hub.docker.com/_/nginx)
 * Install an additional package such as procps (for `ps` commands)
     * using the package manager built into your chosen distribution
 * Copy a local nginx.conf file into your container
