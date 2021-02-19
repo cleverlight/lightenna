@@ -10,7 +10,7 @@ header:
 ---
 
 ## Exercise: build a container hosting environment
-* Create an Azure Key Vault with a randomly-generated [azurerm_key_vault_secret](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/key_vault_secret) for `admin_password`.
+* Create an Azure Key Vault with a randomly-generated [azurerm_key_vault_secret](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/key_vault_secret) for `admin-password`.
     * The Key Vault must be created in its own isolated root module.
 * Provision an Azure Container registry using the [azurerm_container_registry resource type](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/container_registry).
     * The Container registry must be created in a separate root module.
@@ -29,6 +29,6 @@ header:
 {% if include.pres %}Note: {% endif %}
 This exercise is much more substantial than previous exercises.  Please take it slowly, code a couple of lines then test and iterate, refactor as needed.
 
-The solution to the 'container hosting' exercise is composed of both [a Terraform solution](https://github.com/lightenna/devops-workstream/tree/master/terraform/tutorial/12-container-hosting), [a Docker solution](https://github.com/lightenna/devops-workstream/tree/master/docker/tutorial/02-dockerfile-augment) is available as part of our open-source [Devops-Workstream](https://github.com/lightenna/devops-workstream/).
+The solution to the 'container hosting' exercise is composed of both [a Terraform solution](https://github.com/lightenna/devops-workstream/tree/master/terraform/tutorial/12-container-hosting), [a Docker solution](https://github.com/lightenna/devops-workstream/tree/master/docker/tutorial/06-dockerfile-cloud-hosting) is available as part of our open-source [Devops-Workstream](https://github.com/lightenna/devops-workstream/).
 
 ---
