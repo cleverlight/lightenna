@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Terraform-Docker integration exercises
-description: Azure provides all the building blocks we need to securely run containers in the Cloud, we just need Terraform to glue it together
+description: Azure provides all the building blocks we need to securely run containers in the Cloud, we just need Terraform to glue them together
 tags: tech devops docker terraform
 toc: true
 header:
