@@ -15,7 +15,7 @@ header:
         * While this secret isn't used, it validates that AKV can create (and destroy) secrets.
         * Create an `output` resource to show some information about the created secret.
     * The Key Vault must be created in its own isolated root module.
-    * Declaring the Key Vault's access policies inline (as part of the azurerm_key_vault resource) makes deletion easier and removes the need for manual depends_on references.
+    * Declaring the Key Vault's access policies inline (as part of the [azurerm_key_vault](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/key_vault) resource) makes deletion easier and removes the need for manual depends_on references.
 * Provision an Azure Container registry using the [azurerm_container_registry resource type](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/container_registry).
     * The Container registry must be created in a separate root module.
     * Enable the admin user.
