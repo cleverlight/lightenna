@@ -10,12 +10,17 @@ header:
 ---
 
 ## Exercise: build a container hosting environment
-* Create an Azure Key Vault with a randomly-generated [azurerm_key_vault_secret](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/key_vault_secret) for `admin-password`.
+* Create an Azure Key Vault
+    * Create a randomly-generated [azurerm_key_vault_secret](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/key_vault_secret) called `temp-password`.
+        * While this secret isn't used, it validates that AKV can create (and destroy) secrets.
+        * Create an `output` resource to show some information about the created secret.
     * The Key Vault must be created in its own isolated root module.
+    * Declaring the Key Vault's access policies inline (as part of the azurerm_key_vault resource) makes deletion easier and removes the need for manual depends_on references.
 * Provision an Azure Container registry using the [azurerm_container_registry resource type](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/container_registry).
     * The Container registry must be created in a separate root module.
     * Enable the admin user.
-    * Set the admin user's password using a [azurerm_key_vault_secret data source](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/key_vault_secret) to retrieve the value from your key vault.
+    * Record the admin user's password in your Key Vault.
+        * Use a [azurerm_key_vault data source](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/key_vault) to reference your existing Key Vault.
 * Use [docker login](https://docs.docker.com/engine/reference/commandline/login/) to authenticate against your new container registry.
 * Create a containerised Node.js application
     * You might choose to use the `Dockerfile` and management scripts that your wrote as your solution to the [previous 'environment variables' exercise](https://github.com/lightenna/devops-workstream/tree/master/docker/tutorial/03-dockerfile-environment-variables).
