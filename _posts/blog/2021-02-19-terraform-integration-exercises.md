@@ -19,9 +19,13 @@ header:
 * Provision an Azure Container registry using the [azurerm_container_registry resource type](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/container_registry).
     * The Container registry must be created in a separate root module.
     * Enable the admin user.
-    * Record the admin user's password in your Key Vault.
+    * Record the admin user's username and password in your Key Vault.
         * Use a [azurerm_key_vault data source](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/key_vault) to reference your existing Key Vault.
+        * Store each credential in its own secret.
 * Use [docker login](https://docs.docker.com/engine/reference/commandline/login/) to authenticate against your new container registry.
+    * Extend your Container registry module to produce a `docker login` command as output to make command-line login easier.
+        * You'll need to inline the password for now with either `--password` or `--password-stdin`.  While this is too insecure for production, it's sufficient for a short-lived password in an IAC exercise.
+        * Also provider a `docker logout` command as output.
 * Create a containerised Node.js application
     * You might choose to use the `Dockerfile` and management scripts that your wrote as your solution to the [previous 'environment variables' exercise](https://github.com/lightenna/devops-workstream/tree/master/docker/tutorial/03-dockerfile-environment-variables).
     * Configure docker to accept a `PORT` environment variable.
