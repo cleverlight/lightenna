@@ -100,7 +100,7 @@ The [solution to the 'augment' exercise](https://github.com/lightenna/devops-wor
 The [solution to the 'environment variables' exercise](https://github.com/lightenna/devops-workstream/tree/master/docker/tutorial/03-dockerfile-environment-variables) is available as part of our open-source [Devops-Workstream](https://github.com/lightenna/devops-workstream/).
 
 ## Exercise: volumes
-* Build on the [environment variables](https://github.com/lightenna/devops-workstream/tree/master/docker/tutorial/03-dockerfile-environment-variables) to share volumes into your container
+* Build on the ['augment' exercise](https://github.com/lightenna/devops-workstream/tree/master/docker/tutorial/02-dockerfile-augment) to share volumes into your container
     * Instead of using `COPY` to make a duplicate of your `nginx.conf`
         * mount the file as a volume
 * Try modifying your config then restarting your container
