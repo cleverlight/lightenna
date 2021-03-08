@@ -32,6 +32,10 @@ header:
     * Modify your management scripts to build the container and upload it to your container registry.
 * Create an [azurerm_app_service](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/app_service) instance.
     * Again, the instance must be created using a separate root module.
+        * Hint: start by using a community module, such as [this one by InnovationNorway](https://registry.terraform.io/modules/innovationnorway/web-app-container/azurerm/latest), to create all the azurerm_app_service resources.
+    * Initially configure the app service to run a public container image, before trying to authenticate against your Azure Container Registry.
+        * Hint: use a public image that you're familiar with (default ports etc.) from a previous exercise such as [nginx:latest](https://hub.docker.com/_/nginx) to make testing easier.
+        * Output the app_service hostname to test your deployment in a browser.
 * Deploy a container from your Container registry to your App Service instance.
     * Output a URL that allows you to test you Node.js application from a browser.
 
