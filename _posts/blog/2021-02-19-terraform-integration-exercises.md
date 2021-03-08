@@ -30,6 +30,8 @@ header:
     * You might choose to use the `Dockerfile` and management scripts that your wrote as your solution to the [previous 'environment variables' exercise](https://github.com/lightenna/devops-workstream/tree/master/docker/tutorial/03-dockerfile-environment-variables).
     * Configure docker to accept a `PORT` environment variable.
     * Modify your management scripts to build the container and upload it to your container registry.
+        * Be careful to re-build and re-push your container if you re-create your container registry.
+        * Verify you can see your repository and tag in the [Azure Portal](https://portal.azure.com/) `Container registry` dashboard, `Repositories` blade
 * Create an [azurerm_app_service](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/app_service) instance.
     * Again, the instance must be created using a separate root module.
         * Hint: start by using a community module, such as [this one by InnovationNorway](https://registry.terraform.io/modules/innovationnorway/web-app-container/azurerm/latest), to create all the azurerm_app_service resources.
