@@ -36,7 +36,10 @@ header:
     * Initially configure the app service to run a public container image, before trying to authenticate against your Azure Container Registry.
         * Hint: use a public image that you're familiar with (default ports etc.) from a previous exercise such as [nginx:latest](https://hub.docker.com/_/nginx) to make testing easier.
         * Output the app_service hostname to test your deployment in a browser.
+            * Give azure_app_service plenty of time (2-3 minutes) to pull and start the container.
+            * Check the start-up process using the logs visible in the [Azure Portal](https://portal.azure.com/) `App Service` dashboard, `Deployment Centre` blade
 * Deploy a container from your Container registry to your App Service instance.
+    * Set up authentication so that your App Service instance can pull container images from the Container Registry.
     * Output a URL that allows you to test you Node.js application from a browser.
 
 {% if include.pres %}Note: {% endif %}
