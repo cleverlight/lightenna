@@ -55,9 +55,12 @@ Rather than write all the Puppet code ourselves, we can rely on a good array of 
 mod 'puppet-puppetboard'
 mod 'puppet-puppetserver'
 mod 'camptocamp-augeas'
+mod 'herculesteam-augeasproviders_core'
+mod 'puppetlabs-apt'
 mod 'puppetlabs-puppetserver_gem'
 mod 'puppetlabs-puppetdb'
 mod 'puppetlabs-postgresql'
+mod 'puppetlabs-concat'
 mod 'puppetlabs-inifile'
 ```
 
