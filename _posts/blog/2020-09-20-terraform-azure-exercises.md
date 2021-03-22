@@ -96,9 +96,10 @@ The [solution to the 'docker host' exercise](https://github.com/lightenna/devops
 ---
 
 ## Exercise: create single-node Kubernetes cluster with Rancher
-+ Use the docker host VM from the previous exercise as a base
++ Use the docker host VM from the [previous exercises](https://github.com/lightenna/devops-workstream/tree/master/terraform/tutorial/10-docker-host) as a base
     + Note down your hostname (e.g. host1)
-+ Install Rancher Server [using a docker container](https://rancher.com/docs/rancher/v2.x/en/installation/other-installation-methods/single-node-docker/)
++ Either: install Rancher Server using RancherD
++ Or: install Rancher Server [using a docker container](https://rancher.com/docs/rancher/v2.x/en/installation/other-installation-methods/single-node-docker/)
     + use version 2.4.11 of the container, which is the latest at the time of writing and has been tested
     + expose port 8443 on your VM by updating the Network Security Group
     + configure docker to run Rancher Server API [on a non-standard port (8443)](https://rancher.com/docs/rancher/v2.x/en/installation/other-installation-methods/single-node-docker/advanced/#running-rancher-rancher-and-rancher-rancher-agent-on-the-same-node)
@@ -115,9 +116,6 @@ The [solution to the 'docker host' exercise](https://github.com/lightenna/devops
         + Set --address to <hostname>
         + Add all roles (etcd, control plane and worker)
 
----
-
-## Exercise: create Azure Kubernetes cluster
-* Coming soon
-
 {% if include.pres %}Note: {% endif %}
+There are at least two possible solutions to the 'kubernetes host' exercise, [using RancherD](https://github.com/lightenna/devops-workstream/tree/master/terraform/tutorial/11-kubernetes-host), which uses [this RancherD install script](https://github.com/lightenna/devops-workstream/tree/master/terraform/tutorial/11-kubernetes-host/scripts/install_rancherd.sh), or [using a docker container](https://github.com/lightenna/devops-workstream/tree/master/terraform/tutorial/11-kubernetes-host/scripts/install_rancher_server.sh).  They are available as part of our open-source [Devops-Workstream](https://github.com/lightenna/devops-workstream/).
+---
