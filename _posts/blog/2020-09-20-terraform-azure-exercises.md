@@ -118,4 +118,3 @@ The [solution to the 'docker host' exercise](https://github.com/lightenna/devops
 
 {% if include.pres %}Note: {% endif %}
 There are at least two possible solutions to the 'kubernetes host' exercise, [using RancherD](https://github.com/lightenna/devops-workstream/tree/master/terraform/tutorial/11-kubernetes-host), which uses [this RancherD install script](https://github.com/lightenna/devops-workstream/tree/master/terraform/tutorial/11-kubernetes-host/scripts/install_rancherd.sh), or [using a docker container](https://github.com/lightenna/devops-workstream/tree/master/terraform/tutorial/11-kubernetes-host/scripts/install_rancher_server.sh).  They are available as part of our open-source [Devops-Workstream](https://github.com/lightenna/devops-workstream/).
----
