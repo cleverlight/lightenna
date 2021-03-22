@@ -95,6 +95,28 @@ The [solution to the 'docker host' exercise](https://github.com/lightenna/devops
 
 ---
 
+## Exercise: create single-node Kubernetes cluster with Rancher
++ Use the docker host VM from the previous exercise as a base
+    + Note down your hostname (e.g. host1)
++ Install Rancher Server [using a docker container](https://rancher.com/docs/rancher/v2.x/en/installation/other-installation-methods/single-node-docker/)
+    + use version 2.4.11 of the container, which is the latest at the time of writing and has been tested
+    + expose port 8443 on your VM by updating the Network Security Group
+    + configure docker to run Rancher Server API [on a non-standard port (8443)](https://rancher.com/docs/rancher/v2.x/en/installation/other-installation-methods/single-node-docker/advanced/#running-rancher-rancher-and-rancher-rancher-agent-on-the-same-node)
++ Use a browser to connect over HTTPS your VM on port 8443
+    + set an admin password for your Rancher install
++ Create a cluster in Rancher (based on existing nodes)
+    + Select `Add cluster`
+    + Select `From existing nodes (Custom)`
+    + Select a cluster name, then `Next`
++ Add your VM as an all-roles agent node to your cluster
+    + You'll need to run the agent using docker with suitable credentials for server/token etc.
+    + Hint: start with the command in the `Customize Node Run Command` or `Edit cluster` screen
+        + Set --server to your https://<hostname>:8443
+        + Set --address to <hostname>
+        + Add all roles (etcd, control plane and worker)
+
+---
+
 ## Exercise: create Azure Kubernetes cluster
 * Coming soon
 
