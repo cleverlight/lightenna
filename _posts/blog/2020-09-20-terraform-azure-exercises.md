@@ -112,8 +112,8 @@ The [solution to the 'docker host' exercise](https://github.com/lightenna/devops
 + Add your VM as an all-roles agent node to your cluster
     + You'll need to run the agent using docker with suitable credentials for server/token etc.
     + Hint: start with the command in the `Customize Node Run Command` or `Edit cluster` screen
-        + Set --server to your https://&gt;hostname&lt;:8443
-        + Set --address to &gt;hostname&lt;
+        + Set --server to your https://&lt;hostname&gt;:8443
+        + Set --address to &lt;hostname&gt;
         + Add all roles (etcd, control plane and worker)
 
 {% if include.pres %}Note: {% endif %}
