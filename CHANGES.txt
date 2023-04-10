@@ -40,7 +40,7 @@
   <img src="/assets/chrome/map_uk_200x.png">
   <span class="estbased">Established 2004,</span>
   <span class="estbased">UK-based</span>
-  <span class="phonenumber">+44 (0)207 1835698</span>
+  <span class="phonenumber">+44 (0)20 8133 0692</span>
 </div>
 ```
 
