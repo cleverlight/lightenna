@@ -1,7 +1,7 @@
 ---
 layout: splash
 title: Event streaming
-description: If you're running an in-person event that everyone can attend, we can stream it to an online audience.
+description: If you're running an in-person event that everyone can attend, we can stream it to an online audience.  Afterwards, an archive copy gives you a record for posterity or those who couldn't tune in live.
 permalink: /services/streaming/
 canonical_url: https://www.lightenna.com/services/streaming/
 redirect_from:
