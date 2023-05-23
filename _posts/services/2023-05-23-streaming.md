@@ -11,7 +11,7 @@ header:
     overlay_image: /assets/images/bluebokeh_24040_1920x.jpg
     small_image: /assets/images/bluebokeh_24040_640x.jpg
 preview:
-    parentheses: "filming and online delivery"
+    parentheses: "Filming and online delivery"
 feature_row_features:
   - title: "Low disruption"
     image_path: /assets/images/videographer_32193_640x.jpg
