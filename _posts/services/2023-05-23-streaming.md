@@ -1,6 +1,6 @@
 ---
 layout: splash
-title: Event capture and streaming
+title: Event streaming
 description: If you're running an in-person event that everyone can attend, we can stream it to an online audience.
 permalink: /services/streaming/
 canonical_url: https://www.lightenna.com/services/streaming/
@@ -10,6 +10,8 @@ tags: services front media
 header:
     overlay_image: /assets/images/bluebokeh_24040_1920x.jpg
     small_image: /assets/images/bluebokeh_24040_640x.jpg
+preview:
+    parentheses: "filming and online delivery"
 feature_row_features:
   - title: "Low disruption"
     image_path: /assets/images/videographer_32193_640x.jpg
@@ -43,7 +45,7 @@ Each streamed event typically includes:
 * Multi-microphone setup including radio mics for presenters
 * Minimal disruption with only 1 or 2 engineers/camera-people
 * Streaming online using your existing network
-* Secure delivery to ensure closed-meetings and sensitive content are handled appropriately
+* Secure delivery to ensure closed meetings and sensitive content are handled appropriately
 
 # Save the moments that not everyone can attend in person
 
