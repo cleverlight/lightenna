@@ -2,7 +2,7 @@
 layout: single
 title: Positive Futures for AI - 1. Understand it
 description: Artificial intelligence is oft portrayed as scary, but we're collective shaping the reality (and future) of this exciting new tool
-permalink: /tech/2019/track-aws-costs-in-real-time/
+permalink: /tech/2023/positive-futures-ai-part1-understand-it/
 tags: front tech ai future
 toc: true
 header:
