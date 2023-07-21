@@ -6,7 +6,7 @@ permalink: /services/streaming/
 canonical_url: https://www.lightenna.com/services/streaming/
 redirect_from:
   - /products/streaming/
-tags: services front media
+tags: services media
 header:
     overlay_image: /assets/images/bluebokeh_24040_1920x.jpg
     small_image: /assets/images/bluebokeh_24040_640x.jpg
