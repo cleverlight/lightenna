@@ -8,10 +8,10 @@ toc: true
 header:
     overlay_image: /assets/images/ai_understand_60143_1920x.jpg
     small_image: /assets/images/ai_understand_60143_640x.jpg
-    og_video: https://www.youtube.com/v/TOBEREPLACED/
+    og_video: https://www.youtube.com/v/bXW119GGJy0/
 ---
 
-{% include video id="TOBEREPLACED" provider="youtube" %}
+{% include video id="bXW119GGJy0" provider="youtube" %}
 
 ### Introduction
 
