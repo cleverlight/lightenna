@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Positive Futures for AI - 2. Train
-description: Artificial intelligence is oft portrayed as scary, but we're collective shaping the reality (and future) of this exciting new tool
+description: Artificial intelligence is closer to artificial intuition than a reasoned intelligence.  The way we train machines can help us train ourselves.
 permalink: /tech/2023/positive-futures-ai-part2-train/
 tags: front tech ai future
 toc: true
