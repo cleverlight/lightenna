@@ -20,7 +20,7 @@ The basis of this demo is a simple OAuth login using Github as a provider.  It's
 To achieve that anonymous user experience we need a session, as the user hasn't logged in yet.  This demo creates an anonymous session using a second `provider`.  It's not polished.  It simply shows the session information, specifically how:
 
 * It starts with an empty state (no data)
-* It's replaces by an anonymous session automatically, typically within a few seconds
+* It's replaced by an anonymous session automatically, typically within a few seconds
 * When the user clicks `Sign in`, they're redirected to GitHub
 * After they're redirected back, selected GitHub user details are visible in the session
 * When the user clicks `Sign out`, the session is wiped (no data).
