@@ -159,4 +159,4 @@ const createAnonymousUser = (): User => {
 };
 ```
 
-This took a while to puzzle out from various blog posts and GitHub issues.  I hope that it helps anyone trying to do the same thing.  Please start with [the GitHub repo](https://github.com/lightenna/nextjs-app-auth-anon-logins-example), because the highlights shown in this blog post are illustrative only and not comprehensive, whereas the repo is complete and works at the time of writing.
+This took a while to puzzle out from various blog posts and GitHub issues ([1](https://github.com/nextauthjs/next-auth/issues/568),[2](https://github.com/nextauthjs/next-auth/issues/6649)).  I hope that it helps anyone trying to do the same thing.  Please start with [the GitHub repo](https://github.com/lightenna/nextjs-app-auth-anon-logins-example), because the highlights shown in this blog post are illustrative only and not comprehensive, whereas the repo is complete and works at the time of writing.
