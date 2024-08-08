@@ -6,7 +6,7 @@ permalink: /services/kubernetes-as-a-service/
 canonical_url: https://www.lightenna.com/services/kubernetes/
 redirect_from:
   - /products/kubernetes-as-a-service/
-tags: services front kubernetes
+tags: services front
 header:
     overlay_image: /assets/images/cloudland_01197_1920x.jpg
     small_image: /assets/images/cloudland_01197_640x.jpg
