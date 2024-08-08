@@ -3,7 +3,7 @@ layout: single
 title: What is Kubernetes?
 description: From the ground up, or really the application down, we look at the transformative effect that Kubernetes is having and the container technology that underpins it
 permalink: /tech/2020/what-is-kubernetes/
-tags: tech devops front
+tags: tech devops kubernetes front
 toc: true
 header:
     overlay_image: /assets/images/tetris_kubernetes_24040_1920x.jpg
