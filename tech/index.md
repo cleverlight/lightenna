@@ -19,4 +19,5 @@ Technology underpins all the work we do.  Alongside specific posts about current
 <li><a href="/tech/puppet/">Puppet</a></li>
 <li><a href="/tech/terraform/">Terraform</a></li>
 <li><a href="/tech/vr/">Virtual reality</a></li>
+<li><a href="/tech/ai/">Artificial intelligence</a></li>
 </ul>
