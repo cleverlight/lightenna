@@ -1,7 +1,7 @@
 ---
 layout: splash
 title: Kubernetes as a service
-description: We provide a high-powered (24 Xeon cores/48vCPU/256GB RAM) Kubernetes cluster, ready-to-go for £885/month + VAT, fully-managed and monitoring by Lightenna engineers.  Deploy your production workload in minutes using kubectl, Helm or visually with Rancher.
+description: We provide a high-powered (e.g. 48vCPU/256GB RAM) Kubernetes cluster, ready-to-go, fully-managed and monitoring by Lightenna engineers.  Deploy your production workload in minutes using kubectl, Helm or visually with Rancher.
 permalink: /services/kubernetes-as-a-service/
 canonical_url: https://www.lightenna.com/services/kubernetes/
 redirect_from:
