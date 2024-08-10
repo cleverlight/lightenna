@@ -19,6 +19,12 @@
 * _includes/feature_row
     + Add back video_id case for feature_row(s)
 
+* _includes/footer
+    + Add back MailChimp form (commented right now), even though we're not really using it
+
+* _includes/masthead
+    + add UK map
+
 * _includes/page__hero.html
     + Add if statement to use page.description in favour of page.excerpt
 ```
@@ -26,15 +32,10 @@
     <p class="page__lead">{{ page.description | markdownify | remove: "<p>" | remove: "</p>" }}</p>
 ```
 
-* _includes/footer
-    + Add back MailChimp form (commented right now), even though we're not really using it
-
 * _config.yml
     + Merge by hand, looking for new keys
     + exclude .idea from watch
 
-* _includes/masthead
-    + add UK map
 ```
 <div class="ukmap">
   <img src="/assets/chrome/map_uk_200x.png">
