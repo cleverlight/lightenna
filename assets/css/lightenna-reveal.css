@@ -1,0 +1,37 @@
+/*!
+ * Lightenna-specific styles
+ * Copyright Lightenna Ltd - lightenna.com | @lightenna
+*/
+
+.left {
+    text-align: left;
+    float: left;
+    width: 45%;
+    z-index: -10;
+  }
+  
+  .right {
+    left: 25%;
+    top: 75px;
+    float: right;
+    z-index: -10;
+    width: 45%;
+  }
+  
+  ul.as-right {
+    direction: rtl;
+    margin: 0 1em 0 0;
+    li {
+      text-align: right;
+    }
+  }
+  
+  object.wrapper {
+    position: relative;
+    width: 80%;
+  }
+  
+  .reveal .download-link {
+    display: none;
+  }
+  
