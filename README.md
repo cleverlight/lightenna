@@ -1,15 +1,19 @@
-To run locally:
+
+# Run locally
+
+Requires:
++ bundler
++ ruby
++ ruby-devel
+
 ```
+gem install nokogiri -- --use-system-libraries
 bundle install
-bundler exec jekyll serve --future
+bundle add webrick
+bundle exec jekyll serve --future
 ```
 
 Can use --incremental to try to only build diffs, but unreliable:
 ```
 bundler exec jekyll serve --future --incremental
-```
-
-To build JS:
-```
-npm run-script uglify
 ```

@@ -116,6 +116,7 @@ include:
   - .htaccess
   - _pages
 exclude:
+  - .idea # ignore IDE folders
   - "*.sublime-project"
   - "*.sublime-workspace"
   - vendor
@@ -126,23 +127,14 @@ exclude:
   - assets/js/plugins
   - assets/js/_main.js
   - assets/js/vendor
-  - Capfile
-  - CHANGELOG
   - config
   - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
+  - Gemfile.lock
   - LICENSE
-  - log
-  - node_modules
-  - package.json
-  - package-lock.json
   - Rakefile
   - README
+  - log
   - tmp
-  - /docs # ignore Minimal Mistakes /docs
-  - /test # ignore Minimal Mistakes /test
-  - .idea # ignore IDE folders
 keep_files:
   - .git
   - .svn
