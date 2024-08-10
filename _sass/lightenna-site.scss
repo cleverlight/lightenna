@@ -3,6 +3,12 @@
  * Copyright Lightenna Ltd - lightenna.com | @lightenna
 */
 
+/* duplicate the variables we use locally from the remote theme */
+$intro-transition: intro 0.3s both !default;
+$large: 1024px !default;
+$x-large: 1280px !default;
+$xx-large: 1680px !default;
+
 /* sensible page width and borders */
 #main {
   @include clearfix;
