@@ -10,7 +10,7 @@ header:
     small_image: /assets/images/lightning_bolt_03d79886_640x.jpg
 ---
 
-Markdown is bring simple ASCII text to life with formatting and structure traditionally found in rich text or Word documents.  It's also nothing more than annotated text, which makes it accessible now and in the future.
+Markdown brings simple ASCII text to life with formatting and structure traditionally found in rich text or Word documents.  It's also nothing more than annotated text, which makes it accessible now and in the future.
 
 {% include presentations/2024-08-12-write-markdown-for-future-proof-publishing.md %}
 
