@@ -34,6 +34,7 @@ Paragraph with some **bold** and *italic* text.
 + Documentation near the code
 + Version control
 + Use of markdown internally
+  + and more widely
 + Create a visibility culture
 
 {% if include.pres %}Note: {% endif %}
@@ -48,6 +49,40 @@ By looking at a diff between now and when you last looked at a project, you can 
 If the documentation has been kept up to date with the code, those docs will reflect what's been updated in a project.
 Organisations can use this combination of Markdown and version control to build a culture of visibility,
 where staff collaborate to share what they're working on, and what they've learned.
+
+As a simple text mark-up tool, Markdown is increasingly used in many different contexts, so investment in learning and disseminating the skills is worthwhile.
+For example, Markdown can be used natively in Azure DevOps, GitHub, GitLab, JIRA, Confluence, and many other tools.
+It's even the basis for chat in Microsoft Teams and Slack.
+
+---
+
+## For posterity
+
++ Separated content from display
++ Minimal formatting
+  + titles
+  + paragraphs
+  + lists
+  + emphasis
+  + nesting
+
+{% if include.pres %}Note: {% endif %}
+Markdown is pure text.  There's a minimal amount of formatting information, really only enough to inform how different sections of the document relate to each other.
+
+Nested headings allow different areas of the document to subsume others.
+
+This presentation illustrates the approach.  It's available as both a web page (blog post) or a presentation (slide deck).
+The markdown content that underpins it is identical for both.
+This allows you to author once and use the information in multiple contexts, such as:
+
+* Background information for AI prompts
+* Introductory material for a training course
+* Marketing material for a product launch
+* Documentation for a software project
+* A blog post for community engagement
+* A contribution to a network of interconnected, searchable web pages to aid research.
+
+While every group will have its own specific requirements, the basic structure of the document can be the same, itself included or referenced in other documents.
 
 ---
 
@@ -99,10 +134,10 @@ links can be made resilient to the many different locations this repo will be ch
 {% if include.pres %}Note: {% endif %}
 This isn't a git tutorial as such, so please see our [Git series](https://www.lightenna.com/tech/git/) for the fundamentals.
 
-The goal is to make code repos updateable by lots of users simultaneously.
+The goal is to make code repos updatable by lots of users simultaneously.
 Everything I'm advocating for here is designed to serve that end.
 The key is to make sure that the code is always in a state that can be built and run.
-That tends to be less of an issue when publishing documentation, notes or summaries alongside the code, but the pricipal still applies.
+That tends to be less of an issue when publishing documentation, notes or summaries alongside the code, but the principle still applies.
 
 The best way to achieve that is to:
 * Identify a source branch
@@ -154,6 +189,25 @@ Git-based publishing works well in situations where the content is naturally lin
 If the repo coordinates all activity for a project, then there may be a wider audience interested in that project, beyond those actively driving it forward.
 These stakeholders might be interested in newly released features, known issues, upcoming changes or progress against plans.
 GitHub Pages enables that wider audience to get a view that's bang-up-to-date, straight from the people working on it, right where they're working on it.
+
+---
+
+## Publishing demo
++ Simple publish process
++ Branded front-end
++ Multiple formats
++ Deliberate error
+
+{% if include.pres %}Note: {% endif %}
+When this presentation is published, it will be available at lightenna.github.io, which is aliased to [lightenna.com](https://www.lightenna.com/).
+
+It's available in multiple formats:
+
+* [Web page](https://www.lightenna.com/tech/2024/write-markdown-for-future-proof-publishing/)
+* [Presentation deck](https://www.lightenna.com/tech/2024/write-markdown-for-future-proof-publishing/reveal/)
+* [Raw text](https://raw.githubusercontent.com/cleverlight/lightenna/main/_includes/presentations/2024-08-12-write-markdown-for-future-proof-publishing.md)
+* [Pre-formatted markdown](https://github.com/cleverlight/lightenna/blob/main/_includes/presentations/2024-08-12-write-markdown-for-future-proof-publishing.md)
+
 
 ---
 
