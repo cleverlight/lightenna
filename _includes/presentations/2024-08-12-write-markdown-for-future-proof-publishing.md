@@ -161,6 +161,17 @@ Authoring a pull request is much like authoring a commit, but it's just a bit mo
 
 ---
 
+## Feature branching
+
+{% include svg.html svg="/assets/svg/gitflow/gitflow-partials-1.svg" png="/assets/svg/gitflow/gitflow-partials-1.png" %}
+
+{% if include.pres %}Note: {% endif %}
+This diagram illustrates how a topic branch ('feature') might be branched from a source branch ('develop').
+It also shows how the merge process works.
+Merging could be implemented here directly, or indirectly via approved pull requests.
+
+---
+
 ## GitHub pages
 + In addition to repo view
 + github.io or custom domain
