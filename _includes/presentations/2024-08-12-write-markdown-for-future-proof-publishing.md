@@ -207,7 +207,6 @@ GitHub Pages enables that wider audience to get a view that's bang-up-to-date, s
 + Simple publish process
 + Branded front-end
 + Multiple formats
-+ Deliberate error
 
 {% if include.pres %}Note: {% endif %}
 When this presentation is published, it will be available at lightenna.github.io, which is aliased to [lightenna.com](https://www.lightenna.com/).
