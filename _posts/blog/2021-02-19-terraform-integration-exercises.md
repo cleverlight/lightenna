@@ -2,7 +2,7 @@
 layout: single
 title: Terraform-Docker integration exercises
 description: Azure provides all the building blocks we need to securely run containers in the Cloud, we just need Terraform to glue them together
-tags: tech devops docker terraform
+tags: tech devops docker kubernetes terraform
 toc: true
 header:
     overlay_image: /assets/images/techupdate_25318_1920x.jpg
@@ -45,8 +45,30 @@ header:
     * Output a URL that allows you to test you Node.js application from a browser.
 
 {% if include.pres %}Note: {% endif %}
-This exercise is much more substantial than previous exercises.  Please take it slowly, code a couple of lines then test and iterate, refactor as needed.
+This exercise is highly dependent upon the Cloud you're using to provision resources and has been written with Microsoft Azure in mind.  It's also much more substantial than previous exercises.  Please take it slowly, code a couple of lines then test and iterate, refactor as needed.
 
 The solution to the 'container hosting' exercise is composed of both [a Terraform solution](https://github.com/lightenna/devops-workstream/tree/master/terraform/tutorial/12-container-hosting), [a Docker solution](https://github.com/lightenna/devops-workstream/tree/master/docker/tutorial/06-dockerfile-cloud-hosting) is available as part of our open-source [Devops-Workstream](https://github.com/lightenna/devops-workstream/).
+
+## Exercise: build and connect to a Kubernetes cluster
+* Provision Kubernetes cluster
+* Download a local Kubeconfig file
+    * Store in `~/.kube`
+        * The default file used by `kubectl` is `~/.kube/config
+    * If using an alternative file name, perhaps because you've already got Kube configurations set up on your machine, set up a KUBECONFIG environment variable to temporarily point at the right filename.
+        * e.g. `export KUBECONFIG=~/.kube/azure-aks-kubeconfig`
+        * If exported in a script file, the environment variable will only be available to commands run in that script file.
+        * If exported at a (Linux) command prompt, the environment variable will only be available during that session.
+* Connect to cluster using `kubectl`
+    * List nodes that make up the cluster
+        * `kubectl get nodes`
+    * List available pods
+        * `kubectl get pods`
+
+{% if include.pres %}Note: {% endif %}
+Again, this exercise is highly dependent upon the Cloud you're using to provision resources and has been written with Microsoft Azure in mind.
+
+The solution to the 'kubernetes cluster' exercise is available as [a set of Terraform manifests](https://github.com/lightenna/devops-workstream/tree/master/terraform/tutorial/13-azure-aks) is available as part of our open-source [Devops-Workstream](https://github.com/lightenna/devops-workstream/).
+
+
 
 ---
