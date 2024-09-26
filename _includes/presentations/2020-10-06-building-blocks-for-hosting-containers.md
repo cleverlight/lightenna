@@ -149,7 +149,7 @@ Services broker requests to an orchestrated set of pods
 
 ---
 
-Pods may be replicates across multiple worker nodes
+Pods may be replicated across multiple worker nodes
 {% include svg.html svg="/assets/svg/kubernetes/k8s-service-across-workers.svg" png="/assets/svg/kubernetes/k8s-service-across-workers.png" %}
 
 ---
