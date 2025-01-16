@@ -3,10 +3,32 @@
 
 > Positive Futures for AI
 
+---
+
+## Quality of AI
+
+Graph showing the quality of AI by an array of different benchmarks
+
+{% if include.pres %}Note: {% endif %}
+
+AI improving is not news.  The quality of the outputs of AI models is going to carry on improving.
+It may eventually be bounded by the availability of high-quality training data, but even that is debatable.
+I'm pretty sure AI is going to be valuable for organisations and individuals alike.
+
+---
+
+## Investment in AI
+
+Graph showing the amount of money being invested in AI
+
+{% if include.pres %}Note: {% endif %}
+
+...so does most of the tech sector.  That's why major ICT companies are investing so heavily.
 
 ---
 
 ## Part 3: Context
++ Quality and investment trends are not surprising
 + Not about parameter count
 + Not about prompts
 + Growth in context windows
