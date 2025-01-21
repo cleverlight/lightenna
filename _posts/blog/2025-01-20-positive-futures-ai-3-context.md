@@ -6,8 +6,8 @@ permalink: /tech/2025/positive-futures-ai-part3-context/
 tags: front tech ai future
 toc: true
 header:
-    overlay_image: /assets/images/ai_train_tunnels_25996_1920x.jpg
-    small_image: /assets/images/ai_train_tunnels_25996_640x.jpg
+    overlay_image: /assets/images/ai_context_02g47810_1920x.jpg
+    small_image: /assets/images/ai_context_02g47810_640x.jpg
 ---
 
 {% include presentations/2025-01-17-positive-futures-ai-3-context.md %}
