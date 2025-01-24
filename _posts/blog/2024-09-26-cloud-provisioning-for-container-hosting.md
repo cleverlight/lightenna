@@ -10,7 +10,6 @@ header:
     small_image: /assets/images/techupdate_25318_640x.jpg
 ---
 
-
 {% include presentations/2024-09-26-cloud-provisioning-for-container-hosting.md %}
 
 {% include reveal_link.html %}
