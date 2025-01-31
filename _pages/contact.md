@@ -9,7 +9,7 @@ Contact details
 To get in touch, please fill out this form:
 
 <form action="https://formspree.io/f/xqaebqzd" method="POST">
-  <label>Your name:<input type="text" name="name" placeholder="Your name"></label>
+  <label>Your name:<input type="text" name="name"></label>
   <label>Your email:<input type="email" name="email"></label>
   <label>Your message:<textarea name="message"></textarea></label>
   <button type="submit">Send</button>

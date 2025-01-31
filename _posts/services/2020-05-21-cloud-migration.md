@@ -72,7 +72,7 @@ Get the support you need without being tied in.  We offer three different servic
 
 <a name="form" />
 <form action="https://formspree.io/f/xqaebqzd" method="POST">
-    <label>Your name:<input type="text" name="name" placeholder="Your name"></label>
+    <label>Your name:<input type="text" name="name"></label>
     <label>Your email:<input type="email" name="email"></label>
     <label>Your message:<textarea name="message"></textarea></label>
     <p>There's a human-being on the end of this form, so please tell us how and when you'd like to be contacted
