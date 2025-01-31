@@ -97,11 +97,10 @@ The success of any kind of Cloud project depends not only on a good delivery but
 # Let us show you the business benefits of Kubernetes
 
 <a name="form" />
-<form action="https://formspree.io/alex_stanhope@hotmail.com"
-      method="POST">
-    <input type="text" name="name" placeholder="Your name">
-    <input type="email" name="email" placeholder="Your email">
-    <textarea name="message" placeholder="Your message"></textarea>
+<form action="https://formspree.io/f/xqaebqzd" method="POST">
+    <label>Your name:<input type="text" name="name" placeholder="Your name"></label>
+    <label>Your email:<input type="email" name="email"></label>
+    <label>Your message:<textarea name="message"></textarea></label>
     <p>There's a human-being on the end of this form, so please tell us how and when you'd like to be contacted
     and anything pertinent about your Cloud or the on-prem environment that you'd like to move to Kubernetes.</p>
     <button type="submit" class="btn btn--primary btn--large">Send</button>

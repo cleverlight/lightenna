@@ -71,11 +71,10 @@ Get the support you need without being tied in.  We offer three different servic
 # Accelerate your Cloud migration
 
 <a name="form" />
-<form action="https://formspree.io/alex_stanhope@hotmail.com"
-      method="POST">
-    <input type="text" name="name" placeholder="Your name">
-    <input type="email" name="email" placeholder="Your email">
-    <textarea name="message" placeholder="Your message"></textarea>
+<form action="https://formspree.io/f/xqaebqzd" method="POST">
+    <label>Your name:<input type="text" name="name" placeholder="Your name"></label>
+    <label>Your email:<input type="email" name="email"></label>
+    <label>Your message:<textarea name="message"></textarea></label>
     <p>There's a human-being on the end of this form, so please tell us how and when you'd like to be contacted
     and anything pertinent about your existing environment or the greenfield project you're initiating.</p>
     <button type="submit" class="btn btn--primary btn--large">Send</button>
