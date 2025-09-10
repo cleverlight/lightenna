@@ -21,4 +21,7 @@ await page.locator('div[value="archivePending"]').click();
 await page.locator('[data-testid="SetStatusButton"]').click();
 ```
 
+This code clicks the Mantine Menu to open it, selects the option with value "archivePending", and then clicks the button to submit the form.
+I've used `data-testid` attributes to make the locators more robust, because they feature on a page with multiple similar components, which makes role-based isolation difficult.
+
 Playwright's `selectOption` method does not work with Mantine Select components.
