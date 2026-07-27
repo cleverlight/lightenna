@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="diagram-title diagram-desc">
+  <title id="diagram-title">Working with AI agents &#8212; the loop</title>
+  <desc id="diagram-desc">A four-step cycle: give them context, give them a job to do, measure how well they do it, then repeat with many agents working in parallel. A cluster of agents sits at the centre of the loop.</desc>
+
+  <defs>
+    <marker id="a1" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#3B5F8A"/></marker>
+    <marker id="a2" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#1E8073"/></marker>
+    <marker id="a3" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#DB9126"/></marker>
+    <marker id="a4" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#C0483F"/></marker>
+  </defs>
+
+  <rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+
+  <!-- the cycle -->
+  <g fill="none" stroke-width="5">
+    <path d="M 888.0 212.1 A 235 235 0 0 1 1017.9 342.0" stroke="#3B5F8A" marker-end="url(#a1)"/>
+    <path d="M 1017.9 518.0 A 235 235 0 0 1 888.0 647.9" stroke="#1E8073" marker-end="url(#a2)"/>
+    <path d="M 712.0 647.9 A 235 235 0 0 1 582.1 518.0"  stroke="#DB9126" marker-end="url(#a3)"/>
+    <path d="M 582.1 342.0 A 235 235 0 0 1 712.0 212.1"  stroke="#C0483F" marker-end="url(#a4)"/>
+  </g>
+
+  <!-- step nodes -->
+  <g fill-opacity="0.13" stroke-width="3">
+    <circle cx="800"  cy="195" r="68" fill="#3B5F8A" stroke="#3B5F8A"/>
+    <circle cx="1035" cy="430" r="68" fill="#1E8073" stroke="#1E8073"/>
+    <circle cx="800"  cy="665" r="68" fill="#DB9126" stroke="#DB9126"/>
+    <circle cx="565"  cy="430" r="68" fill="#C0483F" stroke="#C0483F"/>
+  </g>
+
+  <!-- step numbers -->
+  <g font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="30" font-weight="500" letter-spacing="2.7" text-anchor="middle">
+    <text x="800"  y="195" dy=".34em" fill="#33547B">01</text>
+    <text x="1035" y="430" dy=".34em" fill="#146258">02</text>
+    <text x="800"  y="665" dy=".34em" fill="#97600C">03</text>
+    <text x="565"  y="430" dy=".34em" fill="#AC3B33">04</text>
+  </g>
+
+  <!-- step labels -->
+  <g font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="38" font-weight="700" letter-spacing="-0.5" fill="#14171D">
+    <text x="800" y="92"  text-anchor="middle">Give them context</text>
+
+    <text x="1126" y="416">Give them</text>
+    <text x="1126" y="460">a job to do</text>
+
+    <text x="800" y="782" text-anchor="middle">Measure how well</text>
+    <text x="800" y="826" text-anchor="middle">they do it</text>
+
+    <text x="474" y="416" text-anchor="end">Repeat &#8212; many</text>
+    <text x="474" y="460" text-anchor="end">in parallel</text>
+  </g>
+
+  <!-- the agents running the loop -->
+  <g fill="#C0483F">
+    <circle cx="800" cy="398" r="13"/>
+    <circle cx="836" cy="398" r="13"/>
+    <circle cx="764" cy="398" r="13"/>
+    <circle cx="818" cy="367" r="13"/>
+    <circle cx="782" cy="367" r="13"/>
+    <circle cx="818" cy="429" r="13"/>
+    <circle cx="782" cy="429" r="13"/>
+  </g>
+  <g font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="26" letter-spacing="1.3" fill="#656D7A" text-anchor="middle">
+    <text x="800" y="488">many agents,</text>
+    <text x="800" y="520">one loop</text>
+  </g>
+</svg>
