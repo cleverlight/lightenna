@@ -30,16 +30,20 @@ header:
 
 ## Single web-based chats
 + learning stuff
+  + how can helium be used to cool a nuclear reaction?
 + abstract, disconnected
++ one agent
 
-## AI where you work
-+ connected
-+ seeing what I'm seeing
-+ access to what I'm working on
-
-## Action-based chats
+## Give the agent context
 + uploading files
 + modifying and downloading files
+
+## AI where you work
++ seeing what I'm seeing
++ access to what I'm working on
++ desktop
++ protected cloud contexts better
+  + connectors, more later
 
 ## Folder-based local chats
 + modifying local copies
