@@ -16,3 +16,5 @@ header:
 {% include presentations/2025-01-17-positive-futures-ai-3-context.md %}
 
 {% include reveal_link.html %}
+
+Next in the series: [Part 4: A thousand typewriters](/tech/2026/positive-futures-ai-part4-a-thousand-typewriters/)
