@@ -14,3 +14,7 @@ example/_site
 Gemfile.lock
 node_modules
 npm-debug.log*
+
+# PowerPoint versions of talks can name the venue, so they stay out of the public repo
+assets/images/presentation_resources/*/*.pptx
+assets/images/presentation_resources/*/*-pptx.*

@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="t d">
+<title id="t">Law, finance and business</title>
+<desc id="d">Law, finance and business: for each profession, what AI now takes on, what the professional focuses on instead, a current real-world example, and one thing a sixth-former can start now.</desc>
+<defs>
+<marker id="aBlue" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#3B5F8A"/></marker>
+<marker id="aBlueBase" viewBox="0 0 10 10" refX="0.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#3B5F8A"/></marker>
+<marker id="aTeal" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#1E8073"/></marker>
+<marker id="aTealBase" viewBox="0 0 10 10" refX="0.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#1E8073"/></marker>
+<marker id="aAmber" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#DB9126"/></marker>
+<marker id="aAmberBase" viewBox="0 0 10 10" refX="0.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#DB9126"/></marker>
+<marker id="aRed" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#C0483F"/></marker>
+<marker id="aRedBase" viewBox="0 0 10 10" refX="0.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#C0483F"/></marker>
+<marker id="aGrey" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#8A919C"/></marker>
+<marker id="aGreyBase" viewBox="0 0 10 10" refX="0.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#8A919C"/></marker>
+</defs>
+<rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="80.0" y="98.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="50" font-weight="700" fill="#14171D" text-anchor="start" letter-spacing="-0.8">Law, finance and business</text>
+<text x="80.0" y="144.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="25" font-weight="400" fill="#4A515C" text-anchor="start">The first draft is now instant; the advice, the decision and the responsibility are yours</text>
+<text x="80.0" y="202.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="700" fill="#4A515C" text-anchor="start" letter-spacing="1.5">PROFESSION</text>
+<circle cx="361" cy="195" r="9" fill="#1E8073"/>
+<text x="378.0" y="202.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="700" fill="#146258" text-anchor="start" letter-spacing="1.5">AI TAKES ON</text>
+<circle cx="761" cy="195" r="9" fill="#3B5F8A"/>
+<text x="778.0" y="202.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="700" fill="#33547B" text-anchor="start" letter-spacing="1.5">YOU FOCUS ON</text>
+<circle cx="1139" cy="195" r="9" fill="#DB9126"/>
+<text x="1156.0" y="202.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="700" fill="#97600C" text-anchor="start" letter-spacing="1.5">START NOW</text>
+<text x="80.0" y="252.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#14171D" text-anchor="start">Law</text>
+<text x="80.0" y="292.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#4A515C" text-anchor="start">In 2025 the SRA authorised</text>
+<text x="80.0" y="313.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#4A515C" text-anchor="start">Garfield.Law, the first AI-driven</text>
+<text x="80.0" y="334.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#4A515C" text-anchor="start">law firm in England and Wales,</text>
+<text x="80.0" y="355.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#4A515C" text-anchor="start">with named solicitors still</text>
+<text x="80.0" y="376.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#4A515C" text-anchor="start">accountable.</text>
+<rect x="352" y="228" width="352" height="58" rx="8" fill="#1E8073" fill-opacity="0.1"/>
+<rect x="352" y="228" width="6" height="58" rx="3" fill="#1E8073"/>
+<text x="368.0" y="252.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Reviewing thousands of pages of</text>
+<text x="368.0" y="274.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">contracts</text>
+<rect x="352" y="293" width="352" height="36" rx="8" fill="#1E8073" fill-opacity="0.1"/>
+<rect x="352" y="293" width="6" height="36" rx="3" fill="#1E8073"/>
+<text x="368.0" y="317.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Legal research and first drafts</text>
+<rect x="352" y="336" width="352" height="36" rx="8" fill="#1E8073" fill-opacity="0.1"/>
+<rect x="352" y="336" width="6" height="36" rx="3" fill="#1E8073"/>
+<text x="368.0" y="360.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Due-diligence checklists</text>
+<rect x="752" y="228" width="352" height="36" rx="8" fill="#3B5F8A" fill-opacity="0.1"/>
+<rect x="752" y="228" width="6" height="36" rx="3" fill="#3B5F8A"/>
+<text x="768.0" y="252.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Advising clients on what to do</text>
+<rect x="752" y="271" width="352" height="36" rx="8" fill="#3B5F8A" fill-opacity="0.1"/>
+<rect x="752" y="271" width="6" height="36" rx="3" fill="#3B5F8A"/>
+<text x="768.0" y="295.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Negotiating and arguing the case</text>
+<rect x="752" y="314" width="352" height="36" rx="8" fill="#3B5F8A" fill-opacity="0.1"/>
+<rect x="752" y="314" width="6" height="36" rx="3" fill="#3B5F8A"/>
+<text x="768.0" y="338.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Taking responsibility for the advice</text>
+<line x1="712" y1="303.5" x2="742" y2="303.5" stroke="#8A919C" stroke-width="3.5" marker-end="url(#aGrey)"/>
+<rect x="1130" y="228" width="390" height="151.0" rx="10" fill="#DB9126" fill-opacity="0.10" stroke="#DB9126" stroke-width="2.5"/>
+<text x="1150.0" y="258.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Moot, debate or join a mock trial.</text>
+<text x="1150.0" y="282.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Follow legal news on AI, and ask firms</text>
+<text x="1150.0" y="306.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">at open days how trainees use it.</text>
+<line x1="80" y1="399.2" x2="1520" y2="399.2" stroke="#E3E6EA" stroke-width="2"/>
+<text x="80.0" y="443.5" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#14171D" text-anchor="start">Accounting &amp;</text>
+<text x="80.0" y="475.5" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#14171D" text-anchor="start">finance</text>
+<text x="80.0" y="515.5" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#4A515C" text-anchor="start">Audit is moving from checking</text>
+<text x="80.0" y="536.5" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#4A515C" text-anchor="start">a sample of transactions to</text>
+<text x="80.0" y="557.5" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#4A515C" text-anchor="start">AI-assisted analysis of every</text>
+<text x="80.0" y="578.5" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#4A515C" text-anchor="start">transaction.</text>
+<rect x="352" y="419.5" width="352" height="58" rx="8" fill="#1E8073" fill-opacity="0.1"/>
+<rect x="352" y="419.5" width="6" height="58" rx="3" fill="#1E8073"/>
+<text x="368.0" y="443.8" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Reconciling and categorising</text>
+<text x="368.0" y="465.8" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">transactions</text>
+<rect x="352" y="484.5" width="352" height="58" rx="8" fill="#1E8073" fill-opacity="0.1"/>
+<rect x="352" y="484.5" width="6" height="58" rx="3" fill="#1E8073"/>
+<text x="368.0" y="508.8" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Testing every transaction, not a</text>
+<text x="368.0" y="530.8" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">sample</text>
+<rect x="352" y="549.5" width="352" height="58" rx="8" fill="#1E8073" fill-opacity="0.1"/>
+<rect x="352" y="549.5" width="6" height="58" rx="3" fill="#1E8073"/>
+<text x="368.0" y="573.8" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Building forecasts and first-cut</text>
+<text x="368.0" y="595.8" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">reports</text>
+<rect x="752" y="419.5" width="352" height="36" rx="8" fill="#3B5F8A" fill-opacity="0.1"/>
+<rect x="752" y="419.5" width="6" height="36" rx="3" fill="#3B5F8A"/>
+<text x="768.0" y="443.8" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Explaining what the numbers mean</text>
+<rect x="752" y="462.5" width="352" height="58" rx="8" fill="#3B5F8A" fill-opacity="0.1"/>
+<rect x="752" y="462.5" width="6" height="58" rx="3" fill="#3B5F8A"/>
+<text x="768.0" y="486.8" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Spotting risk, fraud and odd</text>
+<text x="768.0" y="508.8" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">patterns</text>
+<rect x="752" y="527.5" width="352" height="36" rx="8" fill="#3B5F8A" fill-opacity="0.1"/>
+<rect x="752" y="527.5" width="6" height="36" rx="3" fill="#3B5F8A"/>
+<text x="768.0" y="551.8" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Advising on the decision</text>
+<line x1="712" y1="513.5" x2="742" y2="513.5" stroke="#8A919C" stroke-width="3.5" marker-end="url(#aGrey)"/>
+<rect x="1130" y="419.5" width="390" height="188.0" rx="10" fill="#DB9126" fill-opacity="0.10" stroke="#DB9126" stroke-width="2.5"/>
+<text x="1150.0" y="449.5" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Get properly fluent with spreadsheets,</text>
+<text x="1150.0" y="473.5" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">then run a mock portfolio or the</text>
+<text x="1150.0" y="497.5" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">budget for a club or enterprise project.</text>
+<line x1="80" y1="627.8" x2="1520" y2="627.8" stroke="#E3E6EA" stroke-width="2"/>
+<text x="80.0" y="672.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#14171D" text-anchor="start">Business,</text>
+<text x="80.0" y="704.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#14171D" text-anchor="start">marketing &amp;</text>
+<text x="80.0" y="736.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#14171D" text-anchor="start">management</text>
+<text x="80.0" y="776.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#4A515C" text-anchor="start">A small team can now research</text>
+<text x="80.0" y="797.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#4A515C" text-anchor="start">a market, test dozens of</text>
+<text x="80.0" y="818.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#4A515C" text-anchor="start">campaign versions and analyse</text>
+<text x="80.0" y="839.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#4A515C" text-anchor="start">the results in a week.</text>
+<rect x="352" y="648.0" width="352" height="36" rx="8" fill="#1E8073" fill-opacity="0.1"/>
+<rect x="352" y="648.0" width="6" height="36" rx="3" fill="#1E8073"/>
+<text x="368.0" y="672.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Market and competitor research</text>
+<rect x="352" y="691.0" width="352" height="58" rx="8" fill="#1E8073" fill-opacity="0.1"/>
+<rect x="352" y="691.0" width="6" height="58" rx="3" fill="#1E8073"/>
+<text x="368.0" y="715.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Drafting campaigns in many</text>
+<text x="368.0" y="737.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">versions</text>
+<rect x="352" y="756.0" width="352" height="36" rx="8" fill="#1E8073" fill-opacity="0.1"/>
+<rect x="352" y="756.0" width="6" height="36" rx="3" fill="#1E8073"/>
+<text x="368.0" y="780.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Analysing customer data</text>
+<rect x="752" y="648.0" width="352" height="36" rx="8" fill="#3B5F8A" fill-opacity="0.1"/>
+<rect x="752" y="648.0" width="6" height="36" rx="3" fill="#3B5F8A"/>
+<text x="768.0" y="672.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Understanding customers as people</text>
+<rect x="752" y="691.0" width="352" height="36" rx="8" fill="#3B5F8A" fill-opacity="0.1"/>
+<rect x="752" y="691.0" width="6" height="36" rx="3" fill="#3B5F8A"/>
+<text x="768.0" y="715.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Choosing the strategy</text>
+<rect x="752" y="734.0" width="352" height="58" rx="8" fill="#3B5F8A" fill-opacity="0.1"/>
+<rect x="752" y="734.0" width="6" height="58" rx="3" fill="#3B5F8A"/>
+<text x="768.0" y="758.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Leading teams of people and AI</text>
+<text x="768.0" y="780.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">agents</text>
+<line x1="712" y1="745.0" x2="742" y2="745.0" stroke="#8A919C" stroke-width="3.5" marker-end="url(#aGrey)"/>
+<rect x="1130" y="648.0" width="390" height="194.0" rx="10" fill="#DB9126" fill-opacity="0.10" stroke="#DB9126" stroke-width="2.5"/>
+<text x="1150.0" y="678.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Start something small outside school (a</text>
+<text x="1150.0" y="702.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">stall, a club, a channel) and use AI tools</text>
+<text x="1150.0" y="726.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">to help you run it. Keep notes on what</text>
+<text x="1150.0" y="750.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">worked.</text>
+<line x1="80" y1="858" x2="1520" y2="858" stroke="#E3E6EA" stroke-width="2"/>
+<text x="80.0" y="884.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#8A919C" text-anchor="start">Sources: Solicitors Regulation Authority (May 2025); public statements from major audit firms on AI-assisted audit</text>
+<text x="1520.0" y="884.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#8A919C" text-anchor="end">lightenna.com</text>
+</svg>

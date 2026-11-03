@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="t d">
+<title id="t">Health, science and education</title>
+<desc id="d">Health, science and education: for each profession, what AI now takes on, what the professional focuses on instead, a current real-world example, and one thing a sixth-former can start now.</desc>
+<defs>
+<marker id="aBlue" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#3B5F8A"/></marker>
+<marker id="aBlueBase" viewBox="0 0 10 10" refX="0.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#3B5F8A"/></marker>
+<marker id="aTeal" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#1E8073"/></marker>
+<marker id="aTealBase" viewBox="0 0 10 10" refX="0.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#1E8073"/></marker>
+<marker id="aAmber" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#DB9126"/></marker>
+<marker id="aAmberBase" viewBox="0 0 10 10" refX="0.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#DB9126"/></marker>
+<marker id="aRed" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#C0483F"/></marker>
+<marker id="aRedBase" viewBox="0 0 10 10" refX="0.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#C0483F"/></marker>
+<marker id="aGrey" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#8A919C"/></marker>
+<marker id="aGreyBase" viewBox="0 0 10 10" refX="0.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#8A919C"/></marker>
+</defs>
+<rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="80.0" y="98.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="50" font-weight="700" fill="#14171D" text-anchor="start" letter-spacing="-0.8">Health, science and education</text>
+<text x="80.0" y="144.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="25" font-weight="400" fill="#4A515C" text-anchor="start">AI takes the volume work, so professionals spend more time on people and discovery</text>
+<text x="80.0" y="202.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="700" fill="#4A515C" text-anchor="start" letter-spacing="1.5">PROFESSION</text>
+<circle cx="361" cy="195" r="9" fill="#1E8073"/>
+<text x="378.0" y="202.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="700" fill="#146258" text-anchor="start" letter-spacing="1.5">AI TAKES ON</text>
+<circle cx="761" cy="195" r="9" fill="#3B5F8A"/>
+<text x="778.0" y="202.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="700" fill="#33547B" text-anchor="start" letter-spacing="1.5">YOU FOCUS ON</text>
+<circle cx="1139" cy="195" r="9" fill="#DB9126"/>
+<text x="1156.0" y="202.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="700" fill="#97600C" text-anchor="start" letter-spacing="1.5">START NOW</text>
+<text x="80.0" y="252.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#14171D" text-anchor="start">Medicine &amp;</text>
+<text x="80.0" y="284.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#14171D" text-anchor="start">healthcare</text>
+<text x="80.0" y="324.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#4A515C" text-anchor="start">AI tools have already helped</text>
+<text x="80.0" y="345.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#4A515C" text-anchor="start">over 4 million NHS patients get</text>
+<text x="80.0" y="366.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#4A515C" text-anchor="start">a faster lung cancer diagnosis</text>
+<text x="80.0" y="387.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#4A515C" text-anchor="start">or all-clear.</text>
+<rect x="352" y="228" width="352" height="58" rx="8" fill="#1E8073" fill-opacity="0.1"/>
+<rect x="352" y="228" width="6" height="58" rx="3" fill="#1E8073"/>
+<text x="368.0" y="252.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Reading scans and flagging possible</text>
+<text x="368.0" y="274.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">cancers early</text>
+<rect x="352" y="293" width="352" height="58" rx="8" fill="#1E8073" fill-opacity="0.1"/>
+<rect x="352" y="293" width="6" height="58" rx="3" fill="#1E8073"/>
+<text x="368.0" y="317.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Writing up notes while you talk to</text>
+<text x="368.0" y="339.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">the patient</text>
+<rect x="352" y="358" width="352" height="58" rx="8" fill="#1E8073" fill-opacity="0.1"/>
+<rect x="352" y="358" width="6" height="58" rx="3" fill="#1E8073"/>
+<text x="368.0" y="382.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Triage, letters and appointment</text>
+<text x="368.0" y="404.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">admin</text>
+<rect x="752" y="228" width="352" height="58" rx="8" fill="#3B5F8A" fill-opacity="0.1"/>
+<rect x="752" y="228" width="6" height="58" rx="3" fill="#3B5F8A"/>
+<text x="768.0" y="252.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Examining, diagnosing, deciding</text>
+<text x="768.0" y="274.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">with the patient</text>
+<rect x="752" y="293" width="352" height="36" rx="8" fill="#3B5F8A" fill-opacity="0.1"/>
+<rect x="752" y="293" width="6" height="36" rx="3" fill="#3B5F8A"/>
+<text x="768.0" y="317.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Explaining risk with empathy</text>
+<rect x="752" y="336" width="352" height="58" rx="8" fill="#3B5F8A" fill-opacity="0.1"/>
+<rect x="752" y="336" width="6" height="58" rx="3" fill="#3B5F8A"/>
+<text x="768.0" y="360.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Spotting when the AI has got it</text>
+<text x="768.0" y="382.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">wrong</text>
+<line x1="712" y1="322.0" x2="742" y2="322.0" stroke="#8A919C" stroke-width="3.5" marker-end="url(#aGrey)"/>
+<rect x="1130" y="228" width="390" height="188.0" rx="10" fill="#DB9126" fill-opacity="0.10" stroke="#DB9126" stroke-width="2.5"/>
+<text x="1150.0" y="258.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Get care experience (volunteering, a</text>
+<text x="1150.0" y="282.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">hospital or care-home placement) and</text>
+<text x="1150.0" y="306.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">ask the clinicians you meet how AI is</text>
+<text x="1150.0" y="330.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">changing their work.</text>
+<line x1="80" y1="438.0" x2="1520" y2="438.0" stroke="#E3E6EA" stroke-width="2"/>
+<text x="80.0" y="484.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#14171D" text-anchor="start">Scientific research</text>
+<text x="80.0" y="524.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#4A515C" text-anchor="start">AlphaFold has been used by 3</text>
+<text x="80.0" y="545.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#4A515C" text-anchor="start">million+ researchers. Google&#x27;s</text>
+<text x="80.0" y="566.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#4A515C" text-anchor="start">AI co-scientist reached, in 2</text>
+<text x="80.0" y="587.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#4A515C" text-anchor="start">days, a superbug hypothesis</text>
+<text x="80.0" y="608.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#4A515C" text-anchor="start">that took an Imperial team</text>
+<text x="80.0" y="629.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#4A515C" text-anchor="start">years.</text>
+<rect x="352" y="460.0" width="352" height="58" rx="8" fill="#1E8073" fill-opacity="0.1"/>
+<rect x="352" y="460.0" width="6" height="58" rx="3" fill="#1E8073"/>
+<text x="368.0" y="484.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Predicting protein structures in</text>
+<text x="368.0" y="506.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">minutes</text>
+<rect x="352" y="525.0" width="352" height="58" rx="8" fill="#1E8073" fill-opacity="0.1"/>
+<rect x="352" y="525.0" width="6" height="58" rx="3" fill="#1E8073"/>
+<text x="368.0" y="549.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Reading thousands of papers to</text>
+<text x="368.0" y="571.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">suggest hypotheses</text>
+<rect x="352" y="590.0" width="352" height="36" rx="8" fill="#1E8073" fill-opacity="0.1"/>
+<rect x="352" y="590.0" width="6" height="36" rx="3" fill="#1E8073"/>
+<text x="368.0" y="614.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Running and analysing simulations</text>
+<rect x="752" y="460.0" width="352" height="58" rx="8" fill="#3B5F8A" fill-opacity="0.1"/>
+<rect x="752" y="460.0" width="6" height="58" rx="3" fill="#3B5F8A"/>
+<text x="768.0" y="484.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Asking the question worth</text>
+<text x="768.0" y="506.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">answering</text>
+<rect x="752" y="525.0" width="352" height="58" rx="8" fill="#3B5F8A" fill-opacity="0.1"/>
+<rect x="752" y="525.0" width="6" height="58" rx="3" fill="#3B5F8A"/>
+<text x="768.0" y="549.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Designing the experiment that</text>
+<text x="768.0" y="571.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">proves it</text>
+<rect x="752" y="590.0" width="352" height="36" rx="8" fill="#3B5F8A" fill-opacity="0.1"/>
+<rect x="752" y="590.0" width="6" height="36" rx="3" fill="#3B5F8A"/>
+<text x="768.0" y="614.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Judging what is new, true and useful</text>
+<line x1="712" y1="546.0" x2="742" y2="546.0" stroke="#8A919C" stroke-width="3.5" marker-end="url(#aGrey)"/>
+<rect x="1130" y="460.0" width="390" height="172.0" rx="10" fill="#DB9126" fill-opacity="0.10" stroke="#DB9126" stroke-width="2.5"/>
+<text x="1150.0" y="490.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Explore the free AlphaFold Protein</text>
+<text x="1150.0" y="514.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Structure Database for a molecule</text>
+<text x="1150.0" y="538.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">you&#x27;ve studied, and read one research</text>
+<text x="1150.0" y="562.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">summary a month in a field you love.</text>
+<line x1="80" y1="654.0" x2="1520" y2="654.0" stroke="#E3E6EA" stroke-width="2"/>
+<text x="80.0" y="700.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#14171D" text-anchor="start">Teaching &amp;</text>
+<text x="80.0" y="732.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#14171D" text-anchor="start">education</text>
+<text x="80.0" y="772.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#4A515C" text-anchor="start">Oak National Academy&#x27;s free AI</text>
+<text x="80.0" y="793.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#4A515C" text-anchor="start">assistant, Aila, helps UK</text>
+<text x="80.0" y="814.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#4A515C" text-anchor="start">teachers plan lessons, slides</text>
+<text x="80.0" y="835.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#4A515C" text-anchor="start">and quizzes in minutes.</text>
+<rect x="352" y="676.0" width="352" height="58" rx="8" fill="#1E8073" fill-opacity="0.1"/>
+<rect x="352" y="676.0" width="6" height="58" rx="3" fill="#1E8073"/>
+<text x="368.0" y="700.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Drafting lesson plans, resources and</text>
+<text x="368.0" y="722.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">quizzes</text>
+<rect x="352" y="741.0" width="352" height="36" rx="8" fill="#1E8073" fill-opacity="0.1"/>
+<rect x="352" y="741.0" width="6" height="36" rx="3" fill="#1E8073"/>
+<text x="368.0" y="765.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Personalised practice for every pupil</text>
+<rect x="352" y="784.0" width="352" height="58" rx="8" fill="#1E8073" fill-opacity="0.1"/>
+<rect x="352" y="784.0" width="6" height="58" rx="3" fill="#1E8073"/>
+<text x="368.0" y="808.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Marking routine work and spotting</text>
+<text x="368.0" y="830.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">gaps</text>
+<rect x="752" y="676.0" width="352" height="36" rx="8" fill="#3B5F8A" fill-opacity="0.1"/>
+<rect x="752" y="676.0" width="6" height="36" rx="3" fill="#3B5F8A"/>
+<text x="768.0" y="700.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Inspiring and motivating</text>
+<rect x="752" y="719.0" width="352" height="36" rx="8" fill="#3B5F8A" fill-opacity="0.1"/>
+<rect x="752" y="719.0" width="6" height="36" rx="3" fill="#3B5F8A"/>
+<text x="768.0" y="743.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Knowing each pupil as a person</text>
+<rect x="752" y="762.0" width="352" height="36" rx="8" fill="#3B5F8A" fill-opacity="0.1"/>
+<rect x="752" y="762.0" width="6" height="36" rx="3" fill="#3B5F8A"/>
+<text x="768.0" y="786.3" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Teaching judgement and integrity</text>
+<line x1="712" y1="759.0" x2="742" y2="759.0" stroke="#8A919C" stroke-width="3.5" marker-end="url(#aGrey)"/>
+<rect x="1130" y="676.0" width="390" height="166.0" rx="10" fill="#DB9126" fill-opacity="0.10" stroke="#DB9126" stroke-width="2.5"/>
+<text x="1150.0" y="706.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">Tutor, coach or mentor younger</text>
+<text x="1150.0" y="730.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">students. Notice which explanations</text>
+<text x="1150.0" y="754.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">land, and why: that&#x27;s the expertise AI</text>
+<text x="1150.0" y="778.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#14171D" text-anchor="start">can&#x27;t supply.</text>
+<line x1="80" y1="858" x2="1520" y2="858" stroke="#E3E6EA" stroke-width="2"/>
+<text x="80.0" y="884.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#8A919C" text-anchor="start">Sources: GOV.UK (Jun 2026); NHS England ambient scribing guidance; Google DeepMind; Imperial College London / BBC (Feb 2025); Oak National Academy</text>
+<text x="1520.0" y="884.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#8A919C" text-anchor="end">lightenna.com</text>
+</svg>

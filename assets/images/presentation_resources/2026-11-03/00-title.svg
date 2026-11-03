@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="t d">
+<title id="t">Learning to think</title>
+<desc id="d">Title slide. One person at the centre directs many AI agents and checks what comes back.</desc>
+<defs>
+<marker id="aBlue" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#3B5F8A"/></marker>
+<marker id="aBlueBase" viewBox="0 0 10 10" refX="0.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#3B5F8A"/></marker>
+<marker id="aTeal" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#1E8073"/></marker>
+<marker id="aTealBase" viewBox="0 0 10 10" refX="0.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#1E8073"/></marker>
+<marker id="aAmber" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#DB9126"/></marker>
+<marker id="aAmberBase" viewBox="0 0 10 10" refX="0.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#DB9126"/></marker>
+<marker id="aRed" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#C0483F"/></marker>
+<marker id="aRedBase" viewBox="0 0 10 10" refX="0.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#C0483F"/></marker>
+<marker id="aGrey" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#8A919C"/></marker>
+<marker id="aGreyBase" viewBox="0 0 10 10" refX="0.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#8A919C"/></marker>
+</defs>
+<rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<circle cx="1180" cy="470" r="74" fill="#3B5F8A" fill-opacity="0.13" stroke="#3B5F8A" stroke-width="3"/>
+<text x="1180.0" y="481.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="700" fill="#33547B" text-anchor="middle">You</text>
+<line x1="1208.0" y1="392.9" x2="1265.5" y2="235.1" stroke="#1E8073" stroke-width="3" stroke-opacity="0.7" marker-end="url(#aTeal)"/>
+<circle cx="1279.2" cy="197.5" r="30" fill="#1E8073" fill-opacity="0.13" stroke="#1E8073" stroke-width="2.5"/>
+<text x="1279.2" y="204.5" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="19" font-weight="700" fill="#146258" text-anchor="middle">AI</text>
+<line x1="1229.9" y1="404.9" x2="1332.2" y2="271.7" stroke="#1E8073" stroke-width="3" stroke-opacity="0.7" marker-end="url(#aTeal)"/>
+<circle cx="1356.5" cy="239.9" r="30" fill="#1E8073" fill-opacity="0.13" stroke="#1E8073" stroke-width="2.5"/>
+<text x="1356.5" y="246.9" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="19" font-weight="700" fill="#146258" text-anchor="middle">AI</text>
+<line x1="1247.2" y1="423.0" x2="1384.8" y2="326.6" stroke="#1E8073" stroke-width="3" stroke-opacity="0.7" marker-end="url(#aTeal)"/>
+<circle cx="1417.6" cy="303.7" r="30" fill="#1E8073" fill-opacity="0.13" stroke="#1E8073" stroke-width="2.5"/>
+<text x="1417.6" y="310.7" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="19" font-weight="700" fill="#146258" text-anchor="middle">AI</text>
+<line x1="1258.2" y1="445.3" x2="1418.4" y2="394.8" stroke="#1E8073" stroke-width="3" stroke-opacity="0.7" marker-end="url(#aTeal)"/>
+<circle cx="1456.6" cy="382.8" r="30" fill="#1E8073" fill-opacity="0.13" stroke="#1E8073" stroke-width="2.5"/>
+<text x="1456.6" y="389.8" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="19" font-weight="700" fill="#146258" text-anchor="middle">AI</text>
+<line x1="1262.0" y1="470.0" x2="1430.0" y2="470.0" stroke="#1E8073" stroke-width="3" stroke-opacity="0.7" marker-end="url(#aTeal)"/>
+<circle cx="1470.0" cy="470.0" r="30" fill="#1E8073" fill-opacity="0.13" stroke="#1E8073" stroke-width="2.5"/>
+<text x="1470.0" y="477.0" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="19" font-weight="700" fill="#146258" text-anchor="middle">AI</text>
+<line x1="1258.2" y1="494.7" x2="1418.4" y2="545.2" stroke="#1E8073" stroke-width="3" stroke-opacity="0.7" marker-end="url(#aTeal)"/>
+<circle cx="1456.6" cy="557.2" r="30" fill="#1E8073" fill-opacity="0.13" stroke="#1E8073" stroke-width="2.5"/>
+<text x="1456.6" y="564.2" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="19" font-weight="700" fill="#146258" text-anchor="middle">AI</text>
+<line x1="1247.2" y1="517.0" x2="1384.8" y2="613.4" stroke="#1E8073" stroke-width="3" stroke-opacity="0.7" marker-end="url(#aTeal)"/>
+<circle cx="1417.6" cy="636.3" r="30" fill="#1E8073" fill-opacity="0.13" stroke="#1E8073" stroke-width="2.5"/>
+<text x="1417.6" y="643.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="19" font-weight="700" fill="#146258" text-anchor="middle">AI</text>
+<line x1="1229.9" y1="535.1" x2="1332.2" y2="668.3" stroke="#1E8073" stroke-width="3" stroke-opacity="0.7" marker-end="url(#aTeal)"/>
+<circle cx="1356.5" cy="700.1" r="30" fill="#1E8073" fill-opacity="0.13" stroke="#1E8073" stroke-width="2.5"/>
+<text x="1356.5" y="707.1" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="19" font-weight="700" fill="#146258" text-anchor="middle">AI</text>
+<line x1="1208.0" y1="547.1" x2="1265.5" y2="704.9" stroke="#1E8073" stroke-width="3" stroke-opacity="0.7" marker-end="url(#aTeal)"/>
+<circle cx="1279.2" cy="742.5" r="30" fill="#1E8073" fill-opacity="0.13" stroke="#1E8073" stroke-width="2.5"/>
+<text x="1279.2" y="749.5" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="19" font-weight="700" fill="#146258" text-anchor="middle">AI</text>
+<path d="M 1080 640 A 220 220 0 0 1 1084 300" fill="none" stroke="#DB9126" stroke-width="4" stroke-dasharray="10 8" marker-start="url(#aAmber)" marker-end="url(#aAmber)"/>
+<text x="1041.8" y="315.1" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="600" fill="#97600C" text-anchor="end">check</text>
+<text x="1008.0" y="363.4" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="600" fill="#97600C" text-anchor="end">manage</text>
+<text x="986.8" y="418.5" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="600" fill="#97600C" text-anchor="end">integrate</text>
+<text x="979.6" y="477.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="600" fill="#97600C" text-anchor="end">inspire</text>
+<text x="986.8" y="535.5" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="600" fill="#97600C" text-anchor="end">guide</text>
+<text x="1008.0" y="590.6" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="600" fill="#97600C" text-anchor="end">verify</text>
+<text x="1041.8" y="638.9" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="600" fill="#97600C" text-anchor="end">correct</text>
+<text x="80.0" y="330.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="92" font-weight="800" fill="#14171D" text-anchor="start" letter-spacing="-2">Learning</text>
+<text x="80.0" y="432.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="92" font-weight="800" fill="#1E8073" text-anchor="start" letter-spacing="-2">to think</text>
+<text x="80.0" y="500.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="400" fill="#4A515C" text-anchor="start">How AI is reshaping the jobs you&#x27;re heading into,</text>
+<text x="80.0" y="539.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="400" fill="#4A515C" text-anchor="start">and the skills that will get you hired</text>
+<text x="80.0" y="680.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" fill="#14171D" text-anchor="start">Alex Stanhope</text>
+<text x="80.0" y="718.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#4A515C" text-anchor="start">Lightenna  ·  Grammar school presentation  ·  November 2026</text>
+<line x1="80" y1="858" x2="1520" y2="858" stroke="#E3E6EA" stroke-width="2"/>
+<text x="1520.0" y="884.0" font-family="-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#8A919C" text-anchor="end">lightenna.com</text>
+</svg>

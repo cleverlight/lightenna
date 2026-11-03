@@ -136,6 +136,9 @@ exclude:
   - README
   - log
   - tmp
+  # PowerPoint versions of talks can name the venue, so they stay off the public site
+  - "assets/images/presentation_resources/*/*.pptx"
+  - "assets/images/presentation_resources/*/*-pptx.*"
 keep_files:
   - .git
   - .svn
